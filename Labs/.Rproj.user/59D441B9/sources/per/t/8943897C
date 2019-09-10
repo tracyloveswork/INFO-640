@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1568138386158.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2750920948",
+    "id" : "8943897C",
+    "lastKnownWriteTime" : 1568140996,
+    "last_content_update" : 1568140996448,
+    "path" : "~/Google Drive/05 Pratt/07_2019_Fall/INFO-640-01 Data Analysis/info640-master/Labs/dataCleaning.R",
+    "project_path" : "dataCleaning.R",
+    "properties" : {
+        "cursorPosition" : "89,0",
+        "scrollLine" : "74",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
