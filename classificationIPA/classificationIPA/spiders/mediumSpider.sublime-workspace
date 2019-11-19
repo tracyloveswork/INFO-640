@@ -1,0 +1,535 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"int",
+				"intelligent"
+			],
+			[
+				"d_pa",
+				"d_paragraphHeader"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"z",
+				"z-index\tproperty"
+			],
+			[
+				"h",
+				"height\tproperty"
+			],
+			[
+				"i",
+				"italic\tfont-style"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"intro",
+				"introduction"
+			],
+			[
+				"in",
+				"intelligent"
+			],
+			[
+				"paddin",
+				"padding-bottom\tproperty"
+			],
+			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
+				"body",
+				"bodytext"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"bloc",
+				"blockchains"
+			],
+			[
+				"mo",
+				"moreSpaceBelow"
+			],
+			[
+				"more",
+				"moreSpaceAbove"
+			],
+			[
+				"mor",
+				"moreSpaceAbove"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"tip",
+				"tipToLeave"
+			],
+			[
+				"ano",
+				"annoying"
+			],
+			[
+				"top",
+				"margin-top"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"g",
+				"greenparagraph"
+			],
+			[
+				"ce",
+				"centerIt"
+			],
+			[
+				"alig",
+				"align-content"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"al",
+				"align-content"
+			],
+			[
+				"bakcg",
+				"background-color"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"f",
+				"flex-container"
+			],
+			[
+				"tabl",
+				"tableNumbers"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"_",
+				"_blank"
+			],
+			[
+				"flex",
+				"flex-start"
+			],
+			[
+				"s",
+				"space-around"
+			],
+			[
+				"fle",
+				"flex-wrap"
+			],
+			[
+				"fl",
+				"flex"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"row",
+				"row-reverse"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"R",
+				"ReactDOM"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					""
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Re-run sketch"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch (Processing 3 only)"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch fullscreen"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Export sketch as application"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Kill running sketches"
+				]
+			],
+			[
+				"Packages/Processing/Build Systems/Processing.sublime-build",
+				"Run sketch (Processing 3 only)"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: p",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: s",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/01 Working/_workfiles/historicalContext_Site/stylesheets/blogscraping.py",
+		"/Users/tracykubert/Google Drive/05 Pratt/07_2019_Fall/INFO-640-01 Data Analysis/03 Final Project/_code/mediumScrapingPython.py",
+		"/Users/tracykubert/Google Drive/05 Pratt/07_2019_Fall/INFO-640-01 Data Analysis/03 Final Project/_code/scrapy_voiceAssistants.py",
+		"/Users/tracykubert/Google Drive/05 Pratt/07_2019_Fall/INFO-640-01 Data Analysis/03 Final Project/_code/scrapy_medium_ipa_2.py",
+		"/Users/tracykubert/Google Drive/05 Pratt/07_2019_Fall/INFO-640-01 Data Analysis/03 Final Project/_code/scrapy_medium_articleBS.py",
+		"/Users/tracykubert/Google Drive/05 Pratt/07_2019_Fall/INFO-640-01 Data Analysis/03 Final Project/_code/datacamp.py",
+		"/Users/tracykubert/Google Drive/05 Pratt/07_2019_Fall/INFO-640-01 Data Analysis/03 Final Project/_code/medium_scrapper/medium_scrapper.py",
+		"/Users/tracykubert/Google Drive/05 Pratt/07_2019_Fall/INFO-640-01 Data Analysis/03 Final Project/_code/scrapy_medium_articleBS",
+		"/Users/tracykubert/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/tracykubert/Google Drive/05 Pratt/07_2019_Fall/INFO-640-01 Data Analysis/03 Final Project/_code/scraping.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/07_2019_Fall/INFO-640-01 Data Analysis/03 Final Project/_code/loginSelenium.py",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/01 Working/_workfiles/historicalContext_Site/stylesheets/main.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/01 Working/_workfiles/historicalContext_Site/stylesheets/main-responsive.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/01 Working/_workfiles/historicalContext_Site/index.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/stylesheets/main.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/stylesheets/main-responsive.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/stylesheets/main-bg.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/stylesheets/parallax.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/fonts/fonts.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index_test.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/stylesheets/owl.carousel.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index10.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index09.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index08.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index07.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index06.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index05.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index04.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index03.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index02.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/error404.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index01.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/post.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/single-project.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/projects/project-youtube.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/thanks.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/uc.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/images/hero_1500x1050.jpg",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Thesis/_workfiles/historicalContext_Site/index.html",
+		"/Users/tracykubert/LocalFiles/06 Design Resources/05 Themes_Templates/odin-v1.5/site/index10.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/03_DES-720B-03 Technology B/02_Processing/_skillShare/HYPE_basics/step 1/build/build.pde",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/03_DES-720B-03 Technology B/02_Processing/_skillShare/color/step 1/build/build.pde",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/03_DES-720B-03 Technology B/02_Processing/rotation/step 1/build/build.pde",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/03_DES-720B-03 Technology B/02_Processing/_sourceFiles/mongo 1/build/build.pde",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/02_DES_710B-05 Visual Language B/Icebox/fingerprint/Ava got her Missoni @Target 🙂",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/02_DES_710B-05 Visual Language B/Obstructions/03/HTML/baskerville.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/02_DES_710B-05 Visual Language B/Obstructions/03/HTML/futura.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/02_DES_710B-05 Visual Language B/Obstructions/03/HTML/garamond.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/02_DES_710B-05 Visual Language B/Obstructions/03/HTML/key.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/02_DES_710B-05 Visual Language B/Obstructions/03/HTML/css/style.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/02_DES_710B-05 Visual Language B/Obstructions/03/HTML/index.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/02_DES_710B-05 Visual Language B/Obstructions/03/HTML/css/bootstrap.min.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/04_Fall_2018/02_DES_710B-05 Visual Language B/Obstructions/03/HTML/script/script.js",
+		"/Applications/MAMP/htdocs/network/index.html",
+		"/Applications/MAMP/htdocs/wp-content/themes/135-theme/templates/template-home.php",
+		"/Applications/MAMP/website1/wordpress/wp-config.php",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Summer/INFO 658–01 Information Visualization/_finalProject/_sourceFiles/nycb2010_18b/nycb2010.shp",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Summer/INFO 658–01 Information Visualization/Class 6/gephiLab/comics_kubert.json",
+		"/Users/tracykubert/Dropbox/01_CurrentProjects/LiKE/SummerHaven/_workfiles/msci.html",
+		"/Users/tracykubert/Downloads/dolphins.xml",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Summer/INFO 658–01 Information Visualization/_finalProject/_sourceFiles/nycb2010_18b/nycb2010.dbf",
+		"/Users/tracykubert/Downloads/eco-benefits.json",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Summer/INFO 658–01 Information Visualization/Class 6/gephiLab/comics_kubert_3.json",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Summer/INFO 658–01 Information Visualization/Class 6/gephiLab/comics_kubert_2.json",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Summer/INFO 658–01 Information Visualization/Class 6/gephiLab/comics_kubert_4.json",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/Final_Project/assets/css/style.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/Final_Project/assets/javascript/app.js",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/Final_Project/about.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/Final_Project/sources.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/Final_Project/technology.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/Final_Project/index.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/Final_Project/judging.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/Final_Project/quiz.html",
+		"/Users/tracykubert/Dropbox/01_CurrentProjects/one35agency.com/main.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/site/index.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/text.xml",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/doc.dtd",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/javascript2.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/javascript.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/site/715_nostrand.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/site/707_nostrand.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/site/711_nostrand.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/site/816_nostrand.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/site/styles.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/starter_page.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/styles.css",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/paragraphs.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/week8.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_2018_Spring/LIS 654 - Information Technology/LIS654_HW3/table.html",
+		"/Users/tracykubert/Dropbox (Flipped GRA)/01_CurrentProjects/one35agency.com/main.css",
+		"/Users/tracykubert/Google Drive/03 Hypertech/bookitlyst.com/index.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Fall_2017/DES-760A-04 Graduate Seminar A/project3/postPage/index.html",
+		"/Users/tracykubert/Google Drive/05 Pratt/00_Fall_2017/HD-641-04 Origins of Contemporary Comm D/_default/site/html_default.html",
+		"/Users/tracykubert/Dropbox/lyndaCom/Ex_Files_CSS_Flexbox_Layouts/Exercise Files/Chapter_02/02_03/CSS/nav-single-level.css",
+		"/Users/tracykubert/Google Drive/_codeExamples/CSS/flexbox/flexbox.css",
+		"/Users/tracykubert/Google Drive/_codeExamples/CSS/flexbox/flexbox.html",
+		"/Users/tracykubert/Dropbox/lyndaCom/Ex_Files_Learning_MongoDB/Exercise Files/Chapter3/03_01/Start/index.js",
+		"/Users/tracykubert/Dropbox/lyndaCom/Ex_Files_Learning_MongoDB/Exercise Files/Chapter3/03_02/Start/index.js",
+		"/Users/tracykubert/Google Drive/00 Git Repos/project3/src/App.js"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 110.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.autopep8":
+	{
+		"height": 190.0
+	},
+	"output.exec":
+	{
+		"height": 127.0
+	},
+	"output.find_results":
+	{
+		"height": 144.0
+	},
+	"pinned_build_system": "",
+	"project": "mediumSpider.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Exercise Files/Chapter4/04_06/Start/movies.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 381.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
