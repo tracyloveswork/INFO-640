@@ -29,7 +29,7 @@ library(rgdal)
 # https://nycopendata.socrata.com/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9
 
 # My API Key
-register_google(key = "AIzaSyA_TKqfaavsBqNapi58-37D5ItkOIedZNE", write=TRUE)
+register_google(key = "#", write=TRUE)
 
 # Load a map of NYC by passing along the longitute and latitude 
 # On Google Maps: https://www.google.com/maps/@40.6971494,-74.2598655,10z
