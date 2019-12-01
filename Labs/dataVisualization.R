@@ -69,7 +69,6 @@ iris_plot + geom_line()
 posn <- position_jitter(width = 0.1)
 iris_plot + geom_point(position = posn)
 
-
 # Find the midpoint for each species to show an average sepal
 # Create a function that calculates this value for each species
 iris_summary <- aggregate(iris[1:4], list(iris$Species), mean)
@@ -159,12 +158,71 @@ iris_plot +
   labs(title = "3 Species from Iris Dataset: Sepal Length by Sepal Width (cm)") +
   iris_theme
 
-??ggthemes
+?ggthemes
 
 iris_plot + 
   geom_jitter() + 
   theme_tufte()
 
+# ---- Chicken Weights Visualization ----
+?ChickWeight
+data("ChickWeight")
+
+# use weight for the x-axis
+chicks <- ggplot(ChickWeight, aes(x=ChickWeight$weight))
+
+# A histogram is different from a bar chart because in a histogram, you can specify the number of bins you want 
+# your data broken down into whereas with a bar chart, those bins are pre-defined. 
+# Chicken Weight is a QUANTITATIVE variable, which is why a histogram (rather than a bar chart) is appropriate.
+
+chicks + geom_histogram()
+diff(range(ChickWeight$weight)) / 40
+
+chicks + geom_histogram(binwidth = 8.45)
+
+ggplot(ChickWeight, aes(x=ChickWeight$weight, fill = factor(ChickWeight$Diet))) +
+  geom_histogram(binwidth = 8.45)
 
 
+ggplot(ChickWeight, aes(x=ChickWeight$weight, fill = factor(ChickWeight$Diet))) +
+  geom_histogram(aes(y = ..count../sum(..count..)),
+                 binwidth = 8.45, position = "fill")
 
+ggplot(ChickWeight, aes(x=ChickWeight$Time, y=ChickWeight$weight)) +
+  geom_jitter(alpha=.6)
+
+ggplot(ChickWeight, aes(x=ChickWeight$Time, y = ChickWeight$weigh, color = ChickWeight$Diet)) +
+  geom_jitter(alpha = 0.6) +
+  stat_smooth(method = "lm", se=FALSE,col = "grey")
+
+
+ggplot(ChickWeight, aes(x=ChickWeight$weight, y = ChickWeight$Time, color = ChickWeight$Diet)) +
+  geom_jitter(alpha = 0.6) +
+  facet_grid(.~ChickWeight$Diet) +
+  stat_smooth(method = "lm", se=FALSE, col = "grey")
+
+# ---- Tite Series Visualization ----
+
+data("WWWusage")
+?WWWusage
+str(WWWusage)
+
+# Dataset for internet usage from 1998
+www <- data.frame(usage = as.matrix(WWWusage), use_time=time(WWWusage))
+
+ggplot(www, aes(x=use_time, y = usage)) +
+  geom_line()
+
+
+data("airquality")
+?airquality
+str(airquality)
+
+ggplot(airquality, aes(x=Day, y=Temp)) +
+  geom_line()
+
+airquality$new_date <- paste(airquality$Month, airquality$Day, "1973", sep="-")
+airquality$new_date <- mdy(airquality$new_date)
+glimpse(airquality)
+
+ggplot(airquality, aes(x=new_date, y=Temp)) + geom_line()
