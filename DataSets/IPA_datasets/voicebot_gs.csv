@@ -1,0 +1,65 @@
+doc_id,title,term,url,text
+1,The VoiceBot: a voice controlled robot arm,voicebot,https://dl.acm.org/citation.cfm?id=1518731,"We present a system whereby the human voice may specify continuous control signals to manipulate a simulated 2D robotic arm and a real 3D robotic arm. Our goal is to move towards making accessible the manipulation of everyday objects to individuals with motor impairments. Using our system, we performed several studies using control style variants for both the 2D and 3D arms. Results show that it is indeed possible for a user to learn to effectively manipulate real-world objects with a robotic arm using only non-verbal voice as a control mechanism. Our results provide strong evidence that the further development of non-verbal voice controlled robotics and prosthetic limbs will be successful."
+2,Demo of vj-voicebot: Control of robotic arm with the Vocal Joystick,voicebot,https://dl.acm.org/citation.cfm?id=1296895,We explore the use of the Vocal Joystick (VJ) for robotic limb control using a small-scale robotic arm. The purpose of this research is to allow individuals with mobile disabilities to obtain greater independence by continuously controlling a robotic arm with their voice. The VJ-Voicebot relies only on continuous and discrete non-verbal vocal sounds to interact with objects in its environment. The demonstration will allow users to experience real-time control of a 5 degrees-of-freedom (DOF) robotic arm using sounds produced from their own vocal system.
+3,College Voice Bot (Khabri),voicebot,https://pdfs.semanticscholar.org/900f/00864ad2b8bada90da0bfb61981a8b44f80e.pdf,"Artificial Intelligent Bots are software programs that include AI components to interact with people over text or voice messaging.
+Backed by AI, bots today are being used for ordering food, listening to music, finding information about your favorite author,
+checking the weather, etc. The AI component of bots helps in recommendations and making decisions for you. Built on NLP and
+ML, bots are based on the human ability to learn and absorb information. The college enquiry bot will be built using artificial
+algorithms that analyses user’s queries and understand user’s message. This System will be an android application which provides
+answer to the query of the user very effectively. User just have to ask their query to the bot which is used for two-way dynamic
+dialogues. The system will use the artificial intelligence algorithms to give appropriate answers to the user. User can ask for any
+information related to college/university like information about students, teachers, courses, admission process etc. The
+applications of this voice bot can be limitless. "
+4,A Photo-realistic Voice-bot,voicebot,https://upcommons.upc.edu/handle/2117/168405,"Technology is at the point where systems are capable of synthesizing video of human actors indistinguishably from ones in which the actor is present. This research investigates whether or not it is possible to use this technology in order to create a system which, allows video generation of a human actor, that is able to interact with a user through speech in real-time, whilst also remaining indistinguishable from a real human actor. In other words, a photo-realistic voicebot. The work discusses the motivations and ethics, but also presents and tests a prototype system. The prototype aims to take advantage of the latest in real-time video manipulation software to create a natural sounding conversation with an artificially synthesized video."
+5,Performance analysis of an integrated data/voice protocol on bus LANs,voicebot,https://ieeexplore.ieee.org/abstract/document/544963/,This paper presents a new hybrid protocol by combining the minislotted alternation priority (MSAP) protocol and the CSMA/CD protocol with priority scheme (HMCP) to handle the different demands of data and voice services on bus local area networks (LANs). The stations on the LANs can access the bus with either the MSAP or the CSMA/CD protocol. Analytical formulations are derived to evaluate the protocol performance. The throughput and the mean packet delay are also obtained. The results show that the throughout and the mean packet delay of this protocol are particularly better than that of the CSMA/CD at high loads. The delay of the voice station is lower than that of the data station.
+6,"Voicebot and Chatbot Design: Flexible Conversational Interfaces with Amazon Alexa, Google Home, and Facebook Messenger",voicebot,https://books.google.com/books?hl=en&lr=&id=XSxxDwAAQBAJ&oi=fnd&pg=PP1&dq=voicebot&ots=R9bprD5Vg5&sig=zdU09I94XsqFqOxeqFb9Q9X9yPI,"Create conversational UIs using cutting-edge frameworks
+
+Key Features
+Build AI chatbots and voicebots using practical and accessible toolkits
+Design and create voicebots that really shine in front of humans
+Work with familiar appliances like Alexa, Google Home, and FB Messenger
+Design for UI success across different industries and use cases
+Book Description
+We are entering the age of conversational interfaces, where we will interact with AI bots using chat and voice. But how do we create a good conversation? How do we design and build voicebots and chatbots that can carry successful conversations in in the real world?
+
+In this book, Rachel Batish introduces us to the world of conversational applications, bots and AI. You’ll discover how - with little technical knowledge - you can build successful and meaningful conversational UIs. You’ll find detailed guidance on how to build and deploy bots on the leading conversational platforms, including Amazon Alexa, Google Home, and Facebook Messenger.
+
+You’ll then learn key design aspects for building conversational UIs that will really succeed and shine in front of humans. You’ll discover how your AI bots can become part of a meaningful conversation with humans, using techniques such as persona shaping, and tone analysis.
+
+For successful bots in the real world, you’ll explore important use-cases and examples where humans interact with bots. With examples across finance, travel, and e-commerce, you’ll see how you can create successful conversational UIs in any sector.
+
+Expand your horizons further as Rachel shares with you her insights into cutting-edge voicebot and chatbot technologies, and how the future might unfold. Join in right now and start building successful, high impact bots!
+
+What you will learn
+Build your own AI voicebots and chatbots
+Use familiar appliances like Alexa, Google Home, and Facebook Messenger
+Master the elements of conversational user interfaces
+Key design techniques to make your bots successful
+Use tone analysis to deepen UI conversation for humans
+Create voicebots and UIs designed for real-world situations
+Insightful case studies in finance, travel, and e-commerce
+Cutting-edge technology and insight into the future of AI bots
+Who this book is for
+This book is for you, if you want to deepen your appreciation of UI and how conversational UIs - driven by artificial intelligence - are transforming the way humans interact with computers, appliances, and the everyday world around us. This book works with the major UI toolkits available today, so you do not need a deep programming knowledge to build the bots in this book: a basic familiarity with markup languages and JavaScript will give you everything you need to start building cutting-edge conversational UIs."
+7,"Aye, aye Captain: Voice active bots in a maritime MUVE",voicebot,https://www.citrenz.ac.nz/conferences/2015/pdf/2015CITRENZ_1_Cochrane_Voice_v4.pdf,"The paper presents an aspect of design based research into the design of 3D Multi User Virtual Environment (MUVE) to
+support authentic language learning on the bridge of a ship. Voice active Non-Player Characters (NPCs) “voice bots”
+were included in the design process to increase the authenticity of helm experiences, including helm commands. Using
+an Agile approach, development of a client based “voice bot” avatar was undertaken to complement human controlled
+avatar voice communication. While initial analysis indicated a relatively short development phase, the need to work
+around proprietary voice software led to a number of tasks that became distractingly large and exploratory on the
+programmer’s Agile backlog list. A decision to focus on the first principle in the Agile Manifesto constrained the
+solutions that were developed, which led to a working system for creating voice bots. "
+8,Practical bot development: designing and building bots with Node. js and Microsoft Bot Framework,voicebot,https://books.google.com/books?hl=en&lr=&id=JYxlDwAAQBAJ&oi=fnd&pg=PR3&dq=voicebot&ots=AZjrQfI9wl&sig=jC7ORC05awIhII5uyFaJa6GeYyE,"Explore the concept of bots and discover the motivation behind working with these new apps with messaging platforms. This book is an accessible resource teaching the basic concepts behind bot design and implementation. Each chapter builds on previous topics and, where appropriate, real working code is shown that implements the concepts. By just picking up a code editor, you can start creating smart, engaging, and useful bot experiences today.
+Practical Bot Development will teach you how to create your own bots on platforms like Facebook Messenger and Slack, incorporate extension APIs, and apply AI and ML algorithms in the cloud. By the end of this book, you'll be equipped with the information to reach thousands of new users with the bots you create!
+The book is a great resource for those looking to harness the benefits of building their own bots and leveraging the platform feasibility of them.
+What You’ll Learn
+Understand the general architecture of a bot
+Distinguish between a great bot experience versus a bad bot experience.
+Explore the ideas behind natural language processing and apply them to bot development
+Implement real Messenger, Slack, and custom channel bots using Node.js and the Microsoft Bot Builder framework
+Deploy bots to Facebook Messenger and Slack
+Who This Book Is For
+
+Engineers, hobbyists, and the design oriented community looking looking for an introduction to the technologies and concepts involved in building bots. The experience level could be from beginner to expert, although some familiarity with Node.js and APIs will be assumed."
+9,Virtual Assistants for End-User Development in the Internet of Things,voicebot,https://link.springer.com/chapter/10.1007/978-3-030-24781-2_17,"The spread of Virtual Assistants (software and hardware) on the consumer market deeply changed the way Internet of Things (IoT) is implemented and used today. Such devices, and related applications, are becoming more and more integrated within smart environments and this might pave the way to potential new approaches to End-User Development activities, which can be performed in IoT environments. This paper discusses the evolution of the IoT ecosystem definition that has been studied by the authors in the last years."
+10,Virtual Assistants for End-User Development in the Internet of Things,voicebot,https://books.google.com/books?hl=en&lr=&id=Vj2gDwAAQBAJ&oi=fnd&pg=PA209&dq=voicebot&ots=qM10xKZz2R&sig=_ZXlmmFEVAwZOEllHVWCVAlbBzY,"This book constitutes the refereed proceedings of the 7th International Symposium on End-User Development, IS-EUD 2017, held in Hatfield, UK, in July 2019. The 9 full papers and 8 short papers presented were carefully reviewed and selected from 35 submissions. The papers discuss progress in research around end-user development through, or towards, methods, socio-technical environments, intelligent agents, as well as the most effective end-user programming paradigms for smart environments. Papers and submissions in all categories addressed this specific theme together with topics that have been traditionally covered by the broader themes of end-user development, such as domain specific tools, spreadsheets, educational applications, and end user aspects. "

@@ -1,0 +1,490 @@
+doc_id,title,term,url,text
+1,Conversational interface for chatbot & voicebot: the French touch,voicebot,https://blog.prototypr.io/conversational-interface-for-chatbot-voicebot-the-french-touch-28a1d5522ec3,"Now a new form of expression is available to brands: they can express their image through a specific and more friendly tone of voice, so users can feel more included and emotionally linked.
+Can you explain to us what a conversational experience is?
+It’s a basic service: a virtual assistant that helps people with daily tasks, or to quickly obtain information.
+A conversational interface enables users to interact with this service, or with a brand, in an easier and a more natural way. Customers only have to write a few lines or only have to speak: “What’s the best deal for a trip to Australia?”, “I want to book an Uber”, “How much is an electric bike?”. This conversation can be accessed from a website or a mobile app, and also via typical daily channels (e.g. Messenger, Google Assistant, WhatsApp, Slack, etc.).
+These days, more and more devices are dedicated to a user vocal experience (smartwatch, speakers, GPS, etc.), fitted out with microphones and AI, like Google Assistant for Google Home or Android devices. A lot of brands choose IoT so they can offer their clients a more natural and direct service with vocal input.
+These kinds of products offer customers new options which are evolving very fast. As designers, we have the responsibility of fully exploring their potential and we need to make sure we design experiences adapted to user’s needs.
+How can we explain the popularity and fast development of these tools?
+With a 100 % live vocal interaction non-digital people can use a service like anyone else.
+A more human-like interaction: Users can express their needs, or ask their questions in any way they like, in any order they like. The bot will adapt and respond.
+Accessibility: It’s a great opportunity for non-digital people, especially the visually impaired, to access a digital service! Currently their only option is a mechanical synthesised voice reading out all screen content. With a 100 % live vocal interaction they can use a service like anyone else.
+More efficiency, fewer constraints: The conversational experience helps to decrease the cognitive load and will ease the user journey. On a typical website, the user has to carry out a certain number of steps including: interface analyse, comprehension of the website, product identification and selection. Through a conversational experience, the user’s cognitive load is significantly reduced thanks to AI.
+Time saving: Long waiting times on the phone, endless redirections, and repetitive tasks, can now be avoided!
+I guess there are business advantages too?
+Brand identity: Now a new form of expression is available to brands: they can express their image through a specific and more friendly tone of voice, so users can feel more included and emotionally linked.
+Increase key knowledge: Brands can combine these new tech tools with their user base to create a better customer experience. It can save valuable time for sales people and customer services, and free them up to focus more on a good quality service.
+Users shouldn’t have to look for information by themselves anymore.
+A bigger connexion: Today, I think e-commerce companies should be more connected to their clients via the daily channels they use (Messenger, Slack, etc.). In my opinion, users shouldn’t have to look for information by themselves anymore. That’s why, with their authorization, the OUI.sncf bot sends personalized train times directly to the passengers, when it knows they need it at a specific time, so the users don’t have to request the information at all.
+What are you currently working on? What are your challenges?
+I currently have the opportunity to explore different sectors, like transportation with OUI.sncf, the medical field with the DeepOP start-up and service delivery with the SMARTLY start-up. I have designed customized vocal experiences and bots for platforms like Messenger, Google Assistant, Google Home and Alexa.
+
+
+
+These projects enabled me to approach vocal use in several completely different contexts. For example, a nurse, who gives medical data to a virtual assistant, will not have the same conversation as a customer buying a train ticket. Also security and legal challenges aren’t the same. A conversational experience for family connected speakers shouldn’t be designed in the same way as a personal device.
+Do you see differences between B2B and B2C?
+A crucial part of the job is to work on the bot persona, to define its personality, tone of voice and specific goals.
+Yes! For B2C applications, the main challenge is convincing users to adopt this new tool; to be successful a tool must be relevant, especially if you want users to change their habits. The key is the trust users are willing to give a brand, and the emotional attachment between them. A crucial part of the job is to work on the bot persona, to define its personality, tone of voice and specific goals.
+For B2B, if you are designing an HR or a legal conversational tool for example, the challenge is more about efficiency.
+I know you worked on mobile apps, interactive kiosks and websites. What do screen content design and conversational design have in common?
+The design approach is just the same! You have to know end-users very well. My work is also based on personas and on the study of customer needs and pain points.
+However, we have a lot more knowledge about website or app design. For conversational design, especially voice interaction, there is no design pattern and no best practice exists. I had to start from scratch.
+After a lot of testing, I have been able to identify some best practices to make information processing easier. In a vocal experience, humans have a very short-term memory, so if a voice bot gives three or four precise pieces of information in the same sentence like train times, users can usually only remember half of them.
+How do you work?
+After the user research phase, I design the “happy path”, i.e. the conversation when everything is going well, then the other cases (e.g. the user says “I don’t know” or “no”, etc.). Finally, I have to focus on “repair conversations” which is equivalent to the error messages and redirections on a website.
+
+Happy path example for Oui.sncf — Google Assistant
+The more you anticipate specific cases, the better the experience will be.
+A huge part of the work is to analyse and identify contexts in order to adapt the design to typical conversations in a given setting. I use macrographs to represent the whole user experience, which gives an immediate overview of the project and also helps to define product scope and goals. The other main specific deliverables are Context map, Intelligence rules and Dialog flows. The more you anticipate specific cases, the better the experience will be. In particular, we pay great attention to non-response scenarios.
+Finally, I also include a plan to measure success (KPIs), including giving users the opportunity to say if they are pleased with their experience via pre-set answer suggestions (“Thanks”, “Great!”).
+
+Context mapping
+What advice would you give to UX designers, who want enter this field?
+First of all, do not change the classic design approach! Like in any project, do a lot of co-design workshops with your client to define your persona bot, identify and prioritize your goals, and choose your wording very carefully.
+Above all, test and test again, I will never stop repeating that. Your creation is worthless if it hasn’t been tested on real end-users. Feedback from user testing is essential and irreplaceable: “I never have a problem buying my ticket, the problem is finding the train”, “I had to interrupt the bot to give it more medical information”, “I feel I am forced to choose from only a small range of products. I want to have more choice”. You never know in advance if you are going to have to change your project strategy at any given time.
+Don’t hesitate to invite your client to assist in test sessions. In my experience, a “Wizard of Oz” method of VUX (Voice User Experience) testing thrilled a lot of my clients because they could see how their product could be used by the users once developed.
+Finally, if you are not good at writing, never hesitate to work with a copywriter!
+What do you see in the future for conversational experience?
+I believe in the automation of recurrent tasks to relieve humans of boring work. Bots can help humans in a non-intrusive way (notification) to remember or become aware of myriad of things.
+Most of my clients choose these new platforms for business reasons. My goal is to make them realize that without a positive experience it’s hard to guarantee the adoption of a conversational tool. Given that GAFA offer conversation templates adapted to e-commerce, client service, etc., we can focus on the value and quality of the service we want to deliver.
+How do you rate France in relation to conversational tool design and development? Are we leaders, good students or only beginners?
+I’m optimistic so I would say we are good students. Tech is here to stay and companies are aware of the UX approach. There is no doubt, in a near future conversational experiences are going to be more and more popular!
+
+Amina Esselimani is a conversational UX designer. She graduated from L’École de Design de Nantes Atlantique in 2011. She’s passionate about user research and testing applied to chatbots and voicebots (B2B and B2C). Putting AI at the the service of the user experience is her daily challenge."
+2,How We Built Our First Voice Bot: The Business Story,voicebot,https://chatbotsmagazine.com/https-medium-com-hellohaptik-how-we-built-our-first-voice-bot-the-business-story-4441315b218e,"2017 kicked off the dawn of the Voice Assistant a.k.a the Voicebot.
+Alexa, Google Assistant and Siri, all won a place for themselves in customers hearts, homes and retail shelves everywhere.
+Their popularity keeps growing by the day and the reason behind this hype is quite obvious. They make life so convenient! All you need do is talk, which is naturally easier than typing or tapping buttons on your phone to get things done.
+But how can a company use a voicebot? What difference is this going to make for businesses?
+Here’s our story from the forefront of this new vocal revolution that should answer what a voicebot can do for you.
+What’s a Voicebot?
+A voicebot is a type of chatbot. Being a Conversational AI company, we had over 4+ years of experience building bots for a text-based interface.
+But building for Voice was fairly different and a challenge that we were raring to work on. That’s when we received our first client request to build a voicebot for a fast food chain.
+Types of Voicebots
+There is no well-defined manual to follow when you’re developing new technology. Based on the interface, voice bots fall into the following two types:
+1) Voice + Text Bots — Hybrid Voice + Chat Support Model
+
+If you’ve used Siri on your iPhone or Google Assistant on your Android phone, you know about Voice + Text bots. These are text-based bots with a layer of voice on top of it, and the input form is speech as well as text.
+A lot of companies have lately started including voice support on their text-based bots, like Axis Bank’s customer support app: ‘Axis AHA’.
+2) Voice Only Bots — Voice Controlled Devices
+
+Alexa on Amazon’s Echo speakers and Google Assistant on Google Home devices are the most popular voice assistants in the market. These beautiful products can handle everything from simple tasks like setting alarms and playing music to more complex tasks like controlling your gadgets and turning your house into a smart home.
+Our client required both these types of bots to deploy as an Alexa skill and a voice supported text-bot for their website and mobile apps.
+Building The Bots
+1) Voice + Text Bot — Hybrid Voice + Chat Support Model
+We realised at the nascent stages of our first ‘voice project’ that text-based bots can’t directly be converted to a voice + text bot. Thinking voice-first was the key to laying the groundwork.
+Challenges
+The biggest challenge was taking a ground-up approach to designing chat flows. Adding a voice layer on top of a text-only bot doesn’t mean simply adding the tech support for it, i.e., it’s not just a one-line code change to your bot.
+❌ Bad Experience Design
+When the voice script and chat script are the same. It’s easier for the user to read the text rather than wait for the bot to stop speaking in some cases. The voice script needs to be less verbose and to the point.
+✅ Good Experience Design
+Keep the voice script different from the chat script. Having the voice script more precise and to the point helps enhance the experience.
+
+Final Results
+In our case, we already had a chatbot platform which was text-based and it was simply a matter of adding a layer of voice on top of it.
+Here are our favourite Speech to Text and Text to Speech APIs:
+1. Bing API — It offers a punctuation feature which isn’t there in Google’s speech-to-text API, which makes a distinct difference.
+
+2. Amazon Polly — With Alexa dominating the voice bot world, we didn’t have to think twice about which API to use. It also helped that we’ve been using Amazon Polly for quite a while on our app! Read more about it here.
+2) Voice Only Bot — Voice Controlled Device
+In layman’s terms — an Alexa Skill is to an Alexa device what an iOS app is to an iPhone. As of March 2018, there are more than 30,000 Alexa Skills in the U.S alone.
+While building an Alexa skill or Google Home command, the User Experience structure is very different from that of a text-based bot. This applies to voice + text bots too. This is because of the missing visual interface. The Echo Spot is the only Echo device with a screen, which has a low market share as of now.
+Challenges
+Using only voice as the mode of communication can be tricky for the product designers in some ways. Taking information like addresses can be very easy for text-based bots but doing this on a voice controlled device just doesn’t work. The industry-wide practice is to take this kind of data using the companion app of the voice device. For example, the Zomato Alexa skill directly pulls a user’s address from his Zomato account. This can be managed through Alexa’s companion app on their phone.
+Since this is not great UX, this process is not to be used too frequently. The point of having a voice-controlled product is lost if a user needs to use his phone too often.
+❌ Bad Experience Design
+No guidance for the next steps or re-prompt in case of no reply.
+✅ Good Experience Design
+It’s very important to guide the user in the right direction and help them fulfil their final goal. Following up with the user if there is no reply is essential. This mirrors ‘Quick Replies’ on most Messengers where you can simply tap a suggested option to send a message.
+
+Final Results
+Our team designed an Alexa Skill ground up for our client that can collect orders, describe the menu and even tell you funny chicken jokes!
+We used our backend to make the Alexa bot which consumed all the APIs and converted that into information which can be presented to the end user. For instance, we utilize the Menu API and communicated an information-heavy food menu in a way which feels conversational and minimalistic to the end user.
+Key Takeaways
+Voice support for a text-based bot is not an ON/OFF switch
+Even if you’re converting a chatbot into a voice bot, think voice-first bot from the beginning of the project.
+The communication that you use should be different
+You don’t speak to a person and write to a person in the exact same way. Don’t use the same chat script and voice script.
+The user should be able to understand the capability of the bot
+Making your product easy-to-use is essential. I didn’t start using Siri until I saw someone else use it correctly — here is the link to that ad if you’re interested.
+Give hints on the next steps in the user’s journey
+It is very important to communicate the usability of the platform to your end user throughout the conversation.
+Alexa only gives you 8 seconds
+If there is no interaction between the user and Alexa then the device automatically exits your skill. A prompt is sent after 8 seconds, the device exits the Alexa skill if the user fails to respond again.
+Which type of voicebot should your business have?
+Voicebots suit the modern consumer’s lifestyle extremely well. Making your services available on these platforms is a sure-fire way to reach a bracket of customers who wish to get things done as quickly and conveniently as possible. So if your business use case is something which can be conversational, like ordering food/groceries or even customer support, then certainly consider getting a voice bot.
+Voice + Text Bot — Hybrid Voice + Chat Support Model
+Your user wouldn’t have access to your Alexa device while their travelling and would need to use your phone to complete a task. Also, if your bot is expected to communicate a lot of information to a user, like a menu from multiple restaurants or a long list which is information heavy, then you should leverage the visual interface of voice + text bots. The Echo Spot is evidence that a screen can be leveraged to enhance user experience.
+Voice Only Bot — Voice Controlled Device
+If you’re looking to add another channel through which you can do business then a Google Home command or an Alexa skill is the right step for you. It most definitely helps to have a large user-base. Uber, Zomato and Dominos are some companies who have seen great success with their Alexa Skills and Google Home commands because discoverability wasn’t a problem for them.
+It helps to maintain a presence on both these platforms if your service is likely to be used both on-the-move and at home.
+Conversational interfaces have been around for a while now, and voice bots are a great way for businesses to use automation and connect with the world at a human level.
+We’ll soon be talking about the tech side of building our first voice bot. So, stay tuned. Considering a bot for your business or want to know about implementing a voicebot?"
+3,Voicebot development insights from the winners of the Actions on Google Developer Challenge,voicebot,https://medium.com/@memerunner/voicebot-development-insights-from-the-winners-of-the-actions-on-google-developer-challenge-e3fade1d8ac3,"This winter it was as if CES was trying to prove to the holiday season that it could create the most buzz around voice assistants. So at least heading into 2018, it looks to be an exciting year for the #VoiceFirst movement.
+And Google recently announced winners of the Actions on Google Developer Challenge, with awards and cash going to what they judged were the best voicebots on the Google Assistant platform in 2017. It’s about time for someone to launch an awards show called the Bottys.
+At any rate, it’s worth looking into the winners and seeing what they’re doing. While we don’t have hard data to indicate if what they’re doing is working, at least they’re getting Google’s nod of approval.
+So I’m going to analyze the first, second and third place winners to see what we can learn from them.
+And without further ado, here they are.
+100 Years Ago: An app that travels back in time 100 years and lets you listen to an interactive radio show, including breaking news and the latest hit songs circa 1917
+Credit Card Helper: Helps users find the best credit cards quickly and avoid traps.
+My Adventure Book: Storytelling game that lets users navigate their own adventure.
+There are 4 areas we’ll assess to better understand how these apps work.
+Invocation
+User interface
+Landing page content
+Developer comments
+Invocation
+The invocation is what you say to Google to get to the app. It’s the name. Now, voice apps aren’t that easy to discover. It’s not like people surf Alexa or Home like they might the web. Currently, users take a linear path through the medium, and typically have a clear idea of what they want to do or find out, if not specifically where they want to go. Categorically, audio information is consumed more linearly than graphic information.
+The invocation is no small part of an apps success. The easier to say and remember, the more likely people will be to actually use it.
+Here are the invocations for the three winners.
+100 Years Ago
+“Talk to 100 Years Ago”
+Credit Card Helper
+“Ask credit card helper what the best credit card is”
+“Ask credit card helper what the risks of credit cards are”
+“Ask credit card helper what to do if my card is stolen”
+“Ask credit card helper what type of credit card i should get”
+“Talk to credit card helper”
+My Adventure Book
+“Talk to My Adventure Book”
+Credit card helper is using a range of invocations to touch on different user interests. Consider the difference between “what the best credit card is” and “what to do if my card is stolen”. The first one could drive users directly into a new customer funnel, and the second helping an existing customer’s make account changes. Both great features to offer, addressing people at different stages of the customer experience path.
+So developers and marketers will want to use terms that are easily remembered, easy to say, distinct from other voice apps, and offer directions to specific sections of the app, where possible.
+User Interface
+Once the user passes through to the app, it’s imperative to create a positive experience as quickly as possible. Like websites and mobile apps before them, voicebots will likely succeed or fail based on the first 30 seconds of the experience.
+And here’s how each app greets you after a successful invocation. These screens were grabbed while interfacing with Google Assistant on the phone, as it displays the script the Voicebot speaks for easy reference here.
+100 Years Ago
+
+Credit Card Helper
+
+My Adventure Book
+
+You can see the relative simplicity of these apps. And of course that’s to be expected from first forays into new territory. However, even early web pages often provided link after link. This is an early indicator of what will likely be a challenge for the voice web for a while to come: The small amount of content that users can comfortably navigate and consume.
+One UX issue I noticed is, when going back through an app repeatedly, it’s great when you can skip through large sections of the script that you’ve already been through. Especially at the intro. Credit Card Helper did this very well, and it removed a sense of tedium from the process. You just have to say “Hey Google, skip” and you’re on to the next section.
+Here’s the main navigation structure for each app.
+100 Years Ago
+Hear the news
+Listen to music
+Speak to special guest
+Credit Card Helper
+Help finding a card
+Browse by category
+About our research
+My Adventure Book
+Single launching point with multiple paths to follow
+It makes sense the simplicity of the navigation reflects the simplicity of the overall app experience, although Credit Card Helper has extensive content on each of the credit cards in its database.
+A frequent discussion point in voicebot design is the optimal depth for a nav. I’ve heard more than one person say 3 is ideal. I think that might be where we are now, although I’m sure that will expand as people become more familiar with the technology.
+Additionally, the AI technology behind the speech interface is also going to improve dramatically, increasing the accuracy and quality of experience.
+App directory
+Due to the invocation process for voicebots, one of the major marketing challenges is getting users to remember the exact invocation name. You might hear it on the radio, or see it in an ad, but when you go to visit the voicebot, via voice, you have to remember what’s likely to be a 3 word name. Not a simple task, especially when you consider marketers spend bazillions just to get consumers to remember their simple brand name.
+To help with finding apps, Google has created an app directory where each voicebot has its own page. This is an opportunity to prep the visitor for their upcoming user experience.
+Here are the Google Directory pages for each app.
+100 Years Ago
+
+Credit Card Helper
+
+My Adventure Book
+
+Firstly, you can see how the many invocation phrases on the Credit Card Helper stands out, offering the user additional ways to invoke and discover the app.
+The description area offers brands a place to briefly (hopefully) summarize why users should visit the app. You can bet there will be a lot of discussions within marketing departments over what goes on this page. Suffice it to say that well written copy with a clear sense of the app’s mission is going to be critical.
+I’d also guess that Google will expand on the media available for presentation on this page.
+Developer Comments
+Given the recency of this industry, there’s not much in the way of best practices or industry standards. Brands are going to need to use this first wave of apps for as much design and user experience information as they can get.
+In addition to reviewing each app, I contacted the app creators to get additional insights about the app development process. So here are some of the highlights and challenges they reported.
+100 Years Ago developer Jesse Vig used feedback from a previous app he developed to guide the direction for his winning voicebot. According to Jesse:
+Prior to building 100 Years Ago, I built another action called Time Machine that reads headlines from the past and plays a brief time travel sound effect. Surprisingly, most of the positive feedback I got was about the sound effect. Based on this experience, I wanted to create a richer audio experience with 100 Years Ago.
+Arun Rao, CEO of Starbutter, the company that developed Credit Card Helper, also has strategic advice for app developers:
+On the design side, state your Action’s key objectives early and try to design a “Wow” experience around them. If you do too much or don’t have a clear objective, your Action won’t be interesting. The first part of “Wow” is to not do anything really dumb — which takes a lot of user testing to figure out.
+I previously mentioned the challenges of designing information for a voice interface. Jesse Vig also addresses this, saying:
+I was able to create a much richer experience when the action had access to a visual display, as in the case of Google Assistant on mobile devices. Reading is faster than listening, and obviously images cannot be conveyed through an audio interface.
+Arun Rao has some good advice for approaching new apps:
+For use cases, think about where voice or chat interactivity adds much more value than a current experience. Test this out with prototypes or videos before you build anything (BotSociety is a good prototyping tool to start with).
+He also offers up a valuable technical recommendation for maximizing app performance:
+On the technical side, go serverless and use Google Cloud Functions or Amazon Lambda. These are efficient and more scalable and error-proof for webhooks than having a real or virtual server.
+Along a similar vein, Nick Laing, developer of My Adventure Book, suggested new developers use the existing tools.
+My advice to any beginners is to start with DialogFlow, there is a lot you can do with that console alone. Once you get familiar with the platform you can write your own code to expand the functionality.
+As the voice assistant industry enters it’s 4th year as a consumer gadget, there’s enormous potential on the horizon. These early examples are the tip of a large and growing iceberg. (And Earth needs more ice, right?) If one thing is certain, it’s that the devices, the apps, and the user base, are all going to evolve considerably over the next few years. It should be an exciting race.
+Thanks to Arun Rao, Jesse Vig and Nick Laing, not only for their work but their generosity in providing guidance for other app developers.
+I’ll be reviewing more voicebots in the coming weeks, so if you’d like to stay up on the latest creations, please follow me."
+4,Voicebot.ai Interview with VoiceLabs,voicebot,https://medium.com/@marchick/voicebot-ai-interview-with-voicelabs-5906d2ea71a6,"What did you see in the market that motivated you to start VoiceLabs?
+Adam Marchick: The first thing I want to do is give a lot of credit to my cofounder Alex Linares, the Chief Product Officer at VoiceLabs. I was skiing and on sabbatical because I hadn’t had a vacation in five years, and was thinking about doing something new. Alex was an Entrepreneur-in-Residence at The Chernin Group and gave me a call. “Have you checked out this Echo thing.” Alex is an amazing product person. He built the number one Facebook app. He built one of the first mobile apps to reach one million downloads from the App Store. Alex told me, “This Echo thing is amazing. Once I started using it, I’m never going back.” I’m an enterprise software nerd so I said, “Where is the AdMob, Flurry or Kahuna here.” They didn’t exist.
+We saw that developers had no help with analytics or monetization. We started talking to people about their critical needs. I was fortunate enough to be on the Facebook growth team and had immersed in that emerging ecosystem. So, I asked similar questions to Alexa developers: “Do you know how users are experiencing your apps?” They said, “No. I tried trying to use mobile analytics but it didn’t work for voice.” When we dug in, we realized there were differences between voice, mobile and web that required specialized analytics.
+What problem do you solve?
+Marchick: Analytics for voice applications. A lot of this comes from my background in actionable analytics. I started asking questions, “What does my voice usage look like? Are people opening my Amazon skill and leaving delighted or frustrated? Are they opening the skills repeatedly and with what usage patterns? Are they getting the right answers? How are they navigating?” That is where the creation of voice pathing came from. VoiceLabs is the next generation of funnel analytics made for voice.
+
+VoiceLabs’ Voice Pathing showing a successful voice session in a developer’s Voice app. “Successful sessions are the key to a delightful consumer experience,” said VoiceLabs CEO Adam Marchick.
+Are you building Google Analytics for the voice web? What else do you have on the horizon?
+Marchick: I like to think of this as more Mixpanel because we are going to be cross-platform and I really respect them, but Google Analytics is also a good analogy. It’s not just, “here are your metrics.” It is also, “What was your goal conversion rate and monetization?” It is voice-specific, which is unique. In mobile and web, the click-throughs matter a lot. In voice, it is lot about what is being said, the Intent and how Voice bots respond to spoken words.
+On the web, you only care that they entered the email address. Great. Here [in voice] it matters a lot what they said and how Alexa responded. Looking at logs and pulling out the speech-to-text. It’s more than just looking at interaction metrics. We are also evaluating the responses provided by Alexa. That is where you really see the consumer experience play out. That is where the analytics are critical and the insights are really actionable.
+You mention in a blog post that our devices will largely determine which assistants we use because their will be too much hassle to switch. Given that statement, which platforms are you betting on will have the biggest user base?
+Marchick: Right now, it’s impressive that Alexa is on the Echo, FireTVs and all of Amazon’s Fire Tablets. By Q1, should be about 40 million devices. It’s no secret that Apple has 1 billion iPhones sold, so Siri will be big. Google Assistant will be big part of this story because of Android. Samsung, with the acquisition of Viv, is now important. Microsoft is smart, so something will happen with Cortana, and they have 20 million Xboxes so they have a built-in user base.
+There are Access Points and Voice Interfaces. There is no question that Apple and Android have the largest number of Access Points, many with active voice usage (but not a majority). What is awesome about the Echo is that everyone with one actively uses voice.
+How do you expect the introduction of Google Home to impact the consumer market?
+Marchick: People are really excited about it. I think consumers have a lot of brand affinity for Google. We still don’t know exactly what it will and won’t do. What Amazon got right is streaming music and home automation. It will be exciting to see what Google gets right.
+I am an advocate for the third party developer. Being part of building the Facebook and mobile ecosystems, I recognize that you have to make it valuable for developers to spend time in your platform. That speaks to an open ecosystem. By contrast, Google AdWords is not an open ecosystem but it is enormous. Google is the market leader in creating an open ecosystem, Android, and a closed ecosystem, AdWords. In this market, you need as many great people innovating as possible. So, I am assuming it will be open and developer-friendly whether they have a skill, app or some other model. It could be different than a traditional app model, but Google has told us what that different way is yet.
+Many people view Alexa as the first real voice assistant at any meaningful scale, even though Siri would like to make the claim as well and Google’s variously named voice assistants may have a stronger case to make. How do you distinguish between what Siri and Google Now have done previously and Alexa, if at all?
+Marchick: It goes back to this idea of an open ecosystem. If you look at voice searches, there is a distinction between “Call Mom” and “I want to order a pizza.” The idea that voice search leads to third parties getting involved with complex interactions is much more sophisticated than making a call that Apple can control completely on its own platform. The Amazon Echo worked with other people to make stuff happen. That is different and leads to a whole new level of innovation. I can get a great recipe from the Food Network while I’m in the kitchen. That is awesome. Siri or Google would return search results and you start clicking and are back to text based stuff, and that doesn’t work when my hands are messy with tomato sauce, because unfortunately I am not a culinary whiz.
+Your presentation tonight to the NYC Alexa Meetup group suggests that sessions per day are the key metric that Alexa skill developers should focus on. Why sessions per day specifically, and not duration of session, number of interactions per session or number of users?
+Marchick: It’s a metric of engagement. I wanted the talk to focus on doubling your engagement. We can also talk about the other metrics and that would be a different presentation. I’m a growth marketer and I learned from the best in the business by being lucky enough to work at Facebook — there other metrics that are just as important. I am just focusing on sessions per day for that talk.
+Monetization or lack thereof is a topic that comes up in some of the Alexa developer forums. You mention in-skill advertising in your presentation. How do you see monetization playing out on Alexa and other platforms? Will it be advertising or another play, and why?
+Marchick: There are still some structural issues to making advertising valuable. History repeats itself. Getting the ecosystem to scale is critical. Once you have that, you have to determine the best way to monetize. Scale makes the world go around. That is what we are helping people with. Until there is scale, it won’t be clear what is best. We actually have built a voice ad network, and it’s ready whenever the market is ready.
+Who should be building for the voice web / voice ecosystem?
+Marchick: Let’s look at it another way. Who shouldn’t be building for it — someone who just wants to have a placeholder in the voice ecosystem. They won’t be satisfied with what happens because distribution and acquisition isn’t that functional yet. You have to be committed to building something that is interesting and useful for consumers. Otherwise, you will have no installs or repeat users. In mobile, you could build a mediocre app and buy a million installs. You can’t do that here.
+What is your favorite voice-enabled skill, application or utility?
+Marchick: I use Amazon Music daily. There is no question, the first two billion-dollar voice applications are streaming music and home automation. That said, we are starting to see some innovation. I used the Yahoo Fantasy football skill this weekend and it was pretty fun."
+5,"AI & NLP Workshop: Learn how to make an AI powered, NLP based Voice Bot",voicebot,https://becominghuman.ai/ai-nlp-workshop-learn-how-to-make-an-ai-powered-nlp-based-voice-bot-23b1d5575f0b,"Build a Marketing/Customer Service Voice Bot in our All Day Workshop
+AI is no longer the future… it is now the present. AI has quickly gone from the innovation labs to being fully implemented from one department to the next. Take a look at the recent successes:
+Chase: JPMorgan’s COIN, has saved over 360,000 hours of manpower! What does it do? COIN reads contracts and makes sure there are no errors.
+HiCharlie: This bot keep track of your finances so you don’t have to. On average Charlie saves users $80 per week!
+Sweedbank: Their chatbot, Nina, handles 40,000 conversations a month and resolves 81% of the issues.
+Trim: Trim is Financial Assistant bot that can help you reduce expenses and even negotiate bills on your behalf. Trim has a 94% retention rate!
+The AI revolution needs people that understand the technology and can take it to the next level.
+Currently there is a $150 Discount for this Workshop but there are only a few tickets left. RSVP to claim the discount.
+
+Learn how to make an AI powered, NLP based Voice Bot
+In this workshop you will learn from industry experts on AI/ML/NLP and will be working on building a Customer Service or Marketing Chatbot which you can launch on Messenger, your website or on Google Voice or Alexa.
+
+The Schedule
+
+This is a full day workshop, that starts at 9am and ends at 5pm. Breakfast, coffee, and lunch will be provided ☕️
+
+Let’s meet the instructors
+
+By the end of this course you will have designed, built and launched an intelligent Customer Service Chatbot using SmartLoop.Ai technologies along with RASA’s open source NLP which is built on Tensorflow.
+Ideal for
+Anyone Interested in VOICE, AI, or Bots
+Product Managers
+Designers
+Developers
+Marketers,
+Customer Service Department
+Human Resources
+Reasons to attend:
+Learn the basics of Machine Learning and AI
+Learn to collect data, label and classify
+Easy build NLP, Deep Learning applications and get started in no time"
+6,Converse.AI and Actions on Google enable every business to build a voice bot without writing code.,voicebot,https://blog.converse.ai/converse-ai-and-actions-on-google-enable-every-business-to-build-a-voice-bot-without-writing-code-b703e1f04dc6,"Converse.AI, in partnership with Actions on Google, have launched the easiest and simplest way to build a voice bot, for any business, without the need to write any code.
+Converse.AI enables companies to easily build bots, capable of answering questions, holding conversations, managing workflow and integrating into external systems, using it’s unique Chatflow capabilities.
+Actions on Google enables anyone to build for the Google Assistant. Your integrations can help you engage users through Google Home today, and in the future, through Pixel, Google Allo, and many other experiences where the Google Assistant will be available.
+It is the first voice platform to be integrated with Converse.AI and the combination of both platforms enables any business to have their own voice bot, without having to use scarce developer resources.
+The first Google Action launched on the Converse.AI platform, Bay Transport, enables the user to track their preferred route on the BART transport system, set their home stations and easily discover when the next available train will be arriving.
+
+The interest in voice automated services is set to grow significantly in the coming months and the use cases are endless. The ability to build and rapidly iterate a voice activated bot, will soon be crucial for businesses wanting to increase engagement with their customers.
+Image being able to check your bank balance find out the delivery schedule of your latest online purchase, finding out film listings at your nearest cinema and booking tickets, and much more.
+This first Google Action from Converse.AI is just the first step in proving what is already possible, we are really excited to see what you build!
+Get started by signing up or checking out our documentation!"
+7,"Voicebots arrive in Colombia with Google Assistant
+We interview Juan Nates, managing partner of Chatbot Chocolate in Colombia, to talk about virtual assistants and voicebots in Colombia.",voicebot,https://planetachatbot.com/voicebots-colombia-google-assistant-fd146832ae20,"The technological development that we have witnessed over the last few years has caused us to be accustomed to devices such as computers, smartphones, GPS's or others being part of our daily lives. In all of them, the weight of the written word is predominant leading us to deal with keyboards and touch screens since the beginning. However, in this unprecedented technological evolution, the weight of the voice gains ground as the years go by. Now, voicebots arrive in Colombia with Google Assistant.
+
+Therefore, the true consequence of this union between technology and voice are the Smart Speakers. With its emergence in the market, not only the advances in Natural Language Processing are evidenced , but it also shows how the voice returns to take the leading role becoming the interface of the future. Analyzing the possibilities of these new environments is important but doing so without taking into account linguistic or cultural differences is a mistake. Therefore, from Planet Chatbot we have interviewed Juan Nates, managing partner of Chatbot Chocolate in Colombia, who through this interview details how the market for voice interfaces or voicebots is projected in the country.
+1. Why has the voice managed to capture the attention of large companies?
+Over the past few years we have witnessed a technological boom like no other. In a matter of a decade we have become accustomed to living by the hand of our mobile phones and not having an Internet connection seems catastrophic. This “visible” technological development has paralleled a hidden, but constant and gradual improvement in the processes of recognition of human natural language, giving the opportunity to generate new functionalities such as voice search on Google or voice to text transcription available on WhatsApp that we enjoy every day. However, the greatest result of these improvements in natural language processing has been the birth of virtual assistants such as Siri, Google Assistant or Alexa. Some of these assistants have been on our mobile devices for years, others like Google Assistant,
+
+Juan Nates, managing partner of Chatbot Chocolate.
+Be that as it may, more and more companies are betting on starting work in these environments, trusting that conversational interfaces via voice are the new front to exploit in order to communicate with their customers.
+2. What is a voicebot ?
+For all those who are not familiar with this term that will be increasingly common, a voicebot is a computer system capable of having a conversation with a human being using natural language via voice. These types of bots are normally implemented in environments such as Alexa (receiving the name of Skill) or Google Assistant (in this case they are called Actions), although they can also be implemented in websites or proprietary applications.
+3. What opportunities does this new environment offer?
+As I commented, the sudden emergence of Smart Speakers and virtual assistants offers companies the opportunity to reach their customers through voice, an interface to which we are fully accustomed. Solving doubts and questions, buying and selling products or executing commands such as turning on the lights are some of the actions that can be carried out with the use of these devices. If we give concrete examples, we talk about buying a pizza or booking a taxi simply through our voice. Given this, the interest of companies to be in these environments is obvious and undeniable. Although we have to be realistic since there are still many challenges to reach this ideal scenario, especially here in Colombia.
+
+4. Indeed, there are many challenges to overcome to reach that scenario you present, could you tell us about it?
+The main barrier to overcome is the acquisition of the device itself. Although the data is showing that it is increasingly common to see a Smart speaker in the living rooms of homes in the United States and Europe, so much so that according to the latest Gartner data 50% of American households have at least one device In the home.
+Overcoming that barrier, there is no doubt that the learning process of using these devices is substantially less, since it is as simple as executing a command through the voice. However, there are other challenges such as the one derived from the joint use of these devices (that is, by several members of the same family) or security issues regarding the delivery of personal data (the balance of your bank account). Real situations that will be solved as this technology is positioned in the market and becomes a commodity for both companies and end users.
+5. Chatbot Chocolate is a company specialized in the development of voice and chatbots, what have you learned after designing skills and actions for third parties?
+As you know the official launch of Home Speakers in Colombia has not yet occurred. However, from Chatbot Chocolate we are already prepared for the change that is coming bringing to the country all the experience that we have acquired during the last months in Spain designing different pilots and use cases for third parties. In this line, last April we launched Elecciones.chat, a voicebot and chatbot with which citizens could consult the electoral program of the five main parties that attended the country's elections. A concept that we have worked here in Bogotá with the elections for mayor of the city. An initiative that is present in WhatsApp and Google Assistant and with which we highlighted the interest and settlement of voice interfaces in the Colombian market.
+
+Thanks to the development of this and other use cases we have been able to test the real interest in this kind of booming environments and, above all, learn the great differences between the design and development of text bots and voice bots. A constant learning that allows us to be leaders in the market and be already working on different pilots here in Colombia.
+6. Why is it important to start working in these new environments?
+Ten years ago mobile apps became a trend, many companies opted not only to launch their own app but also that multiple companies were born with the aim of developing such interfaces for third parties. However, the market is currently saturated with unused applications, demonstrating that the winners in this market are the messaging apps that consolidate their hegemony every day.
+Given this, it is time to try other environments, which are born to offer a complete service and user experience, without forcing the user to have the app of the company in question taking up space on your Smartphone. There is no doubt that conversational interfaces via chat and voice have arrived to stay and companies have a duty to adapt to the new situation that arises before it is too late. In this way, they can begin to gather information about how their real users use this type of environment, what kind of functionalities can be the most interesting and what is the best way to monetize the conversational channel taking into account the service they offer."
+8,"The Chatbot Landscape, 2017 Edition
+To help decision makers and users wade around the vast landscape of bots, this landscape gives a high-level overview of providers and tools.",voicebot,https://medium.com/keyreply/the-chatbot-landscape-2017-edition-ff2e3d2a0bdb#e083,"Why this landscape, now?
+Since we started building bots more than 2 years ago, the landscape has seen massive interest and change. This makes it hard for companies and customers to figure out what’s really happening and what they should do if they really want to build a chatbot for their business.
+Through this exercise, we deeply explored various bot platforms, bot use cases, and bot frameworks — and we’ve arrived at some interesting observations and insights that may be useful to you (hopefully 😄).
+Obviously, there’s no way to squeeze everyone into the landscape, hence we selected those which fulfill these objectives:
+Give readers an overview of the industry, such as the industry’s structure, notable examples, dominant providers, and tools widely used to develop chatbots.
+Help decision makers understand and choose the most appropriate chatbot development strategies by crossing business needs and capabilities in the market.
+The basics
+The global market for chatbots reached US$88.3 million in 2016. The market will grow to 36% CAGR, to more than $1 billion, through 2023[1]. Other than this growth rate, the current state and structure of the industry is clearly useful to know better — it’s gotten pretty crowded since we started building bots more than 2 years ago!
+Ready? Get ready for a long post 😹
+Methodology
+We began the mapping process by conducting secondary research, collating data from hundreds of sources, including published studies, companies’ websites, online articles, and personal interviews. In order to give a fair representation of dominant players in the landscape, the study spanned diverse geographical regions and 6 industry verticals, namely:
+Commerce
+Fashion & Beauty
+Travel & Hospitality
+Education
+News & Entertainment
+Finance & Insurance
+Additionally, we validated the information presented on the landscape by seeking the opinion of established industry players.
+Classification
+To put everything into a coherent structure, we define the parameters and the terms as such:
+Horizontal axis: The “marketing” function refers to a bot’s ability to drive exposure, reach, and interaction with the brand or product for potential and current customers. The “support” function refers to a bot’s ability to assist current customers with problems, and to resolve those problems for them.
+Vertical axis: “Managed” refers to companies outsourcing the development of bots to external vendors, whereas “self-serve” refers to them building their bots in-house or with an 0ff-the-shelf tool.
+From the inside out, the concentric circles represent:
+Platforms: The messaging platforms that enable the existence bots through robust send-and-receive APIs, frameworks and ecosystems.
+Brands: Companies which have launched and experimented with bots, in that particular quadrant (for example, Managed x Support).
+Providers: Companies who have the capabilities to deliver exceptional work in that quadrant.
+Tools: The supporting tools used by providers, brands, or developers of bots in delivering bot experiences.
+
+Details & Explanation
+Here are some of our observations about each of the concentric circles: platforms, brands, providers and tools.
+Platforms
+In this study, text is the main interaction mode we explore (we might explore voice bots in another study).
+As Facebook Messenger is one of the leading chat platforms (with over 1 billion daily active users worldwide), with a strong push internally for Messenger bots, it’s understandable that companies and developers alike have been heavily investing in Facebook Messenger bots.
+Clearly, everyone is waiting with baited breath for WhatsApp to open up a bot platform, but it’s still conjecture at this stage. SMS remains a baseline option for communication, and companies continue to use it to send automated reminders and information. As more messaging apps gain a foothold among their intended audience, such as Line and Telegram, their bot platforms will become more attractive for companies to invest in.
+Another point to note is that platform adoption and use vary greatly among geographic regions, and certain platforms may work better than others. WeChat, for example, has a naturally huge user base, but may or may not work for your intended target audience.
+By platforms, the type of bot content and interaction paradigm also differs. Line and Kik bots tend to be more brand engagement focused, and are more likely to be “loudhailer type” bots (i.e. Announcements and promotions mostly) than SMS or Messenger bots, which tend to be more varied across support and brand engagement.
+Brands
+Brands are companies who have launched their own bots, split by bot type in specific quadrants as defined above. Here we highlight some interesting bots and their functions, and their respective providers, if applicable.
+Marketing x Managed
+Universal Studio promoted their horror film ‘Unfriended’ with a Facebook Messenger bot speaking in the character of Laura Barnes[2], which was developed by Imperson — a conversational AI startup from Disney’s 2015 accelerator class.
+Maroon 5 Bot[3] on Facebook Messenger, developed by Octane AI, improves the personal touch and interactions between the band and their fans.
+The Gov.sg bot[4] on Facebook Messenger, built with KeyReply, helps the government of Singapore provide timely and accurate news and information to their citizens, and broadcast emergency news in the event they are needed.
+Support x Managed
+Citibank India’s virtual assistant, developed by Creative Virtual, is located in the Customer Service Center of their website and is designed to provide information to customer queries about Citibank products and services[5].
+The Bosch service assistant, developed by Artificial Solutions, makes it easy for customers to troubleshoot an issue with an appliance or arrange a service call via its website[6].
+NinjaBot [7](for Ninja Van, a fast-growing logistics company in Asia) developed with KeyReply, helps customers track and update their parcels before they reach them, deflecting queries to the support team about parcel status.
+Marketing x Self-serve
+Cheapflights, Kayak, Expedia, and more have launched bots of their own to give recommendations on travel products, help customers book flights or hotels, and send booking confirmations on Messenger[8].
+Support x Self-serve
+Marriott International launched Mobile Requests service (via its App) that includes an ‘Ask Anything’ concierge service and ‘Anything Else’ function that allows guests to chat directly with hotel staff, 72 hours before their stay[9].
+Providers
+Providers are companies who have the capabilities to deliver exceptional work in that specific quadrant.
+Marketing x Managed
+Conversable AI is a software-as-a-service (SaaS) platform for messaging and voice experiences across multiple platforms, including Facebook Messenger, Twitter, SMS, Amazon Echo, Google Home, and many others[10]. Some of the notable use cases are the Marvel Interative Story Bot, Pizza Hut Ecommerce Bot, and CES Twitter Guide Event Bot.
+Assist started out as a local services chat assistant and developed into a chat provider that deploys bots on Facebook Messenger, Twitter DMs, Kik, iMessage and Telegram, among others [11]. They have served Fandango, 1800Flowers, Hyatt, and more.
+Msg.ai develops chatbots for multiple channels and provides a dashboard to centrally manage the experiences[12]. They have deployed bots for Sony, CLEAR, and Signal, among others.
+Support x Managed
+KeyReply is one of the top AI bot providers in Asia for enterprises and governments. KeyReply’s AI capabilities aim to completely replace humans for some specific support tasks. KeyReply’s customers include the government of Singapore, Fortune 500 companies and Asian brands across multiple verticals[13].
+Servicefriend provides hybrid bot technology for consistent messaging experiences at scale. They offer an “Interactive Text Response” (the text equivalent of IVRs, interactive voice responders over the phone) for companies such as Globe Telecom[14].
+Kasisto enables banks to offer services through an automated “Virtual Specialist” so that consumers can use voice or text to assess financial information and perform transactions on their mobile banking application. It requires no coding by banking implementers and is designed for banks to private label their own brand[15].
+Marketing x Self-serve
+Chatfuel lets anyone build bots for Facebook Messenger. Their users include NFL and NBA teams, publishers like TechCrunch and Forbes, and millions of others[16]. Chatfuel is great for simple and focused bots, but may not work for complex chatbots requiring lots of customization.
+Octane AI, focuses on allowing celebrity content creators to create tree-like stories that others can engage with on Facebook Messenger. Celebrities such as 50 Cents, Maroon 5, Lindsay Lohan, Jason Derulo, have used Octane AI to build their chatbots[17].
+Gupshup is a bot-building platform that offers businesses pre-made bot templates. It offers both a “no coding required” version and an IDE for developers to build bots[18].
+Support x Self-serve
+Flow XO’s focus is to create an easy chatbot building experience[19]. Flow XO enables the deployment of bots to different platforms, such as web, Messenger and Slack.
+Morph.ai is comes with built-in training and understanding modules to give a more accurate understanding of the business’s target audience. However, the platform only allows limited targeting for broadcasting[20].
+Motion AI offers turn-key templates for many chatbot use cases including customer service, meeting scheduling and surveys[21]. However, it only operates on a multiple choice or single bot statement basis. It services global consumer brands including Kia, Fiverr, Sony, and Wix.
+Some notes about the brands and providers above
+Marketing bots tend to be largely campaign-driven, where it can be used effectively for driving engagement in short bursts. Longer-term marketing or sales efforts in the market are still mostly experimental, as it may be hard to define metrics for success without a strong indicator from the proof-of-concepts.
+Support bots, however, have been around for much longer, and is a medium that customers are already used to. Metrics for deflection and customer satisfaction may also be more well-defined, hence there will be a “flight to quality” in this space to those providers who genuinely can deliver on their promises to answer customers well, not piss them off, and elevate the support experience.
+Tools
+These are supporting tools used by the providers and brands, or by developers of bots.
+Marketing x Managed
+Nuance has been developing highest functioning speech software in the world, perfecting the ability for machines to recognize and emulate the human voice[22].
+Chatsuite offers app marketing experiences with chat [23].
+Bot Metrics, a San Francisco-based company that specializes in metrics and analysis for chat bots has landed funding to help developers and early bot enthusiasts get a better understanding of their services and users[24].
+Support x Managed
+So obviously this is a quadrant that is pretty hard to characterize, because many companies won’t just reveal their tech stack where you can find them. Just based on our own exploration, we find that these are some of the more useful tools for machine/deep learning around the large datasets that come from brands, and there are other natural language processing tools and papers that contribute greatly to the endeavor.
+Theano is the grand-daddy of deep-learning frameworks that many academic researchers in the field of deep learning rely on. Numerous open-source deep libraries have been built on top of Theano, including Keras, Lasagne and Blocks which attempts to provide a more intuitive interface as compared to Theano[25].
+TensorFlow is created by Google with an aim to replace Theano. On top of deep learning, TensorFLow has tools to support reinforcement learning and other algorithm. One limitation is that TensorFlow runs slower than other frameworks like CNTK and MxNet[26].
+Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is a well-known and widely-used machine-vision library, which is suitable for classifying and processing image. The use of Caffe is not applicable to other deep learning applications such as text, sound or time series data[27].
+Torch is a scientific computing framework with wide support for machine learning algorithms that puts GPUs first. Torch comes with a large ecosystem of community-driven package in machine learning, computer vision, signal processing, parallel processing, image, video, audio and networking among others, and builds on top of the Lua community[28].
+Marketing x Self-serve
+Wit.ai enables developers to easily create text or voice based bots that humans can chat with on their preferred messaging platform. The platform offers support to 100,000+ developers, non-coders in Wit community to build applications and devices with its natural language processing capability[29]. Wit.ai is well-suited to support complex functionality but mainly works well for small-sized bots.
+Api.ai, owned by Google, is a visual tool to build decision trees for a chatbot, popular for consumer-facing applications, but clients report limited functionality[30].
+ChatScript is the next generation chatbot engine which manage dialog or NL tools. ChatScript is a rule-based engine, where rules are created by humans writers in program scripts through a process called dialog flow scripting[31].
+Support x Self-serve
+Microsoft Cognitive Services’ initial release with just four services (face recognition, speech recognition, visual content recognition and language understanding) has now been extended to over 20 APIs. Furthermore, in 2016, Microsoft launched the Bot Framework for building a conversational user interface which links to Cognitive Services[32].
+IBM Watson is mostly known for its premium solutions that require you to build a chatbot using its services. It also has the Conversational Service, which is lower in price and offers a visual tool to build decision trees that use Watson to map intent. IBM is pretty open on language support if that is a concern[33].
+Montreal-based Smooch empowers software developers to create conversational experiences across any messaging channel. Smooch.ai is a simple-to-use solution, with Slack support and offers a free solution when the user base is small[34].
+Using this landscape
+What does your business need: Marketing or support?
+Look at the nature of the product/service. What is included in your product/service package? Does your business provide only presale-service or both pre-sales and post-sales support?
+If your products require constant interaction with consumers to drive sales (e.g. companies selling clothes and accessories such as H&M or Victoria’s Secret), you should develop a marketing chatbot.
+If your products require heavy customer support such as product warranties, assistance to resolve technical difficulties (e.g. electronics companies such as Apple), your company should focus on developing a customer support bot.
+How do you do it: Buy or build?
+Does your company have the resources and capabilities to build software in-house? If your existing resources (i.e. technical skills, software infrastructure) can be easily transferable to the creation of a bot, your business should consider developing a chatbot in-house, either for greater control or cost. For example, Skyscanner has a strong existing tech team and robust algorithms; hence, they can apply that to their flight search bot [35].
+Does your company have the ambition, human resources or budget to cope with complex NLP and data science issues that might arise? If no, then you might be better off outsourcing the development of chatbots, reducing the risk of investment in complex NLP, which is not your core business.
+Should you do it: Strategic or faddish?
+If your value proposition involves providing convenient and fast service to your customers, then developing chatbots in-house may enhance your value proposition and strengthen your company’s competitive advantage in the long run.
+For example, a bank’s value proposition lies in its ability to provide convenient and 24/7 support to its customers (such as transactions, transfers, bank loans, debit/credit card applications, etc). Capital One has built an automated bot that can communicate with the bank’s customers via text message (and Alexa) to give them information on their accounts and help them make credit-card payments whenever they need[36].
+What do you want to invest: All-in or experimental?
+Do you want or need to have a full control of conversations with customer or customer data, and already have a good idea what a bot should achieve? If yes, then find an enterprise-grade provider, or build it in-house with a specific team dedicated to the project for at least 3 months.
+If you’re simply experimenting with bots, then it’s fine if you sandbox some of your flows or data and build a small use case on the cloud, working with a provider for a proof-of-concept, or hacking together a small bot internally.
+What’s next
+We’ll want to continue providing updates to this map as we go along. If you think there’s a brand, provider or tool that should be added, please let us know! If you’d like to argue for/against any classification, tell us as well: There are many ways to skin a cat 😸 (especially one as opaque and complex as an entire bot landscape), and we can debate on those ways.
+Thanks for reading and don’t forget to share if you found this useful! 💌"
+9,"DialogFlow: A Simple Way to Build your Voicebots & Chatbots
+Understanding the basics of DialogFlow",voicebot,https://towardsdatascience.com/dialogflow-a-simple-way-to-build-your-voicebots-chatbots-27949a1ac443,"Nowadays, businesses, whether it is B2B or B2C, are heavily relying on chatbots in order to automate their processes and reducing human workloads. There are various NLP chatbot platforms used by the chatbot development companies to build a chatbot, and one of the best platforms among them is DialogFlow. The Platform was previously called as API.AI. It was acquired by Google in 2016 and renamed as DialogFlow.
+DialogFlow is a Google-owned natural language processing platform that can be used to build conversational applications like chatbots and voice bots. It is a platform that provides a use-cHeease specific, engaging voice and text-based conversations, powered by AI. The complexities of human conversations are still an art that machines lack but a domain-specific bot is the closest thing we can build to overcome these complexities. It can be integrated with multiple platforms, including Web, Facebook, Slack, Twitter, and Skype.
+
+DialogFlow Terminology:
+Understanding the basics of DialogFlow
+1. Agent:
+DialogFlow Agent handles conversational flow with end-user. To get started with DialogFlow, first, we need to create an Agent using the Dialogflow console.
+It is a top-level container for intents, entities, integrations, and knowledge. Agent translates end-user text or audio during a conversation to structured data that apps and services can understand.
+2. Intents:
+Intents are used to understand and process the user intentions and contexts to direct the conversation flow with end-users.
+An intent contains some training phrases and their corresponding responses.
+An intent gets invoked when it’s training phrases get matched with user inputs. And give output to end user’s as defined in its responses. If multiple responses are present for input, then responses will be shown to the user randomly.
+If we have multiple intents with the same training phrases, then either the higher priority intent will match, or the intent with active input contexts will match.
+Intents priority:
+Intents priority can be set if there are chances that user input can match with multiple intents. The intent with higher priority will get invoked.
+
+Fallback Intents:
+Fallback intents are invoked when user input did not match with any intent.
+When we create, an Agent two default intents get added in the Agent.
+Welcome intent and default fallback intent.
+Contexts are used to understand natural language user contexts. That is in which context the user wants information.
+For example:
+A person can give input “orange is my favourite.”
+Now this orange can be matched with a colour intent or with a fruit intent. So which intent should be matched in this case.
+To solve this problem, contexts are used in DialogFlow.
+Contexts lifeSpan:
+Contexts have some lifespan for which they remain active. The default lifespan is 5 requests, but it can be changed.
+It means that the context will live longer for the next five matched intents.
+Contexts are of two types:
+a) Input Contexts:
+An intent having some input contexts can be matched, only if its all input contexts are active.
+For example:
+We have two intents with the Same training phrase “Orange is my Favourite.”
+But both intents have different input contexts. One contains colour as input Context, whereas others contain fruit as input context.
+The intent for which input context is active will match with user input.
+
+b) Output Contexts:
+An intent having some output contexts will make its all output contexts active if it matches with user input.
+For example:
+A colour intent match with user input “Do you know about colours.”
+which responds to the user by saying, “what is your favourite colour.”An Output context “colour” can be set active by the intent.
+When the user says, “Orange is my favourite,” the intent having input context “colour” will match the user input.
+
+4. Entity:
+Entities are used to extract some useful information and parameters from end-user input. Entities can be either system-defined or can be developer-defined.
+DialogFlow provides many predefined entities like date, time, colour, temperature known as system entities to handle most popular common concepts.
+However, custom entities can also be defined by developers based on their requirements.
+The extracted parameters from user inputs can be passed between intents to direct a conversational flow.
+5. Responses:
+Agents can give two types of responses to end-users.
+a) Default responses.
+b) Rich responses.
+a) Default Responses:
+Default responses are also known as Platform Unspecified responses. These responses are simple text responses shown to end-users. These can be used with any platforms including web, Facebook, slack.
+
+b) Rich Responses:
+Rich responses are also known as Platform specified responses. Rich responses are used to show buttons, cards, quick replies, links to users via Facebook, slack platforms.
+However, to use rich responses with web applications, the chatbot needs to be customized.
+Rich responses can be configured either with DialogFlow console or can be sent within webhook responses.
+
+6. Webhook:
+A Webhook can be integrated to give responses from our Application. Webhook integration is simple and can be implemented using a fulfilment option. A URL can be configured there, and webhook call needs to be set active for the intent for which you want to call the webhook.
+Conclusion:
+DialogFlow is a very simple platform to build quick chatbots, voice bots with minimum coding efforts. It can process natural language errors easily and can be integrated with multiple platforms. It is basically a tool that allows in building chatbots that clearly understand the human conversation and reply to them with an appropriate answer after parsing the conversation with relevant parameters. For more understanding, you can refer to this link."
+10,Smoother chatbot conversations with multiple intents,voicebot,https://medium.com/@julian.harris/smoother-chatbot-conversations-with-multiple-intents-f270d5b7f72f,"I had what you’d call a status quo conversation with a bank voicebot today. It went something like this:
+Bot: You said your date of birth is 1 Jan 1919. Is that correct?
+Me: No
+Bot: Please tell me your date of birth:
+Me: <proper date that coincidentally doesn’t make me nearly 100 years old>
+To be really fair: having free-form voice like this just a few years ago was nothing short of astonishing, and still is in many parts of the world.
+But we’re in 2018. We can do better than this awkward to-ing and fro-ing. Surely?
+So, yes. the next step is being able to handle a response and another question immediately after that. In conversational computing terms is called “multiple intents”. Once you get a taste of a voice system that can handle more than one request at once (turns out quite common in everyday life), “single intent” systems quickly become infuriatingly inflexible! What actually happened in my bank conversation was more like this:
+Bot: Your date of birth is 1 Jan 1919 is that correct?
+Me: No, it’s 1 Jan 1970
+Bot: please say yes or no
+Me: Gngngnggnngng
+At CogX18 I held an Advanced Conversation Design session and with Hans van Dam from Robocopy.io, John Taylor from Action.ai, Nikola Mrkšić from PolyAI, Rachael Rekart from Autodesk, Alexander Weidauer from Rasa along with CognitionX’s own Bogdan Vrusias, Martin Lambert from eXvisory and Duncan Anderson, and the insights from that session will be shared in CognitionX’s Chatbot Research Subscription (sign up for free trial here)
+John’s Action.AI demo was really slick
+Relevant to this particular theme John’s live Action.AI taxi order demo with Google Assistant really stood out in supporting the ability to both change the subject when responding and give multiple requests. It was both jaw-dropping in how smooth and natural it made the conversation, and at the same time, astonishing that we somehow accept less than this today.
+Rasa.ai offers this now too
+Rasa is an open source chatbot conversation development product and is very interesting for lots of reasons, and the most relevant for this piece is that as of 0.12 Rasa NLU (the understanding component) released a few weeks ago, it also support multiple intents.
+What else supports it?
+It’s my view that it’s inevitable that all conversation development systems will support this. Google Assistant US supports multiple commands but I’m still trying to understand whether it supports multiple commands in responses. I’ll update this when I get the low-down."

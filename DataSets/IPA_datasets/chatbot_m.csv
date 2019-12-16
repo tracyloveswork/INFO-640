@@ -1,0 +1,1300 @@
+doc_id,title,term,url,text
+1,Building a Simple Chatbot from Scratch in Python (using NLTK),chatbot,https://medium.com/analytics-vidhya/building-a-simple-chatbot-in-python-using-nltk-7c8c8215ac6e,"Gartner estimates that by 2020, chatbots will be handling 85 percent of customer-service interactions; they are already handling about 30 percent of transactions now.
+I am sure you’ve heard about Duolingo: a popular language-learning app, which gamifies practicing a new language. It is quite popular due to its innovative styles of teaching a foreign language.The concept is simple: five to ten minutes of interactive training a day is enough to learn a language.
+However, even though Duolingo is enabling people to learn a new language, it’s practitioners had a concern. People felt they were missing out on learning valuable conversational skills since they were learning on their own. People were also apprehensive about being paired with other language learners due to fear of embarrassment. This was turning out be a big bottleneck in Duolingo’s plans.
+So their team solved this problem by building a native chatbot within its app, to help users learn conversational skills and practice what they learned.
+
+http://bots.duolingo.com/
+Since the bots are designed as conversational and friendly, Duolingo learners can practice conversation any time of the day, using their choice of characters, until they feel brave enough to practice their new language with other speakers. This solved a major consumer pain point and made learning through the app a lot more fun.
+So what is a chatbot?
+A chatbot is an artificial intelligence-powered piece of software in a device (Siri, Alexa, Google Assistant etc), application, website or other networks that try to gauge consumer’s needs and then assist them to perform a particular task like a commercial transaction, hotel booking, form submission etc . Today almost every company has a chatbot deployed to engage with the users. Some of the ways in which companies are using chatbots are:
+To deliver flight information
+to connect customers and their finances
+As customer support
+The possibilities are (almost) limitless.
+History of chatbots dates back to 1966 when a computer program called ELIZA was invented by Weizenbaum. It imitated the language of a psychotherapist from only 200 lines of code. You can still converse with it here: Eliza.
+
+Source: Cognizant
+How do Chatbots work?
+There are broadly two variants of chatbots: Rule-Based and Self-learning.
+In a Rule-based approach, a bot answers questions based on some rules on which it is trained on. The rules defined can be very simple to very complex. The bots can handle simple queries but fail to manage complex ones.
+Self-learning bots are the ones that use some Machine Learning-based approaches and are definitely more efficient than rule-based bots. These bots can be of further two types: Retrieval Based or Generative
+i) In retrieval-based models, a chatbot uses some heuristic to select a response from a library of predefined responses. The chatbot uses the message and context of the conversation for selecting the best response from a predefined list of bot messages. The context can include a current position in the dialogue tree, all previous messages in the conversation, previously saved variables (e.g. username). Heuristics for selecting a response can be engineered in many different ways, from rule-based if-else conditional logic to machine learning classifiers.
+ii) Generative bots can generate the answers and not always replies with one of the answers from a set of answers. This makes them more intelligent as they take word by word from the query and generates the answers.
+
+In this article we will build a simple retrieval based chatbot based on NLTK library in python.
+Building the Bot
+Pre-requisites
+Hands-On knowledge of scikit library and NLTK is assumed. However, if you are new to NLP, you can still read the article and then refer back to resources.
+NLP
+The field of study that focuses on the interactions between human language and computers is called Natural Language Processing, or NLP for short. It sits at the intersection of computer science, artificial intelligence, and computational linguistics[Wikipedia].NLP is a way for computers to analyze, understand, and derive meaning from human language in a smart and useful way. By utilizing NLP, developers can organize and structure knowledge to perform tasks such as automatic summarization, translation, named entity recognition, relationship extraction, sentiment analysis, speech recognition, and topic segmentation.
+NLTK: A Brief Intro
+NLTK(Natural Language Toolkit) is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries.
+NLTK has been called “a wonderful tool for teaching and working in, computational linguistics using Python,” and “an amazing library to play with natural language.”
+Natural Language Processing with Python provides a practical introduction to programming for language processing. I highly recommend this book to people beginning in NLP with Python.
+Downloading and installing NLTK
+Install NLTK: run pip install nltk
+Test installation: run python then type import nltk
+For platform-specific instructions, read here.
+Installing NLTK Packages
+import NLTK and run nltk.download().This will open the NLTK downloader from where you can choose the corpora and models to download. You can also download all packages at once.
+Text Pre- Processing with NLTK
+The main issue with text data is that it is all in text format (strings). However, Machine learning algorithms need some sort of numerical feature vector in order to perform the task. So before we start with any NLP project we need to pre-process it to make it ideal for work. Basic text pre-processing includes:
+Converting the entire text into uppercase or lowercase, so that the algorithm does not treat the same words in different cases as different
+Tokenization: Tokenization is just the term used to describe the process of converting the normal text strings into a list of tokens i.e words that we actually want. Sentence tokenizer can be used to find the list of sentences and Word tokenizer can be used to find the list of words in strings.
+The NLTK data package includes a pre-trained Punkt tokenizer for English.
+Removing Noise i.e everything that isn’t in a standard number or letter.
+Removing Stop words. Sometimes, some extremely common words which would appear to be of little value in helping select documents matching a user need are excluded from the vocabulary entirely. These words are called stop words
+Stemming: Stemming is the process of reducing inflected (or sometimes derived) words to their stem, base or root form — generally a written word form. Example if we were to stem the following words: “Stems”, “Stemming”, “Stemmed”, “and Stemtization”, the result would be a single word “stem”.
+Lemmatization: A slight variant of stemming is lemmatization. The major difference between these is, that, stemming can often create non-existent words, whereas lemmas are actual words. So, your root stem, meaning the word you end up with, is not something you can just look up in a dictionary, but you can look up a lemma. Examples of Lemmatization are that “run” is a base form for words like “running” or “ran” or that the word “better” and “good” are in the same lemma so they are considered the same.
+Bag of Words
+After the initial preprocessing phase, we need to transform the text into a meaningful vector (or array) of numbers. The bag-of-words is a representation of text that describes the occurrence of words within a document. It involves two things:
+•A vocabulary of known words.
+•A measure of the presence of known words.
+Why is it is called a “bag” of words? That is because any information about the order or structure of words in the document is discarded and the model is only concerned with whether the known words occur in the document, not where they occur in the document.
+The intuition behind the Bag of Words is that documents are similar if they have similar content. Also, we can learn something about the meaning of the document from its content alone.
+For example, if our dictionary contains the words {Learning, is, the, not, great}, and we want to vectorize the text “Learning is great”, we would have the following vector: (1, 1, 0, 0, 1).
+TF-IDF Approach
+A problem with the Bag of Words approach is that highly frequent words start to dominate in the document (e.g. larger score), but may not contain as much “informational content”. Also, it will give more weight to longer documents than shorter documents.
+One approach is to rescale the frequency of words by how often they appear in all documents so that the scores for frequent words like “the” that are also frequent across all documents are penalized. This approach to scoring is called Term Frequency-Inverse Document Frequency, or TF-IDF for short, where:
+Term Frequency: is a scoring of the frequency of the word in the current document.
+TF = (Number of times term t appears in a document)/(Number of terms in the document)
+Inverse Document Frequency: is a scoring of how rare the word is across documents.
+IDF = 1+log(N/n), where, N is the number of documents and n is the number of documents a term t has appeared in.
+Tf-IDF weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus
+Example:
+Consider a document containing 100 words wherein the word ‘phone’ appears 5 times.
+The term frequency (i.e., tf) for phone is then (5 / 100) = 0.05. Now, assume we have 10 million documents and the word phone appears in one thousand of these. Then, the inverse document frequency (i.e., IDF) is calculated as log(10,000,000 / 1,000) = 4. Thus, the Tf-IDF weight is the product of these quantities: 0.05 * 4 = 0.20.
+Tf-IDF can be implemented in scikit learn as:
+from sklearn.feature_extraction.text import TfidfVectorizer
+Cosine Similarity
+TF-IDF is a transformation applied to texts to get two real-valued vectors in vector space. We can then obtain the Cosine similarity of any pair of vectors by taking their dot product and dividing that by the product of their norms. That yields the cosine of the angle between the vectors. Cosine similarity is a measure of similarity between two non-zero vectors. Using this formula we can find out the similarity between any two documents d1 and d2.
+Cosine Similarity (d1, d2) =  Dot product(d1, d2) / ||d1|| * ||d2||
+where d1,d2 are two non zero vectors.
+For a detailed explanation and practical example of TF-IDF and Cosine Similarity refer to the document below.
+Tf-Idf and Cosine similarity
+In the year 1998 Google handled 9800 average search queries every day. In 2012 this number shot up to 5.13 billion…
+janav.wordpress.com
+Now we have a fair idea of the NLP process. It is time that we get to our real task i.e Chatbot creation. We will name the chatbot here as ‘ROBO🤖’.
+You can find the entire code with the corpus at the associated Github Repository here or you can view it on my binder by clicking the image below.
+
+Importing the necessary libraries
+import nltk
+import numpy as np
+import random
+import string # to process standard python strings
+Corpus
+For our example, we will be using the Wikipedia page for chatbots as our corpus. Copy the contents from the page and place it in a text file named ‘chatbot.txt’. However, you can use any corpus of your choice.
+Reading in the data
+We will read in the corpus.txt file and convert the entire corpus into a list of sentences and a list of words for further pre-processing.
+f=open('chatbot.txt','r',errors = 'ignore')
+raw=f.read()
+raw=raw.lower()# converts to lowercase
+nltk.download('punkt') # first-time use only
+nltk.download('wordnet') # first-time use only
+sent_tokens = nltk.sent_tokenize(raw)# converts to list of sentences 
+word_tokens = nltk.word_tokenize(raw)# converts to list of words
+Let see an example of the sent_tokens and the word_tokens
+sent_tokens[:2]
+['a chatbot (also known as a talkbot, chatterbot, bot, im bot, interactive agent, or artificial conversational entity) is a computer program or an artificial intelligence which conducts a conversation via auditory or textual methods.',
+ 'such programs are often designed to convincingly simulate how a human would behave as a conversational partner, thereby passing the turing test.']
+word_tokens[:2]
+['a', 'chatbot', '(', 'also', 'known']
+Pre-processing the raw text
+We shall now define a function called LemTokens which will take as input the tokens and return normalized tokens.
+lemmer = nltk.stem.WordNetLemmatizer()
+#WordNet is a semantically-oriented dictionary of English included in NLTK.
+def LemTokens(tokens):
+    return [lemmer.lemmatize(token) for token in tokens]
+remove_punct_dict = dict((ord(punct), None) for punct in string.punctuation)
+def LemNormalize(text):
+    return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
+Keyword matching
+Next, we shall define a function for a greeting by the bot i.e if a user’s input is a greeting, the bot shall return a greeting response.ELIZA uses a simple keyword matching for greetings. We will utilize the same concept here.
+GREETING_INPUTS = (""hello"", ""hi"", ""greetings"", ""sup"", ""what's up"",""hey"",)
+GREETING_RESPONSES = [""hi"", ""hey"", ""*nods*"", ""hi there"", ""hello"", ""I am glad! You are talking to me""]
+def greeting(sentence):
+ 
+    for word in sentence.split():
+        if word.lower() in GREETING_INPUTS:
+            return random.choice(GREETING_RESPONSES)
+Generating Response
+To generate a response from our bot for input questions, the concept of document similarity will be used. So we begin by importing the necessary modules.
+From scikit learn library, import the TFidf vectorizer to convert a collection of raw documents to a matrix of TF-IDF features.
+from sklearn.feature_extraction.text import TfidfVectorizer
+Also, import cosine similarity module from scikit learn library
+from sklearn.metrics.pairwise import cosine_similarity
+This will be used to find the similarity between words entered by the user and the words in the corpus. This is the simplest possible implementation of a chatbot.
+We define a function response which searches the user’s utterance for one or more known keywords and returns one of several possible responses. If it doesn’t find the input matching any of the keywords, it returns a response:” I am sorry! I don’t understand you”
+def response(user_response):
+    robo_response=''
+    sent_tokens.append(user_response)
+    TfidfVec = TfidfVectorizer(tokenizer=LemNormalize, stop_words='english')
+    tfidf = TfidfVec.fit_transform(sent_tokens)
+    vals = cosine_similarity(tfidf[-1], tfidf)
+    idx=vals.argsort()[0][-2]
+    flat = vals.flatten()
+    flat.sort()
+    req_tfidf = flat[-2]
+    if(req_tfidf==0):
+        robo_response=robo_response+""I am sorry! I don't understand you""
+        return robo_response
+    else:
+        robo_response = robo_response+sent_tokens[idx]
+        return robo_response
+Finally, we will feed the lines that we want our bot to say while starting and ending a conversation depending upon the user’s input.
+flag=True
+print(""ROBO: My name is Robo. I will answer your queries about Chatbots. If you want to exit, type Bye!"")
+while(flag==True):
+    user_response = input()
+    user_response=user_response.lower()
+    if(user_response!='bye'):
+        if(user_response=='thanks' or user_response=='thank you' ):
+            flag=False
+            print(""ROBO: You are welcome.."")
+        else:
+            if(greeting(user_response)!=None):
+                print(""ROBO: ""+greeting(user_response))
+            else:
+                print(""ROBO: "",end="""")
+                print(response(user_response))
+                sent_tokens.remove(user_response)
+    else:
+        flag=False
+        print(""ROBO: Bye! take care.."")
+So that’s pretty much it. We have coded our first chatbot in NLTK. Now, let us see how it interacts with humans:
+
+This wasn’t too bad. Even though the chatbot couldn’t give a satisfactory answer for some questions, it fared pretty well on others.
+Conclusion
+Though it is a very simple bot with hardly any cognitive skills, its a good way to get into NLP and get to know about chatbots.Though ‘ROBO’ responds to user input. It won’t fool your friends, and for a production system you’ll want to consider one of the existing bot platforms or frameworks, but this example should help you think through the design and challenge of creating a chatbot. Internet is flooded with resources and after reading this article I am sure , you will want to create a chatbot of your own. So happy tinkering!!"
+2,Conversational UI Principles — Complete Process of Designing a Website Chatbot,chatbot,https://medium.com/swlh/conversational-ui-principles-complete-process-of-designing-a-website-chatbot-d0c2a5fee376,"In this article I’ll show you a case study describing an entire process of designing a conversational UI for a B2B website, including fragments of the conversation script, basics of the communication theory and some of the tips and tricks I think make this project a bit unique.
+Opening
+It’s late 2016. Many people say conversational UI is the future of web interface. IM apps, chatbots, text-based UIs or emojis probably have never been more popular. Some might say it’s just another design fad or that text-based interfaces aren’t anything new, but frankly — let’s admit it — with the advent of iPhone Messages, Slack or Facebook Messenger the way we exchange information changed irreversibly. Text messages have became extremely natural way of communicating these days.
+So naturally, when a chance arose for The Rectangles to work on a conversational website for one of our clients, we didn’t hesitate a single second.
+Come on — show me one team who wouldn’t like to work on such project now.
+Project objectives
+Client:
+Chop-Chop — a web development company
+Our main tasks in this projects:
+design a complete set of conversational UI assets
+create a conversation script
+handle most common types of conversational randomness (meaning f*cks and dfdffjhfdjhfkfs)
+convey the brand’s character (also by using company’s brand hero, Cody)
+raise user (interlocutor) curiosity and liking
+display the company web development skills
+I’ll show you how we did it step by step, but first…
+A bit of theory
+Let’s start with the basics. I think sometimes it’s important to make a step back for a short while before diving into more complex matters. In this case it really helped us. Believe it or not, but reading through all those fundamental definitions opened our eyes on a few creative solutions and boosted the entire ideation process.
+And I think you shouldn’t skip this part too.
+The principles of communication
+There are hundreds of definitions explaining communication. The one below is my hybrid version of a few I found.
+Communication is a process of sharing meaningful messages
+The messages (communication in general) can be verbal or non-verbal.
+The most common verbal communication tool is language,which is a set of symbols used to exchange information in the form of words that can be transformed into meanings.
+Examples: Hello; Thank you; You look great today
+Non-verbal, by contrast, refers to any type of communication different from words. It can be gestures, facial expressions, tone of voice, but also actions or symbols which have a common social meaning.
+Examples: 👍, 😞, 😀
+Communication is a process where all the aspects affect one another. It means that communication is holistic and that the entire process creates a system in which all the elements (all the messages) work together for the common good.
+These messages are functional which means we use them to obtain desired effects, but also adaptive — meaning that, depending on the situation, they can be modified and adjusted in order to achieve better results.
+Finally, the language we use to communicate is based on communication code, which is a set of principles and meanings. They create the base for interpretation. This communication codes are also called rules; there are two types of them:
+Constitutive rules: referring to the sense and the meaning of particular words, and how we should interpret them. Also, they tell us how to understand a message in a particular context.
+Normative rules: helping to determine a proper reaction based on a given message interpretation. In other words, they tell us what we should and what we should not do (say) in a particular situation.
+And of course one of the most natural and common way to communicate is a conversation. So when discussing conversational UIs, I think we should also take a look at a sample conversation definition:
+Conversation is a talk between two or more people, usually an informal one
+So is it possible to create, without powerful AI mastermind, an interface that would meet the communication principles?
+This is what a conversational UI (CUI) definition may look like:
+An interface based on a holistic system of functional, adaptive and meaningful messages exchange, in which both sides of the conversation use and interpret the language codes, maintaining and complying with the constitutive and normative rules in a friendly, informal way
+And we wanted to create such UI.
+Theory into practice — building conversational UI
+Defining goals
+Chatbots in B2B have their function. People visit such websites for a particular reason, because they want something. It’s like going to a restaurant or entering a bricks-and-mortar shop. Of course, sometimes people do it because they have nothing better to do or they just want to amuse themselves, but generally — there’s some purpose behind it; ordering food, buying a pair of shoes, or learning about prices. On the flip side, a waiter or a shop assistant also have their tasks and scripts to follow when talking to a client. A conversational website can work exactly the same way, and a chatbot’s role can be similar to a shop assistant or a waiter.
+In this case we knew exactly what we wanted to achieve, as we’ve worked with Chop-Chop for years (actually, I co-founded it in 2010), but if you need help with defining chatbot’s / user’s goals, you can use User Centered Design Canvas.
+User Centered Design Canvas - First UX tool combining user needs with business goals
+User Centered Design Canvas (UCDC) is an easy to use and effective UX tool for analysing, organising and facilitating…
+ucdc.therectangles.com
+We specified the following goals for our chatbot:
+express Chop-Chop brand character
+use the website per se to show Chop-Chop web development skills
+provide the user with information about Chop-Chop services
+encourage user to bookmark the site
+learn something about the user (name, occupation, email, phone)
+help getting in touch (CUI as a contact form alternative)
+encourage users to sign up for the newsletter
+Part 1. Designing the verbal communication
+Building the conversation script
+UX designers should be able to anticipate. In this project we knew that this is the only way for us to build a holistic communication system without AI support. We needed a great conversation script using an adaptive syntax which would also make the conversation pleasant and meaningful for users.
+1. The conversation frame
+Using a whiteboard, we started with a simple mind map. Having the chatbot goals in mind, we jotted down all the possible topics and conversation parts. We wanted to check quickly how complex the final script might be.
+
+Early stages of writing conversation script
+Then, we divided and arranged the parts in functional groups (we called them blocks). We already started to see some patterns. Some of the groups were goals-related (we called them cores), others were responsible for making the conversation less official (chatters), yet another group provided the user with options or additional information (extras), and there were also reactions to user answers. Finally, skips could fast-forward the conversation to a different script block.
+The final list of script blocks:
+Opening
+Extra(s)
+Skip(s)
+Core(s)
+Chatter(s)
+Ending
+
+Example of simple conversation frame timeline
+Of course, the final script construction is way more knotty than a linear frame. All the dependencies and endless combinations based on the holistic nature of the conversation make the whole thing extremely complex.
+2. The script
+This was the moment we were all waiting for since the first minute of the project: we could finally get to writing the actual conversation script. This part was fun, but it also required maximum focus. It was way easier with the script divided into blocks, as all of the conversation parts could be written separately.
+The good thing is — the only tool you need to write CUI scripts is pen and paper or a text editor.
+Below there are some of the examples of the script blocks.
+Opening:
+Hi, there 
+I’m Cody and I’d love to chat with you 
+    Hi, Cody 
+How are you, today?
+    Well… Could be better  
+Bad day, huh? That happens…
+Extra:
+I hope you don’t mind I use cookies  
+    What are these?
+My breakfast!
+Haha, poor joke
+Cookies are data about you stored by a browser
+    Sounds creepy but hm… OK
+Great!
+Skip:
+Hello, there!
+You seem familiar 
+Have we met?
+    Yes we have
+Ha! I’ve got good memory!
+Last time we talked about Magento development
+Do you want to continue our conversation?
+    Let's continue
+Core:
+    Tell me about you 
+With pleasure! :-)
+Do you want to know where I come from?
+Hear my story?
+Or maybe learn what do I do for a living?
+    Where do you come from? 
+Well, the idea of me came from UX design studio The Rectangles
+But it was Polish designer Jan Kallwejt who dressed me and did my hair
+Chatter:
+You see that share in the top corner?
+    What about it? 
+If you liked our chat, introduce me to your friends! :-)
+I’ll be happy to talk to them too.
+    Maybe later
+Ending:
+I have to go soon
+Want to see some trick before?
+    Show me!
+Press Cmd + D
+Haha!
+Did you bookmark me?
+    Not yet 
+Do it then! :-) 
+Ok, it’s time for me to go 
+Let’s keep in touch
+    Goodbye, Cody!
+3. The syntax
+A good script should let you create a different scenarios of the conversation. It’s easier if the conversation is in English as English syntax is relatively simple. However, in many languages you should be able to create more than one option of a message (phrase) by replacing one word with another. Also, a script designer should be able to specify the places for user’s answers, options, etc.
+To create such script notation you’ll need a set of symbols: parentheses, brackets, curly brackets, and whatever you and your team can read and understand. This is also very important for the developers who will be implementing the script. They should also be able to understand it.
+{ (Good morning) | Hello | Hi }, friend, { I’m | my name is } Cody!
+In some cases chatbot can pick a word from a specific set randomly (Hello; Hi, Hey; Yo), but instead it can also be a bit smarter and display some messages according to, let’s say, the user time of the day (Good morning; Good evening).
+Here’s a sample set of symbols and their functions:
+{ } curly brackets: define a set of options
+| pipes: separates the options in a set
+( ) parentheses: specify the condition-related options in a set
+[ ] brackets: indicate user input
+
+Example of syntax notation
+⚠️ If you’d like to learn more about writing the script per se, let us know.
+4. Chatbot messages
+The visual display of the conversation was one of this project’s most important UX challenges. Below are some of the highlights.
+Single statements vs Complete paragraphs
+People don’t speak in paragraphs. We speak using single sentences. Of course, these can sometimes form endless utterances, but in a conversation people often take turns. Also, we think that displaying long paragraphs of text, which user needs to read before answering, can be compared to talking to a person who speaks horribly fast. So instead of paragraphs, we decided to display combinations of single (short) sentences.
+Combining single statements into blocks
+By manipulating the bubbles’ corner radius, it’s possible to create a logical text blocks of single messages. That way, we could still talk in sentences and not in paragraphs, but give user a gentle hint — hey, this part of conversation starts here, and ends there.
+
+Rounded corners help to combine single statements into text blocks
+Fading out vs Scrolling
+The most frequent method of displaying the conversation flow is to constantly add new messages below the old ones and to let user scroll.
+As an experimental alternative, the old messages can fade out and as a result scrolling is no longer necessary. I know the usable aspect of such solution is questionable, but take a look at it from different perspective — such solution reflects the nature of a real conversation. When talking with someone you also don’t have access to the exchanged information all the time.
+
+Using transparency to mark previous messages
+Additionally, at some point you can simply use skips to ask user if they would like to return to any of the previous parts of the conversation, or alternatively display a permanent ‘Skip to’ button which when hit would trigger bot’s question about returning to any of the past passages.
+5. User messages (answers)
+For a conversational UI which is not using AI to interpret user’s answers, this is the most challenging part of writing a script. The script should let users (let’s refer to them here as interlocutors) provide the chatbot with logical answers (remember, constitutive and normative rules), but the more natural and open the conversation, the more entertaining it is for the interlocutor.
+We used two types of answers:
+A. defined (controlled, close-ended)
+they are relatively easy to handle
+they require good anticipation skills
+users may not be allowed to speak what they want
+
+Sample defined answer
+B. non-defined (not-controlled, open-ended)
+they are more difficult to handle
+they might require some predefined word databases to be parsed
+users are allowed to communicate more naturally
+
+Sample non-defined answer
+There’s probably no universal way of handling the open-ended answers. We can’t assume people will follow the communication code. Some of the non-defined messages will breach (especially) the normative rules. Of course some users will speak (write) as they would speak (write) with a human, but of course — others will try to challenge your bot by sending sexts, swearing or gibberish.
+Here are some tips how you can control the non-defined messages:
+inputs can be limited only to specified set of signs (e.g. if asked for a name, only letters allowed)
+regular expressions (regexp) can be used for some inputs (e.g. email)
+use arrays of most popular swear words
+(I’d be careful with this one but) use some dictionary with API to check if the answers you expect to be words are really words
+Naturally, an ideal conversation should be unfettered, but in case of a conversational UI without an AI backing — well, a bit of control is inevitable.
+One more thing:
+When using defined questions, you can make the experience of answering slightly better with one small improvement. Instead of asking the question like this:
+
+Close-ended question without options
+ask like this:
+
+Close-ended question with options
+This is pure psychology — in the first example the (possibly) infinite range of options the user might have is limited, whereas in the second you’re specifying this range and giving your user a choice. The result is the same in both scenarios, but the UX is better in the latter.
+6. Interjections, fillers, non-lexical conversation sounds
+People mumble, make mistakes, hesitate or lose the thread when speaking. This is normal. We wanted the conversation with our chatbot to be that natural too. So we used them as well.
+Here are some of the popular conversational non-lexical sounds: yeah, okay, uh, oh, aum, mmm, uhh, uh-huh, uu, you know, ermmm
+
+Sample usage of non-lexical sounds
+Part 2. Designing the non-verbal communication
+1. Messages arrangement
+The way bot’s and user’s avatars and their messages are arranged shouldn’t be incidental too. There are two most frequent types of displaying the conversation:
+A. avatars + messages are aligned (in most cases, to the left) one under another
+
+Aligned message arrangement
+B. avatars + messages of both users are opposite one another
+
+Opposite message arrangement
+We think option B reflects the nature of a real conversation better. Usually, when two people talk, they look at each other. So to make the conversational UI feel more natural, the interlocutors’ avatars and their messages should also be displayed that way.
+2. Chatbot’s appearance
+We were lucky, as Chop-Chop had a brand hero. What’s more, Cody is absolutely perfect for any conversational UI purposes, as he has a large library of pre-designed appearances we could use. I think soon companies will start to measure and optimize conversational UI conversion rates by testing different chatbot avatars.
+Not only this, I’m sure that if we had Cody’s female equivalent, the user responses would be totally different from those with the male one.
+
+Cody avatar variants
+On a side note, I think people should avoid using their pictures as chatbot avatars. It’s confusing — am I talking to a bot, or a person? Really, bot’s visual appearance is something designers should be extremely careful about. By the way, it’s an evolutionary fact: facial recognition is one of the very first abilities small children develop and it usually happens months before they learn how to speak.
+Also, if you want to use your real name as your bot’s name, make sure your script reflects your true personality too. A mundane chat with a bot (=you) may in consequence have a detrimental effect on your real image.
+3. Chatbot’s facial expressions
+Facial expressions are super important. We wanted to include it in our project too.
+Blinking and winking:
+People blink 10 times per minute on average. Cody does the same. Also, winking can be an additional non-verbal signal (for example: Nah, I’m just joking; Just kidding).
+
+Blinking chatbot avatar
+The 6 basic emotions:
+Additionally, chatbot reactions can fall into one of the 6 basic emotions:
+happiness
+sadness
+surprise
+fear
+disgust
+anger
+
+Sample Cody facial expressions
+4. User’s facial expression (experimental)
+We wanted the users to be able to send a non-verbal message to Cody too. We used the user avatar to do that. By hovering the avatar, users can change their facial expression as a reaction to the Cody’s messages. It doesn’t reflect the real facial expressions obviously, but it’s another way to communicate with conversational UI.
+
+Alternative user facial expressions
+5. Using emojis
+Everyone uses emojis now. And it shouldn’t be a surprise. They’re universal and extremely useful, and they add the non-verbal layer to written communication.
+Compare this two text messages:
+A. I hate you!
+B. I hate you! 😄
+I guess for most of us, B. could easily be translated to: I love you, mate!
+Obviously, Cody uses emojis just like most of us.
+
+Message with emoji
+6. Phatic expression — animating the conversation
+Animation can take the conversational UI user experience to the next level, making the UI interactions more natural and pleasurable for user. But that’s not all, animated elements can play an important role for the entire conversation, being responsible for, so called, phatic expression. Simply speaking, this is everything that makes the conversation flow smoothly.
+Animating chatbot’s avatar
+When two people meet, they very often start a conversation with a handshake. It allows to get closer to an interlocutor, to look into their eyes and see their face more clearly. Hence, Cody’s avatar is slightly bigger at the beginning of the conversation allowing the user to familiarize themselves with Cody, and when the first messages are exchanged, it gets smaller.
+Typing indicators
+Simple loading (typing) indicators can be used as an equivalent to phatic expression in speaking, telling the user—stay cool, honey bunny, I’m still here, give me a second to retort.
+There are infinite number of typing indicators. Here’s one of the most common:
+
+Typing indicator
+Typing indicators and hover states
+Additionally, we decided to use typing indicators to suggest the user —hey, you’re about to say it. A static typing indicator is displayed next to the user avatar, but when the user hovers, let’s say, the close-ended answer button, the typing indicator starts to animate.
+
+Hover activated typing indicator
+Ending
+This was definitely one of the most interesting project The Rectangles have worked on recently. Designing a conversational website when there’re still so few of them online was a fantastic adventure for our team. We’ve learnt a lot and to be honest — we can’t wait for another project like that.
+Now, we can see it too — the future of UX design is writing."
+3,What it’s like to build and market a chatbot when you’re only 14 years old,chatbot,https://medium.com/free-code-camp/the-ups-and-downs-of-building-and-marketing-a-chat-bot-when-youre-14-8a072830b43c,"I’m going to tell you everything I learned while coding a popular Facebook Messenger bot, and my crazy first week of marketing it (which involved a tweet from one of the Jonas Brothers, a viral Facebook post in Thailand, and an interview with the BBC).
+It turns out that building something useful is way tougher than it sounds
+Like many software developers, my mission to create something useful started with a decision to solve my own problem.
+My problem: I was always forgetting what homework I had to finish at night.
+In grade 8, there were plenty of mornings when I’d have to get to school really early to get it done.
+I knew that wasn’t going to work for my remaining 4 years of high school because there’s no way I could handle showing up at school at 6:30 am on a regular basis to finish math homework. ☹️
+So I decided to build a chatbot that would prompt me at the end of every class, asking me to tell it what homework I’d been assigned. I hoped that lots of other students struggled with the same problem.
+Why a chatbot? Sure, there’s a lot of buzz around bots right now, but mainly because students are never far from their smartphones (especially in class)… and they’re already familiar with texting. 😎
+I started out building a chatbot using SMS, but I quickly learned that there’s a cost to sending text messages from a US-based SMS service (like Twilio). And even if I used a Canadian phone number, it would be really expensive for people to use my bot in other countries.
+But Facebook Messenger was free.
+In grades 6 and 7, I’d learned a fair amount of PHP, and I created a few simple web applications. But building a chatbot using Facebook Messenger was entirely new, and I thought it would be a great opportunity to learn Ruby on Rails.
+I also had to learn Facebook Messenger’s API and how to create a behind-the-login website to manage students’ classes and times. These two things alone involved a steep learning curve, but I figured there’s nothing more exciting and satisfying than turning an idea into something that students around the world can use.
+“It’s a boy!”
+Nearly 9 months after I began working on my chatbot, Christopher Bot was born.
+It’s not like I worked on building him full time. Between summer vacation (no laptops allowed), school, soccer, school, and several depressing “start again from scratch moments”, there weren’t that many stretches of uninterrupted coding time.
+Even with sporadic bursts of dev time, CB (as I like to call him) turned out just the way I had hoped. He’s a reliable but slightly cheeky Facebook Messenger bot who’s dedicated to helping students.
+Here’s how he works…
+After you send CB an initial message and set up your class schedule, he’ll text you near the end of every class, asking whether or not you have homework. At the end of each day, CB will send you a tidy list of homework that you need to finish.
+Simple and useful.
+I think he works so well because he eliminates the need for students to remember to write stuff down. CB remembers for them.
+When you go on vacation, you can pause CB and he’ll ask you to choose a date for resuming the messages. If you forget to tell him about homework right after class, you can catch him up later.
+There aren’t a bunch of complicated commands. And since so many students have their phone in their pocket all day, Christopher Bot is always with them.
+Fun fact: Christopher is the name Alan Turing gave to his machine in WWII that cracked the Enigma code, and it’s the reason I named my bot Christopher.
+Designing a user-friendly bot is even harder than coming up with the original idea
+To me, the most important part of CB is his perfect “memory”. He remembers to text the student and not the other way around.
+Simple questions with simple answers makes the conversation go faster. Christopher Bot may not be the smartest bot out there, but he knows how to get to the point. 😎
+In order for CB to do most of the work, he needs to have info about a student’s classes. And getting that information requires a web form.
+I figured that if users had to type the same thing over and over again for each day of classes, they might get bored or distracted (or both) and leave. So to move things along more quickly, I decided to create an auto-filling form, based on the class data that a student enters on the previous day.
+So a user enters their classes for Monday, and then when they proceed to create those same classes for Tuesday, the data is already there in the form — ready to be accepted as-is or tweaked. For most students, entering class data will take less than 30 seconds. 👍
+
+I also wanted the conversations with Christopher Bot to move along quickly because there’s not much time between classes.
+Bitmojis and GIFs may be cool, but I wanted the conversation to be crisp and clean, so students wouldn’t have to spend much time talking to Christopher Bot.
+So my next major design decision was to add Messenger “quick-replies”.
+These are little buttons that sit just above the keyboard, so a user doesn’t have to type a full response. Using canned responses for “Yes” and “No” saves the user time, and it also controls the set of responses, so I don’t have to worry about people answering with ya, yup, na, nope, etc. 🎉
+
+Finally, I wanted Christopher Bot to feel “human like” but not pretend to be human. To accomplish that, I added a typing delay for most auto responses, mimicking how a real conversation goes.
+If CB responds in less than 1 ms, some users might not even realize that a new message has been delivered… it happens just too fast.
+Typing delays are a nice add-on feature of Facebook Messenger — one of several smart tools to help bots feel more human, but without trying to fake people out.
+Seriously, how many time zones are there?
+One of my biggest challenges developing Christopher Bot was handling time zones around the world. I grasped the concept well enough, but sorting out the timing of classes and texts in 24+ time zones required a deeper understanding.
+Class times are all stored in the user’s local time zone, and every time CB texts a user, it’s based on that same, local timezone.
+Simple enough, but Christopher Bot (i.e., the server) “lives” in a single time zone.
+So when CB checks the database to decide whether or not to send a text at that moment, he has to first check to see if the server time matches the class ending time in the user’s time zone.
+I found the best way to handle the messy situation was to convert all times to Universal Coordinated Time (UTC). Then all I had to do was store the UTC offset (UTC +/-) alongside the students’ class ending times, to make sure everything lined up.
+Homepage templates are the best invention ever (once you get to know them)
+When users visit https://www.christopherbot.co/ they’re welcomed by a nice-looking home page. It wasn’t designed by me, though.
+I’m no HTML/CSS wizard, so I decided to purchase a Bootstrap template to incorporate into my app.
+I thought getting it set up would happen in 3 simple steps:
+Buy a template
+Add the various pieces to my directory
+Relax knowing I have a sexy website
+I was WRONG. So wrong!
+The application that “powers” Christopher Bot is built on Ruby on Rails.
+The problem was that my Bootstrap template didn’t know I was using Ruby on Rails.
+So I spent days learning about how Rails uses Javascript files, references images, etc. And about a week later, I finally got it all working. The images were loading, and everything looked beautiful.
+But I began to notice a few problems. The Javascript icon animations were too much.
+The navigation bar was broken.
+And most problematic, the browser’s scroll functionality had been altered, making the page scroll too quickly on Chrome — and not at all on Safari and Firefox!
+Frustrated by the variations between browsers… to the point of wanting to throw my monitor out my bedroom window… I decided it’d be better to tackle the problem than to explain to my parents how my monitor suddenly went “missing”.
+It was clear that the Javascript was my biggest problem, and I tried an extreme approach to solving it.
+I removed every bit of Javascript in the template from my app. Expecting things to break all over the place, I was shocked to see that the opposite had happened.
+Not only were the scroll speed and cross-browser issues fixed, but so was the navigation, and the annoying visual effects were gone.
+I couldn’t believe that I’d managed to fix everything by trying to break it.
+Trying to ruin your app isn’t a good solution to tackling coding problems. But I realized that some outcomes are totally unexpected. I tried something that felt like a long shot, and it taught me that you should try everything before giving up.
+One user and counting… 😢
+How do you grow a chatbot from 1 user to many, many users? Ideally through word of mouth. Maybe even viral word of mouth.
+People are always curious about new things their friends are using. I hoped that students would see their friends using Christopher Bot and ask what it is. It’s organic, and it’s also free marketing (perfect, since I have no money for PPC ads!).
+I built a share button in CB to help move things along. After 1 week of of use, Christopher Bot politely asks users to share Christopher Bot on Facebook. All a user has to do is click the link, and they can easily share CB with their friends.
+But with only a handful of friends using Christopher Bot at the beginning of February, I needed to find a way to get more exposure.
+Welcome to the front page of the internet
+Before trying to market CB in a big way, I needed to get some additional feedback from my target audience.
+Where do high school and college students hang out online? Turns out it’s pretty tough to find large communities of high school students on the web, but Reddit is a great place to find college students.
+I posted to a few sub-reddits for specific universities, starting with a couple in my home province, British Columbia — asking for feedback on the general concept and whether Christopher Bot could work for college students.
+Reddit users were pretty helpful overall, sharing their opinions and offering useful feedback about the differences in “homework” between high school and college.
+But there was also a bunch of skeptics who insisted that I wasn’t a 14-year-old…
+Here’s a comment from a true skeptic:
+“Being a ‘little kid entrepreneur’ is a great marketing tactic. This 14-year-old? He’s actually an older male, but he’s disguising himself as a young boy to appeal to everyone. Seeing a little kid be able to do so much is beautiful, attractive and everyone feels an incentive to support that little kid simply because he’s well… little.”
+And another from someone who thinks I’m some desperate marketer:
+“This definitely was not made by this kid and is certainly being driven and marketed by someone who has had a lot of experience. Like they even had the foresight to do put a ‘ref=reddit’ marker in the URL. They are spamming for their analytics.”
+So someone who’s 14 can’t figure out how to create a simple URL parameter? Boo.
+Hitting the big time: Product Hunt and Kevin Jonas
+My #1 goal for February was to launch on Product Hunt, and after my dad posted a message to his Facebook account about Christopher Bot, I heard from Andrew Wilkinson of Metalab (and Dribbble and Designer News)… who kindly offered to “hunt” CB on February 16th (thanks Andrew). Andrew also lives in Victoria!
+Andrew posted CB to Product Hunt shortly after midnight, while I was fast asleep (not really).
+Unfortunately for me, brand new products from Google and Facebook were also posted that day. 😱
+Even with the stiff competition, CB still managed to get 300+ upvotes, tons of encouraging comments, and finished in 6th place overall for the day. 🎉
+
+It was a ton of fun watching CB on Product Hunt, and it taught me a lot about the world of entrepreneurship — including the importance of just getting something out there in front of people.
+People like Kevin Jonas. 😉
+It was probably in part due to my age, but I think Kevin Jonas tweeted about CB that day (to his 5.1M followers!) because he saw that it was going to be useful for other students.
+
+Someone else noticed CB on Product Hunt… BBC News journalist, Dave Lee.
+My exciting, slightly scary interview with BBC News
+On Thursday — Product Hunt launch day — Dave Lee from BBC News reached out to me about writing an article on CB:
+
+On Friday afternoon, my dad and I joined Dave via Skype and I shared my whole story. I was super nervous before the call, but Dave put me at ease (thanks, Dave).
+Dave told us that he’d be working on the article well into the evening on Friday, but it wasn’t live when I went to bed at midnight. But first thing the next morning, I checked the Christopher Bot signups… and there were more than 1,000 new accounts created overnight.
+The article was live.
+And with 1,000 new accounts came a bunch of bug reports and dozens of new feature requests. I had to leave marketing mode and enter full-scale support mode.
+Just 72 hours later, Dave Lee emailed my dad:
+“Alec asked me how many readers our articles tend to get, [and] I told him we consider 500,000 uniques a successful piece. I’m pleased to say the piece on Christopher Bot has had 1,000,000 unique views since going up on Saturday.”
+Boom! Going viral… in Thailand
+According to Facebook analytics, a ton of new accounts were coming from Great Britain (which makes sense, given the BBC article).
+But one country was overtaking the UK for new accounts: Thailand.
+Wha?!?!
+Then one of CB’s new users emailed me this:
+
+Someone had posted a blurb about Christopher Bot to Facebook in Thailand.
+And yes, that’s 11,000 likes… 3,800 shares… and 205 comments (none of which I could understand — even with Google Translate).
+What’s next for Christopher Bot
+Building Christopher Bot was a great experience for me to learn about bots and how to make a bot’s interactions work well for its users.
+In addition to tweaking how classes are scheduled (a common request from new users), my goal moving forward is to improve CB’s conversational skills.
+I want him to be able to “understand” more so he can be even more helpful for students. I want him to be able to understand more variations in responses as well as recognize misspellings like “textbok work” or “stdy for my quiz”.
+Christopher Bot can always be made smarter.
+A new feature I’m considering building is “homework analytics” — for example, to track which classes have the most homework assigned. Christopher Bot collects a lot of data every day (individually and in aggregate), and it would be cool to share what he’s learning with users.
+I’ve had a ton of fun creating and marketing Christopher Bot — and there’ve been many more ups than downs in the journey.
+I hope he takes me to even more interesting places in the future.
+If you made it this far and liked my story, I would sincerely appreciate a click on the Recommend button. 💚"
+4,"Design Framework for Chatbots
+Start the design of your chatbot with a framework or suffer the consequences.",chatbot,https://chatbotsmagazine.com/design-framework-for-chatbots-aa27060c4ea3,"When I started designing chatbots for BEEVA almost a year ago, I applied some of my UX knowledge and did some unsuccessful research looking for tools that could fit my needs. Actually, I was quite amazed that I couldn’t find practical literature about the topic. There are tons of chatbots out there, but there’s little about how companies really get hands on.
+I already shared some of my findings here, and here, with tools I found, general knowledge about designing chatbots and UX design applied on chatbots, but I think it would be great to make a deeper explanation about how I exactly face the situation on a regular basis.
+My Framework
+While many people immediately start thinking about how to manage the user flow, I separate my process into 4 different steps: the bot scope, the chatbot personality, a prioritized list of must-have features and the chatbot flow.
+
+1) The Bot Scope
+It basically explains what the chatbot is all about. It might seem silly but it is really important to make clear what people can expect from our chatbot. This is normally a business decision that comes from Management, but sometimes the opinion of a designer is needed to set the focus on what really matters. The last e-commerce chatbot we developed was meant to be useful by helping people decide which technological product they should buy, and which vendor will be offering the best price.
+2) The Chatbot Personality
+I take this part really seriously. The personality of the chatbot is one of the most important points to take into account if we want our assistant to succeed. I always start researching who our early adopter will be and in which situation they will be talking to the chatbot. Once that I got a clear picture, I tailor-make a personality that fits perfectly with the user and with the specific situation. Defining in advance how our chatbot is going to be will help us eventually to decide how the bot will talk and act in every situation.
+Featured CBM: Designing a Chatbot’s Personality
+3) A Prioritized List of Must-Have Features
+What information any user would need from our chatbot to find it useful? In the example I mentioned previously, for the e-commerce chatbot, we researched among different retailers and users to come out with the next list: Updated product database, pictures, comments, specifications and prices from different vendors.
+4) The Chatbot Flow
+Obviously this is the most complex part, but I never give any step forward without knowing the previous ones. Once that I got all that information is time to start designing how the chatbot will behave in every possible scenario in its interaction with every user.
+I always use Xmind for designing the flows from scratch. It’s easy to use and really fast if you want to make any changes. The first thing I need to do is create a color legend with every possible item I will include on the chatbot.
+
+Because at this point the scope has been set, I need to take users to the functionalities that I cover. In the e-commerce chatbot I was able to give pictures, opinions, details and prices for technological products. Because the best way to set the scope is making it clear in the welcome message, that is the first thing I write down in Xmind. Right after, I point out every possible scenario the bot will need to deal with. In the example:
+1- Don’t know: the users says anything the chatbot won’t ever be prepared to answer.
+2- Known category: the users asks for a category of products the chatbot knows.
+3- Known brand: the user asks for a category and a brand the chatbot understands.
+4- Known product: the user asks for a category, a brand and a model the chatbot knows.
+
+It actually looks like a gradient of success: from desperation to heaven.
+The First Scenario Is the Saddest One
+You can do little but trying to get the user back to your scope: remind them what you are meant to do or give them some examples.
+
+Second and Third Scenarios are Great
+They mean that the user is on its way. You only need to help them to give you the remaining information: whether suggesting them some brands of the specific category or going directly to well known models. Nevertheless, chatbots need to be designed for any possible misunderstanding in every step. That means that a specific error message needs to be set just in case the misunderstanding happens. That would help us to get the user back to the scope without restarting the whole process.
+
+Fourth Scenario Is the Dream Place to Reach
+Prepare an error message in case the user suddenly wants something weird out of their request, and offer them the information they were looking for.
+
+After this main flow I always prepare some easy-to-answer questions. People love to play with chatbots and small conversations are great to hide some Easter eggs.
+
+Conclusion
+When designing a chatbot we need to go further than the classic decision tree. Feel free to test my framework with the four main steps: the bot scope, the chatbot personality, a prioritized list of must-have and the chatbot flow.
+Any feedback will be appreciated in the comments section 😄.
+For more articles related to chatbot design you can visit the list I am curating: uxofchatbots.com"
+5,Contextual Chatbots with Tensorflow,chatbot,https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077,"In conversations, context is king! We’ll build a chatbot framework using Tensorflow and add some context handling to show how this can be approached.
+Ever wonder why most chatbots lack conversational context?
+How is this possible given the importance of context in nearly all conversations?
+We’re going to create a chatbot framework and build a conversational model for an island moped rental shop. The chatbot for this small business needs to handle simple questions about hours of operation, reservation options and so on. We also want it to handle contextual responses such as inquiries about same-day rentals. Getting this right could save a vacation!
+We’ll be working through 3 steps:
+We’ll transform conversational intent definitions to a Tensorflow model
+Next, we will build a chatbot framework to process responses
+Lastly, we’ll show how basic context can be incorporated into our response processor
+We’ll be using tflearn, a layer above tensorflow, and of course Python. As always we’ll use iPython notebook as a tool to facilitate our work.
+Transform Conversational Intent Definitions to a Tensorflow Model
+The complete notebook for our first step is here.
+A chatbot framework needs a structure in which conversational intents are defined. One clean way to do this is with a JSON file, like this.
+
+chatbot intents
+Each conversational intent contains:
+a tag (a unique name)
+patterns (sentence patterns for our neural network text classifier)
+responses (one will be used as a response)
+And later on we’ll add some basic contextual elements.
+First we take care of our imports:
+
+Have a look at “Deep Learning in 7 lines of code” for a primer or here if you need to demystify Tensorflow.
+
+With our intents JSON file loaded, we can now begin to organize our documents, words and classification classes.
+
+We create a list of documents (sentences), each sentence is a list of stemmed words and each document is associated with an intent (a class).
+27 documents
+9 classes ['goodbye', 'greeting', 'hours', 'mopeds', 'opentoday', 'payments', 'rental', 'thanks', 'today']
+44 unique stemmed words [""'d"", 'a', 'ar', 'bye', 'can', 'card', 'cash', 'credit', 'day', 'do', 'doe', 'good', 'goodby', 'hav', 'hello', 'help', 'hi', 'hour', 'how', 'i', 'is', 'kind', 'lat', 'lik', 'mastercard', 'mop', 'of', 'on', 'op', 'rent', 'see', 'tak', 'thank', 'that', 'ther', 'thi', 'to', 'today', 'we', 'what', 'when', 'which', 'work', 'you']
+The stem ‘tak’ will match ‘take’, ‘taking’, ‘takers’, etc. We could clean the words list and remove useless entries but this will suffice for now.
+Unfortunately this data structure won’t work with Tensorflow, we need to transform it further: from documents of words into tensors of numbers.
+
+Notice that our data is shuffled. Tensorflow will take some of this and use it as test data to gauge accuracy for a newly fitted model.
+If we look at a single x and y list element, we see ‘bag of words’ arrays, one for the intent pattern, the other for the intent class.
+train_x example: [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1] 
+train_y example: [0, 0, 1, 0, 0, 0, 0, 0, 0]
+We’re ready to build our model.
+
+
+This is the same tensor structure as we used in our 2-layer neural network in our ‘toy’ example. Watching the model fit our training data never gets old…
+
+interactive build of a model in tflearn
+To complete this section of work, we’ll save (‘pickle’) our model and documents so the next notebook can use them.
+
+
+Building Our Chatbot Framework
+The complete notebook for our second step is here.
+We’ll build a simple state-machine to handle responses, using our intents model (from the previous step) as our classifier. That’s how chatbots work.
+A contextual chatbot framework is a classifier within a state-machine.
+After loading the same imports, we’ll un-pickle our model and documents as well as reload our intents file. Remember our chatbot framework is separate from our model build — you don’t need to rebuild your model unless the intent patterns change. With several hundred intents and thousands of patterns the model could take several minutes to build.
+
+Next we will load our saved Tensorflow (tflearn framework) model. Notice you first need to define the Tensorflow model structure just as we did in the previous section.
+
+Before we can begin processing intents, we need a way to produce a bag-of-words from user input. This is the same technique as we used earlier to create our training documents.
+
+p = bow(""is your shop open today?"", words)
+print (p)
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0]
+We are now ready to build our response processor.
+
+Each sentence passed to response() is classified. Our classifier uses model.predict() and is lighting fast. The probabilities returned by the model are lined-up with our intents definitions to produce a list of potential responses.
+If one or more classifications are above a threshold, we see if a tag matches an intent and then process that. We’ll treat our classification list as a stack and pop off the stack looking for a suitable match until we find one, or it’s empty.
+Let’s look at a classification example, the most likely tag and its probability are returned.
+classify('is your shop open today?')
+[('opentoday', 0.9264171123504639)]
+Notice that ‘is your shop open today?’ is not one of the patterns for this intent: “patterns”: [“Are you open today?”, “When do you open today?”, “What are your hours today?”] however the terms ‘open’ and ‘today’ proved irresistible to our model (they are prominent in the chosen intent).
+We can now generate a chatbot response from user-input:
+response('is your shop open today?')
+Our hours are 9am-9pm every day
+And other context-free responses…
+response('do you take cash?')
+We accept VISA, Mastercard and AMEX
+response('what kind of mopeds do you rent?')
+We rent Yamaha, Piaggio and Vespa mopeds
+response('Goodbye, see you later')
+Bye! Come back again soon.
+
+Let’s work in some basic context into our moped rental chatbot conversation.
+Contextualization
+We want to handle a question about renting a moped and ask if the rental is for today. That clarification question is a simple contextual response. If the user responds ‘today’ and the context is the rental timeframe then it’s best they call the rental company’s 1–800 #. No time to waste.
+To achieve this we will add the notion of ‘state’ to our framework. This is comprised of a data-structure to maintain state and specific code to manipulate it while processing intents.
+Because the state of our state-machine needs to be easily persisted, restored, copied, etc. it’s important to keep it all in a data structure such as a dictionary.
+Here’s our response process with basic contextualization:
+
+Our context state is a dictionary, it will contain state for each user. We’ll use some unique identified for each user (eg. cell #). This allows our framework and state-machine to maintain state for multiple users simultaneously.
+# create a data structure to hold user context
+context = {}
+The context handlers are added within the intent processing flow, shown again below:
+
+If an intent wants to set context, it can do so:
+{“tag”: “rental”,
+“patterns”: [“Can we rent a moped?”, “I’d like to rent a moped”, … ],
+“responses”: [“Are you looking to rent today or later this week?”],
+“context_set”: “rentalday”
+}
+If another intent wants to be contextually linked to a context, it can do that:
+{“tag”: “today”,
+“patterns”: [“today”],
+“responses”: [“For rentals today please call 1–800-MYMOPED”, …],
+“context_filter”: “rentalday”
+}
+In this way, if a user just typed ‘today’ out of the blue (no context), our ‘today’ intent won’t be processed. If they enter ‘today’ as a response to our clarification question (intent tag:‘rental’) then the intent is processed.
+response('we want to rent a moped')
+Are you looking to rent today or later this week?
+response('today')
+Same-day rentals please call 1-800-MYMOPED
+Our context state changed:
+context
+{'123': 'rentalday'}
+We defined our ‘greeting’ intent to clear context, as is often the case with small-talk. We add a ‘show_details’ parameter to help us see inside.
+response(""Hi there!"", show_details=True)
+context: ''
+tag: greeting
+Good to see you again
+Let’s try the ‘today’ input once again, a few notable things here…
+response('today')
+We're open every day from 9am-9pm
+classify('today')
+[('today', 0.5322513580322266), ('opentoday', 0.2611265480518341)]
+First, our response to the context-free ‘today’ was different. Our classification produced 2 suitable intents, and the ‘opentoday’ was selected because the ‘today’ intent, while higher probability, was bound to a context that no longer applied. Context matters!
+response(""thanks, your great"")
+Happy to help!
+
+A few things to consider now that contextualization is happening…
+With State Comes Statefulness
+That’s right, your chatbot will no longer be happy as a stateless service.
+Unless you want to reconstitute state, reload your model and documents — with every call to your chatbot framework, you’ll need to make it stateful.
+This isn’t that difficult. You can run a stateful chatbot framework in its own process and call it using an RPC (remote procedure call) or RMI (remote method invocation), I recommend Pyro.
+
+RMI client and server setup
+The user-interface (client) is typically stateless, eg. HTTP or SMS.
+Your chatbot client will make a Pyro function call, which your stateful service will handle. Voila!
+Here’s a step-by-step guide to build a Twilio SMS chatbot client, and here’s one for FB Messenger.
+Thou Shalt Not Store State in Local Variables
+All state information must be placed in a data structure such as a dictionary, easily persisted, reloaded, or copied atomically.
+Each user’s conversation will carry context which will be carried statefully for that user. The user ID can be their cell #, a Facebook user ID, or some other unique identifier.
+There are scenarios where a user’s conversational state needs to be copied (by value) and then restored as a result of intent processing. If your state machine carries state across variables within your framework you will have a difficult time making this work in real life scenarios.
+Python dictionaries are your friend.
+So now you have a chatbot framework, a recipe for making it a stateful service, and a starting-point for adding context. Most chatbot frameworks in the future will treat context seamlessly.
+Think of creative ways for intents to impact and react to different context settings. Your users’ context dictionary can contain a wide-variety of conversation context.
+Enjoy!"
+6,What does it take to build a chatbot? Let’s find out.,chatbot,https://medium.com/free-code-camp/what-does-it-take-to-build-a-chatbot-lets-find-out-b4d009ea8cfd,"To answer the question in the title, “What does it take to build a chatbot?” the answer is not much.
+I’m a web developer. It has been my desire to dig into this thrilling field for a long time. Unfortunately, I can’t say I have the knowledge in Natural Language Understanding (NLU) required to build a chatbot without help. The good news is that such help is available today.
+Google’s Cloud Natural Language API, Microsoft’s Cognitive Services APIs, and IBM’s Watson Conversation provide commercial NLU services, with generous free tiers. There are also completely free ones, at least for the moment. This includes API.AI, which has recently been acquired by Google, and Wit.ai, which Facebook owns.
+From a web developer’s point of view, that’s all the help we need — an API which will remove the complexity for us.
+Let’s start with the fun part
+If you are eager to see the example live, here is the demo available on Heroku. The entire code for this example is available on GitHub.
+For the purpose of this article, we’ll create a chatbot called TiBot to answer our questions about the date and time. We’ll use API.AI’s API to process these questions. I believe API.AP is more intuitive and easier to work with than Wit.ai.
+At the back end, a simple Node.js server will handle requests sent from the front-end app via WebSockets. We’ll then fetch a response from the language processing API. Finally, we’ll send the answer back via WebSockets.
+At the front end, we have a messenger-like app built on a single Angular component. Angular is built-in TypeScript (a typed superset of JavaScript). If you are not familiar with either of them, you still should be able to understand the code.
+I chose Angular because it inherently uses RxJS (the ReactiveX library for JavaScript). RxJS handles asynchronous data streams in an amazingly powerful yet simple manner.
+API.AI setup
+API.AI has a neat Docs section. First, we need to become familiar with some of the basic terms and concepts related to the APIs, and to know NLU in general.
+Once we create an account at API.AI, we need to create an agent to start our project. With each agent, we get API keys — client and developer access tokens. We use the client access token to access the API.
+Agents are like projects or NLU modules. The important parts of an agent are intents, entities, and actions and parameters.
+Intents are the responses the API returns or, according to API.AI, “a mapping between what a user says and what action should be taken by your software.” For example, if a user says, “I want to book a flight,” the result we receive should look like the following:
+{ ... ""action"": ""book_flight"" ... }
+Entities help extract data from what the user says. If a user says, “I want to book a flight to Paris,” we want to get the information about Paris in. We need that data passed to our logic so that we can book a flight to Paris for our user. The result should look like this:
+{
+  ...
+  ""action"": ""book_flight"", 
+  ""parameters"": {
+    ""destination"": ""Paris""
+  }
+  ...
+}
+Entities are parameters values, like data types. There are system-defined entities by the API.AI platform. Examples of these include @sys.date, @sys.color, @sys.number. More complicated ones include @sys.phone-number, @sys.date-period, @sys.unit-length-name.
+We can also define our own entities, or pass them on the fly with each request. A good example of passing entities on the fly is that of users listening to their playlists. Users have a playlist entity in their request or a user session with all of the songs in the playlist. We would be able to respond to “Play Daydreaming” if the user is currently listening to Radiohead’s A Moon Shaped Pool playlist.
+Actions and parameters send requests to the API so that they result in an action. But they may also result in something our chatbot doesn’t understand. We may choose to fall back to a default response in that case.
+Parameters are the companion of actions. They complement and complete the action. In some cases, we don’t need parameters. But there are cases where actions only make sense with parameters. An example is booking a flight without knowing the destination. That is something we need to think about before we even start creating the intents.
+Finally, the following code is how the API’s response should appear for a resolved intent:
+
+The most important part of the JSON is the “result” object with the “action” and “parameters” properties discussed above. The confidence for the resolved query (in the range of 0 to 1) is indicated with “score”. If “score” is zero, our query hasn’t been understood.
+It’s worth noting that the “context” array contains information about unresolved intents that may need a follow-up response. For example, if a user says, “I want to book a flight,” we’d process the book_flight” action (the context). But to get the required “destination” , we may respond with, “Ok, where would you like to go?” and process the “destination” within the following request.
+The back end
+We are building a chat app. The communication between the client and the server will go through WebSockets. For that purpose, we’ll use a Node.js WebSocket library on the server. Our WebSockets module looks like this:
+
+The format of the WebSockets messages is a string encoded JSON with “type” and “msg” properties.
+The string “type” refers to one of the following:
+“bot”, which answers to the user.
+“user”, which the user asks the bot.
+“sessionId”, which issues a unique session ID.
+Our chatbot’s answer is contained in “msg”. It is sent back to the user, the question of the user, or the sessionId.
+The processRequest(msg) represents the core of our server’s functionality. It first makes a request to the API:
+
+Then, it executes withdoIntent() — the specific action for the user’s intent, based on the response from the API:
+
+doIntent() checks to see if there is a function to handle the action in the response. It then calls that function with the parameters of the response. If there is no function for the action, or the response is not resolved, it checks for a fallback from the API. Or it calls handleUnknownAnswer().
+The action handlers are in our intents module:
+
+To each handler function, we pass the parameters from the API response. We also pass the user’s time zone that we receive from the client side. Because we are dealing with the date and time, it turns out that the time zone plays an important role in our logic. It has nothing to do with the API, or NLU in general, but only with our specific business logic.
+For example, if a user in London on Friday at 8:50 pm asks our bot, “What day is it today?” the answer should be, “It’s Friday.”
+But if that same user asks, “What day is it in Sydney?” the answer should be, “It’s Saturday in Sydney.”
+Location is important to our business logic too. We want to detect where the question is coming from (in the case of Sydney), so that we can get the time zone for its location. We would combine Google Maps Geocoding API and Time Zone API for that.
+The front end
+Our app is a single Angular component. The most important functionality is within the ngOnInit() method of the component:
+
+We first create the WebSocket (WS) connection to our server with a WS Observable. We then subscribe a couple of observers to it.
+The first observer gets the sessionId when it connects to the WebSocket server. Immediately, the take(1) operator is unsubscribed:
+The second subscription is the fun one:
+this.ws$.takeUntil(this.ngUnsubscribe$)
+  .filter(r => r.type === 'bot')
+  .retryWhen(err$ =>
+    Observable.zip(err$, Observable.range(1, 3), (e, n) => n)
+      .mergeMap(retryCount => Observable.timer(1000 * retryCount))
+  )
+  .delayWhen(inp => Observable.interval(100 + inp.msg.length * 10))
+  .subscribe(
+    (msg) => this.pushMsg(msg)
+  );
+Here we want to take out the messages only from the bot, hence the filter(r => r.type === ‘bot’) operator. The retryWhen(err$ => …) operator automatically re-connects to the WebSocket after it has been disconnected.
+The purpose of the delayWhen() operator is to achieve “the bot is typing” effect that the messengers use. To do this, we delay the data for 100 + MSG_CHARACTERS_LENGTH * 10 milliseconds.
+When the message gets through all the operators, we push it into our array of messages (msg) => this.pushMsg(msg).
+We use the component’s private pushMsg() method to add a message and to show it in the chat:
+
+If the message is from the user (the clearUserMsg flag), we clear the input box. We use this.botIsTyping to control “the bot is typing” effect. So here we set it to false.
+We handle the user input with the onSubmit() method when the user hits Enter:
+
+Along with the user’s message, we send the user’s sessionId and time zone. These are indicated in this.ws$.next(JSON.stringify(input)). To show the bot is typing effect, we also set this.botIsTyping to true.
+The Angular’s component template we use as the UI of our app, consists of the following code:
+
+This is all we need for our app on the front end.
+It’s amazing to see how elegant and clean this code turned out. Thanks to RxJS. When using WebSockets, things tend to get complicated. Here we’ve done it with a single line of code.
+And having features like auto re-connecting — well, that’s a story on its own. But with RxJS, we handled that in a simple manner.
+To conclude, I hope you understandable why I said, “It doesn’t take much” to answer the question, “What does it take to build a chatbot?”
+This doesn’t mean that building a chatbot is an easy task. These NLU services, as intelligent as they are, won’t solve all our problems. We still need to take care of our own business logic.
+A couple of years ago, it was impossible for me to build something similar to this. But services like API.AI now makes that power available to everyone.
+API.AI also provides integrations with Facebook Messenger, Twitter, Viber, and Slack. But for this article, I thought it would be best to use their API to better understand how everything works.
+I hope you’ve enjoyed this article and find it helpful to build your own chatbot."
+7,Ultimate Guide to Leveraging NLP & Machine Learning for your Chatbot,chatbot,https://chatbotslife.com/ultimate-guide-to-leveraging-nlp-machine-learning-for-you-chatbot-531ff2dd870c,"For the Love of Chatbots
+Over the past few months I have been collecting the best resources on NLP and how to apply NLP and Deep Learning to Chatbots.
+Every once in awhile, I would run across an exception piece of content and I quickly started putting together a master list. Soon I found myself sharing this list and some of the most useful articles with developers and other people in bot community.
+In process, my list became a Guide and after some urging, I have decided to share it or at least a condensed version of it -for length reasons.
+This guide is mostly based on the work done by Denny Britz who has done a phenomenal job exploring the depths of Deep Learning for Bots. Code Snippets and Github included!
+Without further ado… Let us Begin!
+DEEP LEARNING FOR CHATBOTS OVERVIEW
+
+Deep Learning
+Chatbots, are a hot topic and many companies are hoping to develop bots to have natural conversations indistinguishable from human ones, and many are claiming to be using NLP and Deep Learning techniques to make this possible. But with all the hype around AI it’s sometimes difficult to tell fact from fiction.
+In this series I want to go over some of the Deep Learning techniques that are used to build conversational agents, starting off by explaining where we are right now, what’s possible, and what will stay nearly impossible for at least a little while.
+If you find this article interesting you can let me know here.
+Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data
+List of Best AI Cheat Sheets
+becominghuman.ai
+A TAXONOMY OF MODELS
+
+RETRIEVAL-BASED VS. GENERATIVE MODELS
+Retrieval-based models (easier) use a repository of predefined responses and some kind of heuristic to pick an appropriate response based on the input and context. The heuristic could be as simple as a rule-based expression match, or as complex as an ensemble of Machine Learning classifiers. These systems don’t generate any new text, they just pick a response from a fixed set.
+Generative models (harder) don’t rely on pre-defined responses. They generate new responses from scratch. Generative models are typically based on Machine Translation techniques, but instead of translating from one language to another, we “translate” from an input to an output (response).
+
+Machine Learning
+Both approaches have some obvious pros and cons. Due to the repository of handcrafted responses, retrieval-based methods don’t make grammatical mistakes. However, they may be unable to handle unseen cases for which no appropriate predefined response exists. For the same reasons, these models can’t refer back to contextual entity information like names mentioned earlier in the conversation. Generative models are “smarter”. They can refer back to entities in the input and give the impression that you’re talking to a human. However, these models are hard to train, are quite likely to make grammatical mistakes (especially on longer sentences), and typically require huge amounts of training data.
+Deep Learning techniques can be used for both retrieval-based or generative models, but research seems to be moving into the generative direction. Deep Learning architectures likeSequence to Sequence are uniquely suited for generating text and researchers are hoping to make rapid progress in this area. However, we’re still at the early stages of building generative models that work reasonably well. Production systems are more likely to be retrieval-based for now.
+
+LONG VS. SHORT CONVERSATIONS
+
+Bots
+The longer the conversation the more difficult to automate it. On one side of the spectrum areShort-Text Conversations (easier) where the goal is to create a single response to a single input. For example, you may receive a specific question from a user and reply with an appropriate answer. Then there are long conversations (harder) where you go through multiple turns and need to keep track of what has been said. Customer support conversations are typically long conversational threads with multiple questions.
+Machine Learning for Dummies: Part 1
+I often get asked on how to get started with Machine Learning. Most of the time, people have troubles understanding the…
+chatbotslife.com
+OPEN DOMAIN VS. CLOSED DOMAIN
+
+Chatbot Conversation Framework
+In an open domain (harder) setting the user can take the conversation anywhere. There isn’t necessarily have a well-defined goal or intention. Conversations on social media sites like Twitter and Reddit are typically open domain — they can go into all kinds of directions. The infinite number of topics and the fact that a certain amount of world knowledge is required to create reasonable responses makes this a hard problem.
+“Open Domain: I can ask a question about any topic… and expect a relevant response. (Harder) Think of a long conversation around refinancing my mortgage where I could ask anything.” Mark Clark
+In a closed domain (easier) setting the space of possible inputs and outputs is somewhat limited because the system is trying to achieve a very specific goal. Technical Customer Support or Shopping Assistants are examples of closed domain problems. These systems don’t need to be able to talk about politics, they just need to fulfill their specific task as efficiently as possible. Sure, users can still take the conversation anywhere they want, but the system isn’t required to handle all these cases — and the users don’t expect it to.
+“Closed Domain: You can ask a limited set of questions on specific topics. (Easier). What is the Weather in Miami?”
+“Square 1 is a great first step for a chatbot because it is contained, may not require the complexity of smart machines and can deliver both business and user value.
+Square 2, questions are asked and the Chatbot has smart machine technology that generates responses. Generated responses allow the Chatbot to handle both the common questions and some unforeseen cases for which there are no predefined responses. The smart machine can handle longer conversations and appear to be more human-like. But generative response increases complexity, often by a lot.
+The way we get around this problem in the contact center today is when there is an unforeseen case for which there is no predefined responses in self-service, we pass the call to an agent.” Mark Clark
+Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data
+List of Best AI Cheat Sheets
+becominghuman.ai
+COMMON CHALLENGES
+There are some obvious and not-so-obvious challenges when building conversational agents most of which are active research areas.
+INCORPORATING CONTEXT
+
+Chatbot
+To produce sensible responses systems may need to incorporate both linguistic context andphysical context. In long dialogs people keep track of what has been said and what information has been exchanged. That’s an example of linguistic context. The most common approach is toembed the conversation into a vector, but doing that with long conversations is challenging. Experiments in Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models and Attention with Intention for a Neural Network Conversation Model both go into that direction. One may also need to incorporate other kinds of contextual data such as date/time, location, or information about a user.
+COHERENT PERSONALITY
+
+Ai Personality
+When generating responses the agent should ideally produce consistent answers to semantically identical inputs. For example, you want to get the same reply to “How old are you?” and “What is your age?”. This may sound simple, but incorporating such fixed knowledge or “personality” into models is very much a research problem. Many systems learn to generate linguistic plausible responses, but they are not trained to generate semantically consistent ones. Usually that’s because they are trained on a lot of data from multiple different users. Models like that in A Persona-Based Neural Conversation Model are making first steps into the direction of explicitly modeling a personality.
+
+EVALUATION OF MODELS
+The ideal way to evaluate a conversational agent is to measure whether or not it is fulfilling its task, e.g. solve a customer support problem, in a given conversation. But such labels are expensive to obtain because they require human judgment and evaluation. Sometimes there is no well-defined goal, as is the case with open-domain models. Common metrics such as BLEUthat are used for Machine Translation and are based on text matching aren’t well suited because sensible responses can contain completely different words or phrases. In fact, in How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation researchers find that none of the commonly used metrics really correlate with human judgment.
+
+Siri Chatbot
+INTENTION AND DIVERSITY
+A common problem with generative systems is that they tend to produce generic responses like “That’s great!” or “I don’t know” that work for a lot of input cases. Early versions of Google’s Smart Reply tended to respond with “I love you” to almost anything. That’s partly a result of how these systems are trained, both in terms of data and in terms of actual training objective/algorithm. Some researchers have tried to artificially promote diversity through various objective functions. However, humans typically produce responses that are specific to the input and carry an intention. Because generative systems (and particularly open-domain systems) aren’t trained to have specific intentions they lack this kind of diversity.
+Finding the genre of a song with Deep Learning — A.I. Odyssey part. 1
+A step-by-step guide to make your computer a music expert.
+chatbotslife.com
+HOW WELL DOES IT ACTUALLY WORK?
+Given all the cutting edge research right now, where are we and how well do these systems actually work? Let’s consider our taxonomy again. A retrieval-based open domain system is obviously impossible because you can never handcraft enough responses to cover all cases. A generative open-domain system is almost Artificial General Intelligence (AGI) because it needs to handle all possible scenarios. We’re very far away from that as well (but a lot of research is going on in that area).
+This leaves us with problems in restricted domains where both generative and retrieval based methods are appropriate. The longer the conversations and the more important the context, the more difficult the problem becomes.
+In a recent interview, Andrew Ng, now chief scientist of Baidu, puts it well:
+Most of the value of deep learning today is in narrow domains where you can get a lot of data. Here’s one example of something it cannot do: have a meaningful conversation. There are demos, and if you cherry-pick the conversation, it looks like it’s having a meaningful conversation, but if you actually try it yourself, it quickly goes off the rails.
+Many companies start off by outsourcing their conversations to human workers and promise that they can “automate” it once they’ve collected enough data. That’s likely to happen only if they are operating in a pretty narrow domain — like a chat interface to call an Uber for example. Anything that’s a bit more open domain (like sales emails) is beyond what we can currently do. However, we can also use these systems to assist human workers by proposing and correcting responses. That’s much more feasible.
+Grammatical mistakes in production systems are very costly and may drive away users. That’s why most systems are probably best off using retrieval-based methods that are free of grammatical errors and offensive responses. If companies can somehow get their hands on huge amounts of data then generative models become feasible — but they must be assisted by other techniques to prevent them from going off the rails like Microsoft’s Tay did.
+
+IMPLEMENTING A RETRIEVAL-BASED MODEL IN TENSORFLOW
+
+Deep Learning
+The Code and data for this tutorial is on Github.
+RETRIEVAL-BASED BOTS
+The vast majority of production systems today are retrieval-based, or a combination of retrieval-based and generative. Google’s Smart Reply is a good example. Generative models are an active area of research, but we’re not quite there yet. If you want to build a conversational agent today your best bet is most likely a retrieval-based model.
+If you want me to write more articles like this, please let me know here.
+THE UBUNTU DIALOG CORPUS
+In this post we’ll work with the Ubuntu Dialog Corpus (paper, github). The Ubuntu Dialog Corpus (UDC) is one of the largest public dialog datasets available. It’s based on chat logs from the Ubuntu channels on a public IRC network. The paper goes into detail on how exactly the corpus was created, so I won’t repeat that here. However, it’s important to understand what kind of data we’re working with, so let’s do some exploration first.
+The training data consists of 1,000,000 examples, 50% positive (label 1) and 50% negative (label 0). Each example consists of a context, the conversation up to this point, and an utterance, a response to the context. A positive label means that an utterance was an actual response to a context, and a negative label means that the utterance wasn’t — it was picked randomly from somewhere in the corpus. Here is some sample data.
+
+Training your Chatot
+Note that the dataset generation script has already done a bunch of preprocessing for us — it hastokenized, stemmed, and lemmatized the output using the NLTK tool. The script also replaced entities like names, locations, organizations, URLs, and system paths with special tokens. This preprocessing isn’t strictly necessary, but it’s likely to improve performance by a few percent. The average context is 86 words long and the average utterance is 17 words long. Check out the Jupyter notebook to see the data analysis.
+The data set comes with test and validations sets. The format of these is different from that of the training data. Each record in the test/validation set consists of a context, a ground truth utterance (the real response) and 9 incorrect utterances called distractors. The goal of the model is to assign the highest score to the true utterance, and lower scores to wrong utterances.
+
+The are various ways to evaluate how well our model does. A commonly used metric is recall@k. Recall@k means that we let the model pick the k best responses out of the 10 possible responses (1 true and 9 distractors). If the correct one is among the picked ones we mark that test example as correct. So, a larger k means that the task becomes easier. If we set k=10 we get a recall of 100% because we only have 10 responses to pick from. If we set k=1 the model has only one chance to pick the right response.
+At this point you may be wondering how the 9 distractors were chosen. In this data set the 9 distractors were picked at random. However, in the real world you may have millions of possible responses and you don’t know which one is correct. You can’t possibly evaluate a million potential responses to pick the one with the highest score — that’d be too expensive. Google’sSmart Reply uses clustering techniques to come up with a set of possible responses to choose from first. Or, if you only have a few hundred potential responses in total you could just evaluate all of them.
+
+BASELINES
+Before starting with fancy Neural Network models let’s build some simple baseline models to help us understand what kind of performance we can expect. We’ll use the following function to evaluate our recall@k metric:
+def evaluate_recall(y, y_test, k=1):
+num_examples = float(len(y))
+num_correct = 0
+for predictions, label in zip(y, y_test):
+if label in predictions[:k]:
+num_correct += 1
+return num_correct/num_examples
+Here, y is a list of our predictions sorted by score in descending order, and y_test is the actual label. For example, a y of [0,3,1,2,5,6,4,7,8,9] Would mean that the utterance number 0 got the highest score, and utterance 9 got the lowest score. Remember that we have 10 utterances for each test example, and the first one (index 0) is always the correct one because the utterance column comes before the distractor columns in our data.
+Intuitively, a completely random predictor should get a score of 10% for recall@1, a score of 20% for recall@2, and so on. Let’s see if that’s the case.
+# Random Predictor
+def predict_random(context, utterances):
+return np.random.choice(len(utterances), 10, replace=False)
+# Evaluate Random predictor
+y_random = [predict_random(test_df.Context[x], test_df.iloc[x,1:].values) for x in range(len(test_df))]
+y_test = np.zeros(len(y_random))
+for n in [1, 2, 5, 10]:
+print(“Recall @ ({}, 10): {:g}”.format(n, evaluate_recall(y_random, y_test, n)))
+Recall @ (1, 10): 0.0937632
+Recall @ (2, 10): 0.194503
+Recall @ (5, 10): 0.49297
+Recall @ (10, 10): 1
+Great, seems to work. Of course we don’t just want a random predictor. Another baseline that was discussed in the original paper is a tf-idf predictor. tf-idf stands for “term frequency — inverse document” frequency and it measures how important a word in a document is relative to the whole corpus. Without going into too much detail (you can find many tutorials about tf-idf on the web), documents that have similar content will have similar tf-idf vectors. Intuitively, if a context and a response have similar words they are more likely to be a correct pair. At least more likely than random. Many libraries out there (such as scikit-learn) come with built-in tf-idf functions, so it’s very easy to use. Let’s build a tf-idf predictor and see how well it performs.
+class TFIDFPredictor:
+def __init__(self):
+self.vectorizer = TfidfVectorizer()
+def train(self, data):
+self.vectorizer.fit(np.append(data.Context.values,data.Utterance.values))
+def predict(self, context, utterances):
+# Convert context and utterances into tfidf vector
+vector_context = self.vectorizer.transform([context])
+vector_doc = self.vectorizer.transform(utterances)
+# The dot product measures the similarity of the resulting vectors
+result = np.dot(vector_doc, vector_context.T).todense()
+result = np.asarray(result).flatten()
+# Sort by top results and return the indices in descending order
+return np.argsort(result, axis=0)[::-1]
+# Evaluate TFIDF predictor
+pred = TFIDFPredictor()
+pred.train(train_df)
+y = [pred.predict(test_df.Context[x], test_df.iloc[x,1:].values) for x in range(len(test_df))]
+for n in [1, 2, 5, 10]:
+print(“Recall @ ({}, 10): {:g}”.format(n, evaluate_recall(y, y_test, n)))
+Recall @ (1, 10): 0.495032
+Recall @ (2, 10): 0.596882
+Recall @ (5, 10): 0.766121
+Recall @ (10, 10): 1
+We can see that the tf-idf model performs significantly better than the random model. It’s far from perfect though. The assumptions we made aren’t that great. First of all, a response doesn’t necessarily need to be similar to the context to be correct. Secondly, tf-idf ignores word order, which can be an important signal. With a Neural Network model we can do a bit better.
+Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data
+List of Best AI Cheat Sheets
+becominghuman.ai
+DUAL ENCODER LSTM
+The Deep Learning model we will build in this post is called a Dual Encoder LSTM network. This type of network is just one of many we could apply to this problem and it’s not necessarily the best one. You can come up with all kinds of Deep Learning architectures that haven’t been tried yet — it’s an active research area. For example, the seq2seq model often used in Machine Translation would probably do well on this task. The reason we are going for the Dual Encoder is because it has been reported to give decent performance on this data set. This means we know what to expect and can be sure that our implementation is correct. Applying other models to this problem would be an interesting project.
+The Dual Encoder LSTM we’ll build looks like this (paper):
+
+Duel Encoder
+It roughly works as follows:
+Both the context and the response text are split by words, and each word is embedded into a vector. The word embeddings are initialized with Stanford’s GloVe vectors and are fine-tuned during training (Side note: This is optional and not shown in the picture. I found that initializing the word embeddings with GloVe did not make a big difference in terms of model performance).
+Both the embedded context and response are fed into the same Recurrent Neural Network word-by-word. The RNN generates a vector representation that, loosely speaking, captures the “meaning” of the context and response (c and r in the picture). We can choose how large these vectors should be, but let’s say we pick 256 dimensions.
+We multiply c with a matrix M to “predict” a response r’. If c is a 256-dimensional vector, then M is a 256×256 dimensional matrix, and the result is another 256-dimensional vector, which we can interpret as a generated response. The matrix M is learned during training.
+We measure the similarity of the predicted response r’ and the actual response r by taking the dot product of these two vectors. A large dot product means the vectors are similar and that the response should receive a high score. We then apply a sigmoid function to convert that score into a probability. Note that steps 3 and 4 are combined in the figure.
+To train the network, we also need a loss (cost) function. We’ll use the binary cross-entropy loss common for classification problems. Let’s call our true label for a context-response pair y. This can be either 1 (actual response) or 0 (incorrect response). Let’s call our predicted probability from 4. above y’. Then, the cross entropy loss is calculated as L= −y * ln(y’) − (1 − y) * ln(1−y’). The intuition behind this formula is simple. If y=1 we are left with L = -ln(y’), which penalizes a prediction far away from 1, and if y=0 we are left with L= −ln(1−y’), which penalizes a prediction far away from 0.
+For our implementation we’ll use a combination of numpy, pandas, Tensorflow and TF Learn (a combination of high-level convenience functions for Tensorflow).
+DATA PREPROCESSING
+The dataset originally comes in CSV format. We could work directly with CSVs, but it’s better to convert our data into Tensorflow’s proprietary Example format. (Quick side note: There’s alsotf.SequenceExample but it doesn’t seem to be supported by tf.learn yet). The main benefit of this format is that it allows us to load tensors directly from the input files and let Tensorflow handle all the shuffling, batching and queuing of inputs. As part of the preprocessing we also create a vocabulary. This means we map each word to an integer number, e.g. “cat” may become 2631. The TFRecord files we will generate store these integer numbers instead of the word strings. We will also save the vocabulary so that we can map back from integers to words later on.
+Each Example contains the following fields:
+context: A sequence of word ids representing the context text, e.g. [231, 2190, 737, 0, 912]
+context_len: The length of the context, e.g. 5 for the above example
+utterance A sequence of word ids representing the utterance (response)
+utterance_len: The length of the utterance
+label: Only in the training data. 0 or 1.
+distractor_[N]: Only in the test/validation data. N ranges from 0 to 8. A sequence of word ids representing the distractor utterance.
+distractor_[N]_len: Only in the test/validation data. N ranges from 0 to 8. The length of the utterance.
+The preprocessing is done by the prepare_data.py Python script, which generates 3 files:train.tfrecords, validation.tfrecords and test.tfrecords. You can run the script yourself or download the data files here.
+CREATING AN INPUT FUNCTION
+In order to use Tensorflow’s built-in support for training and evaluation we need to create an input function — a function that returns batches of our input data. In fact, because our training and test data have different formats, we need different input functions for them. The input function should return a batch of features and labels (if available). Something along the lines of:
+def input_fn():
+# TODO Load and preprocess data here
+return batched_features, labels
+Because we need different input functions during training and evaluation and because we hate code duplication we create a wrapper called create_input_fn that creates an input function for the appropriate mode. It also takes a few other parameters. Here’s the definition we’re using:
+def create_input_fn(mode, input_files, batch_size, num_epochs=None):
+def input_fn():
+# TODO Load and preprocess data here
+return batched_features, labels
+return input_fn
+The complete code can be found in udc_inputs.py. On a high level, the function does the following:
+Create a feature definition that describes the fields in our Example file
+Read records from the input_files with tf.TFRecordReader
+Parse the records according to the feature definition
+Extract the training labels
+Batch multiple examples and training labels
+Return the batched examples and training labels
+DEFINING EVALUATION METRICS
+We already mentioned that we want to use the recall@k metric to evaluate our model. Luckily, Tensorflow already comes with many standard evaluation metrics that we can use, including recall@k. To use these metrics we need to create a dictionary that maps from a metric name to a function that takes the predictions and label as arguments:
+def create_evaluation_metrics():
+eval_metrics = {}
+for k in [1, 2, 5, 10]:
+eval_metrics[“recall_at_%d” % k] = functools.partial(
+tf.contrib.metrics.streaming_sparse_recall_at_k,
+k=k)
+return eval_metrics
+Above, we use functools.partial to convert a function that takes 3 arguments to one that only takes 2 arguments. Don’t let the name streaming_sparse_recall_at_k confuse you. Streaming just means that the metric is accumulated over multiple batches, and sparse refers to the format of our labels.
+This brings is to an important point: What exactly is the format of our predictions during evaluation? During training, we predict the probability of the example being correct. But during evaluation our goal is to score the utterance and 9 distractors and pick the best one — we don’t simply predict correct/incorrect. This means that during evaluation each example should result in a vector of 10 scores, e.g. [0.34, 0.11, 0.22, 0.45, 0.01, 0.02, 0.03, 0.08, 0.33, 0.11], where the scores correspond to the true response and the 9 distractors respectively. Each utterance is scored independently, so the probabilities don’t need to add up to 1. Because the true response is always element 0 in array, the label for each example is 0. The example above would be counted as classified incorrectly by recall@1because the third distractor got a probability of 0.45 while the true response only got 0.34. It would be scored as correct by recall@2 however.
+
+Ai Models
+BOILERPLATE TRAINING CODE
+Before writing the actual neural network code I like to write the boilerplate code for training and evaluating the model. That’s because, as long as you adhere to the right interfaces, it’s easy to swap out what kind of network you are using. Let’s assume we have a model functionmodel_fn that takes as inputs our batched features, labels and mode (train or evaluation) and returns the predictions. Then we can write general-purpose code to train our model as follows:
+estimator = tf.contrib.learn.Estimator(
+model_fn=model_fn,
+model_dir=MODEL_DIR,
+config=tf.contrib.learn.RunConfig())
+input_fn_train = udc_inputs.create_input_fn(
+mode=tf.contrib.learn.ModeKeys.TRAIN,
+input_files=[TRAIN_FILE],
+batch_size=hparams.batch_size)
+input_fn_eval = udc_inputs.create_input_fn(
+mode=tf.contrib.learn.ModeKeys.EVAL,
+input_files=[VALIDATION_FILE],
+batch_size=hparams.eval_batch_size,
+num_epochs=1)
+eval_metrics = udc_metrics.create_evaluation_metrics()
+# We need to subclass theis manually for now. The next TF version will
+# have support ValidationMonitors with metrics built-in.
+# It’s already on the master branch.
+class EvaluationMonitor(tf.contrib.learn.monitors.EveryN):
+def every_n_step_end(self, step, outputs):
+self._estimator.evaluate(
+input_fn=input_fn_eval,
+metrics=eval_metrics,
+steps=None)
+eval_monitor = EvaluationMonitor(every_n_steps=FLAGS.eval_every)
+estimator.fit(input_fn=input_fn_train, steps=None, monitors=[eval_monitor])
+Here we create an estimator for our model_fn, two input functions for training and evaluation data, and our evaluation metrics dictionary. We also define a monitor that evaluates our model every FLAGS.eval_every steps during training. Finally, we train the model. The training runs indefinitely, but Tensorflow automatically saves checkpoint files in MODEL_DIR, so you can stop the training at any time. A more fancy technique would be to use early stopping, which means you automatically stop training when a validation set metric stops improving (i.e. you are starting to overfit). You can see the full code in udc_train.py.
+Two things I want to mention briefly is the usage of FLAGS. This is a way to give command line parameters to the program (similar to Python’s argparse). hparams is a custom object we create in hparams.py that holds hyperparameters, nobs we can tweak, of our model. This hparams object is given to the model when we instantiate it.
+CREATING THE MODEL
+Now that we have set up the boilerplate code around inputs, parsing, evaluation and training it’s time to write code for our Dual LSTM neural network. Because we have different formats of training and evaluation data I’ve written a create_model_fn wrapper that takes care of bringing the data into the right format for us. It takes a model_impl argument, which is a function that actually makes predictions. In our case it’s the Dual Encoder LSTM we described above, but we could easily swap it out for some other neural network. Let’s see what that looks like:
+def dual_encoder_model(
+hparams,
+mode,
+context,
+context_len,
+utterance,
+utterance_len,
+targets):
+# Initialize embedidngs randomly or with pre-trained vectors if available
+embeddings_W = get_embeddings(hparams)
+# Embed the context and the utterance
+context_embedded = tf.nn.embedding_lookup(
+embeddings_W, context, name=”embed_context”)
+utterance_embedded = tf.nn.embedding_lookup(
+embeddings_W, utterance, name=”embed_utterance”)
+# Build the RNN
+with tf.variable_scope(“rnn”) as vs:
+# We use an LSTM Cell
+cell = tf.nn.rnn_cell.LSTMCell(
+hparams.rnn_dim,
+forget_bias=2.0,
+use_peepholes=True,
+state_is_tuple=True)
+# Run the utterance and context through the RNN
+rnn_outputs, rnn_states = tf.nn.dynamic_rnn(
+cell,
+tf.concat(0, [context_embedded, utterance_embedded]),
+sequence_length=tf.concat(0, [context_len, utterance_len]),
+dtype=tf.float32)
+encoding_context, encoding_utterance = tf.split(0, 2, rnn_states.h)
+with tf.variable_scope(“prediction”) as vs:
+M = tf.get_variable(“M”,
+shape=[hparams.rnn_dim, hparams.rnn_dim],
+initializer=tf.truncated_normal_initializer())
+# “Predict” a response: c * M
+generated_response = tf.matmul(encoding_context, M)
+generated_response = tf.expand_dims(generated_response, 2)
+encoding_utterance = tf.expand_dims(encoding_utterance, 2)
+# Dot product between generated response and actual response
+# (c * M) * r
+logits = tf.batch_matmul(generated_response, encoding_utterance, True)
+logits = tf.squeeze(logits, [2])
+# Apply sigmoid to convert logits to probabilities
+probs = tf.sigmoid(logits)
+# Calculate the binary cross-entropy loss
+losses = tf.nn.sigmoid_cross_entropy_with_logits(logits, tf.to_float(targets))
+# Mean loss across the batch of examples
+mean_loss = tf.reduce_mean(losses, name=”mean_loss”)
+return probs, mean_loss
+The full code is in dual_encoder.py. Given this, we can now instantiate our model function in the main routine in udc_train.py that we defined earlier.
+model_fn = udc_model.create_model_fn(
+hparams=hparams,
+model_impl=dual_encoder_model)
+That’s it! We can now run python udc_train.py and it should start training our networks, occasionally evaluating recall on our validation data (you can choose how often you want to evaluate using the — eval_every switch). To get a complete list of all available command line flags that we defined using tf.flags and hparams you can run python udc_train.py — help.
+INFO:tensorflow:training step 20200, loss = 0.36895 (0.330 sec/batch).
+INFO:tensorflow:Step 20201: mean_loss:0 = 0.385877
+INFO:tensorflow:training step 20300, loss = 0.25251 (0.338 sec/batch).
+INFO:tensorflow:Step 20301: mean_loss:0 = 0.405653
+…
+INFO:tensorflow:Results after 270 steps (0.248 sec/batch): recall_at_1 = 0.507581018519, recall_at_2 = 0.689699074074, recall_at_5 = 0.913020833333, recall_at_10 = 1.0, loss = 0.5383
+…
+EVALUATING THE MODEL
+After you’ve trained the model you can evaluate it on the test set using python udc_test.py — model_dir=$MODEL_DIR_FROM_TRAINING, e.g. python udc_test.py — model_dir=~/github/chatbot-retrieval/runs/1467389151. This will run the recall@k evaluation metrics on the test set instead of the validation set. Note that you must call udc_test.py with the same parameters you used during training. So, if you trained with — embedding_size=128 you need to call the test script with the same.
+After training for about 20,000 steps (around an hour on a fast GPU) our model gets the following results on the test set:
+recall_at_1 = 0.507581018519
+recall_at_2 = 0.689699074074
+recall_at_5 = 0.913020833333
+While recall@1 is close to our TFIDF model, recall@2 and recall@5 are significantly better, suggesting that our neural network assigns higher scores to the correct answers. The original paper reported 0.55, 0.72 and 0.92 for recall@1, recall@2, and recall@5 respectively, but I haven’t been able to reproduce scores quite as high. Perhaps additional data preprocessing or hyperparameter optimization may bump scores up a bit more.
+MAKING PREDICTIONS
+You can modify and run udc_predict.py to get probability scores for unseen data. For example python udc_predict.py — model_dir=./runs/1467576365/ outputs:
+Context: Example context
+Response 1: 0.44806
+Response 2: 0.481638
+You could imagine feeding in 100 potential responses to a context and then picking the one with the highest score.
+CONCLUSION
+In this post we’ve implemented a retrieval-based neural network model that can assign scores to potential responses given a conversation context. There is still a lot of room for improvement, however. One can imagine that other neural networks do better on this task than a dual LSTM encoder. There is also a lot of room for hyperparameter optimization, or improvements to the preprocessing step. The Code and data for this tutorial is on Github, so check it out.
+Resources:
+dennybritz/chatbot-retrieval
+chatbot-retrieval - Dual LSTM Encoder for Dialog Response Generation
+github.com
+Denny’s Blogs: http://blog.dennybritz.com/ & http://www.wildml.com/
+Mark Clark: https://www.linkedin.com/in/markwclark
+Final Word
+I hope you have found this Condensed NLP Guide Helpful. I wanted to publish a longer version (imagine if this was 5x longer) however I don’t want to scare the readers away.
+As someone who develops the front end of bots (user experience, personality, flow, etc) I find it extremely helpful to the understand the stack, know the technological pros and cons and so to be able to effectively design around NLP/NLU limitations. Ultimately a lot of the issues bots face today (eg: context) can be designed around, effectively.
+If you have any suggestions on regarding this article and how it can be improved, feel free to drop me a line.
+Let’s Hack Chatbots Together
+Creator of 10+ bots, including Smart Notes Bot. Founder of Chatbot’s Life, where we help companies create great chatbots and share our insights along the way.
+Want to Talk Bots? Best way to chat directly and see my latest projects is via my Personal Bot: Stefan’s Bot.
+Chatbot Projects
+Currently, I’m consulting a number of companies on their chatbot projects. To get feedback on your Chatbot project or to Start a Chatbot Project, contact me."
+8,"What We Learned Designing a Chatbot for Banking
+The truth about online banking interfaces is that they are usually terribly complex. Chatbots make it easy.",chatbot,https://chatbotsmagazine.com/what-we-learned-designing-a-chatbot-for-banking-2dd2c51d7c2c,"For the past year we were working on a concept of conversational interface for an online banking system that we called K2 Bank. Check out the video below with a prototype of it:
+
+Here I want to talk about some things that we have learned along the way while designing it, and I hope it can inspire you and help you working with chatbots. You can find more about our solution in this article.
+The Future of Digital Banking
+K2 agency presents a new way of personal banking: K2 Bank powered by Stanusch Technologies.
+medium.com
+(Also please check out our project on Behance.)
+Conversational UIs Are a Great Way to Simplify the Experience
+The truth about online banking interfaces is that they are usually terribly complex. And banks are often thinking: the more features we have, the better. But from our experience (and we have a lot of experience working on banking systems), 99% of tasks users wants to carry out using the online banking systems are:
+check my balance
+check my recent history of transactions
+make a simple money transfer
+We wanted to optimize for these three most frequent scenarios. So you can find your accounts and recent history available from the main screen of K2 Bank, but nothing more. All other features are accessible by asking a bot.
+For rarely used commands it can be actually easier to put them into words than to find them navigating complex GUIs (for example: “cancel my credit card” — is it under “cards”, “settings”, “contact”, or somewhere else?)
+
+Discoverability and Shortcuts Are Very Important to Conversational UIs
+In theory Natural Language Processing engine should understand everything the user is trying to say in their natural language. And this technology is now pretty advanced.
+But new users need to understand the scope of what they can ask a BankBot. (This can be accomplished in part through a thoughtful on-boarding process.) On the other hand the power users would want to use shortest commands and shortcuts for the most frequent tasks.
+Both discoverability and speed can be improved by:
+a) Autocomplete — at most you need to type two or three letters and the system will present you with a list of options matching your query — past recipients’ names or commands.
+
+b) A menu. You can always click on the “burger” icon near the input field to bring a menu with a list of the most important commands and just select one of them. This works similar to typing “/” (slash) in Slack.
+
+You Will Need Some UI Device to Present Larger Lists of Information
+Conversational interfaces are great at presenting small chunks of relevant information, but sometimes we need to display larger sets of data, which users want to browse.
+For more on UI, Read “The Bot Playbook”
+Do you remember an ancient game by iD Software called Quake? Of course you do! It was the first FPP shooter with true 3D graphics, and it was groundbreaking. And Quake also had one cool UI device called “Quake Console”. If you pressed the tilde key (“~”) it opened a command line interface sliding down from the top of the screen. Then you could type your commands into the Quake Console, for example: “changelevel <map>”.
+
+Quake Console
+When we were designing the K2 Bank interface we also asked ourselves a question: do we really need to store the history of all conversations with the BankBot?
+We have adapted this concept into our design, splitting the screen into two halves at certain moments. But for us the command line interface is the main way of interaction, and the “console” is a way to present a long lists of items like history, products or list of applications. It is visible, in example, on the home screen, where the bottom half of it is a command line interface with BankBot welcome message, with the top half being a recent history of transactions. You can expand the “console” and scroll up through your history or ignore it and just talk to your BankBot.
+
+When we were designing the K2 Bank interface we also asked ourselves a question: do we really need to store the history of all conversations with the BankBot? The answer was: not really, who cares what you have asked a bot a year ago? We need to store history of real transactions, and conversation history could only be confined to a single session.
+Processes with Lots of Options Are Hard to Adapt for Conversational UIs
+This part is really important. A good conversational user interface is not a simple adaptation of your forms with a bot asking a question for every possible form field, most of them optional. It will be a nightmare and a waste of time.
+With banking, even in a case of a simple money transfer form, there are a lot of options you probably would not want to touch in most cases, but sometimes you have to, like date, currency, address, or even a title. So we have to come up with smart defaults that you can change if you really need to, but usually you don’t need to edit them at all.
+A hybrid interface works best: part conversational, part point and click.
+Featured CBM: Banking with Artificial Intelligence
+We Need to Provide Users with a Sense that They Are in Charge of the System
+We found out that in interaction with bots it is easy to lose the feeling of being in full control of everything. We needed to provide stop gaps for the users to confirm or cancel certain processes, so they would be fully aware that they are in charge. This is especially important when we are dealing with money. So at some moments the input line is replaced with “Accept”/”Cancel” buttons and no other actions are possible.
+
+Some Personality is Nice, but Don’t Over Do it
+We believe banking is generally lacking humanity and it is perceived as very “stiff” business. You have to ask: why so serious?
+Sure, money is a serious issue, but some personality, friendliness and humor can help. We designed a robot character as a representation of BankBot and living “logo” for K2 Bank: a cute, friendly little helper. We wanted very simple physical shape: a sphere or some kind of a cylinder with a big face (not a screen), made from plastic material like a toy. Not very human-like, because that will take us into the “uncanny valley” territory. It needed to work in large and small sizes (e.g. on mobile). Three dimensional rendering is a nice contrast against otherwise very simple and flat UI.
+
+BankBot uses anti-gravity propulsion to move around!
+After you sign in to your account the robot becomes a part of the logo, and is at the periphery of yours awareness. In the main stream of communication BankBot is represented by a flat vector icon. We don’t want to be Mr. Clippy!
+We also found out that the response times are very important for how the bot is perceived. If it is answering too quickly it ruins an illusion of talking to a human-like being. If it is too slow the bot is perceived as not too smart.
+
+Some early sketches of BankBot in a form of a sphere
+The Real Power of Conversational Interfaces Is the Bots Acting Proactive
+You can talk to chatbots in natural language, and that’s awesome, but they can also talk to you on their own when they have something important to tell you. Proactive behavior is what makes a bot an intelligent assistant.
+Your personal banking robo-assistant can:
+remind you about important payments
+periodically inform you about the state of your budget
+suggest how to save money
+inform you about financial products that are best fitted for you
+provide an investment portfolio update
+deliver important, time sensitive notifications.
+
+We shouldn’t message users too often — only when we know that the update is important to them, we need their decision or action, or it is at their best interest. Treat the users with respect and try to be helpful, and it can be a beginning of a great human-robot friendship :)
+For more, check out: Conversational Banking: From Branches to Bots
+Want to Know More? Talk to Us!
+
+K2 Internet is a leading digital product design and communications agency in Poland. We develop digital services, apps and websites with a strong focus on user experience. We have a long-time experience partnering with financial institutions — in the last 10 years we helped to envision, design and develop over 10 transactional systems for the biggest banks in Poland."
+9,"How I designed, developed, and deployed a chatbot entirely in the cloud",chatbot,https://medium.com/free-code-camp/how-i-designed-developed-and-deployed-a-chatbot-entirely-in-the-cloud-a60614eb94f2,"It all started with a YouTube video I recorded few months back. In it, I talked about the importance of deliberate revision. This helps you retain things in your mind for a longer period of time, and gives you techniques to revise important projects. If you haven’t, please watch it here.
+In the video, I talked about how frequently you should revise, what the heck is the forgetting curve, and why you should care.
+I wanted to give you guys a proper tool, in addition to the video, so that you can revise better. Being a developer, my natural response was “Let’s write an app!”
+But if you’ve read my other article about why native apps are doomed, you know I was a bit reluctant to write a standalone app for this. I took a step back and analyzed the situation. I needed a back-end to store users’ data and a front-end to collect and show that data.
+I wanted the user on-boarding to be as frictionless as possible. Forcing users to download a new app is hard. If I built a chatbot, it would serve that purpose and I wouldn’t have to convince anyone to download anything. I would also save some time since I wouldn’t have to build a standalone client app and go through app stores’ processes.
+You can try the bot I built here.
+Let’s cut to the chase and talk about the process. Read on to see how my chatbot went from an idea to a fully working product — entirely using cloud-based tools.
+Quest #1: AI and NLP
+Natural Language Processing (NLP) and AI are integral parts of any smart chatbot. So, I knew from the start that I’d require AI and NLP to make my bot “smart” and something you could talk to. It should also understand what you are asking it to do. I come from a full stack development background and I have zero experience with Machine Learning, AI or NLP. But for this bot, all of these things were necessities.
+Being a tech enthusiast, I always keep tabs on what tools and libraries the Biggies are launching. I was aware of Wit.ai, an online API, released by Facebook for enabling NLP in your apps and bots. I played around with it for a while but found it particularly hard.
+I quickly searched for other alternatives and found Api.ai. I played around with it and found it more developer-friendly, so I went with it.
+Here’s what exactly you do with these ai APIs:
+First, you write down a probable conversation which can happen between your bot and a person.
+Based on that conversation, you create an exclusive flow-diagram (or something like that) which handles all the outcomes of the conversation.
+You program the Api.ai agent to handle all the pre-defined outcomes using its dashboard. It’s simple enough — once you learn it.
+Note: You can call on custom logic, which resides in your secure back-end, if API.ai’s built-in handlers can’t handle your use case. In the case of Revisebot, I was storing each user’s learning history and calculating what topics the user should revise next. This required custom calculations and persistence mechanisms.
+
+Revisebot’s NLP using Api.ai
+Api.ai also offers some pre-built agents, such as small talk and weather agents, which can answer users’ queries about weather and other topics. These are plug-n-play things which you can readily use in your chatbots.
+Since Revisebot needed to handle custom use cases, I had to write some code. Time to churn out some JavaScript/Node.js code. Yay!
+Quest #2: Cloud Hosting
+I am a long time user of Digital Ocean, but it costs around $6/month at a minimum. Since I wasn’t hoping to make money off of Revisebot, hosting it on Digital Ocean didn’t make sense. I’d be losing money on a monthly basis.
+I needed a free cloud host for this project. I knew Firebase offered free hosting (as I’ve used it in the past). I have also used Open Shift as well, for other projects (mostly Laravel). But I thought it would be a great idea to Google some other alternatives, at least for the sake of Node.js.
+That’s when I came across Heroku and its free plan.
+In no time, I learned that Heroku’s Node.js integration is awesome. So I read their docs and quickly spun up a Node.js app on their free dynamo. It was enough for my needs. Its only limitation was that it sleeps after a while, so the first API call might fail while the dynamo is waking up from sleep. But I adapted my chatbot to respond to such scenarios.
+Quest #3: MongoDB in the cloud
+I had been contemplating learning some MongoDB. So I decided to use MongoDB as the database for my chatbot. A chat app is a good use case for MongoDB’s document-based storage system.
+My plan ran into a little roadblock when I discovered that Heroku does not offer MongoDB integration for free. No worries — I went back to my friend Google and searched for a “Free MongoDB cloud.”
+That’s how I came to know about mLabs, which offers free MongoDB instances in the cloud.
+Their free plan is not recommended for production ready apps, but that’s OK. I’m gonna run my chatbot on the free plan anyway.
+Quest #4: Cloud IDE
+My plan was to code the entire thing up in whatever free time I had after my full time job. Because of this, I needed the flexibility of coding from anywhere. So my developer workspace needed to reside in the cloud, which I could load up from anywhere I had internet.
+I’ve been using cloud-based IDEs for quite a while and the experience is mixed. Nitrous.io was awesome but they shut it down. :( After trying some online IDEs like cloud9 and codeanywhere, the one that I found most stable and developer-friendly was Codenvy. It offers workspaces which you can create or destroy at your own will.
+So I created a new Ubuntu-based workspace in Codenvy and installed node, npm, git and curl right away. Codenvy offers a terminal as well, so Linux users feel right at home. My developer workspace in the cloud was all set.
+Next, I git-cloned my project’s repository from Heroku, and set up the DB integration with mLab’s MongoDB instance using .env files. As you can see in the screenshot below, blooming-escarpment-58368 was my Heroku Node.js project.
+
+Coding revisebot in Codenvy.io
+Quest #5: Integrating the chatbot with Social Media APIs
+The chatbot was supposed to work with Facebook Messenger and Slack. I would have to learn the developer APIs for both platforms and set up my development machine for testing the API calls. Luckily, Api.ai also offers easy one-click integration with most of the social media platforms. You just have to follow their documentation to bring your chatbot to the specified platform.
+
+Social Media Integration for Revisebot
+As you can see in the screenshot above, I’ve integrated Revisebot with Facebook Messenger and Slack, as of now. This step won’t take long, believe me.
+Using these tools, I was able to write, test and deploy the entire ecosystem of my chatbot (the DB, the application layer, the front-end and the AI agent) to react to users’ queries.
+But there were still some pieces left in order to make Revisebot a complete, finished product.
+Quest #6: Source Code Management
+Although I was the only developer working on this chatbot, I needed to store the code somewhere safe. Git was an obvious choice for source code and version control management, but GitHub does not offer a free, private repository. Revisebot was not supposed to be an open-source venture, so I could not host the source code there. Additionally, as I was not using a local development machine, I couldn’t use any local git repo to store my code on.
+Back in the day, I played around with bitbucket.org. I had some idea that they offered a free private repository, but wasn’t sure if they still offered any such plans. I went to their site and found that they did. The rest is pretty self-explanatory.
+Quest #7: Graphic Assets
+Design and graphics sit at the core of any digital product. I needed a logo, background images, and cover images for my chatbot’s Facebook page, Slack app store listing, and homepage.
+I am not a designer by any means, so I needed some help. I had to choose the color palette and icons, mix shapes together to create a logo, and more.
+Luckily, there is a helpful tool for this called Canva.
+It offers ready-made design templates for social media, YouTube, and logos which you can customize according to your needs. I created Revisebot’s logo, entirely in Canva, using free shapes and some creativity. I think I did fine.
+
+Revisebot’s Logo, built using Canva.com
+I also used some of their free templates to create other visual assets for Revisebot like a Facebook cover image.
+So that’s how I coded and deployed a fully working chatbot, which can help you schedule your revision, entirely in the cloud.
+It costs me exactly $0 to run this service.
+Let me know if you have any questions regarding my project.
+*No local machines were engaged in the making of this chatbot.
+If you liked this post, kindly give me some claps and follow me for more posts like this one. You should also subscribe to my YouTube channel, if you like developing digital things."
+10,How to nail a great chatbot experience,chatbot,https://thinkgrowth.org/how-to-nail-a-great-chatbot-experience-7bbfd98026d6,"Even though it felt like the entire world was building a next generation experience using chat bots in 2017, the reality is that we’re at the beginning of a slow-burn revolution that’s going to take decades.
+Chat-bots are here to stay, but they aren’t the overnight paradigm shift some thought they would be for one reason: they’re hard to pull off. Chat-bots are revolutionary because they feel like a more human way to interact with our devices, but that’s what makes it so easy to get wrong.
+Not only are there massive technical challenges — such as understanding user intent from free-form text — it’s a whole new paradigm for design: what do you do when there’s very little interface? For designers working on chat, text itself is now one of the only canvases they have, making it the most powerful tool in the modern design kit.
+Over the last year I've worked directly on a handful of chat-first interfaces with big brands personally, and wanted to look at what makes a great chat experience, from beginning to end.
+It's incredibly easy to build a bot but not something that people actually want to willingly use — it all comes down to the way the user experiences it and whether or not it’s getting in the way of actually getting the job done.
+KLM and our new robot ticketing overlords
+One of the first big brands in the world to wholeheartedly embrace chatbots was KLM, the national Dutch airline, which is often hailed for being an early adopter to new technology.
+The company has one of the best chatbots available, and it has a good reason for caring so much about it: the company employs more than 230 dedicated agents to reply on social media.
+With more than 100,000 mentions publicly every week, the sheer impact of being able to quickly solve simple questions with the use of artificial intelligence and chatbots is clear.
+KLM has invested heavily in both chatbots and A.I tools to solve messages as quickly and precisely as possible, but has spent a lot on developing marketing tools as well — to the point that you can book almost your entire flight via Facebook Messenger!
+Not only is the KLM chatbot a fantastic thing to use, it actually seems easier than booking via the website, which can often be clumsy and confusing as you're trying to figure out which button will do what you want it to.
+Here's what makes KLM's bot so good, and how other brands could learn.
+Don't just assume a single intent
+
+A common mistake I've seen from other companies that use chatbots is assuming that users who land on their bot will understand it — or have the same intentions.
+This often leads to high failure rates as people just argue with the bot, which doesn't understand their request, or they close the conversation immediately.
+KLM's bot understands this risk, so immediately offers the user a choice of where to go; is the query about support, booking a flight or something else?
+Even if the other options end up with a human, this is a fantastic way to figure out where to route the user internally without any humans involved.
+Handle ambiguous responses
+
+If you choose Book Your Flight, which is what this bot is made for, KLM lets you type where you'd like to go.
+This is basically every bot developer's worst nightmare, because users could say anything right now, and the bot is left to interpret it based on a very limited understanding of what could happen next.
+
+Even being vague doesn’t break KLM’s bot
+Even if you get the user to write something you’re expecting into the text box, most people tend to type something vaguer than you’d hope at this point — leaving it with you to figure out the specifics of their answer.
+I ended up naturally typing New Zealand without the actual city I was planning to visit — and I expected the worst but found myself surprised: they'd thought of this scenario.
+A good bot development project — particularly from the UX writing side — will consider all of the different weirdness that could eventuate here, and KLM did this right.
+Not only did KLM ask for more specifics politely, they nailed combining the two separate data points to figure out what I meant, rather than forcing me to enter the full destination myself all over again.
+Your words are everything
+When you’re building a chatbot, your words are everything. They’re the beginning and end of your user’s experience with you, so you can’t afford any misinterpretations, dead ends or confusing phrasing.
+I’ve written the UX copy for a number of chatbots, and your use of language should be the principle consideration before writing a single line of code. I noted a number of places that KLM uses great copy to guide the user, so let’s walk through them.
+1.KLM sets expectations immediately by making it clear it’s a bot through the use of an emoji and in a friendly tone explaining its own limitations.
+
+By doing this, the user already feels comfortable, but understands something might go wrong, so is far more willing to be patient because they know it’s not perfect yet.
+2.KLM uses a smart, subtle trick to win points from users: repeating what the bot understands to be the correct query back to them before continuing.
+Once you’ve figured out dates and destination, for example, KLM spells the search out, offering an opportunity to correct any mistakes. This may seem tedious, but there’s a great trick behind this.
+Think of the times you’ve used Siri and how frustrating it is when she gets it wrong; if a computer is trying to be human and makes a mistake, the illusion is ruined immediately. By leveraging subtle language cues, KLM able to avoid the computer giving the wrong answer before it happens, and maintain the illusion that we’re getting everything right, even if it isn’t perfect.
+3.KLM does a great job of helping you along the way with the wording it uses. When you’re given the chance to respond in free form, the chatbot guides you on how it expects you to respond.
+
+Dates are particularly hard, because there’s so many formats humans can respond in
+These types of cues avoid frustration on the user’s part and make it easier on the developer’s side: predictable input is the best input, and trying to figure out if 11/04/2018 is the 11th of April 2018, or 4th of November 2018 is impossible if you’ve got customers around the world.
+It’s useful beyond the first interaction
+
+A common area these bots fall over in is a lack of awareness of the user beyond that first interaction.
+Often chatbots don’t understand who you actually are because they are unable to access data from existing backends.
+KLM thought of this, and their bot is able to be useful beyond day one: you can choose to receive travel updates in one place and get your boarding pass without leaving it.
+While it’s still fairly limited, this a great example of extending a conversational interface beyond just that first chat, and keeping users engaged long-term.
+It’s harder than you think
+When Facebook launched its chatbot platform, there was a deluge of different bots to try, but many of them were a frustrating experience. As it turned out, many brands jumped on the hype train without really considering the nuances involved in building a great experience.
+KLM is a rare example of a chatbot done well. While it’s not perfect, it’s a fantastic way to search for flights that doesn’t feel more cumbersome to use than its app or website — which is the entire point in the first place.
+If you’re considering building a chatbot, sweat the details and more than anything else, focus on the words you use. Your phrasing is the beginning and end of a great chatbot story, and it’s key to whether or not it succeeds."

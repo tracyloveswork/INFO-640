@@ -1,0 +1,107 @@
+doc_id,title,term,url,text
+1,Embodied conversational agents,conversational agents,https://books.google.com/books?hl=en&lr=&id=tHiKZGh9t7sC&oi=fnd&pg=PA1&dq=%22conversational+agent%22&ots=D--NoZfGBs&sig=wnROHZ3evb6aEz2wF73iMlqavr8,"Embodied conversational agents are computer-generated cartoonlike characters that demonstrate many of the same properties as humans in face-to-face conversation, including the ability to produce and respond to verbal and nonverbal communication. They constitute a type of (a) multimodal interface where the modalities are those natural to human conversation: speech, facial displays, hand gestures, and body stance; (b) software agent, insofar as they represent the computer in an interaction with a human or represent their human users in a computational environment (as avatars, for example); and (c) dialogue system where both verbal and nonverbal devices advance and regulate the dialogue between the user and the computer. With an embodied conversational agent, the visual dimension of interacting with an animated character on a screen plays an intrinsic role. Not just pretty pictures, the graphics display visual features of conversation in the same way that the face and hands do in face-to-face conversation among humans. This book describes research in all aspects of the design, implementation, and evaluation of embodied conversational agents as well as details of specific working systems. Many of the chapters are written by multidisciplinary teams of psychologists, linguists, computer scientists, artists, and researchers in interface design. "
+2,A conversational agent as museum guide–design and evaluation of a real-world application,conversational agents,https://link.springer.com/chapter/10.1007/11550617_28,"This paper describes an application of the conversational agent Max in a real-world setting. The agent is employed as guide in a public computer museum, where he engages with visitors in natural face-to-face communication, provides them with information about the museum or the exhibition, and conducts natural small talk conversations. The design of the system is described with a focus on how the conversational behavior is achieved. Logfiles from interactions between Max and museum visitors were analyzed for the kinds of dialogue people are willing to have with Max. Results indicate that Max engages people in interactions where they are likely to use human-like communication strategies, suggesting the attribution of sociality to the agent."
+3,Simulating the emotion dynamics of a multimodal conversational agent,conversational agents,https://link.springer.com/chapter/10.1007/978-3-540-24842-2_15,"We describe an implemented system for the simulation and visualisation of the emotional state of a multimodal conversational agent called Max. The focus of the presented work lies on modeling a coherent course of emotions over time. The basic idea of the underlying emotion system is the linkage of two interrelated psychological concepts: an emotion axis – representing short-time system states – and an orthogonal mood axis that stands for an undirected, longer lasting system state. A third axis was added to realize a dimension of boredom. To enhance the believability and lifelikeness of Max, the emotion system has been integrated in the agent’s architecture. In result, Max’s facial expression, gesture, speech, and secondary behaviors as well as his cognitive functions are modulated by the emotional system that, in turn, is affected by information arising at various levels within the agent’s architecture."
+4,Greta. a believable embodied conversational agent,conversational agents,https://link.springer.com/content/pdf/10.1007/1-4020-3051-7_1.pdf,"1. INTELLIGENT BELIEVABLE EMBODIED CONVERSATIONAL AGENTS
+A wide area of research on Autonomous Agents is presently devoted to the
+construction of ECAs, Embodied Conversational Agents (Cassell et al. 2000;
+Pelachaud & Poggi, 2001). An ECA is a virtual Agent that interacts with a User or
+another Agent through multimodal communicative behavior. It has a realistic or
+cartoon-like body and it can produce spoken discourse and dialogue, use voice with
+appropriate prosody and intonation, exhibit the visemes corresponding to the words
+uttered, make gestures, assume postures, produce facial expression and
+communicative gaze behavior.
+An ECA is generally a Believable Agent, that is, one able to express emotion
+(Bates, 1994) and to exhibit a given personality (Loyall & Bates, 1997). But,
+according to recent literature (Trappl & Payr, in press; de Rosis et al., in press a), an
+Agent is even more believable if it can behave in ways typical of given cultures,
+and if it has a personal communicative style (Canamero & Aylett, in press; Ruttkay
+et al., in press). This is, in fact, what makes a human a human. More, an ECA must
+be interactive, that is, take User and context into account, so as to tailor interaction
+onto the particular User and context at hand.
+In an ECA that fulfils these constraints the communicative output, that is, the
+particular combination of multimodal communicative signals displayed (words,
+prosody, gesture, face, gaze, body posture and movements) is determined by
+different aspects: a. contents to communicate, b. emotions, c. personality, d. culture,
+e. style, f. context and User sensitivity. At each moment of a communicative
+interaction, all of these aspects combine with each other to determine what the
+Agent will say, and how.
+In this paper we show how these aspects of an ECA can be modeled in terms of a
+belief and goal view of human communicative behavior. We then illustrate Greta, an
+ECA following these principles which is being implemented in the context of the
+EU project MagiCster1.
+2. WHAT AND HOW WE COMMUNICATE
+Before focusing on the Agent’s dialogue, let us see how a single move can be
+represented and simulated. An Agent S (Sender) generates a set of beliefs - about itself or about external objects and events - and has the goal to make Agent A (the
+Addressee) believe them. To achieve this, S produces a set of communicative signals
+(for example words, gestures, gaze, head, face and body behavior), taken from its
+communicative repertoire and temporally ordered in a particular way.
+Now, what are the beliefs an Agent may conceive to communicate? What is the
+structure of its communicative repertoire? What are the rules for the temporal
+ordering and synchronization of different signals? But also: how does the system go
+from the input – a set of beliefs – to the output – that particular arrangement of
+words, voice, hands, body, face signals? In fact, our communicative repertoire is
+very complex, in order for us to modulate our communication in a very sophisticated
+way. For example, words have formal and informal variants, connotations, positive
+or negative, tender or insulting nuances; and not only is the verbal lexicon so rich,
+but we can also communicate by subtly different intonations, gestures, facial
+expression, gaze, posture, spatial behavior.
+In each move of a dialog, how do we choose the best way to communicate, the
+combination of verbal and non verbal signals that are most fit to express our
+communicative goal? How do we activate the goal of using that given word,
+replacing it with a gesture or using both to communicate our meaning?
+According to a goal and belief model of social action (Conte & Castelfranchi,
+1995), choice, that is, the decision to pursue a goal instead of another is determined
+by the relative values attached to the alternative goals. But the value of a goal in its
+turn stems from the value of its superordinate goals, or from the algebraic sum of the
+values of two or more of them. So, whoever discovers his car was stolen might
+shout. But if this happens to someone who is just starting a work where he needs his
+car, his shout will be sharper or longer and his utterance more aggressive. In other
+words, resources we specifically use in a given communicative situation (a gesture
+in the place of a word, a very colloquial term instead of a more formal one) are
+determined by a number of permanent and contingent factors.
+3. PERMANENT AND CONTINGENT FACTORS
+As an Agent enters a communicative interaction, having the goal of
+communicating some meanings, two kinds of factors affect the final aspect of
+his/her communication: permanent and contingent ones (Table 1). The former are
+the goals and resources coming from the Senders’ biological and cultural
+endowment, that are always active in them; the latter are the goals activated and the
+resources provided by the contingent situation in which the Senders communicate.
+Long-lasting internal resources are (1) personality, (2) social identity (age,
+gender, cultural roots) and (3) cognitive traits. Among them, we may distinguish (4)
+innate and (5) culturally learned features: innate ones may be (6) a higher or lower
+capacity of making inferences, different reasoning styles (more abstract, intuitive, or
+imaginative); or (7) the different aptitudes, partly depending on neurological
+dispositions, towards musical, mathematical, visual or linguistic skills."
+5,Embodied conversational agent-based kiosk for automated interviewing,conversational agents,https://www.tandfonline.com/doi/abs/10.2753/MIS0742-1222280102,"We have created an automated kiosk that uses embodied intelligent agents to interview individuals and detect changes in arousal, behavior, and cognitive effort by using psychophysiological information systems. In this paper, we describe the system and propose a unique class of intelligent agents, which are described as Special Purpose Embodied Conversational Intelligence with Environmental Sensors (SPECIES). SPECIES agents use heterogeneous sensors to detect human physiology and behavior during interactions, and they affect their environment by influencing human behavior using various embodied states (i.e., gender and demeanor), messages, and recommendations. Based on the SPECIES paradigm, we present three studies that evaluate different portions of the model, and these studies are used as foundational research for the development of the automated kiosk. The first study evaluates human-computer interaction and how SPECIES agents can change perceptions of information systems by varying appearance and demeanor. Instantiations that had the agents embodied as males were perceived as more powerful, while female embodied agents were perceived as more likable. Similarly, smiling agents were perceived as more likable than neutral demeanor agents. The second study demonstrated that a single sensor measuring vocal pitch provides SPECIES with environmental awareness of human stress and deception. The final study ties the first two studies together and demonstrates an avatar-based kiosk that asks questions and measures the responses using vocalic measurements."
+6,CALMsystem: a conversational agent for learner modelling,conversational agents,https://link.springer.com/chapter/10.1007/978-1-84800-086-5_7,"This paper describes a system which incorporates natural language technologies, database manipulation and educational theories in order to offer learners a Negotiated Learner Model, for integration into an Intelligent Tutoring System. The system presents the learner with their learner model, offering them the opportunity to compare their own beliefs regarding their capabilities with those inferred by the system. A conversational agent, or “chatbot” has been developed to allow the learner to negotiate over the representations held about them using natural language. The system aims to support the metacognitive goals of self-assessment and reflection, which are increasingly seen as key to learning and are being incorporated into UK educational policy. The paper describes the design of the system, and reports a user trial, in which the chatbot was found to support users in increasing the accuracy of their self-assessments, and in reducing the number of discrepancies between system and user beliefs in the learner model. Some lessons learned in the development have been highlighted and future research and experimentation directions are outlined."
+7,Welbo: An embodied conversational agent living in mixed reality space,conversational agents,https://dl.acm.org/citation.cfm?id=633299,"This paper introduces a new type of anthropomorphic agent that lives in a 3D space where the real and virtual worlds are seamlessly merged. In this mixed reality (MR) space, people wearing a see-through head-mounted display can interact with both physical and virtual objects in real time. In this type of MR space, an embodied conversational agent, named ""Welbo,"" is implemented to study how agent technology contributes. This agent has several unique features, compared with the conventional desktop agent."
+8,Olga-A conversational agent with gestures,conversational agents,https://www.researchgate.net/profile/Jonas_Beskow/publication/2782400_Olga_-_a_Conversational_Agent_With_Gestures/links/546c9f330cf21e510f63ee16.pdf,"The Olga project has developed an animated agent interface for information services. The interface
+combines a graphical interface, spoken dialogue and an animated 3D ‘human-like’ character for
+multimodal input and output. The interaction is intelligently managed using techniques derived from
+spoken dialogue but extended for the graphical modality. The Olga agent is innovative in combining
+a spoken dialogue system with a 3-D animated character using lip-synthronized synthetic speech and
+gesturing. Particular attention has been paid to ensuring that the behaviour of the agent is
+immediately comprehensible for the user. Synchronizing speech with mouth movements increases
+intelligibility, while facial and gesturing realize the agent’s internal states and focus of the dialogue."
+9,Managing context in a conversational agent,conversational agents,https://www.researchgate.net/profile/Claude_Sammut/publication/220465339_Managing_Context_in_a_Conversational_Agent/links/0a85e537b13457fc41000000.pdf,"This paper describes a conversational agent, called “ProBot”,
+that uses a novel structure for handling context. The ProBot
+is implemented as a rule-based system embedded in a Prolog
+interpreter. The rules consist of patterns and responses, where
+each pattern matches a user’s input sentence and the response is
+an output sentence. Both patterns and responses may have attached Prolog expressions that act as constraints in the patterns
+and can invoke some action when used in the response. The main
+contributions of this work are in the use of hierarchies of contexts
+to handle unexpected inputs. The ProBot is also interesting in
+its link to an underlying engine capable of implementing deeper
+reasoning, which is usually not present in conversational agents
+based on shallow parsing."
+10,Delivering Cognitive Behavior Therapy to Young Adults With Symptoms of Depression and Anxiety Using a Fully Automated Conversational Agent (Woebot): A Randomized Controlled Trial,conversational agents,https://mental.jmir.org/2017/2/e19,"Web-based cognitive-behavioral therapeutic (CBT) apps have demonstrated efficacy but are characterized by poor adherence. Conversational agents may offer a convenient, engaging way of getting support at any time.
+
+Objective: The objective of the study was to determine the feasibility, acceptability, and preliminary efficacy of a fully automated conversational agent to deliver a self-help program for college students who self-identify as having symptoms of anxiety and depression.
+
+Methods: In an unblinded trial, 70 individuals age 18-28 years were recruited online from a university community social media site and were randomized to receive either 2 weeks (up to 20 sessions) of self-help content derived from CBT principles in a conversational format with a text-based conversational agent (Woebot) (n=34) or were directed to the National Institute of Mental Health ebook, “Depression in College Students,” as an information-only control group (n=36). All participants completed Web-based versions of the 9-item Patient Health Questionnaire (PHQ-9), the 7-item Generalized Anxiety Disorder scale (GAD-7), and the Positive and Negative Affect Scale at baseline and 2-3 weeks later (T2).
+
+Results: Participants were on average 22.2 years old (SD 2.33), 67% female (47/70), mostly non-Hispanic (93%, 54/58), and Caucasian (79%, 46/58). Participants in the Woebot group engaged with the conversational agent an average of 12.14 (SD 2.23) times over the study period. No significant differences existed between the groups at baseline, and 83% (58/70) of participants provided data at T2 (17% attrition). Intent-to-treat univariate analysis of covariance revealed a significant group difference on depression such that those in the Woebot group significantly reduced their symptoms of depression over the study period as measured by the PHQ-9 (F=6.47; P=.01) while those in the information control group did not. In an analysis of completers, participants in both groups significantly reduced anxiety as measured by the GAD-7 (F1,54= 9.24; P=.004). Participants’ comments suggest that process factors were more influential on their acceptability of the program than content factors mirroring traditional therapy.
+
+Conclusions: Conversational agents appear to be a feasible, engaging, and effective way to deliver CBT."

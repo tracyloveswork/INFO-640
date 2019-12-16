@@ -1,0 +1,99 @@
+doc_id,title,term,url,text
+1,Work–life boundary management and the personal digital assistant,personal digital assistant,https://journals.sagepub.com/doi/abs/10.1177/0018726707076698,"New mobile information and communication technologies are of special interest to researchers seeking to understand the problematic of boundaries between work and personal-life. This study examines how workers used and interpreted the personal digital assistant (PDA) as a boundary management resource. Using a protocol that combined structured, closed-ended questions with open-ended questions, 42 users were interviewed. The data were analyzed to examine individuals' practices in using this technology, the interpretive resources they drew upon, and the ways in which the spirit of the device's design intersected with their practices and interpretations. Results suggest that the spirit of the device is control, and that users interpreted their technological practices as expressions of personal agency, using the PDA to control the work—life boundary through both integration and segmentation of work and personal-life."
+2,Evaluation of personal digital assistant software for drug interactions,personal digital assistant,https://academic.oup.com/ajhp/article-abstract/61/4/380/5143908,"The accuracy, comprehensiveness, and ease of use of drug interaction software used with personal digital assistants (PDAs) were studied.
+
+Methods. Each program was assessed for accuracy using 40 clinically important and 40 clinically unimportant drug interaction pairs. Accuracy was scored through the summation of software sensitivity, specificity, and positive and negative predictive values. The comprehensiveness of each program was determined by the number of components in the drug interaction monograph. Time needed to identify the management of five important drug interactions defined each program's ease of use. The aggregate scores for accuracy, comprehensiveness, and ease of use were calculated.
+
+Results. Scoring 777 and 756 out of a possible 800 points, iFacts and Lexi-lnteract, respectively, provided the most competent, complete, use-friendly compendia for assessment of drug interactions. Mosby's Drug Consult and Mobile Micromedex ranked third and fourth, scoring 688 and 655 points, respectively, while ePocrates Rx v. 6.0 rated seventh, with a score of 559. All drug interaction resources suffer from limitations in the quality or relevance of evidence for the interaction, an absence of identifiable patient and medication risk factors, and a lack of standardization in assigning significance to the interaction. Consequently, clinicians must interpret the importance of the interaction based on all available evidence. Discussion of such evidence was available for only iFacts and Lexi-Interact.
+
+Conclusion. Both iFacts and Lexi-Interact excelled as PDA pharmacopoeia for assessing drug interactions. However, clinicians should understand the limitations of all current drug interaction resources and exercise vigilance in prevention and recognition of interactions relevant to their patients."
+3,"Too little, too early: Introduction timing and new product performance in the personal digital assistant industry",personal digital assistant,https://journals.sagepub.com/doi/abs/10.1177/002224379703400105,"The authors address the following key questions: (1) When should a firm introduce a new product? (2) What should its performance level be? and (3) How do the decisions of a competing firm affect a firm's timing and product performance decisions? The authors present a detailed case study of the initial competitors in the personal digital assistant (PDA) industry on the basis of which they construct a stylized game-theoretic model of entry timing and product performance level decisions in a duopoly. Situations in which the duopolists are symmetric as well as asymmetric in terms of their estimates of market size and product development capabilities are considered. When firms are symmetric, the authors show that an equilibrium exists when the firms enter at different times with different performance levels. In the asymmetric cases, the firm that has a higher estimate of market size enters first, as does the firm with a superior development process. The performance level decisions, however, depend on the sensitivity of demand to this variable. The results provide one explanation for empirical observations that market pioneers maintain their leadership in some cases, and later entrants eventually dominate in other cases. The authors then relate the model results to actual decisions in the PDA market, finding that Apple's Newton was “too little, too early.”"
+4,Using a personal digital assistant to increase independent task completion by students with autism spectrum disorder,personal digital assistant,https://link.springer.com/article/10.1007/s10803-009-0761-0,"In this study, a personal digital assistant (PDA) with picture, auditory, and video prompts with voice over, was evaluated as a portable self-prompting device for students with autism spectrum disorder (ASD). Using a multiple probe design across three cooking recipes and replicated with three students with ASD, the system was tested for its effectiveness in increasing independent performance across the multiple step tasks. In addition, data were recorded for the number and types of prompts used by the students across time. Results indicate that the students with ASD were able to adjust the prompt levels used on the PDA and to maintain their ability to use the device to independently complete recipes over time."
+5,The use of the Personal Digital Assistant (PDA) among personnel and students in health care: a review,personal digital assistant,https://www.jmir.org/article/view/1038/1,"Health care personnel need access to updated information anywhere and at any time, and a Personal Digital Assistant (PDA) has the potential to meet these requirements. A PDA is a mobile tool which has been employed widely for various purposes in health care practice, and the level of its use is expected to increase. Loaded with suitable functions and software applications, a PDA might qualify as the tool that personnel and students in health care need. In Sweden today, despite its leadership role in mobile technologies, PDAs are not commonly used, and there is a lack of suitable functions and software applications.
+
+Objective: The aim of the present review was to obtain an overview of existing research on the use of PDAs among personnel and students in health care.
+
+Methods: The literature search included original peer-reviewed research articles written in English and published from 1996 to 2008. All study designs were considered for inclusion. We excluded reviews and studies focusing on the use of PDAs in classroom situations. From March 2006 to the last update in May 2008, we searched PubMed, CINAHL, Cochrane, IngentaConnect, and a local search engine (ELIN@Kalmar). We conducted a content analysis, using Nielsen’s Model of System Acceptability as a theoretical framework in structuring and presenting the results.
+
+Results: From the 900 references initially screened, 172 articles were selected and critically assessed until 48 articles remained. The majority originated in North-America (USA: n=24, Canada: n=11). The categories which emerged from our content analysis coincided to a certain extent to Nielsen’s Model of System Acceptability (social and practical acceptability), including usefulness (utility and usability) subcategories such as learnability, efficiency, errors, and satisfaction. The studies showed that health care personnel and students used PDAs in patient care with varied frequency. Most of the users were physicians. There is some evidence that the use of a PDA in health care settings might improve decision-making, reduce the numbers of medical errors, and enhance learning for both students and professionals, but the evidence is not strong, with most studies being descriptive, and only 6 randomized controlled trials. Several special software programs have been created and tested for PDAs, and a wide range of situations for their use have been reported for different patient groups. Drug and medical information were commonly accessed by PDA users, and the PDA was often viewed as the preferred tool when compared to paper-based documents. Some users regarded the PDA easy to operate, while others found it difficult in the beginning.
+
+Conclusions: This overview of the use of PDAs revealed a positive attitude towards the PDA, which was regarded as a feasible and convenient tool. The possibility of immediate access to medical information has the potential to improve patient care. The PDA seems to be a valuable tool for personnel and students in health care, but there is a need for further intervention studies, randomized controlled trials, action research, and studies with various health care groups in order to identify its appropriate functions and software applications."
+6,Survey assessment of personal digital assistant use among trainees and attending physicians,personal digital assistant,https://academic.oup.com/jamia/article-abstract/10/6/605/763048,"Limited information is available on personal digital assistant (PDA) use patterns in medical settings. Recognizing that use patterns may be important considerations for development of handheld-based information systems, the authors characterized PDA use at their institution. A survey was mailed to all internal medicine physicians at the Mayo Clinic, Rochester, Minnesota, in May 2002. PDA use prevalence, user demographics, hardware preferences, and work setting and application use frequencies were assessed for respondents reporting current PDA use. Use patterns of trainees (residents and subspecialty fellows) and attending physicians were compared. Trainees reported more frequent PDA use in the hospital setting and for direct patient care. Attending physicians reported more frequent PDA use in administrative settings and for calendar functions. These findings may reflect differences in the information needs and work roles of learners and experienced physicians. Such factors may be important considerations for the development and implementation of institutional PDA resources."
+7,Performance of health status measures with a pen based personal digital assistant,personal digital assistant,https://ard.bmj.com/content/64/10/1480.short,"Increasing use of self reported health status in clinical practice and research, as well as patient appreciation of monitoring fluctuations of health over time, suggest a need for more frequent collection of data. Electronic use of health status measures in the follow up of patients is a possible way to achieve this.
+
+Objective: To compare self reported health status measures in a personal digital assistant (PDA) version and a paper/pencil version for test–retest reliability, agreement between scores, and feasibility.
+
+Methods: 30 patients with stable rheumatoid arthritis (mean age 61.6 years, range 49.8 to 70.0; mean disease duration, 16.7 years; 63% female; 67% rheumatoid factor positive; 46.6% on disease modifying antirheumatic drugs) completed self reported health status measures (pain, fatigue, and global health on visual analogue scales (VAS), rheumatoid arthritis disease activity index, modified health assessment questionnaire, SF-36) in a conventional paper based questionnaire version and on a PDA (HP iPAQ, model h5450). Completion was repeated after five to seven days.
+
+Results: Test–retest reliability was similar, as evaluated by the Bland–Altman approach, the coefficient of variation, and intraclass correlation coefficients. The scores showed acceptable agreement, but with a slight tendency to higher scores on VAS with the PDA than the paper/pencil version. No significant differences were seen for measures of feasibility (time to complete, satisfaction score), but 65.5% preferred PDA, 20.7% preferred paper, and 13.8% had no preference.
+
+Conclusions: The clinimetric performance of paper/pencil versions of self reported health status measures was similar to an electronic version, using an inexpensive PDA."
+8,Initial experience with a wireless personal digital assistant as a teleradiology terminal for reporting emergency computerized tomography scans,personal digital assistant,https://journals.sagepub.com/doi/abs/10.1258/1357633001933943,"A new type of terminal device, a wireless personal digital assistant (PDA) based on a GSM digital cellular phone, was used to transmit computerized tomography scans of 21 patients to a neuroradiologist. All transmitted images were suitable for a preliminary consultation and in one case a final report could be made. In 18 cases the findings were compatible with the reference film reading performed later and in three cases there were minor differences of no clinical importance. Transmission of a single image lasted 1 min 30 s and the transmission of a complete brain scan (14 images) took on average 21 min. The total process of transmission and interpretation of a brain examination series took on average 40 min. In this pilot study the neuroradiologist gained essential information in 24% of the cases and beneficial information in 62%. The neuroradiologist considered that the image consultation saved a hospital visit in 15 cases (71%). Although PDA technology is at an early stage of development and has numerous limitations, it is likely that future technical improvements will allow easier clinical consultations for neurosurgeons and neurologists."
+9,Adopting a personal digital assistant system: application of Lewin's change theory,personal digital assistant,https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2648.2006.03935.x,"This paper reports a study exploring nurses’ perceptions of adopting an information system using handheld computers (personal digital assistants) in their daily practice.
+
+Background. Handheld computers have recently been used in nursing information systems for patient care, but few studies have explored their impact on users. By understanding clinicians’ experiences of using this technology, strategies can be implemented to smooth the change process in adopting their use, thus achieving optimal patient outcomes.
+
+Method. A descriptive, exploratory approach was used to study nurses’ perceptions of using personal digital assistants as part of a hospital information system. A purposive sample of 15 nurses participated in one‐to‐one, in‐depth interviews from February to March 2004. Nurses’ perceptions of the adoption process were analysed using Lewin's force field theory of change as a framework.
+
+Findings. Nurses initially resisted using the personal digital assistant system (unfreezing stage), then came around to using it (moving stage), and finally adopted the system in their daily practice (re‐freezing stage). However, an anticipatory stage also occurred and this could serve as a feedback mechanism to improve the system for current and future use.
+
+Conclusion. Educational programmes should be provided and strategic planning should be done in the early stage of implementing a policy to adopt new technology. In addition, the adoption process and learning period could be shortened by improving the system's content design. During this transition stage, dual charting should be used as a backup only for a limited time to avoid adding extra work to nurses’ already heavy workload. Finally, the concept of confidentiality should be reinforced and stressed early in the educational programme to protect patient data, which can easily be accessed in computerized systems"
+10,Using a personal digital assistant to enhance the independence of an adolescent with Asperger syndrome,personal digital assistant,http://www.daddcec.org/Portals/0/CEC/Autism_Disabilities/Research/Publications/Education_Training_Development_Disabilities/2005v40_Journals/ETDD_200503v40n1p060-067_Using_Personal_Digital_Assistant_Enhance_Independence_Adolescent.pdf,"According to the Individuals with Disabilities
+Education Act Amendments of 1997 and the
+Technology-related Assistance for Individuals
+with Disabilities Act of 1988 as Amended in
+1994, school districts must provide technology
+and related services to support students with
+disabilities in the general education curriculum (Mirenda, Wilk, & Carson, 2000). This act
+introduced assistive technology as a means of
+helping individuals with disabilities overcome
+the obstacles that inhibit them from fully taking part in activities at school, home and the
+community, including enhancing tasks that
+involve memory and organization skills
+(Bremer & Rauch, 1998; Bull, Bull, Garofalo,
+& Harris, 2002; Lewis, 1998, 2000).
+Assistive technology includes a variety of
+supports ranging from augmentative communication devices to more commonly used
+desktop and laptop computers. One device
+that appears promising for students with disabilities is the PDA (Swan, Swan, & Van Hover,
+2002). The PDA, a handheld computer that
+mainly serves as a personal information organizer, allows data input via an on-screen keyboard or handwriting recognition program using a stylus. With multimedia capabilities, it is
+capable of playing both sound and video clips.
+Pictures and other visual representations are
+vivid and precise due, in part, to the highresolution color screens. In addition, the PDA
+can be hooked up to a computer to synchronize information and connected to network
+systems, including the Internet for exchanging e-mails and exploring the World Wide
+Web. In addition, portable keyboards can connect to the Pocket PC to create a discrete
+word-processing system, enabling information
+such as names, addresses, phone numbers,
+dates, and personal schedules to be stored for
+easy access and retrieval. Scheduling and time
+management programs are included as default functions in the PDA (Lewis, 1998; Swan
+et al.).
+Despite their use in the mainstream, few
+studies have been conducted on the impact of
+PDAs. Nevertheless, the following has been
+established to date. For individuals without
+disabilities, the PDA has assisted students in
+organizing classroom notes and preparing for
+tests (Norris & Soloway, 2003). PDAs have also
+been used to support individuals with special
+needs in career and leisure activities (Furniss
+et al., 2001) and to increase independence
+and self-determination (Davies, Stock, &
+Wehmeyer, 2002). Davies et al. found that
+persons with disabilities who used PDAs functioned more independently, learned more,
+and required less assistance from support personnel.
+The purpose of this study was to add to the
+literature base on PDA use with students with
+special needs. Specifically, this study was designed to determine whether a PDA could
+Correspondence concerning this article should
+be addressed to Brenda Smith Myles, Department of
+Special Education, University of Kansas, Joseph R.
+Pearson Building, 5th Floor, 1122 W. Campus Road,
+Lawrence, KS 66045-3101. E-mail: bmyles@ku.edu
+Education and Training in Developmental Disabilities, 2005, 40(1), 60 – 67
+© Division on Developmental Disabilities
+60 / Education and Training in Developmental Disabilities-March 2005
+enhance the independence of an adolescent
+with AS at home and at school."

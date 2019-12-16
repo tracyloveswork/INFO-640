@@ -1,0 +1,412 @@
+doc_id,title,term,url,text
+1,Voice User Interface (VUI) — A Definition,vui,https://medium.com/@Nikita_Tank/voice-user-interface-vui-a-definition-6e6b973c0ad6,"The Switch to Voice User Interface
+Each decade we have seen a new form of interaction between human and computer. If I go a little bit back in time, we were using mouse and keyboard to communicate or to talk with a computer. Then we started using touchscreen laptops and smartphones where there is no need for keyboard or mouse to interact with a device. Nowadays, laptops and computers have inbuilt VUI to communicate with a computer.
+Why VUI?
+Voice User Interface allows a user to interact with computer or mobile or other electronic devices through speech or voice commands. Voice or speech is an input/output for any VUI device. VUI is an interface of any speech recognition applications. Many Voice User Interface devices and voice examples are available on the market.
+Amazon Alexa, Echo Dot, Google Home, Google Mini, Siri, Cortana, and the Google Assistant are the examples of VUI devices which take voice /speech as an input and returns in the same manner. People use VUI device in their daily life one or another way.
+Voice Examples using the Alexa Tool
+1. The Capital One skill allows you to check your credit card balance or make a payment when one is due. This is secure: The skill performs security checks and requires you sign in using your username and password. Then, when you open the skill, you must provide a four-digit code to confirm your identity. Just be wary of who is around when using the skill — anyone who overhears you say your key can access your banking or credit card info just by asking Alexa.
+2. You can use IFTTT to push additions to your Amazon To-do List to Google Calendar, or you can use the Quick Events skill. Say something like “Alexa, tell Quick Events to add go to the grocery store tomorrow at 6” to add an event to your calendar.
+3. If you wear a Fitbit tracker on your wrist, you can enable the Fitbit skill. With this skill, you can ask Alexa about your progress or how you slept the night before. Before you can use the skill, however, you will need to link your Fitbit account by going to the skill page for Alexa and linking your account.
+I have mentioned a few skills of Amazon Alexa here, but you can ask about the weather, education, population and many more things. You can even play games! Amazon Alexa device offers Akinator. It can read your mind and tell you what character you are thinking about, just by asking a few questions. Think of a real or fictional character and Akinator will try to guess who it is. This is one of best games offered for Amazon Alexa. If you’re interested in creating your own Alexa skill, check out our paragraph on voice user interface design below.
+VUI Device
+Google Assistance(Android), Siri(Apple), Cortana(Microsoft) are available in smart device or laptop. Their functionality is almost same as Amazon Alexa. While Google Home, Google Mini, Amazon Alexa, Amazon Echo are the devices available in the market.
+Voice User Interface Design
+Does VUI sound very exciting to you? If you enjoyed the voice examples, I’ll bet you’re looking to get started right away. Some of you may be experienced developers while others have recently interacted with a Google Home or Alexa device and are looking to build your own bot. Look no further! Enter Botsociety.
+Botsociety is a conversational design tool that offers support for everything from Facebook Messenger and slack bots, to Google Assistant and Alexa. With Botsociety, you can effortlessly create a voice user interface design that will be impactful and hold real value. You can preview the paths and different ways a conversation between users and the bot you wish to build will take place."
+2,Everything You Should Know About Voice User Interface Design in 2018,vui,https://medium.com/hackernoon/everything-you-should-know-about-voice-user-interface-design-in-2018-2384451f2f5b,"Voice User Interface (VUI) has more and more effect in our daily lives. VUI designers should create a voice user interface that can provide a better user experience.
+Language is a communication method unique to human beings. We are now in the era of rapid development of artificial intelligence(AI) and will inevitably liberate our hands through the use of Voice User Interface (VUI). Voice User Interface is a major trend in 2018 and has become a part of our daily lives. VUI is used in smartphones, smarthomes, smart TVs, and a range of other products. All over the world, people are getting used to talking to Siri, Google Assistant, Cortana, or Bixby.
+
+With the rapid development in VUI, designers need to create a product that provides superior user experience. That is, if they want to get ahead of the competition.
+1. What is Voice Interface Design (VUI)?
+“A voice-user interface (VUI) makes human interaction with computers possible through a voice/speech platform in order to initiate an automated service or process.” VUI design focuses on the process of interaction design for the user and the voice application system. VUI is a user-facing interface, so it is vital that it meets the needs of the user.
+
+2. VUI is your personal voice assistant
+VUI will become your personal assistant. The development of new technologies will make it easier for designers and developers to provide tailored digital experiences. VUI will not only be your personal assistant, understand your current needs, but it will also predict your future needs. It involves all aspects of your life, even in areas you can’t imagine.
+
+3. What is the Voice User Interface Designer’s job?
+There is not much difference between VUI design and “traditional” web design. However, there are 3 main aspects VUI designers should focus on:
+Conduct user research to understand who and where (environment) the user is. Designers should also understand the entire communication process between the system and the terminal device from beginning to end;
+Designers should be responsible for product prototype design (Mockplus is a great example of a prototype design tool) and product description, describing the interaction between the system and the user.
+Designers should consider the requests that need to be processed when they describe the interactive behavior between the system and the user. Analyze the data to understand where the system has gone wrong. At the end of the day, designers need to continuously check and improve the system.
+
+4. 6 Basic principles for designing the Voice User Interface (VUI)
+Reduce cognitive overload for a better user experience
+Humans store audio as short-term memory. It is impossible for people to remember a lot of new information at once, so don’t overtax short-term memory.
+The voice device must understand the user’s main needs accurately and provide answers quickly.
+For example, the speech system asks the user: “What are your main symptoms”. The user answers: “A fever and a cold.”
+The system must understand that the user is talking about about two symptoms. It must then provide solutions for both symptoms.
+
+Information and user interface components must be presented to the user in a perceptible way.
+Create content that can be presented in different ways (such as a simple layout) without losing information or structure.
+Provides different ways to help users navigate, find information, and determine its location.
+
+5. Graphical User Interface (GUI) and Voice User Interface (VUI) make a better product
+The content of the GUI is mainly graphics and text, while the content of the VUI is mainly text. People interact with the GUI through clicks and gestures, while people interact with the VUI through dialogues. The VUI must understand what people are saying, then give the correct response.
+The VUI combined with the GUI helps simplify the entire navigation process and the selection and confirmation operations.
+
+Conclusion
+Voice User Interface design is a promising brand new field which provides solutions through voice control. With VUI and GUI combined, human-machine interaction can be enhanced and streamlined using input via facial expressions, gestures, and audio."
+3,Voice User Interface Insights,vui,https://blog.prototypr.io/voice-user-interface-insights-686fe441e425,"Imagine you have a new project in UX/UI and it is related to Voice User Interface (VUI) and you don´t know much about it. Here some info to help you with it!
+VUI Stats
+Why is voice a trend?
+Gartner says it, so it is a trend, no discussion: You can see it at the top left on the curve: “Virtual Assistants”.
+
+How do people know about Voice Assistants?
+You can see at Statista See here
+
+What do people use Voice Assistants for?
+See original here.
+
+
+Virtual Assistant Smartphone Penetration
+original here.
+
+Digital Assistant Market Expectation
+Source
+
+Trend studies about Voice User Interaction.
+Some good slides about VUI:
+Speak Easy Global Edition
+
+Voice assistants & smart speakers
+
+The Rise of Voice
+
+#AllAboutVoice A new era with new Business Opportunities
+
+Informe Altavoces Inteligentes
+
+IA for VUI: The Blueprints of Conversation
+
+Technical area for VUI
+Where to learn VUI specifications from different platforms?
+Now, let´s move to the technical part, so we can have a look at what the big ones recommend on VUI. These are Amazon Alexa, Google Assistant, Windows Cortana, Apple Siri
+Amazon, Alexa Voice Service (AVS)
+
+There´s a place for programmers at Platform for Alexa Voice Service (AVS)
+And for Designers, The Alexa Skills Kit. There´s even an online seminar: Situational Design: How Designing for Voice Differs from Designing for the Screen.
+The Voice Design Guide is very intuitive, points on Design process, what users say, how Alexa works, Design checklist, and a glossary. I recommend doing the whole tutorial. You can watch these videos as introduction:
+
+
+
+From the UX point of view, you work as in any other project, so you have your personas, your user journeys, your user flow and your intents. Understanding intents is critical if you want to develop Alexa Skills. If you don´t nothing about developing you can always use StoryLine which is the same with a graphical interface.
+Skills work same as Apps, you must have a developer account and once you have your skill ready, upload it to Amazon Alexa Skills platform. Then you can be approved or denied. The process is strict.
+Google Voice Assistant
+For Google the main concept of Conversation Design is about Actions
+
+There´s even a UI toolkit for Sketch. The site for Coversation Design has a step by step tutorial in order to develop your user personas, flows and dialogs. In fact, Google uses Dialogflow, Dialogflow is Google’s natural language understanding tool for building conversational experiences, such as voice apps and chatbots, powered by AI.
+
+Here´s the guide if you want to get started.
+The key point in Google Voice Assistant for me are the conversational components: all the things that make up a prompt, like acknowledgements or questions. They also include chips, which are used to continue or pivot the conversation. Prompts and chips are the core of the conversational interaction and should be designed for every turn in the dialog.
+And then you have visual components, these include cards, carousels, lists, and other visual assets. Visual components are useful if you’re presenting detailed information, but they aren’t required for every dialog turn. Cards are a must.
+Google/DialogFlow have a platform to make trials and tests and it works really good.
+Cortana Skills Documentation
+Although I have work with Alexa skills and Google Voice Assistant, I haven´t worked yet with this one, but do not understimate it.
+
+Clearly the orientation is for developers and for bot building.
+Siri, Human Interface Guidelines
+You can take a look at the website, there´s a Siri Kit explaining about intents and topics.
+
+The UX Point of view
+I would recommend two soucres:
+Nielsen Norman Group. They have several articles
+Smashing Magazine: Good examples of people who has already worked in the area of VUI
+More Resources
+If you still want more:
+There´s the Mobile Voice Usage Trends 2018 report from Stone Temple
+The 2017 Voice Report by Alpine (fka VoiceLabs)
+Conversational eCommerce by Capgemini
+Here’s a useful list of lists: as many guiding principles as we could find, all in one place. List compiled and edited by Ben Sauer
+Here´s a good compilation of nice tools to work with VUI"
+4,4 Lessons Mr. Rogers Taught Me About VUI Design,vui,https://blog.soundhound.com/4-lessons-mr-rogers-taught-me-about-vui-design-d6f30105f64,"Like so many other American children, I grew up watching the television show Mr. Rogers’ Neighborhood. The show was created and filmed at my local PBS member station WQED Pittsburgh. It’s where Fred Rogers got his start in public television. Since his rise to fame, Fred has become a legend across the country, but especially in the Pittsburgh area where his likeness is memorialized by many murals and statues throughout the city. Every time I’m home, I’m reminded of the impact Mr. Rogers’ Neighborhood and Fred himself continues to have, on my life and that of so many others.
+
+Since its wide release last year, the critically-acclaimed documentary film Won’t You Be My Neighbor? about the life and work of the late Fred Rogers brought this man and his teachings back into the limelight. Like me, many people reflected on how he became a role model for generations of children by addressing difficult subjects and aspects of human life with straightforward, honest messages.
+In the 2018 biography The Good Neighbor: The Life and Work of Fred Rogers, Maxwell King chronicles the story behind “Freddish” — a concept created by two writers of the show. With great success, they honed Fred Rogers’s voice by following these rules:
+“State the idea you wish to express as clearly as possible, and in terms preschoolers can understand.” Example: “It is dangerous to play in the street.”
+“Rephrase in a positive manner,” as in “It is good to play where it is safe.”
+“Rephrase the idea, bearing in mind that preschoolers cannot yet make subtle distinctions and need to be redirected to authorities they trust.” As in, “Ask your parents where it is safe to play.”
+Rephrase your idea to eliminate all elements that could be considered prescriptive, directive, or instructive.” (i.e., ask): “Your parents will tell you where it is safe to play.”
+“Rephrase any element that suggests certainty.” (i.e., will): “Your parents CAN tell you where it is safe to play.”
+“Rephrase your idea to eliminate any element that may not apply to ALL children (as in, having PARENTS): “Your favorite GROWN-UPS can tell you where it is safe to play.”
+“Add a simple motivational idea that gives preschoolers a reason to follow your advice”: “Your favorite GROWN-UPS can tell you where it is SAFE to play. It is good to listen to them.”
+“Rephrase your new statement, repeating Step One (i.e., GOOD as a personal value judgment): “Your favorite GROWNUPS can tell you where it is SAFE to play. It is important to try to listen to them.”
+“Rephrase your idea a final time, relating it to some phase of development a preschooler can understand (i.e., growing): “Your favorite GROWN-UPS can tell you where it is SAFE to play. It is important to try to listen to them. And listening is an important part of growing.”
+After reading about Freddish last year, I was astonished at the parallels between the Freddish rules and the voice user interface (VUI) brand guidelines my company (Voxable) helps our clients define.
+The three core components of VUI brands are:
+Voice - The quality of the words a VUI uses
+Tone - The way those words modulate for specific situations
+Persona - The character that embodies the voice and tone
+Similar to how the Freddish rules enabled different Mr. Rogers’ Neighborhood writers to come together to create a singular voice, tone, and persona for the show, well-defined VUI brand guidelines help a design team align to create a cohesive conversational experience for users.
+The Freddish rules inspired me to devise an exercise for the conversational design workshops that Voxable delivers to our clients. Voxable’s Freddish exercise centers around a VUI design team reflecting on how the Mr. Rogers’ Neighborhood writers established the Freddish rules, then working to understand or define their company’s brand and collectively creating a set of rules to describe how that brand speaks. The rules defined in this exercise are different for every team as they reflect each company’s unique brand direction.
+Regardless of client type or size, we’ve found every team wanting to create a cohesive VUI voice, tone, and persona benefits from these four Freddish-inspired tips:
+1. Know Your Audience
+Fred Rogers excelled at connecting with his audience because he understood how language affected them. Since his primary audience was children, he used simplistic, positive phrases to build trust and communicate his message. Fred Rogers knew that words mattered and respected the perceptiveness of children. The Good Neighbor describes Rogers’s attention to language:
+His secretary Elaine Lynch remembered how careful he was with each word. When one script referred to putting a pet “to sleep,” Rogers excised it for fear that children would be worried about going to sleep themselves.
+When building a VUI brand, it’s important for a design team to perform foundational research to understand the VUI’s audience just as Fred Rogers understood his audience. Talking directly with users to understand their needs, motivations, and emotions enables the team to create a conversational brand that resonates with those users.
+2. Start With the Core Meaning
+The first rule of Freddish is “State the idea you wish to express as clearly as possible…” which is a perfect place for VUI designers to start when creating a voice experience. VUIs often rely too heavily on conversational flourish which can get in the way of user understanding and usability. It’s essential for a design team to establish the VUI’s reason for existence, every user context the VUI will support, and the core meaning of prompts and responses the VUI delivers to users.
+A design team should only concentrate on establishing the VUI brand after a clear VUI use case has been vetted. The initial VUI designs, complete with sample scripts and flow diagrams, inform what’s generated during VUI brand development. Because natural language is so integral to the structure of a VUI, a design team should leverage real users’ voice interactions to generate Freddish exercise examples.
+3. Test the Language
+Every Freddish rule is accompanied by a clear example of how that rule is applied to a phrase and affects the language. Examples are an integral component to any brand guidelines because they provide concrete direction as to how to appropriately implement the guidelines. Collaborating to create examples is an important activity for a VUI design team to ensure alignment to the defined guidelines.
+A VUI design team should document a handful of examples across varying use cases for each VUI brand guideline they establish during the Freddish exercise. The process of negotiating language decisions amongst a team tests the defined VUI brand guidelines and helps team members grasp the nuances in language choices that affect the overall brand.
+4. Be Authentic
+Part of what makes Fred Rogers legendary is the authenticity in his message and desire to affect positive change through children. Mr. Rogers’ Neighborhood was crafted with a distinct purpose to teach children compassion for themselves and others and help them navigate the world better. Maxwell King describes Rogers’s essence in The Good Neighbor:
+This is Rogers’s signature message: feelings are all right, whatever is mentionable is manageable, however confusing and scary life may become. Even with death and loss and pain, it’s okay to feel all of it, and then go on.
+All aspects of Mr. Rogers’ Neighborhood aligned to that altruistic mission which is why the show was so effective and had such an impact.
+When creating the VUI brand, a design team must consider foundational brand elements like mission, vision, and values. It’s essential to explore the ways those values manifest in conversational interactions, and how the foundational elements affect the VUI’s language.
+Establishing words and concepts that are integral to the brand’s vision is helpful (For example, Mr. Rogers repeats the phrases, “Won’t you be my neighbor?” and “I like you just the way you are.”). Ensuring the VUI speaks authentically builds user trust and helps them understand the VUI’s capabilities most effectively.
+When Mister Rogers sang, “Won’t you be my neighbor?” at the start of every show, he was inviting the kids watching to share their thoughts and feelings about topics that mattered to them. Nothing was more important to him than making children in the extended “neighborhood” feel not only secure, but also “heard,” especially on topics parents might have a hard time grappling with, like the death of the family dog or sibling rivalry.
+— Maxwell King, The Good Neighbor: The Life and Work of Fred Rogers
+Regardless of a VUI design team’s size, aligning various team members to craft on-brand messages using consistent language is a significant challenge. Similar to how Fred Rogers and the Mr. Rogers’ Neighborhood writers created the Freddish rules, defining a set of documented VUI brand guidelines along with concrete examples of their practical use helps establish the VUI’s voice, tone, and persona for more uniform, user-focused messaging. When I think about the care and intention behind Fred Rogers’s communication with children, I’m inspired to design and galvanize other designers to create similarly effective VUI experiences with users.
+If you’d like to learn more about designing a successful VUI for your brand, take a look at SoundHound Inc.’s in-depth best practice guide.
+"
+5,Designing for the Ear,vui,https://medium.com/@AutomatedInsights/designing-for-the-ear-61629b205b06,"We are just now scratching the surface of incorporating voice user interface (VUI) with natural language generation (NLG) and the future landscape is an exciting one. By utilizing NLG, platforms such as Amazon’s Alexa can now have more human-like conversations.
+The current state of VUIs and voice user experience (VUX) leaves a lot to be desired. Most of the focus when designing a VUI that delivers a enjoyable VUX revolves around paying a lot of attention to a user’s potential requests. Responses however, typically sound awkward and very unnatural. By leveraging NLG, responses can become more human like, become conversational, and lead user’s on a unique journey through a skill. This leads to an optimal VUX.
+In January, Automated Insights and Amazon Alexa hosted the first conversational language hackathon, highlighting this new incorporation of NLG. Teams from around the country gathered at Automated Insights’ headquarters to teach Alexa new NLG based skills. Demonstrating cutting-edge integrations using Automated Insights’ Wordsmith platform and Alexa, projects analyzed company stocks, evaluated soccer plays, reported on a loved-one’s well-being, shared a child’s academic status, suggested television shows, music and concerts, and prepared a financial advisor for a client meeting.
+
+As the technology continues to evolve, product managers, designers, and writers of voice interfaces interested in making new NLG based Alexa skills need to change the way in which they design those new skills. Quite simply, it is time to start “designing for the ear.” When setting out to develop a new skill which utilizes NLG, it is important to keep three things in mind.
+Have a good user interface
+Make it sound human
+Keep it simple
+Building a Good User Interface
+Having a good user interface may seem like an easy tenet of designing a new skill for the Alexa platform. Often times, especially with a new kind of user interface where best practices are yet to be defined, this can be easily overlooked. It is essential to make functions discoverable.
+Building Faith
+As a user interacts with the device, the skill should offer suggestions that facilitate user discovery. Perhaps, including responses such as “Would you like to check your balance,” “Would you like to purchase more credits,” and the like offer a pathway to take a user deeper into the interface.
+Building trust with the user provides a great user experience. This can be achieved by a subtle or implicit confirmation of the user’s request. Provide responses that incorporate the user’s original question. “Buy tickets for the new Star Wars,” a user may state. Responding with, “Star Wars: Rogue One is playing at 7:30 and 9, which would you like?” lets the user psychologically build faith in the skill.
+Accounting for Question Variability
+Likewise, it is important to allow users to ask questions in different ways. For instance, if a user is attempting to check the balance within an account and ask, “How many credits do I have,” a bad response would be “I didn’t understand that, you can say ‘check your balance.’”
+By incorporating NLG into a new skill, the user’s seemingly vague question can be understood and appropriate responses can be utilized to guide the user through the depth of the new skill.
+Making a Skill Sound Human
+Sounding human seems like it should be easy, but it is incredibly easy to fall into the trap of providing only static responses. It is essential to adapt logically, providing insights rather than giving a user static information. For instance a bad response may look like, “You have 1000 credits. The average user has 600 credits.” Useful? Slightly. Human sounding? Not at all.
+Providing responses such as, “You are doing great! You have far more credits than the average user,” instills a conversational, human-like tone when responding to a user’s request.
+Responding in the same way every time sounds robotic. It’s important to naturally change word choice and sentence structure so that your responses don’t get stale. Using NLG, this is now possible and allows for personality to be incorporated right into the responses and provides the user with an incredible experience.
+The typical, robotic sounding error messages can benefit greatly from the use of NLG. Instead of responding to a user’s command with a similarly structured, “I’m sorry, I did not understand your request,” the platform can now suggest possible answers to an unrecognizable command. This allows the responses to adequately teach and guide the user.
+Keeping it Simple
+Being an early adopter on the forefront of a new and exciting integration of technology is exciting, but it is important to keep it relatively simple. Just like in good writing, it is important to keep it short. Be concise, be consistent. Use fewer clauses, as having too many independent clauses within sentences makes it hard for a user to parse the device’s response.
+This also introduces more instances for the text-to-speech engine to pause, making the conversation more awkward in tempo. Use simple, clear language. Don’t over complicate things with big words. Use language familiar to users, especially when your potential audience may include children. Simplicity is key."
+6,Job Prospects for Voice User Interface Design (VUI Design),vui,https://medium.com/@raffaelarein/job-prospects-for-voice-user-interface-design-vui-design-dd214574a5ae,"Since announcing our Voice User Interface Design course built in collaboration with Amazon Alexa, several people have asked about the job prospects for Voice UI Designers, so I decided to do some research.
+Being ready for the voice-first era is amongst the highest priorities for leading companies around the globe.
+Because of this there is a huge need for specialized talent who are ready for this next big frontier in technology. Googling the term “careers voice user interface design” yields 319 jobs on Indeed, 569 jobs on LinkedIn, and another 325 on Glassdoor.
+Looking a little further into it, I found that there are a gazillion other jobs around VUI that are not titled VUI, such as Siri Designer, Conversational Interface Designer, or Voice User Interface Engineer (which requires knowledge of UI/VUI as well as some coding such as C++). Often the job ads are simply titled ‘User Interface Designer’ and knowledge of VUI is then found in the job description.
+Companies hiring Voice UI Designers come from all areas, but there is a strong trend in automotive, electronics, enterprise systems and telecommunications industries — no big surprises there! However, over the next few years, voice design will become the norm in many other industries and help us to efficiently carry out many online transactions. As VentureBeat put it: “Texting, making a phone call, troubleshooting a wireless problem, showing me pictures from my vacation, researching a complex topic — they are all voice-enabled today to some extent, but not exactly voice-friendly yet.”
+“Amazon’s Alexa is everywhere at CES 2017” The Verge
+The Verge reported that this year’s Consumer Electronic Show, one of the world’s largest trade show for electronics, was dominated by voice services such as Amazon Alexa. From LG’s voice powered refrigerator, to Ford adding Alexa into its F-150, to Huawei putting Alexa apps into its phones by default, voice is everywhere. And where manufacturers have not yet launched a voice powered product, you can certainly bet that they are working on doing so at lightning speed.
+Still wondering if there are enough job prospects for Voice UI Designers?
+To summarize:
+Becoming voice-first is a top priority for companies today (instead of mobile-first).There is huge amount being invested into developing voice technologies, and a big need for talented designers who are ready to turn their hand to voice interactions.
+Voice interfaces are currently being deployed into products at ALL major companies in the automotive, electronics, enterprise systems and telecommunications sector.
+Specializing in VUI now will make you the go-to person for all things voice in your company and set you apart for at least the next decade
+
+If you liked this article, give it some love :)
+If you are interested in more information, I am currently working on putting together even more data and info on the job market for voice. Coming soon….
+Lastly, here you can check out our new course, the first comprehensive and mentored course on Voice User Interface Design built in collaboration with Amazon Alexa."
+7,Designing a VUI — Voice User Interface,vui,https://uxplanet.org/designing-a-vui-voice-user-interface-c0b3b9b57ace,"More and more voice-controlled devices, such as the Apple HomePod, Google Home, and Amazon Echo, are storming the market. Voice user interfaces are helping to improve all kinds of different user experiences, and some believe that voice will power 50% of all searches by 2020.
+Voice-enabled AI can take care of almost anything in an instant.
+“What’s next in my Calendar?”
+“Book me a taxi to Oxford Street.”
+“Play me some Jazz on Spotify!”
+All five of the “Big Five” tech companies — Microsoft, Google, Amazon, Apple, and Facebook — have developed (or are currently developing) voice-enabled AI assistants. Siri, the AI assistant for Apple iOS and HomePod devices, is helping more than 40 million users per month, and according to ComScore, one in ten households in the US already own a smart speaker today.
+Whether we’re talking about VUIs (Voice User Interfaces) for mobile apps or for smart home speakers, voice interactions are becoming more common in today’s technology, especially since screen fatigue is a concern.
+
+Echo Spot is Amazon’s latest smart speaker that combines a VUI with a GUI, comparable to the Echo Show.
+What Can Users Do with Voice Commands?
+Alexa is the AI assistant for voice-enabled Amazon devices like the Echo smart speaker and Kindle Fire tablet — Amazon is currently leading the way with voice technology (in terms of sales).
+On the Alexa store, some of the trendiest apps (called “skills”) are focused on entertainment, translation, and news, although users can also perform actions like request a ride via the Uber skill, play some music via the Spotify skill, or even order a pizza via the Domino’s skill.
+Another interesting example comes from commercial bank Capital One, which introduced an Alexa skill in 2016 and was the first bank to do so. By adding the Capital One skill via Alexa, customers can check their balance and due dates and even settle their credit card bill. PayPal took the concept a step further by allowing users to make payments via Siri on either iOS or the Apple HomePod, and there’s also an Alexa skill for PayPal that can accomplish this.
+But what VUIs can do, and what users are actually using them for, are two different things.
+ComScore stated that over half of the users that own a smart speaker use their device for asking general questions, checking the weather, and streaming music, closely followed by managing their alarm, to-do list, and calendar (note that these tasks are fairly basic by nature).
+As you can see, a lot of these tasks involve asking a question (i.e., voice search).
+
+Smart speaker usage in the US according to ComScore
+What Do Users Search for with Voice Search?
+People mostly use voice search when driving, although any situation where the user isn’t able to touch a screen (e.g., when cooking or exercising, or when trying to multitask at work), offers an opportunity for voice interactions. Here’s the full breakdown by HigherVisibility.
+
+Real-time traffic updates are becoming a lot easier while driving thanks to Google Assistant and Android Auto.
+Conducting User Research for Voice User Interfaces
+While it’s useful to know how users are generally using voice, it’s important for UX designers to conduct their own user research specific to the VUI app that they’re designing.
+Customer Journey Mapping
+User research is about understanding the needs, behaviors and motivations of the user through observation and feedback. A customer journey map that includes voice as a channel can not only help user experience researchers identify the needs of users at the various stages of engagement, but it can also help them see how and where voice can be a method of interaction.
+In the scenario that a customer journey map has yet to be created, the designer should highlight where voice interactions would factor into the user flow (this could be highlighted as an opportunity, a channel, or a touchpoint). If a customer journey map already exists for the business, then designers should see if the user flow can be improved with voice interactions.
+For example, if customers are always asking a certain question via social media or live support chat, then maybe that’s a conversation that can be integrated into the voice app.
+In short, design should solve problems. What frictions and frustrations do users encounter during a customer journey?
+VUI Competitor Analysis
+Through competitor analysis, designers should try to find out if and how competitors are implementing voice interactions. The key questions to ask are:
+What’s the use case for their app?
+What voice commands do they use?
+What are customers saying in the app reviews, and what can we learn from this?
+Requirements Gathering
+In order to design a voice user interface app, we first need to define the users’ requirements. Aside from creating a customer journey map and conducting competitor analysis (as mentioned above), other research activities such as interviewing and user testing can also be useful.
+For VUI design, these written requirements are all the more important since they will encompass most of the design specs for developers. The first step is to capture the different scenarios before turning them into a conversational dialog flow between the user and the voice assistant.
+An example user story for the news application could be:
+“As a user, I want the voice assistant to read the latest news articles so that I can be updated about what’s happening without having to look at my screen.”
+With this user story in mind, we can then design a dialog flow for it.
+
+The Anatomy of a Voice Command
+Before a dialog flow can be created, designers first need to understand the anatomy of a voice command. When designing VUIs, designers constantly need to think about the objective of the voice interactions (i.e., What is the user trying to accomplish in this scenario?).
+A users’ voice command consists of three key factors: the intent, utterance, and slot.
+Let’s analyze the following request: “Play some relaxing music on Spotify.”
+Intent (the Objective of the Voice Interaction)
+The intent represents the broader objective of a users’ voice command, and this can be either a low utility or high utility interaction.
+A high utility interaction is about performing a very specific task, such as requesting that the lights in the sitting room be turned off, or that the shower be a certain temperature. Designing these requests is straightforward since it’s very clear what’s expected from the AI assistant.
+Low utility requests are more vague and harder to decipher. For example, if the user wanted to hear more about Amsterdam, we’d first want to check whether or not this fits into the scope of the service and then ask the user more questions to better understand the request.
+In the given example, the intent is evident: The user wants to hear music.
+Utterance (How the User Phrases a Command)
+An utterance reflects how the user phrases their request. In the given example, we know that the user wants to play music on Spotify by saying “Play me…,” but this isn’t the only way that a user could make this request. For example, the user could also say, “I want to hear music … .”
+Designers need to consider every variation of utterance. This will help the AI engine to recognize the request and link it to the right action or response.
+Slots (the Required or Optional Variables)
+Sometimes an intent alone is not enough and more information is required from the user in order to fulfill the request. Alexa calls this a “slot,” and slots are like traditional form fields in the sense that they can be optional or required, depending on what’s needed to complete the request.
+In our case, the slot is “relaxing,” but since the request can still be completed without it, this slot is optional. However, in the case that the user wants to book a taxi, the slot would be the destination, and it would be required. Optional inputs overwrite any default values; for example, a user requesting a taxi to arrive at 4 p.m. would overwrite the default value of “as soon as possible.”
+Prototyping VUI Conversations with Dialog Flows
+Prototyping designers need to think like a scriptwriter and design dialog flows for each of these requirements. A dialog flow is a deliverable that outlines the following:
+Keywords that lead to the interaction
+Branches that represent where the conversation could lead to
+Example dialogs for both the user and the assistant
+A dialog flow is a script that illustrates the back-and-forth conversation between the user and the voice assistant. A dialog flow is like a prototype, and it can be depicted as an illustration (like in the example below), or there are prototyping apps that can be used to create dialog flows.
+
+A sample dialog flow illustrating the intent, slot and overall conversation
+Apps for Prototyping VUIs
+Once you’ve mapped out the dialog flows, you’re ready to prototype the voice interactions using an app. A few prototyping tools have entered the market already; for example, Sayspring makes it easy for designers to create a working prototype for voice-enabled Amazon and Google apps.
+
+Sayspring is a tool that makes it easy to prototype an Alexa Skill or Google Home Action
+Amazon also offers their own Alexa Skill Builder, which makes it easy for designers to create new Alexa Skills. Google offers an SDK; however, this is aimed at Google Action developers. Apple hasn’t launched their competing tool yet, but they’ll soon be launching SiriKit.
+
+Amazon’s Alexa Skill Builder, where designers can prototype VUIs for Alexa-enabled devices.
+UX Analytics for Voice Apps
+Once you’ve rolled out a “skill” for Alexa (or an “action” for Google), you can track how the app is being used with analytics. Both companies offer a built-in analytics tool; however, you can also integrate a third-party service for more elaborate analytics (such as voicelabs.co for Amazon Alexa, or dashbot.io for Google Assistant). Some of the key metrics to keep an eye out for are:
+Engagement metrics, such as sessions per user or messages per session
+Languages used
+Behavior flows
+Messages, intents, and utterances
+Practical Tips for VUI Design
+Keep the Communication Simple and Conversational
+When designing mobile apps and websites, designers have to think about what information is primary, and what information is secondary (i.e., not as important). Users don’t want to feel overloaded, but at the same time, they need enough information to complete their task.
+With voice, designers have to be even more careful because words (and maybe a relatively simple GUI) are all that there is to communicate with. This makes it especially difficult in the case of conveying complex information and data. This means that fewer words are better, and designers need to make sure that the app fulfills the users’ objective and stays strictly conversational.
+Confirm When a Task Has Been Completed
+When designing an eCommerce checkout flow, one of the key screens will be the final confirmation. This lets the customer know that the transaction has been successfully recorded.
+The same concept applies to VUI design. For example, if a user were in the sitting room asking their voice assistant to turn off the lights in the bathroom, without a confirmation, they’d need to walk into the sitting room and check, defeating the object of a “hands-off” VUI app entirely.
+In this scenario, a “Bathroom lights turned off” response will do fine.
+Create a Strong Error Strategy
+As a VUI designer, it’s important to have a strong error strategy. Always design for the scenario where the assistant doesn’t understand or doesn’t hear anything at all. Analytics can also be used to identify wrong turns and misinterpretations so that the error strategy can be improved.
+Some of the key questions to ask when checking for alternate dialogs:
+Have you identified the objective of the interaction?
+Can the AI interpret the information spoken by the user?
+Does the AI require more information from the user in order to fulfill the request?
+Are we able to deliver what the user has asked for?
+Add an Extra Layer of Security
+Google Assistant, Siri, and Alexa can now recognize individual voices. This adds a layer of security similar to Face ID or Touch ID. Voice recognition software is constantly improving, and it’s becoming harder and harder to imitate voice; however, at this moment in time, it may not be secure enough and an additional authentication may be required. When working with sensitive data, designers may need to include an extra authentication step such as fingerprint, password, or face recognition. This is especially true in the case of personal messaging and payments.
+
+Baidu’s Duer voice assistant is used in several KFC restaurants and uses face recognition to make meal suggestions based on age or previous orders.
+The Dawn of the VUI Revolution
+VUIs are here to stay and will be integrated into more and more products in the coming years. Some predict we will not use keyboards in 10 years to interact with computers.
+Still, when we think “user experience,” we tend to think about what we can see and touch. As a consequence, voice as a method of interaction is rarely considered. However, voice and visuals are not mutually exclusive when designing user experiences — they both add value.
+User research needs to answer the question on whether or not voice will improve the UX and, considering how quickly the market share for voice-enabled devices is rising, doing this research could be well worth the time and significantly increase the value and quality of an app.
+Understanding the Basics
+What is a tangible user interface?
+A tangible user interface is one that can be interacted with via taps, swipes and other physical gestures. Tangible user interfaces are commonly seen on touchscreen devices.
+What is a speech interface?
+A speech interface, better known as a VUI (Voice User Interface), is an invisible interface that requires voice to interact with it. A common device that has voice recognition software is the Amazon Alexa smart speaker.
+What does an Echo do?
+Amazon’s Echo smart speaker uses voice recognition software to help users perform tasks using voice interactions, even if they’re across the other side of the room. Echo smart speakers are powered by a voice assistant called Alexa, and VUI apps called “Skills.”"
+8,Building Voice-Enabled Prototypes in Framer,vui,https://blog.framer.com/building-voice-enabled-prototypes-in-framer-3c1c3e14938f,"I’d like to share how to make prototypes that can react to voice in Framer. My goal is to give you the tools to make VUI (voice user interface) prototypes quickly and easily. Don’t have Framer yet? Download a 14-day free trial to follow along with this tutorial.
+In Framer, you can make any layer—or more accurately any layer’s property—react to voice. By react to voice I mean react to the voice input volume that the microphone receives.
+Here’s a simple demonstration of the voice-enabled prototype. You can play around with it, change some properties, etc. It’s all up to you. 😉
+
+How it works
+To make all this magic happen, I used Web Audio API to handle all the audio-related stuff.
+If you’re interested in diving into the topic further, I added links to helpful articles at the end of this post.
+Please note: the prototype only works in browsers that support Web Audio API, which means that you’ll most likely need to run it on desktop.
+I also added some comments to the code of the demo prototype so you can better understand how everything works.
+How to use the prototype
+Next, I’ll explain how you can use the code from the prototype in your own creations.
+Let’s take a look at the respondToVoice function.
+
+As you can see, this function takes layer as a parameter. This layer here is what will actually be ‘reacting’ to voice input and changing in the ways you want. In the example below, we’ll be changing the scale and border width of our layer according to input voice volume.
+Make note of the following lines of code:
+
+What we’re doing here is setting the property value according to the current input volume. How does this actually work? Our layer has two states, inactive and active, and we need to animate it between the properties of these states. To do this, I’ve used Utils.modulate function:
+1. It takes incoming sound volume as the first parameter,
+2. and maps it from [0, MAX_VOLUME] range to value range between properties of active and inactive states. MAX_VOLUME is the maximum value of the input sound volume.
+Here’s an illustration that shows what’s actually happening:
+
+Mapping Input Voice Volume Value to Layer’s Property Value
+In the case above, I am mapping the scale and border width of the layer according to current sound input volume.
+Now that we have our layer properties set, what’s next? Animation! 🎉🤘
+
+Above you can see a chunk of code, which animates our layer according to the input volume. I’ve added some animation options like curve and time so the transition looks more smooth and fluid. You can edit these values to get other interesting results.
+After creating the animation for our layer, we need to loop it because the voice input we’re getting is continuous:
+
+One small note before I wrap up the article: don’t forget that you can play around with different variable values in the prototype. I’d pay attention to MAX_VOLUME variable, if you want the layer to be less ‘sensitive’ and ‘responsive.’
+So yeah, that’s it.
+Don’t forget to check out the prototype and create awesome things, including a full-fledged prototype of a voice-enabled personal assistant (you just need to add SpeechRecognition API).
+I hope that I’ve saved you a little bit of time."
+9,"Voice User Interface Design: New Solutions to Old Problems
+Why voice? Why now? We examine why voice technology is leaping from a decades-long slumber to mainstream success.",vui,https://medium.com/microsoft-design/voice-user-interface-design-new-solutions-to-old-problems-baa36a64b3e4,"In the past few years, voice user experiences have reached critical mass. Cortana. Alexa. Google.
+Like many technologies that seem fresh off the presses (virtual reality, anyone?), voice user interfaces have been in the public consciousness for decades and in research circles even longer. Bell Laboratories debuted their “Audrey” system (the first voice controlled UI) in 1952, predating even Star Trek’s aspirational voice controlled computer!
+
+Voice recognition systems have been a reality for more than half a century. (Photo: AndroidAuthority)
+But speech scientists have long known the magic of transforming analog signals into digital meaning would take a scope of processing power that far outstripped its early humble roots. It is only recently, in the era of ubiquitous cloud computing, that consumers have access to enough processing power that their own voices can be heard and interpreted in real time.
+A New Frontier
+As user experience designers, we were most likely trained in crafting experiences designed for graphical output and physical input. I know that voice interfaces were far from the imagination of the academics of my time — during my senior projects, we were enamored of the Palm Pilot, and of handwriting input that foreshadowed today’s touchscreen UIs.
+And yet, just as we adapted the skills we’d learned for the brave new world of input beyond the mouse and keyboard, so it is time for some of the designers of today to expand our skill sets to include voice input and the resulting output layers.
+
+Touch and pen input, as seen in the Palm Pilot’s Graffiti input language, was once a quirky backwater of design exploration. Voice user interfaces have emerged from this phase.
+In the last few years, a small but growing number of user experience designers have become full-fledged voice user interface (VUI) designers. Though it may seem a quirky specialty skill, so was mobile design 10 years ago. Voice user interface design will soon become a key strategic skill for a new generation of designers.
+Our Oldest Interface
+Humans have been developing the art of conversation for thousands of years. It is a skill adults draw upon instinctively, every day, for most of their lives.
+Speech is one of the first skills we acquire in childhood — and one of the last we lose in our sunset years, long after our vision and motor skills begin to fade.
+The deeply instinctive nature of speech presents specific constraints and new challenges. Our brains are fundamentally wired to interpret the source of speech as human. With few exceptions, we also expect a spoken response when we speak to someone. Thus, a device that speaks to us is tapping into a deep river of psychological adaptations, and subject to a set of assumptions a pixel-based UI will never encounter.
+This is also why — at least for the moment — designing for voice user experiences is inherently different from conversational user interfaces, which at the moment are synonymous with text-based chat bots. Our thousands of years of speech-based perception and psychology don’t (yet) interfere with our ability to enjoy written conversations.
+Today’s Voice UX: Command and Control
+But let’s be super clear: the voice user experiences consumers are learning to use today are usually FAR from conversational. We are still in early days.
+Though some players use “voice UI” and “conversational UI” interchangeably, in my observation there are no truly conversational spoken user interfaces yet. It’s still a bit more accurate to simply call Alexa, Google Home, and Cortana “natural language” voice control systems, but the distinction currently rests in the types of tasks we ask our voice-based assistants to complete. In fact, the key is the word “task”. These devices are all specialized for allowing customers to complete TASKS using their voice.
+By way of example, the “natural language” way to turn off a light isn’t deeply conversational. You wouldn’t turn to your spouse and say, “Isn’t it a chilly night? I’m feeling a bit cold. Turn the thermostat up, won’t you?” (Unless you’re in an Oscar Wilde play, perhaps.) You’d probably just blurt out “Turn the thermostat down.” Less of a conversation, more of a request.
+Furthermore, the way you complete simple tasks is almost always the same, regardless of emotion, mood, or context. Perhaps you might add “please” if you’re having a good day…
+That doesn’t mean there isn’t quite a lot of complexity in getting this voice UI right — but as opposed to truly conversational UI, which paints in adjectives and nuance, command-and control voice UI deals in simplicity and robustness.
+At present, voice user interface designers often spend a significant amount of design time focusing on how to help customers along when things go wrong. What happens if someone just says “Set an alarm” without specifying a time? Or if the system misheard “AM” instead of “PM”? By understanding how a voice interface can fail, VUI designers can find ways to turn those failures into eventual successes.
+Adapting Your Design Instincts
+My time working on VUI for Windows Automotive, Cortana, and Alexa gave me an appreciation for the differences in the design process between visual and voice-based UX, and a passion for sharing that knowledge as it was shared with me by some esteemed coworkers along the way (thank you Lisa Stifelman, Sumedha Kshirsagar, and Stefanie Tomko, amongst others).
+As a result of that passion, I was honored to debut my workshop Giving Voice to Your Voice Designs at Interaction 17, a global design conference sponsored by the Interaction Design Association (IxDA).
+In my #Ixd17 workshop, we started with a primer on key terms and concepts that relate to the speech science component of voice UI: how an analog voice “utterance” is converted into a digital system’s representation of a customer’s “intent”. Usually, this interpretation process spans multiple disparate but connected systems, which is why cloud computing smashed VUI doors wide open.
+We explored common situational constraints and some simple guidelines to set them up for success in the final phase of the class, where we walked through an end-to-end design process with design deliverables for a third-party voice skill.
+
+Walking workshop participants through the process of building an interaction flow for a 3rd party voice feature at #IxD17 — ironically, in a studio in NYC’s School of Visual Arts. Photo credit Malika Chatlapalli.
+My participants really impressed me with their thoughtful questions that drove at some much deeper challenges facing voice UIs, like contextual awareness and “memory” over time. (A later article will deal with a few of these concepts.) These practitioners are a clear indicator that many of today’s designers can transfer their existing design skills to voice with some simple reframing and a bit of added subject matter expertise.
+Voice Input Changes Lives
+Even though current voice UIs are a bit more simplistic than the dreamers amongst us would like to see, we can’t lose sight of the very real benefits voice experiences provide, even simplistic, when done correctly.
+The biggest and most impactful benefit voice user experiences provide is vastly improved accessibility. Looking for inspiration? Go read the reviews of the Amazon Echo. There are so many stories from mobility-impaired customers, vision-impaired customers, and customers with cognitive impairments about how the device has changed their life at home.
+That’s the real quantum leap here. Voice user interfaces don’t solve any NEW problems… yet. But they solve existing problems in novel ways that significantly improve life for many individuals.
+Setting alarms, getting answers to informational questions easily found on Wikipedia… yes, we could do these things before on our smartphones and our computers. But we had to turn our attention to a device to do so. And in that moment, we exchange a bit of our humanity, temporarily, for that exchange of service.
+Voice UIs allow us to remain fully human in our interactions. They allow us to remain more connected to the other humans in the room. And these VUIs are life-changing for those who can’t easily adapt themselves for traditional computer use.
+So the need for voice user experiences — even today’s crop of control-focused, less conversational UIs — is real, and these experiences change lives. You might not be replacing your existing experience, but even adding voice UI to extend an existing experience can have a major impact on your customers.
+Find Your Own Voice
+Inspired? I hope so. I challenge every designer to start looking at voice input as an important new way of connecting with customers. Are there unseen opportunities that could transform the way customers use your product? Even better, transform their lives?
+And even if you’re a “traditional” designer, don’t be immediately intimidated. Many practitioners started just as you did, in a traditional visually-oriented world. Designers are inherently curious and mentally resilient. You can reframe your thinking with some new knowledge and a few adapted skills.
+But there’s so much more to the world of voice user experiences. In my next post, we’ll talk about conversational user interfaces, a hot topic that surfaced repeatedly at Interaction 17. And we’ll talk about the how the voice user interfaces and text-based conversational user interfaces of today may soon begin to intersect.
+May the voice be with you."
+10,"How Voice User Interface is taking over the world, and why you should care",vui,https://medium.com/@goodrebels/how-voice-user-interface-is-taking-over-the-world-and-why-you-should-care-54474bd56f81,"User interfaces, or UI, are what allow us to interact with machines. They encompass everything, from those things we tend to take for granted, like keyboards and the screens of our desktop computers, to technologies that are more complex, like the movement based UI the Xbox Kinect is built upon. As new technologies are introduced, their adoption rate is entirely dependent on the development of efficient, human-centric UI design.
+
+Different types of User Interface
+Voice-user interface, or VUI, has exploded in popularity over recent years. VUI uses speech recognition technology to enable users to interact with technology using just their voices. Virtual assistants like Siri and Alexa have brought VUI into the mainstream, with corporate giants like Google and Sonos following their lead. Companies like Synqq and Nexmo have also taken advantage of VUI technologies in order to develop devices that allow for real-time translation and transcription. However, it’s virtual assistants which have really captured the corporate imagination.
+VUI allows for hands free, efficient interactions that are more ‘human’ in nature than any other form of user interface. “Speech is the fundamental means of human communication,” writes Clifford Nass, Stanford researcher and co-author of Wired for Speech, “…all cultures persuade, inform and build relationships primarily through speech.” In order to create VUI systems that work, developers need to fully understand the intricacies of human communication. Consumers expect a certain level of fluency in human idiosyncrasies, as well as a more conversational tone from the bots and virtual assistants they’re interacting with on a near-daily basis.
+We’re not in Westworld just yet but it’s clear that robotic assistants are here to stay. With that in mind, it’s important to understand all the potential pitfalls and positive opportunities that come along with this newly popular technology; so let’s explore the good, the bad, and the downright ugly side of VUI.
+The Good
+In order to create good VUI, brands need to understand their consumers, what they want from a virtual assistant and, more importantly, what aspects of interacting with Artificial Intelligence (AI) drive them to the absolute brink. There a number of benefits to a VUI that other user interfaces cannot provide, namely:
+Personality and tone — with voice-based virtual assistants there is more opportunity for brands to inject a little personality and humour. Ask Siri to beatbox for you and she’ll do just that, call her by the wrong name and she’ll return “Very funny. I mean, not funny ‘ha-ha,’ but funny.” Google Home is totally au fait with pop culture references, from Star Trek to Sir Mix A Lot, as is Amazon’s Alexa. A more personable tone helps users to forgive those moments when virtual assistants are unable to complete tasks or answer questions that an actual human would have no problem with. A personable VUI also helps to increase brand affinity — you’re more likely to use a particular device or service if it’s more entertaining and ultimately more ‘human’ in nature.
+Efficiency and convenience — VUI requires nothing other than a vocal command to carry out tasks or answer questions. No longer will amateur chefs be forced to scrub up to set a timer lest they smudge the screens of their very expensive smartphones. Now they can just ask Alexa and she’ll set it for them. Users can quickly check the weather forecast on their way out of the house, add an item to their grocery list without scrounging around for a pen, or skip a song on Spotify without lifting a finger. VUIs are more likely to exist within devices that are online and connected all day long, devices which may one day prove integral to our daily lives.
+A more ‘human’ experience — accurate and efficient speech recognition software allows for a more a ‘human’ kind of conversation than can be had using any other device. We shouldn’t underestimate the value of human interaction; if you’ve ever had a long and tedious phone conversation with an automated customer care centre then you know it’s not always easy to get VUI right, or any kind of conversational user interface for that matter. However, with advancements in machine learning and natural language processing, interactions with brands and devices through a VUI are rapidly becoming more ‘human’ and less robotic. Implementation of a VUI-based technology demonstrates real commitment to a culture of human centricity.
+The Bad
+As discussed, the implementation of VUI is not without its roadblocks. Problems that arise during the conceptualisation and design process are often the result of an insufficient understanding of human psychology. In order to prevent issues around adoption and consumer frustration with VUI based devices, we should consider the following:
+Discovery and retention — while Amazon has made it very easy for third party developers to come up with their own skills for the Amazon Echo, only 31% of those 7,000+ skills have more than one review, an indication of low usage. This issue is not unique to Amazon. In order to increase the rate of adoption, developers need to convey to users what they can and can’t do from the very start, while working all the time to ‘humanise’ the VUI systems that these virtual assistants are built on.
+Understanding limitations — when a machine and a human are engaged in conversation, we need to adapt the way in which we communicate — humans aren’t used to following strict, unwavering linguistic law, especially when it comes to speech. If users understand from the very start the ways in which their device is limited, they’re less likely to feel disappointed when their assistant fails to complete a task or answer what might seem like a very simple question.
+Natural Language Processing — we’re not currently capable of developing a VUI with an inbuilt, natural and complex understanding of human communication, not yet. Regional accents, slang, conversational nuance, sarcasm… some humans struggle with these aspects of communication, so at this point can we really expect much more from a machine?
+Visual feedback — including an element of visual feedback helps to reduce the level of frustration and confusion in users who aren’t sure whether or not the device is listening to or understanding what they’re saying. Alexa’s blue light ring, for example, visually communicates the device’s current status e.g. when the device is connecting to the WIFI network, whether or not ‘do not disturb mode’ has been activated, and when Alexa is getting ready to respond to a question…etc.
+The Ugly
+In recent months, user privacy has become an even more contentious issue; following the Cambridge Analytica scandal, accusations that devices like Google Home and Amazon’s Alexa might be listening into private conversations and in the run up to the introduction of GDPR. Consumers are beginning to ask themselves; what’s being recorded, what’s being stored, and how is my private data being used by corporations? As privacy concerns continue to grow, trust in virtual assistants and in the IoT in general is lessening. In order to regain trust, developers and tech manufacturers must find ways to reassure their consumer base that their privacy is of the utmost priority, while at same time trusting that in time consumers will become more comfortable with the technology.
+The Future of VUI
+The aim of systems based on VUI is to provide users with a fully immersive experience; nuanced, complex and more human in nature. We’re not there yet, but advancements in technology which allow us to develop more complex algorithms and software more apt to simulate human behaviours, have opened up more opportunities for growth, both in the home and in the workplace.
+Business — in late 2017 Amazon announced Alexa for Business, designed to help employees manage their schedules, keep track of their to-do list, dial into conference calls, and make voice calls on their behalf. Alexa for Business allows meeting attendees to control the equipment in their conference room using just their voice, notify IT about a broken printer, and recall the latest sales data or inventory levels. Within the working environment, the virtual assistant becomes the virtual secretary.
+Smart Houses and the IoT — Most virtual assistants fall into the category of smart home devices. The more we focus on compatibility between smart home devices, the closer we get to a completely interconnected household. With Google Home, users control every Google device in their home via their Android Smartphone. Google Assistant can control more than 1,000 smart home products including kettles, microwaves, robotic vacuums and thermostats. With Apple’s HomePod users can even use a catchall phrase like “Good Morning” to turn on multiple smart home devices at once.
+Find your voice
+The main barrier preventing widespread implementation and acceptance of VUI systems is the fact that developers are forced to adapt the rules of communication in order to accommodate the limitations of the device. For users, these limitations can make interacting with these devices pretty tedious. Often there are so many different, possible answers to a query, virtual assistants find themselves in an uncomfortable loop listing endless options for Italian restaurants or breeds of dog. Many developers have attempted to remedy this by limiting the initial number of options presented to three, and then asking the user if they want to hear more. To improve the quality of the user experience, we need to develop machines capable of comprehending context, tone of voice, and attitude, with a better understanding of user intention based on historical data and the observation of previous patterns of behaviour. We need to go beyond a pre-programmed script.
+“Interfaces to digital systems of the future will no longer be machine driven. They will be human centric,” explains Werner Vogels, Amazon’s chief technology officer, “We can build human natural interfaces to digital systems and with that a whole environment will become active.”"

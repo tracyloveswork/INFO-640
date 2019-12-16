@@ -1,0 +1,399 @@
+doc_id,title,term,url,text
+1,A Conversational Agent for Data Science,conversational agents,https://medium.com/hackernoon/a-conversational-agent-for-data-science-4ae300cdc220,"Science fiction has long imagined a future in which humans converse with machines. But what are the limits of conversational interfaces? Agents like Siri or Cortana can help us with simple things such as getting directions or scheduling an appointment, but is it possible to apply these agents to more complex goals? Today, our group at Stanford is excited to announce a few ideas we have been exploring through Iris: a conversational agent for data science tasks.
+In comparison to the domains targeted by most conversational agents, data science is unusually complicated, with many steps and dependencies necessary to run any kind of useful analysis. When interacting with data through analyses and visualizations, you can’t simply rely on a set of hardcoded, standalone commands (think of Siri commands such as doing a web-search or placing a call). Instead, commands need to build upon and support one another. For example, when analyzing some econometrics data, you might take the log-transform first, then run a statistical test.
+Iris supports interactive command combination through a conversational model inspired by linguistic theory and programming language interpreters. Our approach allows us to leverage a simple language model to enable complex workflows: for example, allowing you to converse with the system to build a classifier based on a bag-of-words embedding model, or compare the inauguration speeches of Obama and Trump through lexical analyses. To make this concrete, consider the following example:
+
+Figure 1: Here we use Iris to download some tweets and analyze them with Empath, a text analysis library. (Note: these GIFs are large and may be slow to load in some browsers)
+In the rest of this post, we’ll explore the specific interactions that Iris enables, why these interactions matter, and how developers can extend the system through a conversational domain specific language (DSL).
+Basic functionality: how users interact with Iris
+The Iris interface is a cross between a chat application like Facebook messenger and a development environment like RStudio (Figure 2). In the bottom left, users issue commands to the system, which will then appear in the window above, along with system responses. Data structures created in the course of a conversation appear in the upper right. There is a collapsible pane on the right sidebar for function search and documentation.
+
+Figure 2: An overview of the Iris interface. Conversation and analysis occur in the left side window, while supporting metadata appear on the right.
+One thing we learned early in the course of user testing is that people want to see, in advance, what command will be executed under their current input query. Iris displays hints above the text input pane, the leftmost of which will be executed on hitting enter (Figure 3). These hints allow users to reformulate queries when the proposed command does not match their expectations, resulting in fewer system errors. Hints also signal other elements of system state, for example, whether a user input argument parses correctly or matches the required type.
+
+Figure 3: Hints allow for command search and query reformulation
+Once a user hits enter to execute a command, Iris will automatically extract whatever arguments it can from the text of a request. Iris will then resolve any remaining arguments through a series of clarification requests with the user. For example, if you ask Iris to “take the mean of the column”, Iris might respond, “What column of data do you want me to use?” Once all arguments have been resolved, Iris will execute the command and display its output in the main window.
+Commands as building blocks: sequencing commands
+When working with data, it is rarely the case that a single command or function will accomplish everything you are interested in. More commonly, in programming a short script, you will chain together a series of commands. For example, first you might transform some text data into a bag-of-words feature representation, and then you might fit a classification model on these features. In Iris, any command in the system can be combined with any other command (subject to type constraints). This allows data scientists to use Iris to construct more complex workflows.
+One intuitive way of combining commands is through sequencing: executing one command, and then using its result as the argument for some other command. This style of combination is similar to writing an imperative program, which Iris supports in three major ways. First, the result of any Iris command can be referenced in a follow-up command through pronouns such as “that”, “it”, and “those”. Second, Iris enables what is known in programming languages as assignment: storing a value in a named symbol. You can ask Iris, for example, to “save that result as my_array,” and a new variable named my_array will appear in the environment, where it can be referenced later in the conversation. Finally, many Iris commands save named variables in the course of their execution, which will similarly persist in the enviornment for future use.
+Using these strategies, data scientists can chain together commands in sequence. For example, we might create a logistic regression model, then valuate it under cross-validation (Figure 4):
+
+Figure 4: Here we use Iris to build a classification model to predict flower type, then evaluate it under cross-validation.
+Commands as building blocks: composing commands
+While sequencing commands is powerful and intuitive, it is not always the best way to stitch commands together. Consider how people speak, and you will often find that they craft meaning through a composition of statements. For example, if someone asks you, “what is the variance of that?”, and you respond, “sorry, what data are you talking about?”, then they might say, “I meant the first column of data’.” In programming terms, this conversation would compose a command to compute variance with another command to select the first column of data:
+
+Iris supports composition through the ability to execute any other command when resolving some top-level command’s arguments. This style of sub-conversation can be nested upon itself to form conversations of arbitrary depth (in practice, exchanges that are more than two levels deep become somewhat confusing). For example, we can ask Iris to run a t-test, and interactively compose that with a log-transform (Figure 5):
+
+Figure 5: Here we compose a command to run a t-test, with a command to log-transform columns of data
+Like an interpreter in a dynamically typed programming language, Iris will check whether a composed command returns the type of value that an argument requires (for example, a command that takes the mean of some data might expect a composed command to return an array value). If the type returned by the composed function doesn’t match, Iris will reject the value and ask the user for further clarification.
+Extending Python functions with conversational affordances
+User contributions are an important part of any programming ecosystem. One of Iris’s goals is to allow expert users to extend the system with missing functionality. For this reason, all of the underlying commands in Iris are defined as Python functions, transformed by a high-level DSL into Iris commands with conversational affordances. For example, here is the implementation of an command to compute a standard deviation:
+
+Figure 6: An Iris command implementation that computes the standard deviation of an array of data. The logic of the command is simply a Python function, annotated with natural language and type annotations.
+The core logic of the function is wrapped in a class that defines metadata such as the title of a function (how it will appear in a hint), example user requests that execute the function, argument type information, and descriptive information. The DSL uses these metadata to transform the class into an automata that users can interact with conversationally.
+While this DSL is relatively compact, we found in user testing that even expert users preferred a GUI to help with command creation. Iris has a command editor that supports command creation and modification dynamically within the environment, where changes can be saved to persist across sessions. We have also discovered, in practice, that the ability to compile and test commands directly within the enviornment leads to much faster iteration and debugging of new functionality.
+
+Figure 7: Iris includes an editor that allows users to create new commands and edit existing commands. Any modifications to command can then be immediately tested through conversation in the environment.
+Beyond text: working with mixed modality interfaces
+Conversation may be an efficient way to create and execute programs, but data science tasks often rely on non-textual abstractions. For example, researchers often inspect and organize data through spreadsheets or write code that produces visual output, such as charts or graphs. Iris supports these modalities as a complement to its conversational interface. For example, when selecting a column from a dataframe, Iris will present the dataframe in a spreadsheet-like view, where users can click on the title of the column to populate the conversation request field.
+Similarly, visualizing data is an important part of many data science workflows, and Iris supports this through the vega-lite library (a high-level wrapper around d3.js). Whenever an Iris command produces vega-lite schemas as output, for example, scatter plots or bar charts, these will be rendered as visual elements within the conversation.
+
+Figure 8: Iris integrates with vega-lite to produce data visualizations
+Launching an open source community
+Iris is a research project, but it is also open source code, and as development continues to progress we hope that others will contribute. By building a community around this project, we aim to bootstrap an open dataset of natural language interactions that will allow us to push the boundaries of the kinds of tasks that conversational agents can support. We are planning to launch a desktop client for OSX later this summer, so if you are interested in helping us debug a beta release, check out our arXiv paper, follow the Gihub project or sign up on our mailing list at irisagent.com."
+2,How chatbots will benefit businesses,conversational agents,https://medium.com/the-guild-journal/how-chatbots-will-benefit-businesses-2803e4e59da5,"The topic of conversational enterprise typically focuses on customer service in B2C environments. However, with the level of sophistication chatbots and virtual assistants exhibit today thanks to machine learning and natural language processing, companies are looking to deploy them internally to drive operational efficiency.
+A virtual assistant is a software application that can perform tasks for an individual. Many people refer to them colloquially as chatbots or bots.
+Integration with enterprise applications
+Most of us are already familiar with popular virtual assistants programmed into our smartphones or speakers such as Apple’s Siri and Amazon’s Echo (Alexa). On the enterprise side, we already see leading SaaS companies integrating popular messaging bots such as Facebook Messenger into their applications. Major ERP providers such as SAP and Oracle are developing virtual assistants for their user interfaces as well.
+TechCrunch reports that Salesforce is on the leading edge of this trend. It continually purchases startups that help its customers automate tasks and aims to democratize access to AI for companies of all sizes that use its services.
+Salesforce is known for designing SaaS solutions for salespeople, but is now expanding into customer facing tools. Last year, it introduced its chatbot, ‘Einstein Bot’, to help improve operational efficiencies in customer service. Businesses that use the chatbot can customize the way it interacts with their customers.
+Einstein Bot can answer customer questions and query the fulfillment system to pull up order information. Like other customer service bots Einstein Bot helps tackle the high volume, repetitive questions and allows customer service people to focus on more complex, nuanced requests. This in turn increases operational efficiency, improves customer engagement and fosters higher job satisfaction for customer service personnel.
+Salesforce also points to research about The State Of Chatbots, to discover user preferences and potential use cases, as shown below:
+
+Project management
+With advanced AI and cognitive computing capabilities, chatbots can track internal data and customer interactions to make inferences that can assist internal operations and project managers.
+Large-scale projects typically span multiple internal departments across different geographies. Stakeholders often spend a lot of time tracking status updates from their counterparts, customers and vendors.
+For example, a project manager in Los Angeles may need a milestone update from their counterpart in Bangalore, and might wait up to 24 hours to receive a response. However, if the relevant information is stored in internal systems, a chatbot may be able to retrieve a response instantaneously.
+While bots may not solve major production delays or strategic challenges, they can certainly cut down on response time and email volume that can create arbitrary delays.
+Accounting
+While virtual assistants may not reach the more complex areas of accounting, they can certainly help automate repetitive, simple tasks. In their current state, virtual assistants will assume more of an administrative support role in accounting.
+They can also help with simplifying workflows and cutting down on administrative tasks. People working in accounts receivable can ask a chatbot straightforward questions such as a customer’s credit limit, to query a D&B report or the status of a payment.
+With further advancements in AI, chatbots will evolve beyond purely transactional tasks and be able to provide advice given accounting data stored internally.
+Human resources
+In the digital era, the hiring process is becoming increasingly data driven. With hundreds of applicants sometimes applying for a single position, a chatbot can help with the screening process by asking some of the preliminary background questions required for a given position.
+This kind of automation would be a great help for companies that hire lots of seasonal or temporary workers, such as retailers and distribution centers.
+Chatbots can also assist with fielding HR FAQs for employees. Some may even feel more comfortable asking sensitive HR questions to a chatbot versus approaching a manager.
+Enrolling in benefits can be one of the most frustrating parts of HR. Employees often spend a lot of time trying to sift through the information and understand the requirements. Chatbot queries may help clarify some of the convoluted areas of enrolling in benefits.
+HR might actually prove to be one of the most difficult area to implement chatbots, due to the personal nature of HR and legal sensitivity of the information shared. While they may help increase operational efficiencies, companies should proceed with caution.
+Faster employee onboarding
+Depending on the experience level and position type, it can take weeks or months to train a new employee. This costs the equivalence of their overhead plus the additional resources it takes to get them up to speed.
+ADP found that the average US company budgets $308,000 annually for new employee onboarding. Big bucks, and a cost that chatbots could help to reduce.
+Most questions new employees have typically regard locating information, systems operations or simple industry knowledge. Many new employees may hesitate when asking questions in fear of interrupting their new peers or bosses who are busy in the middle of other tasks.
+With virtual assistants, new employees can get their simple questions answered faster, feel more confident in their new roles, cut the training time down and start adding value.
+Self service for simple IT
+Reducing tactical IT work is a big priority for many organizations. IT resources don’t come cheap. You don’t want your IT staff spending hours on end helping employees resetting passwords or figuring out task manager.
+For non-IT employees, stopping work to wait for someone to come fix a simple problem can interrupt time-critical tasks. Similar to customer service bots, IT bots can help increase the job satisfaction of IT workers tired of running around hitting Ctrl+Alt+Del. They can spend more time working on larger, strategic projects and contribute their skills to higher value tasks.
+At least one European bank is using chatbots specifically for identity management and knowledge management. More use cases will no doubt emerge.
+Nearly all industries can benefit by implementing virtual assistants for internal use. Major consulting firms and tech journals routinely cite banking, hospitality, travel, healthcare and logistics as some of the best candidates for bot deployment.
+Chatbots can eliminate some of the tedious and redundant tasks of every position from attorneys to customer service reps to accounting managers.
+Companies should start looking — right now — at the kind of virtual assistants that will increase productivity in the near future, while potentially reducing overheads and improving overall employee satisfaction."
+3,Natural Language Understanding — Core Component of Conversational Agent,conversational agents,https://towardsdatascience.com/natural-language-understanding-core-component-of-conversational-agent-3e51357ca934,"We are living in an era where messaging apps deal with all sorts of our daily activities, and in fact, these apps have already overtaken social networks as can be indicated in the BI Intelligence Report. In addition to this clear point, the consumption of messaging platforms is further expected to grow significantly in the coming years; hence this is a huge opportunity for different businesses to gain attention where people are actively engaged.
+In this age of instant gratification, consumers expect companies to respond to them quickly without any delay, and this, of course, requires a lot of time and effort for the company to hire and invest in their workforce. Thus, it’s now the right time for any organization to think of new ways to stay connected with the end-user.
+Many organizations undergoing a digital transformation have already started harnessing the power of Artificial Intelligence in the form of AI-assisted Customer Support System, Talent Screening using AI-assisted interviews, etc. There are even numerous conversational AI applications including Siri, Google Assistant, personal travel assistant which personalizes user experience.
+General Overview
+There are two approaches to create conversational agent namely Rule-based and Self Learning/Machine Learning. For the Rule-based approach, you can use the power of regular expression to create a simple chatbot.
+In this post, I will demonstrate to you how to use machine learning along with the word vectors to classify the user’s question into an intent. In addition to this, we shall also use a pre-built library to recognize different entities from the text. These two components belong to the Natural Language Understanding and are very crucial when designing the chatbot so that the user can get the right responses from the machine.
+Natural Language Understanding
+NLU (Natural Language Understanding) is an important part of Natural Language Processing which allows the machine to understand human languages. This has two important concepts namely Intent and Entity:
+Example Utterance: I would like to book my air ticket from A to C.
+Intent: In this case, the objective of the end-user is to reserve a flight from one location ( A ) to another location ( C ). Therefore, the purpose or intent of this question would be “reserve ticket”.
+Entity: There are two concepts/entities in this query; Departure City (A) and the destination city (B).
+To summarize, an intent “reserve ticket” has the following entities:
+Departure City
+Destination City
+We can now use this information to extract the right piece of response for our user.
+As part of this tutorial, we will be using Chatbot Corpus(https://github.com/sebischair/NLU-Evaluation-Corpora) consisting of 206 questions, which were labeled by the authors. Data comes with two different intents (Departure Time and Find Connection) and five different entity types. In this post, we will be using questions along with the intent to perform intent classification. However, when it comes to entities, we won’t train our custom entities, instead, we will utilize a pre-trained named entity recognizer to extract entities from the text. Custom entities can, of course, be trained using different algorithms but we can look into it later on.
+Part 1: Intent Classification
+To classify the user’s utterance into an intent, we can make use of regular expression but it works well when rules are simple to define.
+We shall now head towards the machine learning approach to classify the user’s utterance; this is a supervised text classification problem where we will make use of training data to train our model to classify an intent.
+An important part here is to understand the concept of word vectors so that we can map words or phrases from the vocabulary to vectors of real numbers such that the similar words are close to each other. For example, vector for the word “glacier” should be close to the vector for the word “valley”; two words appearing in a similar context have similar vectors. Thus, the word vector can capture the contextual meaning across the collection of words.
+
+Please use this link to play with : http://projector.tensorflow.org/
+We will make use of Spacy package in Python that comes with the built-in support for loading trained vectors. Trained Vectors include word2vec, glove, and FastText.
+If we talk about word2vec, it comes in two flavors, Continous Bag of Words(CBOW) and Skip-Gram Model.
+
+http://idli.group/Natural-Language-Processing-using-Vectoriziation.html
+Continuous bag of words (CBOW) tries to guess a single word using the neighboring words, while the skip gram uses a single word to predict its neighboring words in a window.
+Brief Detail
+Input is fed to the network in the form one-hot vector.
+Hidden layer is the magic part here and that is what we want. Hidden layer weights matrix are the word vectors that we are interested in, and it just acts as a lookup table because when you apply dot product between one-hot vector of input word and weight matrix of the hidden layer, it will pick the matrix row corresponding to 1.(Note: Dimension of the word vectors usually range between 100 to 300 depending on the vocabulary size)
+The output part is just the Softmax function which gives us the probabilities of the target words.
+We won’t go into much detail related to this.
+Training Intent Classifier using pre-trained word vectors
+Step1: Load Data
+df=pd.read_excel(“Chatbot.xlsx"")
+queries=np.array(df['text'])
+labels=np.array(df['intent'])
+
+Step2: Load pre-trained Spacy NLP Model
+Spacy is a natural language processing library for Python that comes with the built-in word embedding models, and it uses GLoVE word vectors of 300 dimensions
+# spacy NLP Model
+nlp = spacy.load(‘en_core_web_lg')
+
+n_queries=len(queries)
+dim_embedding = nlp.vocab.vectors_length
+X = np.zeros((n_queries, dim_embedding))
+Step3: Preprocessing — Word Vectors
+Right now if we see the data containing in our queries section:
+print(queries)
+
+To train the model, we will need to covert these sentences to vector using the Spacy pre-trained model.
+for idx, sentence in enumerate(queries):
+   doc = nlp(sentence)
+   X[idx, :] = doc.vector
+
+Now that we have converted sentences into the vector format, it can be fed to the machine learning algorithm.
+Step 4: Training Model using KNeighborsClassifier
+#########Splitting Part###########
+
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, labels, test_size=0.30, random_state=42)
+
+#############Training Part###########
+from sklearn.neighbors import KNeighborsClassifier
+neigh = KNeighborsClassifier(n_neighbors=1)
+neigh.fit(X_train,y_train)
+Let’s evaluate it.
+###########Evaluating##############
+print(""Accuracy on Test Set: "",np.count_nonzero(neigh.predict(X_test)==y_test)/len(y_test))
+
+Let’s check on sample query
+
+Note that this is correctly identifying an intent which is FindConnection. You can try different variants to test this part.
+Congratulations, we have successfully built our intent classifier which can understand the purpose of the user’s utterance. Now that the machine knows the purpose of the user’s question, it needs to extract the entities to completely answer the question user is trying to ask.
+Part 2: Entity Recognition
+Entity Extraction helps us in figuring out the right field so that the user can get the right response from the machine. For example, the query “from olympia einkaufszentrum to hauptbahnhof” classified as FindConnection, has two entities: olympia einkaufszentrum(Start Location) and hauptbahnhof(Destination Location).
+After identifying intent and entities from the text, we can generate a query that can fetch the response from the database.
+EXAMPLE SQL to FETCH from the database:
+ SELECT ___ FROM CONNECTIONS
+ WHERE START_LOCATION=‘olympia einkaufszentrum’
+ AND END_LOCATION=‘hauptbahnhof’
+ __________
+ FURTHER CONDITIONS IF REQUIRED
+ ___________
+This is just an example of SQL to show you the importance of intent and entities to extract the right response for the user.
+To recognize entities, we will make use of Spacy named entity recognition that already supports entity types like PERSON, FAC(Buildings, airports, highways), ORG( Companies, Organizations), GPE(Counties, States, Cities), etc. To see further entity types, refer to this link: https://spacy.io/api/annotation
+doc = nlp('from olympia einkaufszentrum to hauptbahnhof')
+for ent in doc.ents:
+    print(ent.text,ent.label_)
+
+As you can see, Spacy NER has identified these two entities from the text. However, this library only supports basic entities such as PERSON, LOCATION, etc. In our case, olympia einkaufszentrum should be marked as start location and hauptbahnhof as end location.
+We can also train custom entities to support our problem. There are various entities extractor available such as CRFEntityExtractor, MitieEntityExtractor, EntitySynonymMapper, etc through which you can train your custom entities. You can even train Spacy NER with custom entities. This I leave up to you.
+Conclusion
+In this post, we saw an important concept of Natural Language Understanding which can deduce what the end-user mean. More precisely, it is an understanding part of Natural Language Processing that can digest, understand the text to output relevant responses to the end-user. Intents and Entities are the two crucial components of NLU, and we saw how to perform Intent Classification and Entity Recognition using a simple approach with the use of Spacy and scikit-learn. There are various chatbot platforms available that support NLU including RASA NLU, Dialog Flow, IBM Watson, Amazon Lex. RASA NLU would be a good starting point to start with to extract intent and entities from the text.
+In addition to Natural Language Understanding, several other components are important in building AI-Assisted Chatbots. You need to explore the Slot filling section, memory element and much more to create a nice working conversational agent."
+4,TALKO- A reception desk conversational agent,conversational agents,https://medium.com/design-with-code/talko-a-reception-desk-conversational-agent-29f0d65d47ab,"The reception area, located on the 2nd floor in N5 campus of the Srishti Institute of Art, Design, and Technology, is like the help desk for students for a variety of reasons. The receptionists make sure to solve issues such as managing ID cards, solving students’ queries about different faculty or courses, informing about the locations or changes, etc. For someone who is new to N5, this can be a little baffling. Moreover students can find it very confusing if there are no receptionists around to answer their queries or inform them about something or the other. Sometimes, some might even prefer to not talk to another person because of their own personal issues and insecurities. Thus, with the use of a conversational agent, can the reception area be made more user-friendly? Can the space, thus be used, even in the absence of a receptionist and serve some sort of purpose to users even if the receptionists are around and they choose to interact with it? Exploring this, the following concept has been finalized upon, after coming up with a few different ideas.
+Concept note
+TALKO is the conversational agent on the reception desk at N5 Campus in the Srishti Institute of Art Design and Technology. It works on both voice and text based control systems in order to be inclusive and allow the user a choice of their preference. This screen is projected onto the desk and appears only when needed. Projection Mapping has been used to map the buttons that a user presses on the screen. Projection Mapping also ensures that a user does not have to constantly be cautious while he places his arms on the desk, or is talking to the receptionists if they are there, or be wary like he’d have to if there was a screen embedded in the desk instead.
+To activate it, the user has to speak into the microphone of the headphones that are connected to the desk and are placed at a side for access to the users. Once the words “Hi TALKO” are registered, the start up screen gets projected, allowing the user to use the conversational agent accordingly.
+The conversational agent opens up to a screen asking the user to pick the category they’d like to talk about including- Faculty, Information, Admissions, Wellness, etc. Given that people aren’t too open about talking to the wellness team or even talking out loud about needing some sort of help, hopefully talking via text to the conversational agents about their whereabouts should be of some help. The Wellness option facilitates a user to talk to the conversational agent and fix an appointment with any of the counsellors available, in a time slot comfortable with the user. The Faculty option notifies the faculty if a student wants to meet them, but otherwise answers queries about locating some faculty or the other, knowing which faculty or administration person to approach for what, etc. The Information option is basically like an online library of sorts which contains all information about different majors, new notices about other miscellaneous things, etc. Admissions specifically caters to new people in N5 Campus of Srishti, who are there to enquire about admissions and aren’t students yet. The process of understanding the process of how Srishti works and how the admissions go can be simplified by talking to someone instead of by reading a brochure or pamphlet. Using the Equipment option, one can enquire about availability of equipment like cameras, or speakers, etc and also receive information on the procedure to acquire it. Other than this, there will be an Other option, for any other queries, where you can talk to TALKO about anything else that these categories seem to not cover, and TALKO shall respond accordingly.
+The headphones with the microphone, are preferred over speakers, given that the reception area usually has someone or the other in the vicinity. What a user needs to know, or speaks about, to the conversational agent, doesn’t need to be a public declaration. The agent also does not need to be addressing everybody in the vicinity by having the answer being broadcasted through speakers. Hence, headphones and the microphone, along with the text option, are attempts at ensuring confidentiality for the users.
+Buttons of a tick ✔ and a cross ✖ are always present at the side of the screen. To end a conversation the user has to click the tick icon, after which the user is asked for feedback on whether they are content with the conversation or not. The user can then answer via the tick or the cross again, and TALKO asks if they’d like to have a conversation about anything else. If there has been no conversation from the user’s end for two minutes, TALKO shuts by itself showing a default message.
+This is to be implemented at the N5 Campus reception in an attempt to save a user’s time in case of the absence of a receptionist, or to talk about something they seem to not be able to, with the receptionist, thus making the reception area user-friendly."
+5,Bots Are NOT About Conversation,conversational agents,https://medium.com/bots-for-business/bots-are-not-about-conversation-96cb5042de5a,"Most bot developers seem hung up on the conversational aspect of bots. Natural language processing (NLP) is a novelty for many (most?), so this obsession is understandable. But it’s one thing to get stuck with some technical challenge, and quite another thing to declare that very challenge as being the end goal.
+If bots be essentially all about conversations then apps are essentially all about graphics. You see the error in that kind of thinking? Yes, apps rely on graphics when interacting with humans. And bots rely on text when interacting with humans. But neither graphics nor text define the purpose of those software products.
+What Is The Purpose Of Bots?
+The true meaning of the word bot is digital expert. These digital experts serve the purpose of delivering expertise that users expect. Do I have an example, you ask? Sure. Let’s look at digital experts in existence today. One such digital expert (or bot) is Homebrew.
+This bot provides formidable expertise to all users who need to install stuff. Typical install utility expects a human operator to be the expert when wishing to install software. Homebrew is different. This bot lowers its expectations when interacting with humans. It assumes that humans are extremely bad at doing the legwork needed for installing software. Homebrew only expects humans to tell it what they want to install, and then it goes away and does the rest. Flawlessly!
+So we see that the purpose of a bot is to serve humans. A bot needs to be able to amortize the chores. A bot needs to be able to do that while listening to and understanding human commands.
+Conversational interface is merely a side effect of this important interaction with humans. Anyone who has used Homebrew or Git (or similar bots) had realized that text is much more expressive than graphics. Text is where bots thrive, and full service delivered by bots is where humans thrive."
+6,Reading “Managing Context in a Conversational Agent”,conversational agents,https://medium.com/@yixingjiang/reading-managing-context-in-a-conversational-agent-e21d3bb3ef83,"Today I’m reading “Managing Context in a Conversational Agent” by Claude Sammut, here is a link to the paper: https://pdfs.semanticscholar.org/29b8/17100d8a873f3c91ae840264494bfd62b01e.pdf.
+This one is not very hard to read. The main idea is authors developed a bot named “ProBot” which is based off “pattern => response”, which authors call scripting..
+
+Then for conversations, we can have a stack based policy scripts to return responses.
+Other thoughts from this paper:
+how do we usually evaluate conversational agents?
+This paper gave two approaches, paper evaluation, or collect responses from museum where bot is deployed and examine them.
+This paper also mentions a spreading activation model, which is interesting, it has a Wiki page: https://en.wikipedia.org/wiki/Spreading_activation
+I did not spend a lot of time on this but I took it as a way to search nodes in networks, when we have visited one node, we decay its value. In a conversation scenario, this means if one pattern is repeated multiple times, then the user was not happy about the previous output and asked for result again, by decaying values for the previous output we can get a new output."
+7,Toward a fully Context-aware Conversational Agent,conversational agents,https://medium.com/@smartly_ai/toward-a-fully-context-aware-conversational-agent-787d23d279ca,"I was recently asked by my friend Bret Kinsella from voicebot.ai for my predictions on AI and Voice. You can find my 50 cents in the post 2017 Predictions From Voice-first Industry Leaders.
+In this contribution, I mentioned the concept of speech metadata that I want to detail with you here.
+As Voice App developper, when you have to deal with voice inputs coming from an Amazon Echo or a Google Home, the best you can get today is the transcription of the text pronounced by the user.
+While It’s cool to finally have access to efficient speech to text engines, It’s a bit sad that in the process, so much valuable information is lost!
+The reality of a conversational input is much more than just a sequence of words, It’s also about:
+the people — is it John or Emma speaking?
+the emotions — is Emma happy ? angry ? excited ? tired ? laughing ?
+the environment — is she walking on a beach or stuck in a traffic jam?
+local sounds — a door slam? a fire alarm? some birds tweeting ?.
+Imagine now the possibilities, the intelligence of the conversations if we could have access to all this information: Huge!
+But even we could go further.
+It’s a known fact in communication that while interacting with someone, non-verbal communication is as important as verbal communication.
+So why are we sticking to the verbal side of the conversation while interacting with Voice Apps ?
+Speech metadata is all about the non verbal information, wich is in my opinion the immerged part of the iceberg and thus the more interesting to explore!
+A good example of speech metadata is the combination of vision and voice processing in the movie Her.
+
+With the addition of the camera, new conversations can happens, such as discussing the beauty of a sunset, the origin of an artwork or the composition of a chocolate bar!
+Asteria is one of the many startups starting to offer this kind of rich interactions.
+
+I think this is the way to go and that there would be a tremendous amount of innovative apps that will be unleashed by the availablily of the conversational metadata.
+In particular, I hope from Amazon, Google & Microsoft to release some of this data in 2017 so we the developers can work on a fully context aware conversational agent."
+8,"“Hey Alexa, What’s Up?”: Studies of In-Home Conversational Agents Usage.",conversational agents,https://medium.com/@coolime96/hey-alexa-whats-up-studies-of-in-home-conversational-agent-usage-5a78edcb0b1b,"What is this research paper about ?
+Purpose :
+The purpose of this research paper was to analyze the behavior patterns of Alexa users and seek for the space to make Alexa better.
+Method and Sample Size :
+It presented two complementary studies , one quantitive data study and interview study. The first one is collecting history logs from 75 Alexa participants in household living (278,000 commands). By google chrome extension of Alexa history page, it was possible to download participants’ logs and participants got a chance to exclude any content that may be too sensitive to share (but majority didn’t exclude anything). The other part was the interview with 6 households who have used Alexa for at least more than 6 months.
+Commentary
+It was really interesting research paper that looked deep on actual patterns and categories of conversational usage of Alexa. Some interesting outcomes that I found fascinating was that the most said command is ‘stop Alexa’ and households who have already bought Alexa tend to buy more and more Alexa by approximately 1 year. Larger size of households also tend to have higher satisfaction.
+It would be also more compelling research also about behavioral pattern based on different age groups. Also, actually interviewing children could bring more insights, not only the parents’ reactions towards children’s usage of Alexa. But definitely, since children are the generation growing up with Alexa, rather than ‘using’ Alexa,
+Based on the experience of making skills on Alexa during the last class, I totally understood the point of really limited usage of Alexa compared to the capability of Alexa. I think voice interaction agent like Alexa definitely needs more familiar, flexible on-boarding. Then it leaves another question, as long as Alexa is only responding to ‘Alelxa,’ how can Alexa introduce new skills or features to users?"
+9,How we created the conversational agent for the RMI,conversational agents,https://medium.com/kunstmaan/how-we-created-the-conversational-agent-for-the-rmi-4434455862ce,"Either it’s too wet, or too cold, or waaaaay too hot.
+It turns your barbecue party into a washout.
+It makes sure you’re frozen to the bone when you go out for a run.
+It has you sweating like a pig in your winter coat while waiting for the bus.
+Surely it would be handy if you could ask someone about the weather, at any given moment. And that you would be given answers, bearing in mind your specific location and your personal situation.
+We gathered all our experts in service and conversation design, copywriting and development round the table with the RMI, the Royal Meteorological Institute of Belgium. Together we designed an extension for your Google Assistant that tells you all about the local weather, tailored to your specific needs.
+At Kunstmaan | Accenture Interactive, the process of creating a conversational agent starts with our UX strategists.They work with the client to define the end users needs & wants and design the whole human experience. The Senior Software Architect works on the available information in the backend systems of the client and what is technically feasable. The digital Copywriter writes out conversations based on the tone of voice defined in the human centric designs and splits it into user intents: Making sure the Assistant really understands what the user actually wants when asking something. Finally a Developer starts setting up the fullfillment layer and configures the Dialogflow project. Our Testers have been trained to write test cases for this new kind of interface.
+Let’s dive a bit deeper and explain how we actually — technically — created the RMI conversational agent.
+This is where Actions on Google comes in. Actions on Google is the platform on which anyone can publish Actions for the Google Assistant. The recommended way to develop for Actions on Google is the conversational agent tool called Dialogflow. Dialogflow wraps the functionality of the Actions SDK, and provides additional features such as an easy-to-use IDE, Natural Language Understanding (NLU), Machine Learning (ML), and more. Note that Dialogflow is actually owned by Google. It also allows you to create conversational agents for several other platforms as well (Facebook Messenger, Alexa, Slack,…), but that is out of the current scope.
+A conversational agent on Dialogflow consists of several concepts, which are explained below:
+
+Pictured above: the hobby entity in the RMI Dialogflow project, mapping several synonyms or related hobbies to the same value. The resulting value is used for populating our request to the RMI API endpoint.
+Entities are sets of variables that are limited to certain values, so you can compare them to Enums. Dialogflow provides a set of predefined entities that are either a limited set (such as @sys.address, or @sys.flight-number), or unlimited sets (such as @sys.last-name), but it’s also possible to create your own entities. These entities are recognised by Dialogflow in user queries, and the resulting values are sent up to any webhooks if specified.
+In our RMI project, several alternative wordings for watersport (surfing, sailing, swimming) are defined, so Dialogflow will all match these to the same value. The RMI API endpoint takes an integer as parameter for “hobby type”, which is why the value for the watersport entity is set to the value 3.
+Similar to hobbies we use entities for clothing types, cities/locations, datetimes, and more.
+Be sure to populate your custom entities in all supported languages though!
+
+Pictured above: sample training phrases for the hobby intent. There are several ways to state the same intent, and recognised entities are clearly marked in different colors. A Dialogflow intent matches a user’s intent to do something, in this example the user wants to know if the weather is good for a certain hobby (in particular, the types of hobby defined in our hobby entity). You can define several ways the user could state this intent, with or without certain (optional) parameters. After providing these training phrases (in all languages), Dialogflow will be able to match user queries with the correct intent, even if they do not match completely by using Natural Language Understanding (NLU).
+
+Pictured above: The list of entities used as parameters in our hobby intent. The hobby entity is marked as required, causing the conversational agent to automatically prompt the user if this is missing.
+For each intent, you can provide a list of entities that might be mentioned in the user query, and mark some of them as required. Marking an entity as required will cause the conversational agent to automatically prompt the user for this value. As soon as all required entities in an intent are known, Dialogflow will resolve the intent. It’s possible to resolve the intent directly within Dialogflow (by providing a default static reply), or to trigger a webhook. In both options you will have the inputted entity variables available to use in your response, and in the case of a webhook these can be used in your business logic.
+
+Pictured above: the “clothing” follow-up intent for the weather context.
+Intents can provide an output context in which they can store certain variables. Other intents can be made triggerable only when certain contexts are active (as seen above), which makes them ideal for follow-up questions.
+The easiest way to explain contexts are by using a real-world example. Imagine the following conversation:
+What’s the weather this Thursday in Brussels?
+RMI agent replies with the weather info for Brussels on Thursday.
+Will I need sunglasses?
+RMI agent replies to the question based on the weather for Brussels on Thursday
+As you can see, the follow-up response takes into account the context of the conversation, as all weather intents store information such as location and date into the weather context. Follow-up intents can then utilise this context to fill in the gaps.
+
+Pictured above: A basic text response for the exit intent. It’s also possible to use variable entities from the intent in the response.
+For simple responses that don’t require any business logic it it possible to define them straight in Dialogflow. It’s also possible to provide specific visual responses for Actions on Google such as cards or carousels on phones or other devices with a display.
+However, it’s also possible to trigger a webhook request for the response, which Dialogflow calls Fullfillment. These webhooks will do a POST request to an endpoint of your choosing. Note that the endpoint is the same for all intents, so the first thing you’ll need to do in your business logic is to differentiate between the different intents.
+There are several ways to build your own webhook endpoint. Google’s recommendation is the Actions on Google Node.js library, which we’ve also used for this project. For other internal projects we’ve built prototypes in Java as well, so it doesn’t really matter which backend language you use, as long as you can easily work with JSON objects.
+On completion of an intent that has Fullfillment enabled, Dialogflow will do a POST call to your endpoint with the intent, all relevant entities, and contexts. Your endpoint should be responsible for translating the Dialogflow JSON objects to valid API calls for your business logic, and format the response from the API calls back into response JSON objects for Dialogflow. All of this is required to take less than 5 seconds RTT, since the Google Assistant will mark your conversational agent as non-responsive if any response takes longer than 5 seconds.
+
+Hooking up your Dialogflow project with your business logic via a fulfillment webhook completes your conversational agent. You can see an image above of this complete architecture, of which we’ve only scratched the surface. With Dialogflow as your conversational agent tool, you’re not just limited to the Google Assistant. It provides integrations with all major plagforms, including Facebook Messenger, Alexa, Slack, and others. On top of that, there are several SDK’s available for multiple platforms so your conversational agent can be fully integrated within your web-app, mobile app or even watch app."
+10,Designing a chatbot with IBM Watson Assistant,conversational agents,https://medium.com/ibm-garage/designing-a-chatbot-with-ibm-watson-assistant-7e11b94c2b3d,"Chatbot, also known as “conversational agent”, is a trending technology. Chatbots are changing the business landscape. Its emergence in the enterprise has several implications that require some thought. Building a bot is not a hard task; with the rise of many platforms, it’s now easier than ever to develop and deploy one. The challenge with chatbots lies in delivering a good user experience, and they only present opportunities if done right. But, designing a conversation that meets consumer needs and returns real business value requires a nuanced strategy and in-depth considerations. The experience you are creating for your clients is paramount. Before moving quickly to development, figure out the problem areas that you, your users, and your employees are struggling with, and if a chatbot is the best fit to meet everyone’s needs. *
+Deploying chatbots in the enterprise raises a host of potential issues that inevitably affect the deployment of enterprise software, including performance, scalability, and especially security. Enterprise chatbots may require access to user credentials, profile information, and enterprise data to perform useful functions. Any chatbot initiative must comply with enterprise cybersecurity standards. *
+In this post, we’ll be taking a look at addressing some of these concerns and show how to design a chatbot using IBM Watson Assistant.
+
+Figure 1: IBM Watson Assistant meet IBM Enterprise Design Thinking
+What is exactly a chatbot?
+In general terms, a chatbot is an artificial intelligence (AI) conversational agent, which conducts conversations via text or voice commands in a natural language conversation. It communicates and performs basic tasks such as answering questions or placing product orders. Chatbots’ primary purpose is to streamline interactions between people and services through messaging applications, websites, mobile apps, or through the telephone and interactive voice response (IVR). Other options include:
+Used for service or as a marketing tool for engagement
+Provide content, facilitate a purchase, or connect with consumers
+Combine the ability to scale and personalization
+Provide support
+Suggest product recommendations
+Leveraged for conversational marketing campaigns
+The goal is to have chatbots written in a way to mimic spoken human speech to simulate a conversation with a real person performing any task. Chatbots can learn. Should you feed it a large number of conversation logs, the bot could be trained in a way to understand what type of question needed and what kind of answers to answer. Eventually the bot can be trained enough where you could not tell it is a bot.
+“A computer would deserve to be called intelligent if it could deceive a human into believing that it was a human” — Alan Turing
+These conversational bots are getting smarter. They are less prone to errors based on how they are trained. Hence, they can provide better customer experience and can help establish a better brand. There are tons of services to help you build chatbots, each with varying degrees of control, and these services have also become increasingly sophisticated. Unlike as seen in countless movies with “science fiction” depicted as awkward speech with robotic cadence, chatbots have come a long way! It’s safe to say that chatbots are still growing. Bots are available 24 hours a day, 7 days a week, 365 days a year and are capable of answering customers’ questions much quicker than human agents can.
+Is chatbot the right solution?
+Don’t build a conversation for building’s sake. Stall the idea of a conversation agent as a solution before clearly identifying what is it that you’re trying to achieve. First, ask yourself a few of these questions:
+What is the focus area of the business that needs improvement now?
+Who are all the users and stakeholders involved in this area, and how are they interacting with each other?
+What’s not working for them? Why are they struggling?
+What is the desired business outcome if we can change that?
+If you already have a chatbot/conversation agent operating today, ask yourself:
+Are they performing up to expectations? Are they meeting your KPIs?
+Are users getting helpful answers?
+Is the conversation designed well to serve the users needs?
+Also think about potential pitfalls of chatbot:
+Can bots put people at risk?
+How are the bots trained and do they contain biased information?
+Align together towards the vision
+Once you have a clear business fit for a chatbot, then invite the stakeholders and sponsor users to a design thinking workshop. In this workshop, have the participants go through convergent and divergent activities to understand, explore, and define how chatbot fits into improving user experience. Use activities like Empathy Map and As-Is Scenario to understand the pain points experienced today. Identify areas where a conversational agent can help to improve the experience; look for areas where the user is asking the most questions and are the most confused and frustrated. These areas will be good candidates for where a chatbot can help. Then, prioritize with the team on which of the identified pain points will be the most important and feasible. Using the prioritized pain points as a guide, discuss and identify content, information, questions, and answers that could alleviate the pain points. Identify top priority areas that are the most import to your personas.
+Dialogue design
+In this blog, we will use IBM Watson Assistant to design a conversation. The archetypal chatbot consists of 3 specific concepts: intents, entities, dialog, as described in detail below. Let’s design a chatbot for your business and understand what it takes to create a purpose-built one that also delivers a superior conversational experience.
+
+Figure 2: A typical approach used when deploying Watson Assistant
+Intents
+An intent is a purpose or goal expressed in a customer’s input, such as answering a question or a pressing a bill payment. By recognizing the intent expressed in a customer’s input, the Assistance service chooses the correct dialog flow for responding to it.
+An intent is a category that defines a user’s goal or purpose
+These categories are trained using representative examples
+Recognizing the intents does not require knowing the specifics of the user request — it is a way to guide the dialog flow in the appropriate direction
+Entities
+An entity represents a class of object or a data type that is relevant to a user’s purpose. By recognizing the entities that are mentioned in the user’s input, the Assistance service can choose the specific actions to take to fulfill an intent. It’s also Watson’s way of handling significant parts of an input that should be used to alter the way it responds to the intent.
+Entities are the subjects of intents
+Entities are specific values that clarify user intent and trigger fine-tuned actions and responses
+For each value, you can include a list of synonyms to capture the possible varieties in user expression
+Entities represent information in the user input that is relevant to the user’s purpose.
+System entities
+System entities are common entities created by IBM that could be used across any use case. They are ready to be used as soon as you add them, such as:
+@sys-date
+@sys-time
+@sys-number
+Dialog
+The dialog component of the Assistance service uses the intents and entities that are identified in the user’s input, plus context from the application, to interact with the user and ultimately provide a useful response. The dialog is represented graphically as a tree, so create a branch to process each intent that you define.
+The dialog node is made of a trigger and a response, where the trigger is the condition
+Dialog matches intents (what users say) to responses (what the bot says back)
+Each dialog node contains, at a minimum, a condition and a response
+The dialog response defines how to reply to the user
+
+Figure 3: Depiction of a simple dialog
+Slots
+Add slots to a dialog node to gather multiple pieces of information from a user within that node. Slots collect data at the user’s pace. Details the user provides upfront are saved, and the service asks only for the details they do not. Slots…
+Reduce development time
+Get the information you need before you can respond accurately to the user
+Answer follow-up questions without having to reestablish the user’s goal
+Identify the type of information you want to extract from the user’s response
+Our experience designing a chatbot
+For a delightful user experience, you can’t run away from asking these core questions at the heart of your design, and each question needs to be carefully and meticulously considered with the different facets:
+Is my product well-suited to be a bot?
+How to design a meaningful conversation?
+Will the chatbot understand the messages it receives?
+How to create a simple design for an immediate and direct solution to a person’s problem?
+Will the design solve the problem reliably?
+What are the logical conversation path(s) for users to follow?
+What are the integration points?
+Can the bot handle more complex queries and tasks?
+What user pain point does it solve?
+What type of friction will it remove from the current process?
+How to prevent the chatbot from asking the wrong questions and collecting unnecessary information?
+When to override the bot (and allow for a graceful failover)?
+
+Figure 4: Steve Jobs’ quote
+Chatbot conversational flow
+A chatbot conversational flow works like a decision tree, which gives you a comprehensive list of decisions, events, and outcomes as depicted below:
+
+Figure 5: Basic transactions for a banking use case.
+Prerequisites
+To follow along, you are required to have these accounts and tools in place:
+Start with an account on IBM Cloud. It’s free of cost to start with.
+Setup Watson Assistance
+If you want to follow along, the full solution can be found at the link: Create a banking chatbot with FAQ discovery, anger detection, and natural language understanding.
+
+Figure 6: Watson banking chatbot
+Steps to creating successful chatbots
+Identify the problem to be solved and use case
+Choose the channel for your bot (e.g. Facebook Messenger, Skype, Slack)
+Choose the right use case for your bot
+Choose the services you will use to build your chatbot (in this case we are planning to use IBM Watson)
+Emulate conversations to train and retrain bot.
+Test
+Launch and learn
+Included components:
+IBM Watson Assistant: Build, test, and deploy a bot or virtual agent across mobile devices, messaging platforms, or even on a physical robot
+IBM Watson Discovery: A cognitive search and content analytics engine for applications to identify patterns, trends, and actionable insights
+IBM Watson Natural Language Understanding: Analyze text to extract meta-data from content such as concepts, entities, keywords, categories, sentiment, emotion, relations, and semantic roles, using natural language understanding
+IBM Watson Tone Analyzer: Uses linguistic analysis to detect communication tones in written text
+Node.js: An asynchronous event driven JavaScript runtime, designed to build scalable applications
+Conclusion
+In recent years, AI and machine learning have changed the way we go about our day-to-day business. Chatbots have conquered the market. No longer a nascent technology, chatbots are now mainstream. Its business impacts include breakthrough across different industries, such as financial services, retail, oilfield services, hospitals, and insurance companies. The chatbots market was worth USD 1274.428 million in 2018 and is projected to reach USD 7591.82 million by 2024, registering a CAGR of 34.75% over the period (2019–2024). According to IBM in 2017, 265 billion customer requests are recorded per year and businesses spend nearly $1.3 trillion to service these requests. Using chatbots can help them save up to 30% of this.
+On a closing note, if you asked me the question, “Are chatbots a must-have?”, you can extrapolate and figure out on which side of the track that I’m seating! Chatbots are here to stay!
+Food for thought: Intelligence of Chatbot
+Can bots communicate intelligent insights?
+Is Human Intelligence underrated? Is Artificial Intelligence overrated, an actual breakthrough, or still in its infancy?
+Will bots eventually be equipped to deal with complex issues such as geoeconomic and geopolitical problems?
+Attribution
+Special thank you to the IBM Garage Singapore team: Oliver Senti, Practice Manager; Eunice Shin, Sr UX Designer; Ma Li, Architect / Data Scientist; Iris Tan, UX Designer and Thanh Son Le from the Cognitive Solutions Engineer, IBM Watson and Cloud Platform Expert & Delivery Services.
+References
+For more details on designing and building chatbots, please refer to the links below where you can find many read up on AI-powered chatbots:
+Chatbot Best Practices
+Introduction to Watson Assistant
+Watson Assistant Tooling Overview
+Webinar — Building a ChatBot using IBM Watson Conversation Service
+How to build dialog in your chatbot with Watson Assistant
+Chatbot Tutorial | AI in Marketing
+Conversational A.I. for the Enterprise
+The Future of Banking: A Financial Concierge for Everyone
+Chatbot application Life cycle
+Chatbot Architecture
+What We Learned Designing a Chatbot for Banking
+Design Framework for Chatbots
+Chatbot Design Canvas
+How chatbots can help reduce customer service costs by 30%
+Bring your plan to the IBM Garage.
+Are you ready to learn more about working with the IBM Garage? We’re here to help. Contact us today to schedule time to speak with a Garage expert about your next big idea. Learn about our IBM Garage Method, the design, development and startup communities we work in, and the deep expertise and capabilities we bring to the table."

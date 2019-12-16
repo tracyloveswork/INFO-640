@@ -1,0 +1,446 @@
+doc_id,title,term,url,text
+1,"What is Zero UI?
+Are the interfaces running out? Understand the term “Zero UI” and what it means to us designers.",zero ui,https://brasil.uxdesign.cc/o-que-%C3%A9-zero-ui-d416d8aac8e4,"A quick Google search shows that for some time there has been talk about Zero UI (zero user interfaces) and what will become of the designer profession when screens disappear.
+But Zero UI does not mean the complete extinction of interfaces; it just means the end of interfaces as we know them today.
+Consider the following for a moment: Today interfaces only exist because computers are “dumb”.
+So we humans, very intelligent beings, need to go there and give instructions to the computer. In the past the only way to do this was by memorizing commands and typing our intentions into an interface like this one:
+
+Over time, we designed more user-friendly visual interfaces that helped us accomplish the same tasks much more simply.
+
+And more recently, even simpler:
+
+In this process of technology evolution, the visual interfaces we know today take on a secondary, background role, giving us space to engage with the things that are really important to us - other humans, the physical spaces we inhabit, nature, the environment. society.
+Zero UI is precisely the name of the process of disappearing visual interfaces, to make room for other types of interfaces . Voice, movement, eyetracking, brainwaves, among others. That is, the term “zero UI” itself is incorrect because the interface does not cease to exist. But for now, as a way of educating our industry and provoking designers about this impending technological change, it works.
+
+And what does this mean for us designers?
+That the experiments we are designing (and the interfaces that control them) are becoming much more complex - as many other aspects of human behavior must be taken into account.
+
+Design principles remain the same: design experiences that are easy, intuitive, enjoyable, and subtle. Only what changes is the material we use to make these experiences happen.
+What to expect as a designer:
+Much less software that draws pixels (Photoshop, Sketch, Illustrator), and much more software that draws interaction streams.
+Much, but much more testing. Internal testing while something is being designed (after all, not just “looking at the layout” to see if it works), quality control testing , and user testing .
+The emergence of other types of specialization in our industry, such as verbal designer, conversational designer, gesture designer.
+Our role as UX Designers remains exactly the same: identifying our audience's needs and wants, thinking about products, services and features that deliver those demands, strategically thinking and prototyping these interfaces, and then testing with users to enhance the experience with each new cycle. .
+Ready to head for it?"
+2,"Bots, Chat, Voice, Zero UI, and the future of Mobile Apps",zero ui,https://chatbotsmagazine.com/the-future-of-ui-bots-conversation-voice-zero-ui-and-the-end-of-the-mobile-apps-defa5dcc09f5,"“Alexa”- “Play Blake Shelton-Hillbilly bone.”
+“Siri”– “Text Alex that I am running late for the meeting.”
+As I do this without opening an app on my iPhone with its crowded screen and some 50+ apps, I am hit hard with the thought, the idea of a mobile app as an “independent interaction destination” is becoming irrelevant. The action has shifted to Voice, Natural Language, Notifications, API, and the Conversation; and this has a huge impact on existing mobile app-dependent businesses and how we build and design products in the future.
+Before you shake your head in disbelief, let’s put things in perspective:
+1. The mobile app discovery and its feature discovery layer is broken. There are more than three million+ apps combined in all app stores, and the last thing we need is more apps or features.
+2. Mobile users have limited attention spans, often jumping from one app to another. An average smartphone user has 42 apps on his device but spends 90% of his time on only 9 or 10 of them.
+3. Companies spend billions of dollars every year to drive installs and user engagement, but 25% of apps are only used once and 75% of users leave within the first three months.
+4. The growth of mobile and its app-centric world has been the opposite of the web, and there is no analog of PageRank for mobile apps.
+5. The interaction at the UI layer of mobile is very crowded. A mobile screen with crowded app icons as a dominant design pattern feels old and inefficient now.
+6. Messaging is the most widely used application on the mobile platform, with chat-based apps like WhatsApp, WeChat, and Facebook Messenger owning the communication layer of the world.
+7. Application and device interaction is beginning to shift due to developments in Voice Control and Intelligent Assistants (IA). Already, more than 15% search queries are made on Baidu using Voice Input.
+These points have a major bearing on mobile products and app-dependent businesses. Recent advancements in voice technology and AI suggest that we are undergoing a paradigm shift in how we interact with technology. Ever tried Apple’s Siri, Google’s Now, Microsoft’s Cortana, Amazon Echo, Google Nest, or Facebook’s M?
+All this progress leads to a whole new set of open questions — is Conversation the next frontier? What role does design play in creating one of these experiences? And most importantly, what happens when our devices finally begin to understand us better than we understand ourselves?
+Advances in AI and technology are causing a change in our traditional understanding of UI and human-computer interaction.
+So let’s dive deep.
+Historical Evolution — The Story of New Platforms
+Technology Wave leverages platforms to build scale. New platforms enable new applications, which in turn make the new platforms more valuable, creating a positive feedback loop. Technology progress in the last 20 years has thrown up three key platforms — mainframe/PC, the Web, and mobile. Each platform requires recreation of the application layer, built and customized to grow and scale the new platform. Refer to the picture below.
+
+Because of these technology product cycles, there are mutually reinforcing interactions between platforms and applications. In the last seven to eight years, we have shifted from an “era of the web with browser-based applications” to an “era of smartphones with native apps.” With the growth of mobile -as- a- platform, the application layer also underwent a substantial change.
+With the change in platform, this shift is set to happen again. What we are witnessing now is the “hyper-growth phase” of the mobile platform and, by 2020, almost 80% of people in the world will have a smartphone.
+If 2020 is “peak mobile,” then we are already in the gestation phase of a new platform, which will require recreating new application layers. This means that applications built for mobile as the primary platform are slowly beginning to lose relevance.
+Our experience of the mobile screen as a bank of app icons is dying and we are moving toward a UI-less computer interaction environment. This change in paradigm has a massive impact on how we need to design and build applications.
+Remember, thus far, all human progress has been about how humans interact with machines.
+The Paradigm Shift in the Transfer of Knowledge
+How would you define the UI of Amazon Echo, Nest thermostat, or Siri?
+Is it voice, a shrug, a grunt, or a caress?
+Before you answer that, let’s refer to an important thread in technology history — The Transfer of Knowledge.
+The transfer of knowledge, thus far, has evolved in three paradigms — human to human (past), human to machine (present), and machine to machine (future). For the first time in our history, the new transfer of knowledge will not involve humans.
+Advancements in the Internet of Things (IoT), Artificial Intelligence (AI), and robotics are ensuring that the new transfer of knowledge and skills won’t be to humans at all. It will be directly machine to machine (M2M).
+Objects such as smartphones, connected cars, iBeacons, wearables, and cameras will begin to communicate in ways that no entrepreneur has yet to imagine. Google Mind, Boston Dynamics-Atlas, virtual reality, and drones are just a glimpse of things to come.
+Our experience of technology is becoming so immersive that the idea of an app as a destination is becoming far less important, and very soon the primary interface for interacting with apps might not be the app itself.
+We’re entering the age of apps as service layers, where apps are intelligent, purpose-built, and informed by contextual signals like location, hardware sensors, previous usage, and predictive computation. They respond to us when we need them to, and represent a new way of interacting with our devices.
+Hence, the Application-User Interface is undergoing a massive paradigm shift, and these are the key trends driving it:
+1) Apps are Becoming APIs and Bots are Taking Over
+Looking back to the Web 2.0 era of the mid-2000s, we’ve witnessed a huge change to the Internet. It went from static pages and moved towards applications. Sites like Google Maps or Flickr opened up their APIs, allowing anyone to build websites pulling in their data. With this ability to create new things on top of this data, websites were transformed from static pages into dynamic services.
+Now, we are witnessing the same ‘shift’ in Mobile. With an increasing number of mobile apps and decreasing size of the mobile screens, we’re reaching a peak in the mobile “OS & Apps” paradigm. Downloading, setting up, managing, and switching between so many apps on our mobile device is merely becoming inefficient.
+Thus, transaction-based apps such as those to book cabs, search, and shop or order food are predominantly turning into APIs within the messaging apps. It does not matter anymore which app owns the user. Eventually, the operating system or the platform everyone has built their application on ends up owning them all. However, there are some exceptions to this, particularly in China, where the OS platform itself is still fragmented, and the applications reside in the root of the mobile OS on that platform.
+We are also witnessing something similar to a trend in the ’90s, when browsers replaced the desktop OS as the new platform, and websites replaced client applications. A similar transformation is happening today. Messaging bots are beginning to replace mobile apps.
+Bots are to modern messaging apps what APIs were to Web 2.0: a way to build on top of other services and a new way of interacting with underlying (existing) services, significantly changing human-and-computer interaction.
+Therefore, we are witnessing the start of an era, where messaging is the new OS, Bots are the new apps, and the “bot store” is the new app store.
+We are just at the beginning of the bots era and there are many more developments to come. These developments will open up new and giant opportunities for consumers, developers, and businesses.
+Some leading players in this space are Messenger, WeChat, Line, Kik, Slack, and Telegram.
+2) Notification is the Interface and Emergence of Super Apps-as-Platforms
+The days of sending lots of notifications to bring people back to an app are going away. The focus is on designing notifications that people can engage with then and there without opening the app. This new paradigm matches much more closely with how real life works. We don’t live our lives in silos, like the app silos that exist today. People are beginning to forget about apps and thinking in terms of businesses, products, solutions, and services.
+There is a definite trend towards notifications as the new interface. Very soon, we may not need to open an app to interact with it. It will still live on the device, but its interface will reside on the top layer of our phone, the notification layer. With the container for content soon becoming invisible, learning to engage users via notifications is the key.
+Paul Adams, former Googler wrote this:
+“In a world where notifications are full experiences in and of themselves, the screen of app icons makes less and less sense. Apps as destinations make less and less sense. Why open the Facebook app when you can get the content as a notification and take action — like something, comment on something — right there at the notification or OS level. I believe screens of apps won’t exist in a few years, other than buried deep in the device UI as a secondary navigation.”
+Action now resides in the notification. Google Streaming and Apple Extensions are a step in that direction.
+This trend is very much visible in what’s already happening in China with Baidu and WeChat, where smaller apps are getting bundled within bigger apps, only surfacing when some interaction in the UI invokes the smaller app. For example, in Baidu Maps, you can find a hotel, check room availability, make a booking, and make payments, all inside the app.
+
+Baidu Maps allowing users to search, book and confirm a movie
+Looking at the Chinese internet market is always a great way to challenge one’s belief in what’s inevitable. In this case, Baidu Maps, Alipay, and WeChat, amongst others, are thriving on exactly this approach, that is, bundling multiple services into one Super-App.
+
+Walled Gardens, Portals, Platforms- Chinese App UI’s
+In the western world, Facebook is also looking to bundle its Messenger back with a layer of accessories, highlighting how short the cycle of unbundling can be in a mobile-first world. I think Facebook is very likely to make some major announcements at the forthcoming F8 in April 2016 around Bots and Messenger as a platform.
+3) The Shift to Context, Conversation, and Human UI
+Since messaging apps are used more than any other application on the mobile platform, what if instead of installing an app, we allow a service to chat with us via a message?
+One trend that is making good use of advancement in natural language processing is the rise of Chatbots and Conversational UI’s, that is, using automated software inside WhatsApp/Messenger/WeChat or other messaging apps.
+The cause of this shift is simple: human nature. The conversational interface allows users to ask questions, receive answers, and even accomplish complex tasks in both the digital and physical world through natural dialogue.
+Humans are innately tuned to converse with others. It’s how we share knowledge, emotions, and organize ourselves. Language has been part of our makeup for hundreds of thousands of years. So, of course, we message all day long in bursts and binges, with family, friends, and colleagues. Messaging has become a platform through which our daily life is conducted.
+My experience, in China and other South East Asian countries, of using Weixin (WeChat)and Alipay for booking cabs, movie tickets, checking flights, making payments, video calls, and more has only reinforced my conviction — that a chat and voice-based messaging, payment, and commerce platform is the future of the “attention economy.”
+These apps don’t use a traditional UI as the means of interaction. Instead, the entire app design revolves around a single messaging screen; hence, they are called “Invisible” or “Conversational” apps. While these apps support a slew of different functions, from checking our bank accounts, scheduling a meeting, making a reservation at a restaurant, to being our travel assistant, they all have one thing in common: messaging is at the heart of the interaction.
+Led by Facebook Messenger in the West, and WeChat in the East, messaging apps are quickly transforming themselves into all-encompassing platforms, thereby allowing users to buy products and services, send payments, communicate with businesses, and engage in commerce, leading to a convergence of context and transactions within messaging platforms.
+Two good examples of this approach are Baidu Maps and WeChat in China.
+Using Baidu Maps, you can not only find a restaurant but also book a table or order home-delivery. You can find where a film is showing and choose a seat. You can order a cab, with cabs from all the services in your city shown together on the map. You can book a hotel room or an on-demand cleaner. Most of these services are provided through embedded third-parties service providers’ applications — Baidu is already doing deals with other Chinese Internet companies to provide this.
+WeChat (which now has 840M users) is doing much the same, but, of course, starting from a chat experience rather than a maps experience. WeChat has amassed a massive user-base, become a platform (where the underlying OS doesn’t have power because of multiple operating systems), and emerged as a ‘Super-App’ — the mother of all the apps.
+
+Booking a doctor appointment via WeChat Wallet- Image credit a16z.com
+
+WeChat Virtual Assistants- KPCB
+‘An App within an App’ is very different from ‘Chat based Interface.’ You’d need to use WeChat in China to understand the location ‘context’, and the entire WeChat ecosystem — Official Accounts, Payments, Location,QR codes, O2O and API’/Application Layer, tech architecture, etc. It is akin to a Portal, Platform, and Mobile OS combined, and very different from anything in the western world.
+Another important aspect to note is the increasing role of pre-existing context. Extending the Baidu Maps example, bookings are an organic extension of the context the user already is in. We’ll already be searching for restaurants on the map depending on our location, but now “make a booking” and “pay” will appear.
+In the Western world, a significant step in that direction is the recent partnership between Facebook and Uber; now we can order an Uber-Cab within the Messenger app. Facebook is also releasing M, a personal “Intelligent- Assistant,” integrated within Messenger to help us do just about anything.
+We are seeing this trend in conversational interfaces where companies like Operator and Magic are leading the way, designing rich experiences for their clients to interact with directly.
+
+Operator.com screenshots
+In conversational interfaces, the user experience is primarily a sequence of messages that flow back and forth and involve little layout and design, thus rendering the old paradigms obsolete.
+
+New start-ups developing invisible and conversational apps understand that the UI is not the product itself, but only a scaffolding allowing us to access the product.
+And that brings me to our next key trend.
+4) Voice Interface, Zero UI and the End of the Screen-Based Interface
+Extending the Echo and Siri example — are we in an era of Zero UI?
+“Not entirely, but we’re getting close.”
+Zero UI is the concept of seamless interaction with technology by removing the barrier between user and device. Typically we interact with a device directly through a touchscreen or indirectly with remote control. However, Zero UI is the push to become even more integrated with technology, such as touch-less tech in the case of Amazon Echo.
+Natural language processing, the field of computing and AI concerned with making computers understand and speak the natural languages of humans, has come a long way in recent years. Once the stuff of science fiction, advances in the field of machine learning and voice control have made voice interfaces far more practical, and this is making it easier to communicate with the devices around us.
+While a world entirely devoid of physical interfaces may never be a reality, a world tied less to our devices is already happening. At the helm of this transition are gesture-based user interfaces such as Project Soli.
+
+The gaming world was the first to adopt gesture controls as a way of providing a more natural user experience. Think the Wii, PlayStation Move, and Microsoft Kinect. Our gaming consoles are less tied to button commands and instead integrate more properties of physical space and motion into our experience.
+All of this is causing a shift in “design-think.” Instead of just designing for two-dimensions — that is, what a user is trying to do right now in a linear, predictable workflow — now the designers need to think about what a user is trying to do in any possible workflow.
+Andy Goodman, group director of Fjord, coined the term “Zero UI,” and defined it as “The new paradigm of design when our interfaces are no longer constrained by screens, and instead turn to haptic, automated, and ambient interfaces.“
+Zero UI is not a new idea. If you’ve ever used an Amazon Echo, changed a channel by waving at a Microsoft Kinect, or set-up a Nest thermostat, you’ve already used a device that could be considered part of Zero UI thinking.
+It’s all about interfacing with the devices around us in more natural ways: voice control and artificial intelligence, haptics, and computer vision.
+Maybe next time you’ll say,
+“Alexa — book me a flight to Singapore and charge to Visa card!
+In Conclusion: Re-Architecture and Re-Platforming for the Next Decade
+Web and mobile platforms are going through a massive re-architecture and re-platforming.
+2016 is definitely the year of everything conversational, and messaging is eating the world. Every community, marketplace, on-demand service, a dating app, social game, or e-commerce product has or will soon have chat as part of the experience to drive retention, engagement, and transaction volume.
+The current “pull-based” (we visit websites or download mobile applications) world is giving way to “push-based” (everything will come to us) world. With this “Big Reverse,” applications are disappearing into the background much like our electricity or water supply.
+Powerful speech technology from leading Internet companies is making it much easier to ignore the touchscreens on devices for something much more efficient and intuitive: our voice. The advancements in voice interface will also lead to the start of voice payments and voice commerce.
+Although, we are witnessing is the rise of the conversational and voice interface, the next wave is likely to revolve around Artificial Intelligence (AI). Intelligent Assistant applications like Echo, Google Now, Cortana, Siri, and Facebook M are an early example of how text/voice-based, conversational interfaces, will shape the world around us.
+The entire history of computing is nothing but the history of progress in our ability to communicate with machines. With AI-powered interfaces, what happens once we achieve Zero UI? What happens when our devices finally understand us better than we understand ourselves? What happens when the machines reach or surpass the “human level” of intelligence and computers get embedded in us?
+Do we become the next UI? — — Singularity, Anyone!!!"
+3,Zero UI Andy Goodman explores a possible future in which we don’t need complicated interfaces to interact with our products,zero ui,https://medium.com/net-magazine/zero-ui-dabeb2bc6aeb,"Zero UI has been sometimes misinterpreted as meaning getting rid of the interface entirely. What it actually refers to is a process where many of the visual interfaces we currently spend so much time with recede into the background, leaving us open to engage with the stuff that is important and useful to us. It is analogous to inbox zero, where we strive to achieve a blissful state in which everything is dealt with, calm and invisible. If that is possible, of course.
+I started my career as an interaction designer in 1994, although it wasn’t called interaction design then. My job title was probably ‘graphic designer’ , and since then I have been labelled a UX designer, experience designer and service designer. What we can deduce from these titles is that the object being designed has become less tangible over time, and less to do with interactions happening on the screen. I’m not sure what people that practice Zero UI will be called, but it will be something different again.
+Electronic mesh
+This shift away from the very controllable — although quite primitive — environment of screen and pointer means the things we are trying to do are becoming more complex. They now have to take into account a lot more ideas around human behaviours, motivation, emotion, and all kinds of weird things like that.
+We’ve always had to bring aspects of psychology and perception into our work, admittedly in a pretty amateurish way most the time. Understanding what would make someone click a button, how users would retain information, and the barriers to committing to a decision is important — but for all the elegance of the interfaces we have designed, they are all two-dimensional, with simplistic cues and triggers.
+As we move into a connected world where objects, people and environments are all joined together by a mesh of invisible electronic tethers, the decision making, the services we want, and the results we expect from our interactions become exponentially more complicated. Not only will a system have to predict what someone wants to do next, but it will also need to know where they are, where they are heading and what their intent is. It will be about how we as humans interact with entire systems, and how the constellations of things around us become part of an endless dialogue between us and the world.
+I don’t think there is a huge groundswell of opinion bemoaning the terribleness of interactive systems, products and devices. Quite the opposite in fact; we seem to be entranced by them all. And why not? The devices are beautiful, the systems are intelligent and the services make life so much easier. A few dissident voices, from the likes of Sherry Turkle, have put together pretty strong arguments for the social and emotional dissonance that our addiction to electronic media causes. But in the end the benefit the digital world has brought us far exceeds the problems it has caused.
+Nevertheless, we can all agree that removing the complexity these devices bring into our lives would be a genuine improvement on the state of things. Not just for the older generations, who try as they might are often confounded by the intricacy and closed-shop paradigms of software, but for all of us that have ever struggled with an update or service switch.
+Visual creatures
+The phrase ‘Zero UI’ is designed to provoke people, because as designers we spend a lot of time thinking about the way things look, and not much time thinking about anything else. It is inevitable because of the way platforms and computer interfaces have always been, and also the way that we interact with the world generally. We are primarily visual animals, and so we sometimes forget how important all those other senses are in conveying experience, and how important a part of our memory and identity they are.
+If we think of the ways in which we can make use of those other senses, we can start creating interactions that become more intuitive, more pleasurable and more subtle; and that create less work for us. The objective is to be able to spend less time fiddling around with computers, but still achieve the same outcomes, enjoy the content they provide for us and the communications they enable.
+The irony is that rather than delivering on the promise of freedom, computers have in some sense enslaved us. Not in a Terminator or Matrix sense, but in a much more mundane way. It’s the fact that the battery life on our phone isn’t good enough, or that we can’t work out what’s wrong with our router that’s causing most problems. Who would have thought such banal things would become such a major factor in our lives?
+Because the machines haven’t been designed well enough, it feels sometimes like we’re serving them rather than the other way around. We’re constantly having to feed them and keep them warm and keep them powered. Kevin Kelly’s seminal book What Technology Wants alludes to this idea that machines are a kind of domesticated animal that have evolved over time to get us to look after them.
+Because the machines haven’t been designed well enough, it feels sometimes like we’re serving them rather than the other way around. We’re constantly having to feed them and keep them warm and keep them powered
+Established patterns
+Let’s wind back and consider the problem interaction design was there to solve initially. It was designed to help us understand how a computer or a machine works and provide an interface for us to operate it. When I was younger, I always knew I was going to do something to do with computers and design because I was the only one in the family that could programme the VCR. I would think: this is really bad, why can’t it be easier? That is the motivation of any designer.
+A lot of those purely functional parts of the UI have been solved now, with the help of patterns that are pretty good for simple kinds of interface problems. You could go and design a whole different set of patterns, but they probably wouldn’t be as good and would require people to learn new ways of interacting.
+However, there is a whole set of more complex things we are trying to do now, which are really quite hard problems to solve. One example is the Uber app on your Apple watch: in principle a genius simplification of the experience — just open the app and call a car. But we all know how flaky GPS is, what if the car gets sent two blocks away? With such a simple interface the user has no way of adjusting the information to give the precision required. So they end up checking on their phone and the magic is killed. We will need multiple layers of failsafe and redundancy in systems to allow these types of interactions to become commonplace.
+Coordinated systems
+Imagine a Zero UI scenario where the user wants to travel to the other side of the country. Leaving aside the booking of the plane ticket for now (the complexity of which requires a detailed visual interface), all the systems that enable you to get to your destination could coordinate, from the alarm that gets you up in the morning, to your coffee machine grinding a double shot, to the alert that tells you when to leave and that you need to take the subway rather than trying to get a cab across town at that time of morning, to the system that allows you to walk straight through the pay barrier at the train station, and so on.
+Recently Matías Duarte, Google’s VP of design, talked about how atomised apps are the future of the mobile experience, and how even computer power will be distributed into smaller units, away from the device. This is very close to the vision I have for Zero UI, but perhaps a bit more conservative (necessarily). I would love to see a world where we can go about our daily business without having to waste valuable brain cycles on trivial things like making sure the cab finds our exact GPS coordinate."
+4,Zero UI: Designing for Screenless Interactions,zero ui,https://medium.com/thinking-design/zero-ui-designing-for-screenless-interactions-8b2215bc2d9f,"We are starting to live our daily lives in the post screen world. The advent of smart and contextually aware devices have changed how we interact with content. Data is a snapshot of our contextual connectivity to our physical and digital environments. Designers will need to build screen-less experiences that leverage data and algorithms to create value for users.
+By definition, Zero UI removes the traditional graphic user interface (GUI) from the equation and uses nature interactions of haptic feedback, context aware, ambient, gestures and voice recognition.
+The best interface is no interface.
+– Golden Krishna
+Haptic Feedback
+Haptics (or kinesthetic communication) provides the user with motion or vibration-based feedback. Sega’s Moto-Cross video incorporated haptic feedback through the controller to add to the experience of colliding with other players on screen. Nintendo brought haptics to home consoles with their Rumble Pak accessory. Today, we commonly experience haptics as we interact with small touch screens. Haptics are currently used by fitness trackers and smartwatches to provide notifications to the wearer. Haptic feedback is being extended to clothing, while ultrasound or ultrahaptics will bring the sense of touch to virtual reality (VR) and Kinect style gaming. Keeping haptics to a minimum and avoiding overuse enhances the value of the feedback for users.
+Context Aware
+Devices and apps that are contextually aware and remove the need for additional interactions simplify digital and physical experiences by anticipating user wants. Personalization allows Zero UI devices and applications to be preemptive, predictive, and proactive. Domino’s Zero Click App works on the premise that if you launch the app, you want pizza delivered. The only way not to have pizza delivered is to close the app within ten seconds.
+
+Domino’s Zero Click App via Google Play
+Context of use is being integrated into devices, lowering the overall need to interact with the app or device settings to achieve user wants. At first glance, the new Apple AirPods are just wireless earphones. However, they offer relevant and customized experiences to the user. Remove one AirPod, and music playback switches to mono. Remove both, and playback stops and resumes when the user puts them back in.
+
+Apple AirPods via Apple
+Other devices, like the Nest Thermostat, rely on collecting data on usage and interactions to adapt to the user’s anticipated needs. By leveraging sensors within a device or location data, we can design contextual experiences that become implicit rather than explicit interactions. What is the situation or context the user is in? What is the context of use of the device? The need is to build and design interactions that are in the background and temporal.
+The real problem with the interface is that it is an interface. Interfaces get in the way.
+– Don Norman
+Glanceability and Ambience
+Ambient devices work on the principle of glanceability, with no need to open applications or read notifications. One glance should provide the user with the needed information or context, much like a wall clock or a single day calendar. The Nabaztag Rabbit was a companion style device that provided glanceable experiences by combining colored lights and changing positions of the rabbit’s ears. While the Chumby provided a snapshot of information through widgets. The underlying premise of ambient devices is to create a seamless bridge between physical and digital spaces. These interactions are connected, browserless experiences. Both of these devices were short-lived as they were not able to adapt to changing technologies and the information needs of users.
+
+Nabaztag Rabbit — Image via CNET
+Gesture Based Interactions
+Gestures need to be easily learned and repeatable. One of the problems with gestures is getting systems to recognize the physicality of the actions (wave, hover and swipe) in the three dimensional space. System responsiveness to gesture inputs can create problems as users start going through multiple gesture sets trying to get the system to respond. There needs to be a balance between teaching the gestures and providing feedback to the user on successfully completing actions and tasks. Designing for gestures requires being adaptive and working within the limitations of the system (processing speed) and the focal length of the camera and establishing a minimum and maximum distance from the screen/camera for the interactions to occur. Google’s Project Soli makes “your hands the only interface you need” by using radar to detect fine movements. UI layers and interactions should not overextend the user’s motion away from the body as this can be fatiguing. Make gestures small and natural.
+
+Xbox Kinect Gestures via Microsoft: Programming with the Kinect
+Voice Recognition
+Voice recognition has been a part of science fiction since the early 1970’s and entered the mainstream with the advent of voice recognition and search in both iOS and Android phones. Users will accentuate syllables, words and phrases, thinking that this will allow the system to recognize their queries and commands. Designing the conversational UI requires additional user research to find out how users will phrase and construct their queries or statements. One of the difficult parts of voice recognition is the need to adapt the system to regional dialects and slang. Something as simple as ordering a pizza may become a complex design problem when all the different variants for ordering are considered. Understanding user wants and intent, or motivation, helps determine the phrasing or expression.
+
+Image via Amazon
+The Amazon Echo limits interactions to ambient or background conversations by requiring an initiation phrase with each command and query.
+Conclusion
+The future of Zero UI is in leveraging data and understanding user intent to design and build personalized user experiences that are relevant and anticipate user needs. Contextual devices create experiences that extend beyond the screen and connect our digital and physical worlds. Minimizing dashboards and providing information that is glanceable and creates value for users adds to the challenge of designing for screenless interactions. User research will extend beyond how we interact with an interface to how we live and use physical objects in our daily lives."
+5,Zero UI — Designing Invisible Interfaces,zero ui,https://medium.com/subscribed-magazine/zero-ui-designing-invisible-interfaces-d859fc964913,"Zero UI refers to a paradigm where our movements, voice, glances, and even thoughts can all cause systems to respond to us through our environment. At its extreme, it implies a screen-less, invisible user interface where natural gestures trigger interactions, as if the user was communicating to another person.
+It is brought about by the emergence and eventual mainstream adoption of sensors, wearables, distributed computers, data analytics, connected everything, where anticipatory, adaptive and contextually aware systems provide what we want when we want it — “by magic.” Zero UI will not be limited to personal devices but will extend to homes, entire cities, even environments and ecosystems, and as a result have a massive impact on society as a whole."
+6,The Zero UI Debate,zero ui,https://medium.com/swlh/the-zero-ui-debate-e4b8bee4b742,"The new paradigm of design calls for “design of artifacts, environments and systems” that respond to our thoughts, voices, movements and glances. The field of Interaction Design was realized to help understand how humans will interact and operate on computers. This has now led to everything being crunched into a rectangle screen and a central unit empowered to compute, creating self-knit personalities. Zero UI might remove this disconnect between humans, maintaining the human-computer interaction.
+“The real problem with the interface is that it is an interface. Interfaces get in the way”
+These words of Don Norman have been adapted in many designs, the most commercial products of such kind being personal assistants like Alexa and Echo. These devices are trained to anticipate user needs.
+In his talk at CHI 2014, Scott Jenson introduced the concept of a technological tiller. According to him, a technological tiller is when we stick an old design onto a new technology wrongly thinking it will work. The term is derived from a boat tiller, which was, for a long time, the main navigation tool known to man. Hence, when the first cars were invented, rather than having steering wheels as a mean of navigation, they had boat tillers. The resulting cars were horribly hard to control and prone to crash. It was only after the steering wheel was invented and added to the design that cars could become widely used. As a designer, this is a valuable lesson: A change in context or technology most often requires a different design approach. In this example, the new technology of the motor engine needed the new design of the steering wheel to make the resulting product, the car, reach its full potential.
+When a technological tiller is ignored, it usually leads to product failures. When it is acknowledged and solved, it usually leads to a revolution and tremendous success. And if one company best understood this principle, it is Apple, with the invention of the iPhone and the iPad.
+A technological tiller was Nokia sticking a physical keyboard on top of a phone. The better design was to create a touch screen and digital keyboard.
+A technological tiller was Microsoft sticking Windows XP on top of a tablet. The better design was to develop a new, finger-friendly OS.
+And I believe a technological tiller is sticking an iPad screen over every new Internet of Things thing. What if good design is about avoiding the screen altogether?
+Learning about technological tillers teaches us that sticking too much to old perspectives and ideas is a surefire way to fail. The new startups developing invisible and conversational apps understand this. They understand that the UI is not the product itself, but only a scaffolding allowing us to access the product. And if avoiding that scaffolding can lead to a better experience, then it definitively should be avoided.
+Designers who rely on visualgasm would require to think beyond screens. Intuitive interfaces are an example pointing towards this paradigm. Imagine you want to travel overseas. The ticket booking would be done by saying simple keywords. An alarm will be set and it will remind you accordingly, your cab will be ready at the same exact time you are done packing and the payment would be directly through your bank, all satisfying the Paulo Coelho’s words,
+“And, when you want something, all the universe conspires in helping you to achieve it.”
+
+Would you call this a UI or Zero UI?
+It will require efforts from both academia and investors to move ahead in this domain. Mind-reading computers to brain controlled robots, the age is near where products will be out of their Research phases, ready to kick in the markets. The role of designers shall change and UI designers will have to adapt to these.
+If we look at the history of interfaces, Xerox PARC and Apple Lisa, it required display of content. The current age demands control. The quest for making screens thinner will be gone for now, it will all be invisible. A question definitely will arise now, How will we get all the information we used to get earlier. To answer this, have a glance at your smartphone and think how much content you see is relevant to you now. You may even look at the webpage and see how much data is relevant to you for a particular time. Other things are just there because you might need them. Zero UI would enable computers to anticipate and produce content as you need.
+So does this means that all UI designers will be unemployed?
+Not really. As far as I know, UIs will still be needed for computer output. While bringing about the transformation, people will still use the screens to read, watch videos, visualize data and so on. What I do believe, however, is that design processes will be driven by these new technologies. This is necessary to understand for those planning to have a career in Interaction Design. In a future where computers can see, talk, listen and reply to you, what good are your prototyping skills going to be? What new software would Adobe launch for these designers now.
+Let this be fair warning against complacency. As UI designers, we have a tendency to presume a UI is the solution to every new design problem. If anything, the AI revolution will force us to reset our presumption on what it means to design for interaction. It will push us to leave our comfort zone and look at the bigger picture, bringing our focus on the design of the experience rather than the actual screen. Zero UI would still mean there is an interface for users to operates, its just way too different than screens. And that is an exciting future for designers.
+First step of all, definitely, is to have a proper name for this. Zero UI or No UI is too much offense for the existing UI Designers, nor does it explain what it is.
+"
+7,Zero UI: The End of Screen-based Interfaces and What It Means for Businesses,zero ui,https://medium.com/@inkbotdesign/zero-ui-the-end-of-screen-based-interfaces-and-what-it-means-for-businesses-11da8150d331,"Zero UI: The End of Screen-based Interfaces and What It Means for Businesses
+The television introduced us to the world of screens for the first time.
+Today, not a minute goes by without interacting with a screen, whether it is the computer or the mobile.
+Soon, however, we will be entering the era of screen-less interaction or Zero UI.
+A lot of devices and applications such as Google Home, Apple Siri, and Amazon Echo are already engaging with their end-users without the need for a touchscreen.
+What Is Zero UI?
+In simple terms, Zero UI means interfacing with a device or application without using a touchscreen.
+With the increasing proliferation of the Internet of Things (IoT), touchscreens will eventually become out-of-date.
+Zero UI technology will finally allow humans to communicate with devices using natural means of communication such as voice, movements, glances, or even thoughts.
+Several different devices such as smart speakers and IoT devices are already using Zero UI.
+As of 2018, 16% of Americans (around 39 million) own a smart speaker with 11% having an Amazon Alexa device, while 4% possess a Google Home product.
+Zero UI is fast becoming a part of everything, from making a phone call to buying groceries.
+
+Components of Zero UI
+Tech companies around the globe are using a variety of technologies to build Zero UI-based devices.
+Almost all these technologies are related to IoT devices such as smart cars, smart home appliances, and smart devices at work.
+Haptic Feedback
+Haptic feedback provides you with a motion or vibration-based feedback.
+The light vibration felt when typing a message on your smartphone is nothing but haptic feedback.
+Most smartwatches and fitness devices use this technology to notify the end user.
+Personalisation
+Some applications also eliminate or minimise the need for a touchscreen with the help of personalisation.
+Domino’s “Zero-Click Ordering App” relies on the consumer’s personalised profile to place an order without requiring a single click.
+If you already have Dominos Pizza Profile and an Easy Order, the app will place your order automatically in ten seconds after opening it.
+You can also open this app using your smartphone voice assistant such as Apple’s Siri.
+
+Voice Recognition
+Speaking of Siri, the voice search and command itself is a component of Zero UI.
+Cortana, Google Voice, Amazon Echo, and Siri are a few examples of voice recognition-based Zero UI applications.
+This technology allows a device to identify, distinguish and authenticate the voice of an individual.
+That’s why it has found applications in biometric security systems.
+Glanceability
+Face recognition is also turning into one of the most popular Zero UI technologies.
+Most laptops and computers already use this technology to unlock screens.
+However, Apple’s new Face ID feature takes it to a whole new level.
+With this feature, you can unlock your iPhone with just a glance.
+There is no need to hold your phone to your face.
+It uses infrared and visible light scans to identify your face, and it can work in a variety of conditions.
+Gestures
+Gesture-based interfacing is available on a variety of smart devices.
+For example, Moto Actions, a gesture-based interface on Motorola smartphones, allows you to carry out tasks such as turning on the camera or flashlight without unlocking the phone.
+A bit more advanced example refers to Microsoft Kinect.
+You can add it to any existing Xbox 360 unit.
+It uses an RGB-color VGA video camera, a depth sensor, and a multi-array microphone to detect your motion.
+Messaging Interfaces
+Messaging interfaces such as Google Assistant are also a part of Zero UI.
+If you already have a credit card or e-wallet added to your Google account, you can ask Google Assistant to order food with few text messages instead of wading through different food ordering apps.
+Similarly, you can perform several other tasks such as calling, texting, and sending out emails using the Assistant.
+
+Brands That Are Doing It
+Several brands are trying to create a Zero UI experience for their customers.
+While some companies are building intuitive apps, others are making their services available on Zero UI devices such as Amazon Echo and Google Home.
+Uber
+The Uber Alexa skill has been available on Amazon Alexa for some time now.
+Once you have installed Uber Alexa skill on your Amazon Echo and set the location of your Amazon Echo in the Uber App settings, just say “Alexa, ask Uber to book a ride” to call a ride at your doorstep.
+Starbucks
+Just like Uber, you can also order your favourite Starbucks drink using Starbucks Reorder Skill on Alexa.
+You can use the Google Assistant on your phone to order beverages and snacks from the Starbucks menu.
+You will need to link your Starbucks account and select a payment method before making the first purchase though.
+
+Apple’s HomeKit
+Apple’s HomeKit allows you to control smart home appliances using your iPhone.
+With a simple voice command, you can regulate the thermostat, or turn the lights on/off.
+CapitalOne
+The banking sector is also taking advantage of Zero UI.
+CapitalOne, one of the leading banks in the US, also provides banking service through Amazon Alexa.
+Registered users can check their bank balance or transfer money with voice commands.
+CBS
+CBS provides the latest news from all over the globe through Amazon Alexa.
+You can also access CBS TV shows, movies, and other programs using this feature.
+How Will Zero Ul Affect Web Design?
+Although Zero UI may seem like the end of visual interfaces, that’s unlikely to happen.
+Humans are visual beings.
+We can retain visual information better and longer.
+So, Zero UI is not going to eliminate screens.
+However, it is going to change the present concept of web design forever.
+Contactless management and predictive thinking are going to be the pillars of Zero UI design.
+The present web design, being two dimensional, is mostly built on linear sequences.
+For example, voice search is often carried out using simple voice commands such as “Call my father” or “Call an Uber” or “Tell me the score of yesterday’s Knicks game.”
+However, putting them all together “Call my father then an Uber and then tell me the Knicks game score last night” will probably render your voice search query useless.
+Web designing will have to evolve to handle such complex nature of human conversation.
+
+What This Means for Designers — Understanding Data and AI
+Zero UI brings the search and the purchase history (or behavioural data), two critical components of digital marketing, closer to each other.
+In other words, designers will need to design systems that are intelligent enough to contemplate and create the content you need.
+This, in turn, means, as a designer, you will need a thorough understanding of data analytics and Artificial Intelligence (AI).
+You will need to design the UI for interaction with the device, not just the screen as it will not be limited to the smartphones or computers.
+For example, let’s say you have to build a thermostat that can sense gestures.
+However, there are dozens of ways a user will tell it to increase the temperature.
+That’s where data analytics and AI comes in.
+The more you know about your consumers’ psychology and behavioural patterns, the easier it becomes to design a Zero UI device.
+What Zero Ul Will Mean for Businesses
+In a world of Zero UI, your business will rely on providing the right recommendations at the right time.
+You can’t afford to wait for the customer to initiate searches themselves.
+Your business needs proactive inspiration.
+Data
+You are probably already collecting tons of data for your business.
+You will need to continue gathering this information for Zero UI development as well.
+However, the new extended data structure will require various technologies including machine learning, AI, IoT, data analytics, and the Blockchain to work together.
+As a result, it will mostly be collected and controlled by tech giants such as Amazon and Google.
+So, small and medium businesses will have to form strategic alliances or register themselves with these brands to get this data.
+Context
+You will need to understand the meaning of what users are attempting to find.
+Most people start their search with a simple term, but they want more information about it.
+For example, if a user frequently orders Chinese takeout, his query for “restaurants near me” should list Chinese restaurants at the top.
+This is automatically inferred context.
+So, whenever someone uses a phrase related to your product or service, your system should automatically initiate the next steps to guide them to your brand.
+Design
+As mentioned earlier, your business will have to move away from the linear web designing process.
+Your prospects can take any of the channels in the extended data structure to reach your brand.
+Your system must be ready to gauge most of this incoming traffic.
+For example, a query for “nearest pizza shop” can come from a smart vehicle or a smartphone or even a smart home.
+Can your web design handle it?
+Content
+The content creation process will also become more dynamic than ever.
+You will need to produce content in conjunction with the changes in the consumer data.
+Local SEO will play a crucial role in Zero UI as most people will be searching for places and services in a given area.
+For example, you can think of promoting location-based deals to attract more foot traffic to your store.
+With voice search taking over text, natural language search will also take precedence in your SEO.
+
+How to Optimise Your Site for Natural Language Search?
+When it comes to natural language search, voice search is the most prevalent way of communication.
+Nearly 70% of requests on Google Assistant are natural language searches, and not the typical keywords people type in a web search.
+Optimising your website for this type of search is the first step towards creating a Zero UI experience for your prospects.
+Structure Your Content
+Usually, natural league queries are in the form of questions instead of phrases.
+If you are looking for a burger shop, you will ask “Where is the best burger shop in Chicago?”
+According to SEO Clarity, “how,” “what,” and “best” are the top three keywords used in these search terms.
+So, you need to optimise your website content for these keywords.
+Try to include them in your blogs, articles, and Q&A pages naturally.
+
+Use Long-Tail Keywords
+Conversational phrases also comprise long-tail keywords as people often use more words when they are talking.
+So, you will also need to optimise your website content for longer and more conversational phrases and keywords.
+While you are at it, try to maintain natural language throughout your content marketing efforts.
+Add your Website/Store to Google My Business
+Adding your website to Google My Business (GMB) helps attract more foot traffic through mobile searches, especially the “near me” searches.
+Add your phone number, physical address, business hours, user reviews, and store or office location to GMB.
+Zero UI and the Problem of Privacy
+In its attempt to provide users with a seamless experience, Zero UI may also lead to serious privacy and security issues.
+The ability to order an Uber or a pizza from your Amazon Alexa may seem like a magical experience, but that requires sharing your personal information such as credit card details with not only Amazon but also third-party sites.
+Meanwhile, IoT devices are providing cybercriminals with new ways to steal personal data.
+On October 12, 2016, Mirai, a self-propagating botnet virus brought down the internet service on the US east coast.
+The virus infected poorly protected internet devices. Similar attacks are taking place as we speak.
+However, using smart home appliances can also lead to the invasion of your privacy.
+Recently, Amazon Echo recorded a family’s private conversation and sent it to a random individual in their contact list.
+The victim, a Portland, Oregon, resident felt so insecure that she unplugged all the devices in her house.
+Though rare, incidents such as this raise some serious privacy and security concerns.
+
+Future of Zero UI
+At the moment, the future of Zero UI looks bright despite the security and privacy concerns.
+In the coming years, it will take the smart home and smart city concept to the next level.
+For example, planning a trip to a shopping mall in 2030 will require you say the magic words “Plan a trip to the XYZ mall tomorrow at 7 PM” to Google Home or Amazon Alexa.
+The system will take care of everything from planning a travel route to paying for the car parking in advance.
+Coupled with AI and advanced data analytics, Zero UI devices will be able to form an empathetic and a personalised relationship with your consumers.
+As human-machine interactions become more natural and human-like, it will open new opportunities for digital marketers.
+In Conclusion
+The Zero UI concept aims to make every community, marketplace, on-demand service, e-commerce site, and mobile application more interactive.
+However, this is going to open new doors for marketers and designers alike.
+Hopefully, this comprehensive coverage of the said topic will prove helpful in understanding its magnitude, consequences, and the opportunities it will create.
+If you still have doubts, let us know in the comment section. We will get back to you as soon as possible."
+8,Conversational AI is Eating the Web,zero ui,https://medium.com/@billrice/could-the-web-as-we-know-it-disappear-f8b5fed5cb7c,"Could the web, as we know it, disappear?
+Is it possible that beautifully frustrating browsers and websites disappear? Could these essential tools of daily life and work become technology footnotes alongside Usenet, Gopher, IRC, DMoz as antiquated interfaces to all the Internet’s amazing treasures?
+This future may seem hard to imagine considering most of us grew up experiencing the Internet by browsing websites inside of web browsers. But, believe it or not, the browser (1993 — Mosiac) and hyperlinked websites (1989 — HTTP) are relatively new ways to get information from the Internet. So, it’s not inconceivable that we’re about to transition into a new user interface.
+
+“closeup photo of eyeglasses” by Kevin Ku on Unsplash
+If you’re curious about what is to come, you’ll have to monitor a variety of discussions. Real innovation in user interface and experience (UI/UX) design is embedded in several related technology trends — Zero UI, Conversational AI, AI Assistants, Conversational Agents (Chatbots).
+I like the term Conversational AI because it best describes the underlying technologies that will ultimately enable this new UI/UX. To understand my prediction for Zero UI in the future, let’s better define this Conversational AI domain.
+What is Conversational AI?
+Conversational AI is the use of messaging, voice, and assistants to communicate with computers in a way that creates personal user experiences. In simpler terms, it’s talking to computers in a natural, human-like, conversational style.
+Of course, the challenge is computers aren’t naturally conversational. We have to teach them, which is where artificial intelligence (AI) comes into play. To make a computer conversational, we have to solve three technical challenges:
+Natural Language Understanding (NLU) — Computers need to understand the user’s request (intent).
+Natural Language Processing (NLP) — Computers need to process that intent into a task to retrieve the appropriate response.
+Natural Language Generation (NLG) — Computers need to translate the response into something that makes sense to the user.
+Each of these steps requires enormous amounts of analysis and learning (machine learning) fueled by a massive number of diverse conversations (training data set). This collection, analysis, and learning have only recently become realistic at the scale necessary to even get close to making computers conversational.
+The ubiquity of mobile phones and the swift proliferation of devices like Amazon Echo and Google Home have made crowdsourcing these conversations, at scale, relatively inexpensive and straightforward. Combine this explosion in training data with nearly free data storage, brought on by cloud computing, and rapid advances in machine and deep learning and you have a perfect storm. Conversational AI, as a superior interface, is becoming a reality.
+What is the web?
+It turns out that the web is an inferior version of Conversational AI. Think about our current version of the web. To give you reasonably intuitive access to information on the Internet, we force designers, developers, and users (people) to do all of the natural language processing.
+We build websites, informed by what we think are the most common use cases — workflows that users will use to get to what they want from our sites.
+(Secret Insider Sidenote: Ironically, that’s not really how we design websites. Truthfully, we design them to “funnel” you to where we want you to go. All along the way coaxing you to do what we want you to do.)
+Here in lies the everyday frustrations of using a web browser and navigating websites. This current UI/UX paradigm requires users to find what they want by interpreting what the designer thought when they designed the site. Not ideal.
+Why is Conversational AI is a Better UI/UX?
+One persistent theme in technology innovation is that users, especially power users, tend to fill the gaps and inform creators on how to make their inventions more accessible. Conversational AI is in this phase and swiftly advancing because of rapid user preference for this kind of user interface.
+Users, talking to their mobile phones and marginal conversational agents, are crowdsourcing a massive repository of incredibly diverse training data.
+Meanwhile, users and enterprises, over the last couple of decades have sourced and published nearly the total of all human knowledge on billions of websites. The vision of the Library of Alexandria has been realized in the Googleplex. Google (mainly) is indexing, organizing, optimizing, and learning without pause from publishers and searchers. This index has created another massive set of training data.
+But, these two activities are not yet ideally interfaced. Web users are still using old interfaces that force them to make compromises to the less conversational computers.
+For example, if you go to find something on the Internet today you probably still break your search down into keyword fragments. You’re subconsciously trying to think like the computer to get the most relevant response. Then, you go to a variety of websites and hunt and peck around using a combination of navigation cues and guesses to try and find what you need.
+The first process, search via Google, is getting much closer to conversational AI. I can type in a question and typically get a pretty reasonable list of potential answers and often time a direct summarized response. However, the second process, giving users answers to their questions on a website is a marginal experience even on the best-designed sites.
+The problem is understandable, a personal blog, small business website, or even an enterprise website doesn’t have enough conversations (traffic and interaction data) to sufficiently train its human designers to understand, process, and generate natural responses to their customers’ visits.
+So, the question becomes: Is it necessary to put this burden on websites and their owners? After all, that responsibility exists only because the web browser is the default user interface.
+Removing the limitations of current web user interfaces is where Conversational AI starts to get interesting as a superior web UI/UX.
+Conversational AI platforms and tools are giving enterprises, and even small businesses access to powerful NLP and machine learning at a technically accessible level for the average programmer or even business analyst. As this challenge to deploy bar increasingly lowers, adding this conversational layer to your website or application is going to become expected.
+The added benefit to the business is also compelling. If I can converse with your website — and it works — then you can focus more resources on producing valuable content and less on organizing it for customer discovery.
+How Conversational AI will make the web disappear
+It’s already happening.
+Navigation is disappearing from websites, reduced in many cases to a hamburger menu with a few obligatory links (i.e., contact and about pages). Websites, and the people that design them seem to be assuming that Google search is the user’s preferred navigation, especially for deep pages on our site.
+Think about your behavior.
+Here are a couple of the typical behaviors I witness in analyzing people asked to navigate the web.
+First, and probably the most common is a user asks Siri or Google Now a question in hopes of getting a direct answer or at least a relevant list of web pages that might help.
+Second, if I happen to be sitting in front of a desktop or laptop, I’ll type that same question into the search bar (formally known as the URL bar — how fast we evolve) in my favorite browser, which, interesting enough, will produce the same result. Google or Bing attempts to give me a direct answer along with a list of other possible direct answers, along with a relevant list of web pages.
+Behind each of these scenarios is Conversational AI.
+The approaching reality is that web users don’t need our weak attempts to anticipate their needs with human-crafted user interfaces and experiences. Very soon, it will be less critical to design navigation and intuitively organize our websites. Instead, we will just load up great content and let AI agents arrange, sort, interpret and talk to the humans.
+Before I leave you and to tease my next article, could web designers evolve into the intelligent designers of Conversational AI experiences? Think the eerie hidden corridors of Westworld."
+9,"Zero UI, Alexa and Google Home; the next era of interaction? or a massive hype?",zero ui,https://medium.com/@clowster/zero-ui-alexa-and-google-home-the-next-era-of-interaction-or-a-massive-hype-f10c40eab87,"The year is 2017. From CES, the launch of Samsung Bixby, to that viral video of a toddler asking Alexa to play digger digger, voice user interfaces (VUIs) have been hailed as the future of interfaces.
+A Place For Voice
+Voice works for some use cases: in-car experiences and home automation are prime examples. It’s also great for questions with absolute answers and short, information based transactions.
+
+Image via Rapid API
+Take the example of the image above, getting Alexa to tell you the answer would probably take 2–3 seconds maximum. The alternative would be to find your phone, unlock it, open your browser, tap the search bar, and type in “What is hello world in German” wait for the page to load and see the results load; this would take at least double the time for you to just ask.
+For this test, a voice-only UI wins, but are these standalone home assistants the solution to our impatient, busy lives? Not really.
+When voice only UIs become a problem
+Compared to GUIs, voice-only UIs create a massive cognitive load on the user; instead of having all the options in front of them, they are have to remember the options at every given stage of the user flow. Yes, the assistant or system may be able to give the user options at each stage of the process, but will the user be able to retain the information given?
+What’s easier, remembering a shopping list told to you over the phone? Or having the list in front of you?
+Once a non-binary choice comes into the equation, voice-only UIs fail tragically.
+
+Do you remember of that?
+A bit of theory
+One of the most influential theories of cognitive psychology is the work of George Miller, stating that 7 is the magic number of working memory capacity. In other words, we can only retain 7 (plus or minus 2) pieces of information at any given time. So does that mean we can remember 5–9 choices? Well, technically yes, but in reality, no. Those seven “memory slots” are not for exclusive use of Alexa. As these new home assistants do not have a screen, the user would probably be doing something else at the same time. Looking at the cobweb on the ceiling? One slot. Thinking about how hungry you are? another slot. Loud neighbours? One more. We also have to include things that run at the back of our minds. Realistically, we don’t have the capacity to retain that many choices, let alone remember the right prompts to continue with your query or action.
+Screens + Voice = Win
+The irony is that if voice UI wants to become mainstream, it cannot be zero UI (except for simple, linear journeys with absolute answers). It has to be used in conjunction with GUIs to create the optimum experience. We don’t have to look that far to find good examples of this, both Apple’s Siri and the Google Assistant on phones are a mix of voice and graphical interfaces. However, these only use the voice aspect as the input and don’t normally allow for a full voice story.
+Adding to the existing G(V)UIs
+Apart from just using the GUI to display results, the visuals can also be used to prompt further user input in longer, non-linear stories. A mockup that I’ve recently been working on, was inspired by the little prompt bubbles seen on Facebook’s Chatbots and Google Assistant.
+For this particular project, we looked at a journey with multiple branches. We found that displaying the options to the user, reduces the demands on them and allowed them to see where they are in the journey. In addition, it provided them with an option to step back to the previous set of options.
+
+The visual part of the GVUI interface through a journey.
+It’s common that first time users approach emerging technology with some doubts. We see many people in our lab completely blank when asked to speak to our assistants. Having the reassurance that they can go back and see their options made them feel more at ease. Furthermore, when given the blank slate of “ask me anything”, users often freeze and don’t know where to start — giving them a starting point and some direction is key.
+when given the blank slate of “ask me anything”, users often freeze and don’t know where to start.
+Artificial Intelligence cannot really understand us (at the moment)
+As much as Sci-Fi and glossy product launches would like us to think that artificial intelligence powered interfaces can answer all of our questions, the reality is we are still quite far off from machines completely understanding what humans mean in context. For example, a sustained conversation with Siri is still not possible beyond a few interactions. In other words, most automated conversational UIs require huge UX effort to guide the user down the path of possibility.
+
+Artificial Intelligence is not at the point where it can truly understand us.
+Bottom Line
+Voice is faster and more intuitive when the interaction between the user and the system is linear, short and binary, such as turning on the lights or asking for currency exchanges. However, once the journey branches out or if the interaction has many steps, a voice-only UI will not suffice, even when machine learning is used to predict user intent.
+A Graphical + Voice User Interface (GVUI), with some careful UX crafting will allow users to go through more complex journeys, by prompting them and allowing them to see where they are in the journey. We need to take a step back from the Zero UI hype, and go back to our roots of GVUIs, the stomping ground of Siri and the Google Assistant on phones."
+10,Zero UI — Introduction to new way to interact,zero ui,https://medium.com/@ShahnazShahJaha/zero-ui-introduction-to-new-way-to-interact-6942d1b3bb32,"Let me clear the dust from outset, neither this is a browser nor a library to build the interface. This is simply a new approach to delight your customers as this helps them to complete their actions while doing something else as well (simply multitasking).
+Recently, I lead the team to build the android app prototype that practically doesn’t have any interface and totally voice based.
+Initially, we were quite skeptical about our approach to complete the entire purchase path without any interface —
+
+Purchase Path
+Our target audience are —
+Person driving a car wants to place an order
+Parent feeding their baby and wants to complete an action
+A millennial teen stuck with headphone and doesn’t want to look at the screen
+This list will have more and more entries in future. I have no hesitation to deduce that soon (in next 4–5 years) browser will be out of market and screenless apps will have more footprint than UI based. Designers will not talk about responsive design but will emphasis on #responsivevoice. Mouse (not the living one) will be part of technology museum and every device will be able to listen and respond.
+Current timeline shows so many prototypes and experimental apps, but soon there will be standardized and useful options available for users. Google and Amazon are the frontrunners providing the framework and platform; but they are more focused to promote and boost their offerings rather than offer it for general purpose.
+There is a huge vacuum for neutral players to develop a platform/framework or programming language to attract more developers. Hope someone like James Gosling, somewhere is sipping his favorite coffee and designing new ‘Java’, to foster more independent innovations in this #zeroUI bubble."

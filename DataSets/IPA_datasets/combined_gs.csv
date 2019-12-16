@@ -1,0 +1,874 @@
+doc_id,title,term,url,text
+1,Equivalence checking for comparing user interfaces,zero ui,https://dl.acm.org/citation.cfm?id=2774844,"Plastic User Interfaces (UIs) have the capacity to adapt to changes in their context of use while preserving usability. This exposes users to different versions of UIs that can diverge from each other at several levels, which may cause loss of consistency. This raises the question of similarity between UIs. This paper proposes an approach to comparing UIs by measuring to what extent UIs have the same interaction capabilities and appearance. We use the equivalence checking formal method. The approach verifies whether two UI models are equivalent or not. When they are not equivalent, the UI divergences are listed, thus providing the possibility of leaving them out of the analysis. In this case, the two UIs are said equivalent modulo such divergences. Furthermore, the approach shows that one UI can contain at least all interaction capabilities of another. We apply the approach to a case study in the nuclear power plant domain in which several UI versions are analyzed, and the equivalence and inclusion relations are demonstrated."
+2,The return of the chatbots,zero ui,https://www.cambridge.org/core/journals/natural-language-engineering/article/return-of-the-chatbots/0ACB73CB66134BFCA8C1D55D20BE6392,"By all accounts, 2016 is the year of the chatbot. Some commentators take the view that chatbot technology will be so disruptive that it will eliminate the need for websites and apps. But chatbots have a long history. So what's new, and what's different this time? And is there an opportunity here to improve how our industry does technology transfer?"
+3,Interface Tesseracto UI and the Hologram: A Zero UI Proposal,zero ui,https://www.igi-global.com/article/interface-tesseracto-ui-and-the-hologram/236638,"Building Tesseracto UI-type holographic interfaces is one step significant interaction in interfaces of computational devices with interaction in 3D. This follows the idea that the best user interface is no interface device, in the space of the hypercube and the fourth dimension. The contact device detects haptic interfaces, at the same time the touch in a free space as contact is made from fine ultrasonic sensors corresponding to the hologram images. The prototype was developed using the vertical and horizontal ultrasonic devices and a display hologram. The device is still in the testing phase, but the connection with the computer screens is already possible, in a prototype environment.
+Article Preview
+Top
+2. What Is The Work Of Art As Thing, Virtual Interface And Zero Ui
+It also emphasizes that the concept of aesthetics goes beyond all this, and the concepts of form and content “in which everything fits and something”, making the rational as logical and the irrational as allegorical nowadays incorrectly as virtual or even imaginary. The Heidegger points out and must be taken into account, together with Hinton's discourse on Tesseractus, is that “form-matter and the subject-object relationship, then representation has a conceptual mechanics which nothing can resist.” (Heidegger, 2017: 18).
+
+The fundamental question of the distinction between matter and form, when we are treating as mere things, is primarily due to the “dilation and the emptying” of these concepts, that is, the “remission to a vast use”, trying to make them “natural determinations” to work of art.
+
+In order not to miss out on the essential questions, he will say by way of example: “The granite block, which rests on itself, is something material in a well-defined, though coarse form. This form here means the distribution and ordering of the parts of matter in the places of space, which has as consequence a certain outline, namely that of a block “(Heidegger, 2017, p. 19), and he will say at the end of the reasoning the properties and possibilities of granite, that “the being that is submitted is always the product (Erzeugnis) of a fabrication (Anfertigung)” (Heidegger, 2017, p. 29), the product being manufactured as “an accessory for something”.
+
+It which is compatible with Flusser's manufacturing idea (2017), and which translates into an essential concept of artifact (Marcos, Mucheroni, 2018), although there may be subtle distinctions between the three: Heidegger, Flusser and our concept of the artifact."
+4,InteractivePaper: Minimalism in Document Editing UI Through the Handwriting Prism,zero ui,https://dl.acm.org/citation.cfm?id=3357099,"The use of the minimalistic design in the document editing UI based on novel handwriting recognition technologies for mobile devices with a touch screen is very limited in real-world applications, mainly due to the propagation of errors made by recognition engines for different types of input. It is caused by the iterative nature of recognition for diverse input. Currently, one of the common ways is to pre-configure the input type manually for different types of documents' content that leads to an increase in UI complexity. Bearing this in mind, we revisit UI design issues regarding the unification of recognition flow by introducing the document layout analyzer, to avoid switching between modes during input of handwritten documents. The system for the iterative input of diverse document by using handwritten strokes recognition techniques was presented. Using an evaluation study, we have shown that the proposed approach provides a more interactive experience for the user and increases the input speed by 1.5--2 times compared to the classical approaches."
+5,Eye Drive: Gaze-based semi-autonomous wheelchair interface,zero ui,https://ieeexplore.ieee.org/abstract/document/8856608/,"Existing wheelchair control interfaces, such as sip & puff or screen based gaze-controlled cursors, are challenging for the severely disabled to navigate safely and independently as users continuously need to interact with an interface during navigation. This puts a significant cognitive load on users and prevents them from interacting with the environment in other forms during navigation. We have combined eyetracking/gaze-contingent intention decoding with computer vision context-aware algorithms and autonomous navigation drawn from self-driving vehicles to allow paralysed users to drive by eye, simply by decoding natural gaze about where the user wants to go: A.Eye Drive. Our ""Zero UI"" driving platform allows users to look and interact visually with at an object or destination of interest in their visual scene, and the wheelchair autonomously takes the user to the intended destination, while continuously updating the computed path for static and dynamic obstacles. This intention decoding technology empowers the end-user by promising more independence through their own agency."
+6,The Best Interface For A System,zero ui,https://myassignmenthelp.com/free-samples/the-best-interface-for-a-system,"What does the statement “the best interface for a system is no User interface”? When might this apply and provide examples
+The term No User Interface or Zero UI refers to the feature that enables users to have a screen-less experience with their devices. According to (), it can be considered as a great interface design that can make a device more user friendly by which people can complete their tasks more efficiently. Nowadays, people have become more app-obsessed and they always try to use best tools for their jobs. No one wants to go back to the age of flip-phone, everyone needs a smart phone to get immediate solution for their job-related problems (Kumar, Stecher & Tamura 2016, p.1870).   
+
+For example: In this context, it can be stated that, the automobile engineers can use this zero UI concept in solving the transportation problems. With the help of the technological progress the engineers can make a touch-screen central control that helps the driver to look at their way while driving. Another application of this screen-based thinking can be the app, by which people can get relief from swiping their smart phones (Al-Fuqaha, et. al., 2015). As Apple has launched a new app through which people can speak can speak to their screens for clicking a selfie or calling someone. This app may help the users to access the things more easily that they care about."
+7,zPots: a virtual pottery experience with spatial interactions using the leap motion device,zero ui,https://dl.acm.org/citation.cfm?id=2574834,"We present zPots, an application for gesture-free hand-based design of virtual pottery enabled by the Leap Motion device. With zPots, a user can shape and color 3D pots by moving bare hands in the air with minimal or no training. Unlike large-space hand-and-body movements required by depth cameras such as the Kinect, the use of the Leap motion device facilitates close range 3D interactions collocated with the personal computer. We demonstrate our application as a synergistic combination of novel spatial interactions and tool metaphors that cater to engaging and realistic experiences while supporting creativity in 3D shape conceptualization and modeling."
+8,An adaptation technique for multimedia applications based on the user context to manage the service quality,zero ui,https://avestia.com/MHCI2014_Proceedings/papers/63.pdf,"-Currently, the adaptation of multimedia applications is necessary, because documents can be accessed at
+anytime and anywhere with a wide variety of devices, such as PDAs, laptops and tablets. Unfortunately, in most
+applications dedicated to this type of problem, are essentially based on the heterogeneity of the data (image, sound,
+text, video and encoding format for each type), related to a user context, the context of terminal and network
+receiver and transmitter. In this paper. We propose an architecture on-the-fly adaptation of multimedia documents.
+More precisely, we propose a procedure that selects the relevant adaptation policies to build a document adapted to
+ensure quality of service and to consider the limits users (physical handicap, preferences of users)."
+9,Becoming a User Interface and User Experience Engineer,zero ui,https://books.google.com/books?hl=en&lr=&id=YEJgDwAAQBAJ&oi=fnd&pg=PP1&dq=%22zero+UI%22+user+interface&ots=zWIDEMNY7N&sig=IuPFOr_zGfAE-UFf6ACy87Nmx6M,"Customer satisfaction does not only apply to goods and services but is also extremely important to the digital world as well. As smartphones and mobile devices have become increasingly common, billions of people rely on technology to schedule and live their lives. User interface (UI) and user experience (UX) engineers work to ensure a pleasurable interaction between a customer and product. Accomplishing this requires a knowledge of a variety of fields, including programming, graphic design, marketing and branding, and psychology. This book explores the training, challenges, and rewards of these exciting professions."
+10,Raspberry Pi based voice-operated personal assistant (Neobot),zero ui,https://ieeexplore.ieee.org/abstract/document/8821892/,"This research work aims to build up a personal assistant by using Raspberry Pi as a processing chip and underlying architecture. It emphasizes the substitution of screen-based interaction by utilizing ambient technologies, Robotics and IoT, means the user interface is integrated with the physical gadget. It comprises of components, for example, IR sensors, Pi camera [6], Mic and Motor driver. It is a voice-controlled personal assistant whose movements will be controlled through voice directions and it has the capacity to peruse the content from pictures and then articulate the equivalent to the client by utilizing the inbuilt speaker. It can help the outwardly disabled to connect with the world by giving them the access to informative sources like Wikipedia, Calculator, and so on by using their voice as the command."
+11,Voice user interface design,vui,https://books.google.com/books?hl=en&lr=&id=PI_n2EcJfT0C&oi=fnd&pg=PR17&dq=voice+user+interface+vui&ots=qTWs69H-cd&sig=fTSLStrX94li5QV6Qh48azMWCZs,"This book is a comprehensive and authoritative guide to voice user interface (VUI) design. The VUI is perhaps the most critical factor in the success of any automated speech recognition (ASR) system, determining whether the user experience will be satisfying or frustrating, or even whether the customer will remain one. This book describes a practical methodology for creating an effective VUI design. The methodology is scientifically based on principles in linguistics, psychology, and language technology, and is illustrated here by examples drawn from the authors' work at Nuance Communications, the market leader in ASR development and deployment.
+
+The book begins with an overview of VUI design issues and a description of the technology. The authors then introduce the major phases of their methodology. They first show how to specify requirements and make high-level design decisions during the definition phase. They next cover, in great detail, the design phase, with clear explanations and demonstrations of each design principle and its real-world applications. Finally, they examine problems unique to VUI design in system development, testing, and tuning. Key principles are illustrated with a running sample application."
+12,A comparative study of speech and dialed input voice interfaces in rural India,vui,https://dl.acm.org/citation.cfm?id=1518709,"In this paper we present a study comparing speech and
+dialed input voice user interfaces for farmers in Gujarat,
+India. We ran a controlled, between-subjects experiment with 45 participants. We found that the task
+completion rates were significantly higher with dialed
+input, particularly for subjects under age 30 and those
+with less than an eighth grade education. Additionally,
+participants using dialed input demonstrated a significantly greater performance improvement from the first
+to final task, and reported less difficulty providing input
+to the system.
+ACM Classification Keywords
+H.5.2 User Interfaces: Voice I/O User Interfaces; H.5.2
+User Interfaces: Evaluation; H.1.2 User/Machine Systems: Human Factors
+Author Keywords
+voice user interface, speech interface, isolated word, DTMF,
+India, rural development, semi-literate, ICTD
+INTRODUCTION
+Speech interfaces have been identified for their potential to increase access to information services in developing countries like India, where 480 million illiterate
+people reside [12]. Earlier research has demonstrated
+that automatic speech recognition (ASR) is possible for
+languages and dialects with limited speech resources,
+such as many of those spoken in India [10]. However,
+with this approach, acceptable error rates can only be
+obtained with a voice user interface (VUI) design that
+accepts a small number of distinct single word utterPermission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. To copy otherwise, or
+republish, to post on servers or to redistribute to lists, requires prior specific
+permission and/or a fee.
+CHI 2009, April4- 9, 2009, Boston, Massachusetts, USA.
+Copyright 2009 ACM 978-1-60558-246-7/09/04...$5.00.
+ances at each node in the application (isolated word
+speech input).
+Dual-tone multi-frequency (DTMF) is a mechanism for
+navigating voice user interfaces using the phone’s numeric keypad. In this paper we present a study comparing isolated word speech and DTMF input VUIs
+for farmers in rural Gujarat, India. We conducted a
+controlled, between-subjects experiment with 45 participants, most of whom had less than an eighth grade
+education. The goal of our study was to compare performance and user preference between the two input
+modalities and to correlate the results to users’ education levels and age. Our results show that DTMF
+outperformed speech in terms of task completion rate
+and learnability, and users reported significantly less
+difficulty providing input using DTMF.
+RELATED WORK
+Many studies comparing input modalities for VUIs have
+been conducted in developed countries [3, 4]. Lee and
+Lai compared a dial interface to a fully functioning natural language system. They found that user preference
+depends on the task being completed — DTMF was
+preferred for linear tasks (i.e. listening to voicemails in
+the order received), while speech was preferred for nonlinear tasks (i.e. listening to voicemails from a specific
+acquaintance in random order) [6]. Delogu et. al. compared DTMF to three different speech input systems
+and found no difference in performance, but found a
+user preference for DTMF over an isolated word interface [2]. In this paper we report results from an important user population outside the scope of these studies.
+Our experiment involved farmers from rural Gujarat,
+a state located in western India, where the native language is Gujarati. 87% of the participants had never
+used a computer and 73% of the participants had less
+than an eighth grade education.
+Other researchers have investigated the design of VUIs
+for such populations. Sherwani developed a VUI in
+Urdu for semi-literate community health workers in Pakistan [11]. Plauche designed a VUI in Tamil for accessCHI 2009 ~ Designing for Other Cultures April 6th, 2009 ~ Boston, MA, USA
+51
+ing agricultural market information [10]. She demonstrated that by restricting the input vocabulary to 2-3
+words per node, a VUI using only 15 speakers’ speech
+data could achieve an error rate of 2% or less. The
+tradeoff for accuracy was that most prompts were yesor-no questions. In this study, we evaluated a system
+which uses a viable alternative strategy for limited resource languages: using a recognizer trained on another
+language with copious speech resources (English in this
+case).
+Prior research has pointed out that numerical literacy
+can be leveraged for designing user interfaces accessible
+to semi-literate users [8]. Several researchers have experimented with DTMF interfaces in developing regions
+and found them preferable to speech input for women
+users, and in situations where speaking out loud could
+raise privacy concerns [7, 9]. However, we are not aware
+of other published studies directly comparing these two
+input modalities for the population we are considering -
+users with limited education and experience with computer interfaces.
+PROTOTYPE
+For our study, we designed Avaaj Otalo (“voice-based
+community forum”), a Gujarati language application
+allowing farmers to access agricultural information over
+the phone. To accommodate novice users, our main design goal for the interface was simplicity. Functionality
+was laid out in hierarchical menus, and all tasks were
+linear. We limited all navigational nodes in the application to two or three options. To avoid command ambiguity, only directive-style prompts were used, telling
+the user specifically what commands they could give.
+We partnered with Development Support Center (DSC),
+an NGO in Ahmedabad, Gujarat, to conduct a joint
+needs-finding exercise, based on which three system features were identified and implemented. The announcement board is a list of headline-like informational snippets, uploaded to Avaaj Otalo by DSC staff or other
+agriculture experts several times per week. The radio
+archive lets the caller listen to archived radio programs
+produced by DSC on agricultural topics of current interest. Finally, Avaaj Otalo allows farmers to record their
+own questions, for review and response by experts.
+We implemented both isolated word speech and DTMF
+versions of Avaaj Otalo. Prompts were recorded in a
+professional studio by one of the DSC radio program’s
+popular female voice personalities. Barge-in input was
+disallowed for both treatments. Figure 1 shows a sample
+dialog with Avaaj Otalo.
+Avaaj Otalo was built and deployed using IBM Research India’s WWTW [5] platform. For the speech
+recognition, Gujarati commands were converted to lexicons using the American English phoneme set. In our
+experiment, the system performed with a recognition
+accuracy of 94%. Although this is lower than Plauche’s
+Tamil system (98% accuracy), the difference reflects
+AO: Welcome to Avaaj Otalo! You can get to information by
+saying a single word. To ask a question, say ’question’; to listen
+to announcements, say ’announcements’; to listen to the radio
+program, say ’radio’.
+User: I want to ask a question.
+AO: Sorry, I didn’t understand. I can only understand single
+words. Do you want to ask a question... yes or no?
+User: Yes
+AO: OK, you want to ask a question. To ask a question about
+agriculture, say ’agriculture’; for animal husbandry, say ’animal’.
+....
+AO: OK, you want to ask a question about pests in cotton. Please
+say your question slowly and clearly after the beep.
+User: How can I protect my cotton crop from mili bugs?
+Figure 1. A sample interaction with Avaaj Otalo. The
+DTMF version of the application had identical prompts
+except that command options were mapped to numeric
+keys.
+the cost of a larger command vocabulary for limited
+resource languages.
+EXPERIMENT
+We tested Avaaj Otalo with 45 participants recruited
+from ten districts throughout rural Gujarat. To participate, we only required that subjects be farmers by
+profession. We focused on recruiting small-scale farmers; the median farm size was 10 acres. All of the participants spoke Gujarati as their primary language, and
+none spoke English. The majority of participants (87%)
+reported never having used a PC.
+We did not use a within-subjects experiment design because we felt the simplicity of the application would
+have introduced a priming effect. Input modality (speech
+vs. DTMF) was randomly assigned to each user, but
+was anonymously corrected to maintain balance across
+age, education and gender.
+Testing sessions were led by a DSC staff member who
+had experience communicating with the target user group.
+Participants were first introduced to the system and its
+features, and were assured that it was the system that
+was being tested, not them. Each participant completed three tasks with Avaaj Otalo corresponding to
+its three features (listening to announcements, listening to archived radio program recordings, and posting
+questions), ordered by increasing difficulty.
+We designed Avaaj Otalo to be responsive to input errors. If the system could not recognize user input, or if
+the user was silent, a follow-up prompt would ask the
+user to try again. If input was again not recognized, the
+system reverted to a series of yes-or-no prompts, offering each option serially. We classified a task as failed
+if the user either navigated to a part of the application that was not called for by the task, or failed to
+get passed the yes-or-no prompts after several attempts
+with no sign of recovery.
+We tested 38 participants in a quiet office, with only the
+DSC staffer and two researchers as observers. We used
+CHI 2009 ~ Designing for Other Cultures April 6th, 2009 ~ Boston, MA, USA
+52
+a landline phone in both treatments. The remaining 7
+participants, all women, were tested in their homes due
+to their traveling constraints. In the field, we attempted
+to be faithful to the office environment by testing in a
+quiet room with only the researchers and one family
+member of the participant present. A landline phone
+was not available, so we used a mobile phone. Participants in the DTMF treatment were provided a headset
+so that the dialpad could remain in front of them (see
+figure 2).
+Figure 2. Testing the DTMF interface with a participant
+at her home.
+Capturing Data
+We used several methods to record experimental data.
+For collecting demographic information, we administered a pre-test questionnaire. For performance measures, we instrumented our prototype to log task completion, errors, and call duration. During the test, two
+researchers noted points of difficulty, facial expressions,
+and comments made during the call. To measure user
+satisfaction, ease of use, and learnability, we administered a post-test questionnaire with Likert scales.
+RESULTS
+Performance Results
+The overall task completion rate with DTMF was significantly higher than with speech (74% vs. 61%; p
+< 0.05). Figure 3 shows the breakdown by task, and
+according to age and education level. The third task,
+recording a question, consisted of three subtasks: categorizing the question, recording the question, and recording the participant’s name and location. Categorization (task 3a) was the most difficult because it required
+traversing several levels, choosing one of nine crops, and
+one of six agricultural topics. For this subtask, DTMF
+users had a significantly better completion rate than
+speech (the completion rates were also better for the
+other two subtasks, but not significantly so).
+Participants using the DTMF interface also demonstrated
+a significantly greater performance improvement between
+the first and third task. We calculated the effect size
+using Cohen’s d repeated measures analysis, corrected
+for correlated datasets [1]. DTMF users experienced a
+Figure 3. Task completion rates for speech (light gray)
+and DTMF (dark gray) versions. P-values are given
+where rate differences were significant.
+Task1 Task2 Task3
+DTMF 48% 19% 29%
+Speech 63% 42% 42%
+Table 1. Percentage of users who reported each task as
+either “difficult” or “very difficult”.
+“large positive difference” (Cohen’s d-value = 0.99) in
+completion rates between task 1 and 3. With speech the
+effect was a “small positive difference” (Cohen’s d-value
+= 0.26).
+Despite the difference in task completion rate, there was
+no significant difference in user satisfaction. In both
+groups, over 80% of users reported that they found it
+easy to access information from the system. Over 75%
+of both groups said they would “definitely” use such an
+application if it was made available.
+User Perception of Difficulty
+Table 1 displays the percentage of users who reported
+that a particular task was either “difficult” or “very
+difficult”, based on a five-point Likert scale. Across
+all tasks, the percentage of such responses was 49% for
+speech and 30% for DTMF (p < 0.05). When specifically asked whether they faced any difficulty providing
+input to the system, 81% of DTMF users answered “no”
+or “definitely no”, compared to 38% for speech users (p
+< 0.01).
+DISCUSSION
+Our most consistent result was the success of dialed
+input relative to speech, confirming results obtained
+CHI 2009 ~ Designing for Other Cultures April 6th, 2009 ~ Boston, MA, USA
+53
+in other settings [2, 6]. Our observations indicated
+two main reasons why speech input was less successful.
+First, users expressed discomfort speaking single word
+commands, which was perceived as unnatural. “Talking to the computer” was an unfamiliar idea; DTMF
+users may have had an easier time forming a mental
+model of the system. The second reason was difficulty
+in recovering from errors made by either the system
+(recognition error) or the user (bad or no input). With
+speech input, the task completion rate was 42% when
+one or more recognition errors occurred, compared to
+67% when no errors occurred (p < 0.05). Given the recent emphasis on designing limited vocabulary speech
+interfaces for semi-literate users, it is notable that the
+only group who performed better using speech for multiple tasks was the most educated group. This indicates
+that less educated users may have more difficulty recovering from recognition errors.
+Due to the difficulty and expense of providing training,
+an interface that is easy to learn and understand is a
+key design consideration for information services serving remote populations. No users expressed difficulty
+in understanding how to operate the system through
+dialed input, including several fully illiterate participants. However, one difficulty with the DTMF interface
+was in transitioning between dialed input and speaking,
+which was required in the final task for recording the
+user’s question and personal information. A difficulty
+across both modalities was navigating command-driven
+menus and knowing when to provide input. Every spoken prompt was followed by a beep to indicate that
+input was requested. The prompts did not explicitly
+mention the beep, and many users either gave input
+too early or not at all.
+Difficulties notwithstanding, the participants’ response
+to the application was unanimously enthusiastic. Many
+farmers told us that the ability to access information
+at any time would have a significant impact on their
+farming practices. A few farmers singled out the ability
+to share their personal experiences with other farmers
+and with DSC staff as a key benefit of the system.
+The main limitation of the study is its external validity. The study was conducted in optimal conditions for
+both accurate speech recognition (a calm, quiet environment) and easy dialing (placing the dialpad in front
+of users). A real-world deployment must support usage
+in a diverse range of scenarios. We plan to conduct a
+more realistic assessment of the usage and impact of
+this system after it is deployed across Gujarat. The
+study’s generalizability is also limited by the narrowness of the type of task that was tested. Linear tasks
+with low perplexity are amenable to DTMF input, and
+it is possible that speech input could outperform DTMF
+in more complex scenarios.
+CONCLUSION
+In this paper, we presented a comparative study of
+speech and dialed input for a user population with limited literacy, familiarity with technology, and for a language with limited speech resources. We developed
+Avaaj Otalo, an application for farmers to access relevant and timely agricultural information. We found
+that dialed input outperforms speech, both in terms of
+task completion rate and users’ perception of difficulty.
+We plan on deploying Avaaj Otalo for access throughout Gujarat next year."
+13,What can I say?: addressing user experience challenges of a mobile voice user interface for accessibility,vui,https://dl.acm.org/citation.cfm?id=2935386,"Voice interactions on mobile phones are most often used to augment or supplement touch based interactions for users' convenience. However, for people with limited hand dexterity caused by various forms of motor-impairments voice interactions can have a significant impact and in some cases even enable independent interaction with a mobile device for the first time. For these users, a Mobile Voice User Interface (M-VUI), which allows for completely hands-free, voice only interaction would provide a high level of accessibility and independence. Implementing such a system requires research to address long standing usability challenges introduced by voice interactions that negatively affect user experience due to difficulty learning and discovering voice commands.
+
+In this paper we address these concerns reporting on research conducted to improve the visibility and learnability of voice commands of a M-VUI application being developed on the Android platform. Our research confirmed long standing challenges with voice interactions while exploring several methods for improving the onboarding and learning experience. Based on our findings we offer a set of implications for the design of M-VUIs."
+14,Voice user interface design for a telephone application using VoiceXML,vui,https://link.springer.com/chapter/10.1007/978-3-540-31849-1_106,"VoiceXML is a standard language for developing voice based applications. VoiceXML applications have more advantages over traditional Interactive Voice Response (IVR) systems because they can be used through any type of phones and also accessed via a computer. Voice User Interface (VUI) design is an integral part of developing any VoiceXML application. In this paper, the VUI for a VoiceXML ‘Cinema Service’ telephone application is designed and a number of experiments are undertaken to help the design of the VUI. The experiments focus on users’ navigation, memory and age group, and preferences. Conclusions are drawn based on the experiments for future design and development."
+15,Voice User Interface Design Patterns.,vui,https://pdfs.semanticscholar.org/6e08/7ddc8a262659fa211a2c9dc26a41e758b989.pdf,"We present in this paper a set of design patterns we have mined in
+the area of Voice User Interfaces (VUI). In a previous paper [14], we
+introduced several patterns regarding fundamental issues of developing
+a voice application. In this paper we explore further aspects concerning
+the internal structure of an audio interface, the construction of the interaction style, the system response architecture, and implementation
+strategies to meet the demands of real world scenarios."
+16,Patterns for how users overcome obstacles in voice user interfaces,vui,https://dl.acm.org/citation.cfm?id=3173580,"Voice User Interfaces (VUIs) are growing in popularity. However, even the most current VUIs regularly cause frustration for their users. Very few studies exist on what people do to overcome VUI problems they encounter, or how VUIs can be designed to aid people when these problems occur. In this paper, we analyze empirical data on how users (n=12) interact with our VUI calendar system, DiscoverCal, over three sessions. In particular, we identify the main obstacle categories and types of tactics our participants employ to overcome them. We analyzed the patterns of how different tactics are used in each obstacle category. We found that while NLP Error obstacles occurred the most, other obstacles are more likely to frustrate or confuse the user. We also found patterns that suggest participants were more likely to employ a ""guessing"" approach rather than rely on visual aids or knowledge recall."
+17,Voice interfaces in everyday life,vui,https://dl.acm.org/citation.cfm?id=3174214,"Voice User Interfaces (VUIs) are becoming ubiquitously available, being embedded both into everyday mobility via smartphones, and into the life of the home via 'assistant' devices. Yet, exactly how users of such devices practically thread that use into their everyday social interactions remains underexplored. By collecting and studying audio data from month-long deployments of the Amazon Echo in participants' homes-informed by ethnomethodology and conversation analysis-our study documents the methodical practices of VUI users, and how that use is accomplished in the complex social life of the home. Data we present shows how the device is made accountable to and embedded into conversational settings like family dinners where various simultaneous activities are being achieved. We discuss how the VUI is finely coordinated with the sequential organisation of talk. Finally, we locate implications for the accountability of VUI interaction, request and response design, and raise conceptual challenges to the notion of designing 'conversational' interfaces."
+18,Voicexml: Strategies and Techniques for Effective Voice Application Development with Voicexml 2.0 with Cdrom,vui,https://dl.acm.org/citation.cfm?id=559910,"A timely, hands-on guide to building voice applications with VoiceXML 2.0
+VoiceXML unites the power of the Internet with the ubiquity of the telephone, making it possible for businesses to replace legacy, proprietary IVR platforms with a unified architecture for delivering automated self-service from any device. Without exception, every major voice and call center technology company has embraced VoiceXML, and tens of thousands of developers have already begun building and deploying VoiceXML applications. In this book, experts Chetan Sharma and Jeff Kunins explore this powerful technology and offer you a clear understanding of VoiceXML, its history, and its business uses.
+
+Providing insights that will help your company improve customer service quality and reduce costs, this informative reference manual introduces you to VoiceXML and serves as a practical programming resource for professional VoiceXML developers. You’ll learn how to create a VoiceXML development environment, and receive tutorials on topics such as VoiceXML 2.0 vendor-independent grammars and deployment options for successful voice applications. Two appendices contain the source code for field service case studies and various VoiceXML tips and tricks. Along the way, you’ll discover:
+
+VoiceXML programming and security
+Comparison of network-based and premise-based deployment options
+The voice application life cycle
+Designing effective Voice User Interface (VUI
+A case study of building an application
+Dynamic VoiceXML: Generating voice applications from server-side data
+Various elements to consider while implementing your voice strategy
+Challenges and innovations of the future
+The CD-ROM contains code from the book, as well as toolkits and white papers from leading vendors such as Motorola, IBM, and Nuance.
+
+Professional Developer’s Guides
+The Professional Developer’s Guide series provides the first in-depth look at recent or emerging programming technologies. Experienced programmers and developers will find comprehensive coverage of new programming standards as well as code, sample programs, developer’s tools, and applications that will make programming for a new technology much easier.
+
+Wiley Computer Publishing
+Timely. Practical. Reliable.
+
+Author Biography: CHETAN SHARMA is Director of R&D at Luminant Worldwide, a leading Internet professional services firm. In this role, he provides vision and strategic direction, directs R&D efforts, and focuses on exploring and evangelizing emerging technologies. He is frequently invited to speak at industry conferences worldwide and is often quoted in media publications. He is also the author of Wireless Internet Enterprise Applications (Wiley) and he holds patents in wireless communications.
+JEFF KUNINS is Senior Manager of Technical Marketing at Tellme Networks, Inc., and a frequent speaker at industry shows like Wireless DevCon. He holds patents in Web-based security and zero-footprint voice application development, and is one of the seminal evangelists of VoiceXML technology."
+19,Designing Voice User Interfaces: Principles of Conversational Experiences,vui,https://books.google.com/books?hl=en&lr=&id=MmnEDQAAQBAJ&oi=fnd&pg=PR11&dq=voice+user+interface+vui&ots=HNb35u8Djb&sig=Wn5x_xgj87FIK8f6OOSkNA52MX8,"Voice user interfaces (VUIs) are becoming all the rage today. But how do you build one that people can actually converse with? Whether you’re designing a mobile app, a toy, or a device such as a home assistant, this practical book guides you through basic VUI design principles, helps you choose the right speech recognition engine, and shows you how to measure your VUI’s performance and improve upon it.
+
+Author Cathy Pearl also takes product managers, UX designers, and VUI designers into advanced design topics that will help make your VUI not just functional, but great.Understand key VUI design concepts, including command-and-control and conversational systemsDecide if you should use an avatar or other visual representation with your VUIExplore speech recognition technology and its impact on your designTake your VUI above and beyond the basic exchange of informationLearn practical ways to test your VUI application with usersMonitor your app and learn how to quickly improve performanceGet real-world examples of VUIs for home assistants, smartwatches, and car systems"
+20,Learnability through adaptive discovery tools in voice user interfaces,vui,https://dl.acm.org/citation.cfm?id=3053166,"The invisible nature of VUIs has been attributed to challenging discoverability with VUIs. Low discoverability often leads to learnability issues. Researchers have designed visual tools for VUIs to help users learn as they go. However, few have used adaptation to ensure that learnability with the help of these tools extends beyond initial use. We designed DiscoverCal, a calendar application designed using adaptive discovery tools to improve learnability in VUIs. In this paper, we identify key characteristics of existing discovery tools. We present our design of a VUI that adapts based on contextual relevance and user performance in order to extend learnability beyond initial use. We briefly discuss our user study design."
+21,An intelligent personal assistant for task and time management,intelligent personal assistant,https://www.aaai.org/ojs/index.php/aimagazine/article/view/2039,"We describe an intelligent personal assistant that has been developed to aid a busy knowledge worker in managing time commitments and performing tasks. The design of the system was motivated by the complementary objectives of (1) relieving the user of routine tasks, thus allowing her to focus on tasks that critically require human problem-solving skills, and (2) intervening in situations where cognitive overload leads to oversights or mistakes by the user. The system draws on a diverse set of AI technologies that are linked within a Belief-Desire-Intention (BDI) agent system. Although the system provides a number of automated functions, the overall framework is highly user centric in its support for human needs, responsiveness to human inputs, and adaptivity to user working style and preferences."
+22,Socially-aware animated intelligent personal assistant agent,intelligent personal assistant,https://www.aclweb.org/anthology/W16-3628,"SARA (Socially-Aware Robot Assistant)
+is an embodied intelligent personal assistant that analyses the user’s visual (head
+and face movement), vocal (acoustic features) and verbal (conversational strategies) behaviours to estimate its rapport
+level with the user, and uses its own appropriate visual, vocal and verbal behaviors
+to achieve task and social goals. The presented agent aids conference attendees by
+eliciting their preferences through building rapport, and then making informed
+personalized recommendations about sessions to attend and people to meet."
+23,IPA-An intelligent personal assistant agent for task performance support,intelligent personal assistant,https://ieeexplore.ieee.org/abstract/document/5284791/,"Assisting users in performing their tasks is an important issue in human computer interaction research. A solution to deal with this challenge is to build a personal assistant agent capable to discover the user's habits, abilities, preferences, and goals, ever more accurately anticipating the user's intentions. In order to solve in an intelligent manner this problem, the assistant agent has to continuously improve its behavior based on previous experiences. By endowing the agent with the learning capability, it will become able to adapt himself to the user's behavior. This paper proposes an intelligent personal assistant agent that learns by supervision to assist users in performing specific tasks. For evaluating the performance of the agent a case study is considered, and a neural network is used by the agent to learn by supervision from its experience. We also provide a comparison of our approach with other similar existing work."
+24,Adding semantic web knowledge to intelligent personal assistant agents,intelligent personal assistant,https://espace.curtin.edu.au/handle/20.500.11937/5218,"Intelligent Personal Assistant (IPA) agents are software agents which assist users in performing specific tasks. They should be able to communicate, cooperate, discuss, and guide people. This paper presentsa proposal to add Semantic Web Knowledge to IPA agents. In our solution,the IPA agent has a modular knowledge organization composed by four differentiated areas: (i) the rational area, which adds semantic webknowledge, (ii) the association area, which simplifies building appropriate responses, (iii) the commonsense area, which provides common sense responses, and (iv) the behavioral area, which allows IPA agents to show empathy. Our main objective is to create more intelligent and more humana alike IPA agents, enhancing the current abilities that these software agents provide."
+25,A Case Study in Engineering a Knowledge Base for an Intelligent Personal Assistant.,intelligent personal assistant,https://www.researchgate.net/profile/William_Jarrold/publication/239744798_A_Case_Study_in_Engineering_a_Knowledge_Base_for_an_Intelligent_Personal_Assistant/links/572ce0bf08ae3736095a38d6/A-Case-Study-in-Engineering-a-Knowledge-Base-for-an-Intelligent-Personal-Assistant.pdf,"We present a case study in engineering a knowledge base to meet the
+requirements of an intelligent personal assistant. The assistant is designed to
+function as part of a semantic desktop application, with the goal of helping a user
+manage and organize his information as well as supporting the user in performing
+tasks. We describe the knowledge base development process, the knowledge
+engineering challenges we faced in the process and our solutions to them, and
+important lessons learned during the process. "
+26,An operable email based intelligent personal assistant,intelligent personal assistant,https://link.springer.com/article/10.1007/s11280-008-0049-x,"The recent phenomena of email-function-overloading and email-centricness in daily life and business have created new problems to users. There is a practical need for developing a software assistant to facilitate the management of personal and organizational emails, and to enable users to complete their email-centric jobs or tasks smoothly. This paper presents the status, goals, and key technical elements of an Email-Centric Intelligent Personal Assistant, called ECIPA. ECIPA provides various assisting functions, including automated and cost-sensitive spam filtering based on corresponding analysis, ontology-mediated email classification, query and archiving. ECIPA can learn from dynamic user behaviors to effectively sort and automatically respond email. Techniques developed in Web Intelligence (WI) are adopted to implement ECIPA. In order to facilitate cooperation of ECIPAs of different users, the concept of operable email, an extension of traditional email with an operable form, is introduced. ECIPA can in fact be viewed as a family of collaborative agents working together on the operable email."
+27,Knowledge based engineering and intelligent personal assistant context in distributed design,intelligent personal assistant,https://link.springer.com/chapter/10.1007/11888598_46,"The work focuses on the problem concerning the application of the KBE approach and its tools in distributed environments. The first period of applying industrial KBE systems did not only show their significant advantages but also revealed their shortcomings. This problem is especially disturbing with distributed design where the potential of communication is very limited. Every design process is closely connected with the designer’s knowledge. In general, this is a very individual knowledge which is stored in the designer’s personal memory. The work represents an attempt of integration of KBE and IPA (Intelligent Personal Assistant), [11], which is the designer’s personal knowledge repository."
+28,An IoT-based mobile gateway for intelligent personal assistants on mobile health environments,intelligent personal assistant,https://www.sciencedirect.com/science/article/pii/S1084804516300273,"The evolution of mobile devices has triggered the appearance of intelligent personal assistants (IPAs). IPAs are software agents used to support users to fulfill several daily actions. They are supposed to be intelligent in such a way that allows them to give their owners advices about many different subjects. To do so, IPAs must learn about their user behavior and routines. With the current state of the art technologies, scenarios of ubiquitous communication can be created. One of the potential enablers for those scenarios is the Internet of Things (IoT) paradigm where machines with decision support systems interact and communicate among them. In an IoT environment, IPAs can interact with other smart objects in order to gain new knowledge and awareness about their users. This paper proposes a novel IoT-based mobile gateway solution for mobile health (m-Health) scenarios. This gateway autonomously collects information about the user/patient location, heart rate, and possible fall detection. Moreover, it forwards the collected information to a caretaker IPA, in real time, that will manage a set of actions and alarms appropriately. The algorithms used for each mobile gateway service, and the scenarios where the mobile gateway acts as a communication channel or a smart object are also addressed on this paper.
+
+Graphical abstract
+Intelligent personal assistants (IPAs) are software agents used to help users to fulfill several daily actions. Generally, they learn about their user behavior and routines by interacting directly with them. If introduced on ubiquitous communication scenarios, IPAs can interact with other smart objects and improve the knowledge and awareness about their users. One of the potential enablers for ubiquitous communication scenarios is the Internet of Things (IoT) paradigm where machines with decision support systems interact and communicate among them. Then, this paper proposes a novel IoT-based mobile gateway solution for mobile health (m-Health) scenarios. This gateway autonomously collects information about the user/patient location, heart rate, and possible fall detection. Moreover, it forwards the collected information to a caretaker IPA, in real time, which will manage a set of actions and alarms appropriately."
+29,On the track of artificial intelligence: Learning with intelligent personal assistants,intelligent personal assistant,https://www.j-humansciences.com/ojs/index.php/IJHS/article/view/3549,"In a technology dominated world, useful and timely information can be accessed quickly via Intelligent Personal Assistants (IPAs).  By the use of these assistants built into mobile operating systems, daily electronic tasks of a user can be accomplished 24/7. Such tasks like taking dictation, getting turn-by-turn directions, vocalizing email messages, reminding daily appointments, setting reminders, responding any factual questions and invoking apps can be completed by  IPAs such as Apple’s Siri, Google Now and Microsoft Cortana. The mentioned assistants programmed within Artificial Intelligence (AI) do create an interaction between human and computer through a natural language used in digital communication. In this regard, the overall purpose of this study is to examine the potential use of IPAs that use advanced cognitive computing technologies and Natural Language Processing (NLP) for learning. To achieve this purpose, the working system of IPAs is reviewed briefly within the scope of AI that has recently become smarter to predict, comprehend and carry out multi-step and complex requests of users."
+30,Using intelligent personal assistants to strengthen the elderlies' social bonds,intelligent personal assistant,https://link.springer.com/chapter/10.1007/978-3-319-58700-4_48,"Social isolation and loneliness are among the important factors for the degradation of the life quality as the persons’ aging process advances. These factors can have a pronounced effect on the general health and are caused by the decrease in social interaction by the person with the friends, family and ex-co-workers groups. On the other hand, the software and hardware technologies has reached a maturation point were the electronic assistants can acquire information from the user through camera images, as well as to communicate with the user by means of natural voice language. In this context, a model for the adoption of electronic intelligent assistants by the elderlies has been proposed in previous work. In the current work, it is assessed the possibility of using the current consumer assistants to implement the proposed model. Several assistants are analyzed (Amazon, Google, Microsoft and Apple), assessing their functionalities and how they could be used to assist the elderly in strengthening their social bonds with the family, friends and ex-co-workers groups."
+31,Work–life boundary management and the personal digital assistant,personal digital assistant,https://journals.sagepub.com/doi/abs/10.1177/0018726707076698,"New mobile information and communication technologies are of special interest to researchers seeking to understand the problematic of boundaries between work and personal-life. This study examines how workers used and interpreted the personal digital assistant (PDA) as a boundary management resource. Using a protocol that combined structured, closed-ended questions with open-ended questions, 42 users were interviewed. The data were analyzed to examine individuals' practices in using this technology, the interpretive resources they drew upon, and the ways in which the spirit of the device's design intersected with their practices and interpretations. Results suggest that the spirit of the device is control, and that users interpreted their technological practices as expressions of personal agency, using the PDA to control the work—life boundary through both integration and segmentation of work and personal-life."
+32,Evaluation of personal digital assistant software for drug interactions,personal digital assistant,https://academic.oup.com/ajhp/article-abstract/61/4/380/5143908,"The accuracy, comprehensiveness, and ease of use of drug interaction software used with personal digital assistants (PDAs) were studied.
+
+Methods. Each program was assessed for accuracy using 40 clinically important and 40 clinically unimportant drug interaction pairs. Accuracy was scored through the summation of software sensitivity, specificity, and positive and negative predictive values. The comprehensiveness of each program was determined by the number of components in the drug interaction monograph. Time needed to identify the management of five important drug interactions defined each program's ease of use. The aggregate scores for accuracy, comprehensiveness, and ease of use were calculated.
+
+Results. Scoring 777 and 756 out of a possible 800 points, iFacts and Lexi-lnteract, respectively, provided the most competent, complete, use-friendly compendia for assessment of drug interactions. Mosby's Drug Consult and Mobile Micromedex ranked third and fourth, scoring 688 and 655 points, respectively, while ePocrates Rx v. 6.0 rated seventh, with a score of 559. All drug interaction resources suffer from limitations in the quality or relevance of evidence for the interaction, an absence of identifiable patient and medication risk factors, and a lack of standardization in assigning significance to the interaction. Consequently, clinicians must interpret the importance of the interaction based on all available evidence. Discussion of such evidence was available for only iFacts and Lexi-Interact.
+
+Conclusion. Both iFacts and Lexi-Interact excelled as PDA pharmacopoeia for assessing drug interactions. However, clinicians should understand the limitations of all current drug interaction resources and exercise vigilance in prevention and recognition of interactions relevant to their patients."
+33,"Too little, too early: Introduction timing and new product performance in the personal digital assistant industry",personal digital assistant,https://journals.sagepub.com/doi/abs/10.1177/002224379703400105,"The authors address the following key questions: (1) When should a firm introduce a new product? (2) What should its performance level be? and (3) How do the decisions of a competing firm affect a firm's timing and product performance decisions? The authors present a detailed case study of the initial competitors in the personal digital assistant (PDA) industry on the basis of which they construct a stylized game-theoretic model of entry timing and product performance level decisions in a duopoly. Situations in which the duopolists are symmetric as well as asymmetric in terms of their estimates of market size and product development capabilities are considered. When firms are symmetric, the authors show that an equilibrium exists when the firms enter at different times with different performance levels. In the asymmetric cases, the firm that has a higher estimate of market size enters first, as does the firm with a superior development process. The performance level decisions, however, depend on the sensitivity of demand to this variable. The results provide one explanation for empirical observations that market pioneers maintain their leadership in some cases, and later entrants eventually dominate in other cases. The authors then relate the model results to actual decisions in the PDA market, finding that Apple's Newton was “too little, too early.”"
+34,Using a personal digital assistant to increase independent task completion by students with autism spectrum disorder,personal digital assistant,https://link.springer.com/article/10.1007/s10803-009-0761-0,"In this study, a personal digital assistant (PDA) with picture, auditory, and video prompts with voice over, was evaluated as a portable self-prompting device for students with autism spectrum disorder (ASD). Using a multiple probe design across three cooking recipes and replicated with three students with ASD, the system was tested for its effectiveness in increasing independent performance across the multiple step tasks. In addition, data were recorded for the number and types of prompts used by the students across time. Results indicate that the students with ASD were able to adjust the prompt levels used on the PDA and to maintain their ability to use the device to independently complete recipes over time."
+35,The use of the Personal Digital Assistant (PDA) among personnel and students in health care: a review,personal digital assistant,https://www.jmir.org/article/view/1038/1,"Health care personnel need access to updated information anywhere and at any time, and a Personal Digital Assistant (PDA) has the potential to meet these requirements. A PDA is a mobile tool which has been employed widely for various purposes in health care practice, and the level of its use is expected to increase. Loaded with suitable functions and software applications, a PDA might qualify as the tool that personnel and students in health care need. In Sweden today, despite its leadership role in mobile technologies, PDAs are not commonly used, and there is a lack of suitable functions and software applications.
+
+Objective: The aim of the present review was to obtain an overview of existing research on the use of PDAs among personnel and students in health care.
+
+Methods: The literature search included original peer-reviewed research articles written in English and published from 1996 to 2008. All study designs were considered for inclusion. We excluded reviews and studies focusing on the use of PDAs in classroom situations. From March 2006 to the last update in May 2008, we searched PubMed, CINAHL, Cochrane, IngentaConnect, and a local search engine (ELIN@Kalmar). We conducted a content analysis, using Nielsen’s Model of System Acceptability as a theoretical framework in structuring and presenting the results.
+
+Results: From the 900 references initially screened, 172 articles were selected and critically assessed until 48 articles remained. The majority originated in North-America (USA: n=24, Canada: n=11). The categories which emerged from our content analysis coincided to a certain extent to Nielsen’s Model of System Acceptability (social and practical acceptability), including usefulness (utility and usability) subcategories such as learnability, efficiency, errors, and satisfaction. The studies showed that health care personnel and students used PDAs in patient care with varied frequency. Most of the users were physicians. There is some evidence that the use of a PDA in health care settings might improve decision-making, reduce the numbers of medical errors, and enhance learning for both students and professionals, but the evidence is not strong, with most studies being descriptive, and only 6 randomized controlled trials. Several special software programs have been created and tested for PDAs, and a wide range of situations for their use have been reported for different patient groups. Drug and medical information were commonly accessed by PDA users, and the PDA was often viewed as the preferred tool when compared to paper-based documents. Some users regarded the PDA easy to operate, while others found it difficult in the beginning.
+
+Conclusions: This overview of the use of PDAs revealed a positive attitude towards the PDA, which was regarded as a feasible and convenient tool. The possibility of immediate access to medical information has the potential to improve patient care. The PDA seems to be a valuable tool for personnel and students in health care, but there is a need for further intervention studies, randomized controlled trials, action research, and studies with various health care groups in order to identify its appropriate functions and software applications."
+36,Survey assessment of personal digital assistant use among trainees and attending physicians,personal digital assistant,https://academic.oup.com/jamia/article-abstract/10/6/605/763048,"Limited information is available on personal digital assistant (PDA) use patterns in medical settings. Recognizing that use patterns may be important considerations for development of handheld-based information systems, the authors characterized PDA use at their institution. A survey was mailed to all internal medicine physicians at the Mayo Clinic, Rochester, Minnesota, in May 2002. PDA use prevalence, user demographics, hardware preferences, and work setting and application use frequencies were assessed for respondents reporting current PDA use. Use patterns of trainees (residents and subspecialty fellows) and attending physicians were compared. Trainees reported more frequent PDA use in the hospital setting and for direct patient care. Attending physicians reported more frequent PDA use in administrative settings and for calendar functions. These findings may reflect differences in the information needs and work roles of learners and experienced physicians. Such factors may be important considerations for the development and implementation of institutional PDA resources."
+37,Performance of health status measures with a pen based personal digital assistant,personal digital assistant,https://ard.bmj.com/content/64/10/1480.short,"Increasing use of self reported health status in clinical practice and research, as well as patient appreciation of monitoring fluctuations of health over time, suggest a need for more frequent collection of data. Electronic use of health status measures in the follow up of patients is a possible way to achieve this.
+
+Objective: To compare self reported health status measures in a personal digital assistant (PDA) version and a paper/pencil version for test–retest reliability, agreement between scores, and feasibility.
+
+Methods: 30 patients with stable rheumatoid arthritis (mean age 61.6 years, range 49.8 to 70.0; mean disease duration, 16.7 years; 63% female; 67% rheumatoid factor positive; 46.6% on disease modifying antirheumatic drugs) completed self reported health status measures (pain, fatigue, and global health on visual analogue scales (VAS), rheumatoid arthritis disease activity index, modified health assessment questionnaire, SF-36) in a conventional paper based questionnaire version and on a PDA (HP iPAQ, model h5450). Completion was repeated after five to seven days.
+
+Results: Test–retest reliability was similar, as evaluated by the Bland–Altman approach, the coefficient of variation, and intraclass correlation coefficients. The scores showed acceptable agreement, but with a slight tendency to higher scores on VAS with the PDA than the paper/pencil version. No significant differences were seen for measures of feasibility (time to complete, satisfaction score), but 65.5% preferred PDA, 20.7% preferred paper, and 13.8% had no preference.
+
+Conclusions: The clinimetric performance of paper/pencil versions of self reported health status measures was similar to an electronic version, using an inexpensive PDA."
+38,Initial experience with a wireless personal digital assistant as a teleradiology terminal for reporting emergency computerized tomography scans,personal digital assistant,https://journals.sagepub.com/doi/abs/10.1258/1357633001933943,"A new type of terminal device, a wireless personal digital assistant (PDA) based on a GSM digital cellular phone, was used to transmit computerized tomography scans of 21 patients to a neuroradiologist. All transmitted images were suitable for a preliminary consultation and in one case a final report could be made. In 18 cases the findings were compatible with the reference film reading performed later and in three cases there were minor differences of no clinical importance. Transmission of a single image lasted 1 min 30 s and the transmission of a complete brain scan (14 images) took on average 21 min. The total process of transmission and interpretation of a brain examination series took on average 40 min. In this pilot study the neuroradiologist gained essential information in 24% of the cases and beneficial information in 62%. The neuroradiologist considered that the image consultation saved a hospital visit in 15 cases (71%). Although PDA technology is at an early stage of development and has numerous limitations, it is likely that future technical improvements will allow easier clinical consultations for neurosurgeons and neurologists."
+39,Adopting a personal digital assistant system: application of Lewin's change theory,personal digital assistant,https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2648.2006.03935.x,"This paper reports a study exploring nurses’ perceptions of adopting an information system using handheld computers (personal digital assistants) in their daily practice.
+
+Background. Handheld computers have recently been used in nursing information systems for patient care, but few studies have explored their impact on users. By understanding clinicians’ experiences of using this technology, strategies can be implemented to smooth the change process in adopting their use, thus achieving optimal patient outcomes.
+
+Method. A descriptive, exploratory approach was used to study nurses’ perceptions of using personal digital assistants as part of a hospital information system. A purposive sample of 15 nurses participated in one‐to‐one, in‐depth interviews from February to March 2004. Nurses’ perceptions of the adoption process were analysed using Lewin's force field theory of change as a framework.
+
+Findings. Nurses initially resisted using the personal digital assistant system (unfreezing stage), then came around to using it (moving stage), and finally adopted the system in their daily practice (re‐freezing stage). However, an anticipatory stage also occurred and this could serve as a feedback mechanism to improve the system for current and future use.
+
+Conclusion. Educational programmes should be provided and strategic planning should be done in the early stage of implementing a policy to adopt new technology. In addition, the adoption process and learning period could be shortened by improving the system's content design. During this transition stage, dual charting should be used as a backup only for a limited time to avoid adding extra work to nurses’ already heavy workload. Finally, the concept of confidentiality should be reinforced and stressed early in the educational programme to protect patient data, which can easily be accessed in computerized systems"
+40,Using a personal digital assistant to enhance the independence of an adolescent with Asperger syndrome,personal digital assistant,http://www.daddcec.org/Portals/0/CEC/Autism_Disabilities/Research/Publications/Education_Training_Development_Disabilities/2005v40_Journals/ETDD_200503v40n1p060-067_Using_Personal_Digital_Assistant_Enhance_Independence_Adolescent.pdf,"According to the Individuals with Disabilities
+Education Act Amendments of 1997 and the
+Technology-related Assistance for Individuals
+with Disabilities Act of 1988 as Amended in
+1994, school districts must provide technology
+and related services to support students with
+disabilities in the general education curriculum (Mirenda, Wilk, & Carson, 2000). This act
+introduced assistive technology as a means of
+helping individuals with disabilities overcome
+the obstacles that inhibit them from fully taking part in activities at school, home and the
+community, including enhancing tasks that
+involve memory and organization skills
+(Bremer & Rauch, 1998; Bull, Bull, Garofalo,
+& Harris, 2002; Lewis, 1998, 2000).
+Assistive technology includes a variety of
+supports ranging from augmentative communication devices to more commonly used
+desktop and laptop computers. One device
+that appears promising for students with disabilities is the PDA (Swan, Swan, & Van Hover,
+2002). The PDA, a handheld computer that
+mainly serves as a personal information organizer, allows data input via an on-screen keyboard or handwriting recognition program using a stylus. With multimedia capabilities, it is
+capable of playing both sound and video clips.
+Pictures and other visual representations are
+vivid and precise due, in part, to the highresolution color screens. In addition, the PDA
+can be hooked up to a computer to synchronize information and connected to network
+systems, including the Internet for exchanging e-mails and exploring the World Wide
+Web. In addition, portable keyboards can connect to the Pocket PC to create a discrete
+word-processing system, enabling information
+such as names, addresses, phone numbers,
+dates, and personal schedules to be stored for
+easy access and retrieval. Scheduling and time
+management programs are included as default functions in the PDA (Lewis, 1998; Swan
+et al.).
+Despite their use in the mainstream, few
+studies have been conducted on the impact of
+PDAs. Nevertheless, the following has been
+established to date. For individuals without
+disabilities, the PDA has assisted students in
+organizing classroom notes and preparing for
+tests (Norris & Soloway, 2003). PDAs have also
+been used to support individuals with special
+needs in career and leisure activities (Furniss
+et al., 2001) and to increase independence
+and self-determination (Davies, Stock, &
+Wehmeyer, 2002). Davies et al. found that
+persons with disabilities who used PDAs functioned more independently, learned more,
+and required less assistance from support personnel.
+The purpose of this study was to add to the
+literature base on PDA use with students with
+special needs. Specifically, this study was designed to determine whether a PDA could
+Correspondence concerning this article should
+be addressed to Brenda Smith Myles, Department of
+Special Education, University of Kansas, Joseph R.
+Pearson Building, 5th Floor, 1122 W. Campus Road,
+Lawrence, KS 66045-3101. E-mail: bmyles@ku.edu
+Education and Training in Developmental Disabilities, 2005, 40(1), 60 – 67
+© Division on Developmental Disabilities
+60 / Education and Training in Developmental Disabilities-March 2005
+enhance the independence of an adolescent
+with AS at home and at school."
+41,Continuous Integration for Testing Full Robotic Behaviours in a GUI-stripped Simulation.,headless interfaces,http://ceur-ws.org/Vol-2245/morse_paper_3.pdf,"Today, behaviour models are incorporated to perform a sequence of tasks, involving motion planning, object recognition, localisation, manipulation and collaboration, and potentially even learning.
+Testing models in isolation is insufficient; entire missions that integrate
+several models should be thoroughly validated before deployment. This
+paper provides two new contributions: first, to profit from the development of the simulator as an extension to Model-View-Controller (MVC)
+where the view can be optionally incorporated. Second, to use the simulator with the stripped-GUI to massively scale up the testing the integration of models of behaviour that fulfil missions performed under the
+paradigm of continuous integration. We explore the challenging aspects
+of this testing context and illustrate it with a case study where software
+models of behaviour are parameterized."
+42,Agent-based tsunami evacuation modeling of unplanned network disruptions for evidence-driven resource allocation and retrofitting strategies,headless interfaces,https://link.springer.com/article/10.1007/s11069-017-2927-y,"The M9 Cascadia subduction zone earthquake represents one of the most pressing natural hazard threats in the Pacific Northwest of the USA with an astonishing high 7–12% chance of occurrence by 2060, mirroring the 2011 devastating earthquake and tsunami in Japan. Yet this region, like many other coastal communities, is underprepared, lacking a comprehensive understanding of unplanned network disruptions as a key component to disaster management planning and infrastructure resilience. The goals of this paper are twofold: (1) to conduct a network vulnerability assessment to systematically characterize the importance of each link’s contribution to the overall network resilience, with specific emphasis on identifying the most critical set of links and (2) to create an evidence-driven retrofitting resource allocation framework by quantifying the impacts of unplanned network disruptions to the critical links on network resilience and retrofitting planning. This research used the city of Seaside on the Oregon coast as a study site to create the agent-based tsunami evacuation modeling and simulation platform with an explicit focus on the transportation network. The results indicated that (1) the network bridges are not equally important and some of the critical links are counterintuitive and (2) the diverse ways of spending the limited retrofitting resources can generate dramatically different life safety outcomes. These results strongly suggest that accurate characterization and measurement of infrastructure network failures will provide evidence-driven retrofitting planning strategies and inform resource allocations that enhance network resilience."
+43,Playing and Recording Audio Files,headless interfaces,https://link.springer.com/chapter/10.1007/978-1-4302-5084-5_5,"In this chapter, you will explore how to use audio resources in your app by building applications to play and record audio using iOS’s AVFoundation framework for audio-visual tasks. Much like image files, audio is stored as binary data, and must be decoded before your application can use it. A huge difference, however, is that audio files are stored as a stream of data, indexed by time, rather than a stream that represents one static image. As is so often the case, “there’s an API for that,” and you will take advantage of iOS’s built-in audio player and recorder classes to build your apps. Just as you dealt with images, you will see how AVFoundation takes care of the details, allowing you to focus on building great user experiences rather than on implementing low-level audio codecs."
+44,Interfacing and Verifying ALHAT Safe Precision Landing Systems with the Morpheus Vehicle,headless interfaces,https://arc.aiaa.org/doi/abs/10.2514/6.2015-0325,"The NASA Autonomous precision Landing and Hazard Avoidance Technology (ALHAT) project developed a suite of prototype sensors to enable autonomous and safe precision landing of robotic or crewed vehicles under any terrain lighting conditions. Development of the ALHAT sensor suite was a cross-NASA effort, culminating in integration and testing on-board a variety of terrestrial vehicles toward infusion into future spaceflight applications. Terrestrial tests were conducted on specialized test gantries, moving trucks, helicopter flights, and a flight test onboard the NASA Morpheus free-flying, rocket-propulsive flight-test vehicle. To accomplish these tests, a tedious integration process was developed and followed, which included both command and telemetry interfacing, as well as sensor alignment and calibration verification to ensure valid test data to analyze ALHAT and Guidance, Navigation and Control (GNC) performance. This was especially true for the flight test campaign of ALHAT onboard Morpheus. For interfacing of ALHAT sensors to the Morpheus flight system, an adaptable command and telemetry architecture was developed to allow for the evolution of per-sensor Interface Control Design/Documents (ICDs). Additionally, individual-sensor and on-vehicle verification testing was developed to ensure functional operation of the ALHAT sensors onboard the vehicle, as well as precision-measurement validity for each ALHAT sensor when integrated within the Morpheus GNC system. This paper provides some insight into the interface development and the integrated-systems verification that were a part of the build-up toward success of the ALHAT and Morpheus flight test campaigns in 2014. These campaigns provided valuable performance data that is refining the path toward spaceflight infusion of the ALHAT sensor suite."
+45,An Accessible Project 25 Receiver Using Low-Cost Software Defined Radio,headless interfaces,http://rave.ohiolink.edu/etdc/view?acc_num=ohiou1464007525,"Project 25 (P25) radio, now used by at least 33% of public safety agencies in the US, is accessible to only specialized, digital receivers. These receivers, though, are expensive consumer products – starting at $400. As public safety communications remain legal to receive in unencrypted digital form, the current migration to digital radio has simply made these communications less accessible to the public. What’s missing from the current ecosystem is a sub-$100 P25 receiver with usability similar to a traditional device – automatic, hands-free operation in a portable package – that makes these communications accessible again with a more affordable price.
+
+The result of this research is a device meeting these requirements, made from a $20 RTL-SDR software defined radio, a Raspberry Pi, and a software P25 receiver pipeline. This implementation was evaluated as follows: baseband symbol decoding and frame synchronization accuracies were measured over 4 million random symbols in the presence of varying levels of noise and distortion, and overall performance was compared to a commercial P25 receiver by measuring voice frame muting errors.
+
+This evaluation found the baseband symbol decoder had over 89% accuracy down to a 3:1 SNR, and the frame synchronizer had fewer than 0.0001% false positive and false negative errors at 0.001:1 SNR. Compared to the commercial receiver, the de-signed receiver recovered over 95% of voice frames without muting errors. These findings show that recent advances in low-cost software defined radio allow the device to satisfy the above requirements with suitable real-world performance."
+46,Improving the adoption of dynamic web security vulnerability scanners,headless interfaces,https://www.ru.nl/publish/pages/769526/z03_yannic_smeets.pdf,"Security vulnerabilities remain present in many web applications despite
+the improving knowledge base on vulnerabilities. Attackers can exploit such
+security vulnerabilities to extract critical data from web applications and
+their users. Many dynamic security vulnerability scanners exist that try to
+automatically find such security vulnerabilities. We studied the adoption of
+these tools and found out they are rarely used by web developers during the
+development process of a web application. Through interviews, we investigated the main cause of the lack of adoption is the difficulty to use such
+tools. In order to improve the adoption of dynamic security vulnerability
+scanners, we introduce the Universal Penetration Testing Robot (UPeTeR).
+UPeTeR is a class library that allows web developers to easily set relevant
+data for many dynamic vulnerability scanners by providing them with an
+abstraction of required configuration data. Plugins, ideally created by experts of the scanners, transform this abstraction into an optimal setup of
+such scanners. A prototype has been created which was used to validate UPeTeR’s acceptance by web developers at the Software Improvement Group,
+a software consultancy company in the Netherlands. The acceptance experiment demonstrated that web developers are willing to try out and work
+with UPeTeR."
+47,Digital Persona: A gateway to personal information,headless interfaces,https://dspace.mit.edu/bitstream/handle/1721.1/9461/43479098-MIT.pdf?sequence=2,"A Digital Persona (DP) is a gateway to a set of personal information, such as phone numbers and email addresses. Applications and devices which use personal information, such as electronic calendars and cellular phones, can manage this information by using a DP. Information which is accessible through a DP can be stored in the DP itself or in other applications. Since a DP facilitates the transfer of information between devices and applications, a DP can help solve many information management problems, such as handling data with different internal representations. The DP's structured, yet flexible, object model allows di-verse devices and applications to access and update information without being forced to adopt a common object model. This thesis discusses the design of the DP object model and API, as well as the DP's implementation. Implementation details which are covered include object-oriented techniques, reflection, and interfaces."
+48,iOS Media App,headless interfaces,https://link.springer.com/content/pdf/10.1007/978-1-4302-5084-5.pdf,"Beginning iOS Media App Development is a ground-breaking tutorial that explores the near limitless, programmable audio-visual capabilities of the iPhone, iPad and iPod touch using real-world examples and thorough explanations of the code. This book includes detailed step-by-step instructions and important background information from experienced media and utility app developer, Ahmed Bakir.
+
+You'll learn about content creation, playback, and advanced topics, including AirPlay, AVKit, and Swift. Each chapter is framed with a project that illustrates the concepts being discussed and pulls in lessons from other popular apps. You'll even learn about the latest iOS 8 and Xcode 6 media features.
+
+After reading this book, you should be able to build your first rich media app or utility app that utilizes multimedia for the App Store. And if you're a game developer, this book will provide you with tools to help make your game app look even better by integrating native iOS features."
+49,The Disrupters: Ignore new technology at your peril,headless interfaces,https://thesynergists.co.uk/long-read/jamie-de-vivo/ignore-new-technology-at-your-peril/,"The importance of recognising new technologies as a professional digital media producer.
+Aims and Objectives
+The aim of this report is to gain an insight into the effect new technologies have on the networked media industry and how the role, responsibilities and skill-set of its professional content producers have evolved to overcome the challenges presented by the modern industry.
+
+To ascertain this, the report will:
+
+Gain an insight into the role of a networked media producer and how it has adapted to overcome challenges presented by new technological developments.
+Recognise the more significant developments and the impact they have had on the networked media industry.
+Explore the job profile of a networked media producer and the skills that are required to perform their responsibilities, contrasting them to that of a conventional web developer.
+Study the way networked media producers are deployed within a real company and how they are preparing for the potential challenges presented by new technologies, using RedWeb as a key example.
+Rationale and Methodology
+The emergence of the internet uncovered the absence of an unprecedented skill-set; creating websites required not only the creativity of a designer but also the technical understanding of a programmer. As the internet evolved so did this role; the advent of smartphones and headless interfaces are just a few examples of content in demand online. The argument of this report is developers now need a more diverse skill-set applicable across multiple platforms and for this reason, it is more accurate to define the role, not as a ‘website developer’ but as a ‘networked media producer’. The outcome of this report will be threefold, to provide a more comprehensive understanding of the responsibilities that make up the role of a networked media producer in the modern industry; to act as a guide giving prospective producers in the industry an awareness of the skills they will need to learn; and to suggest the ways in which the role will need to be flexible to overcome challenges in the future.
+
+To achieve the previously stated objectives this report will use RedWeb as a key example of how networked media producers are deployed in the industry. The decision to use this particular agency was made under consideration of it’s size, locality and the approach they have to the work they do. Research included conducting a small scale digital survey and distributing it to Redweb, other digital agencies and a selection of professionals who have experience working in the industry. This will be used to examine how conventional the approach RedWeb employs is as well as to recognise any other approaches. To understand the interrelationship of consumers, producers and technology, a second survey and poll was produced; this provided quantitative data that could be analysed and used to better understand how producers respond to consumer practices and vice versa. To ensure the survey wasn’t biased it was shared on various platforms; including LinkedIn with a professional user base, Facebook with a variety of ages and backgrounds and Twitter with a selection of users with similar and related interests to the author and this report.
+
+To recognise past technological developments a selection of secondary sources were used, these included books, ebooks and websites. In the case of books these are often written from a critical perspective outlining the advantages and disadvantages of the internet and specific developments. The sources varied considerably, however primarily they consisted of blog posts by journalists and industry professionals as well as press releases from companies themselves and educational websites. A selection of networked media relevant job descriptions and person profiles have also been sourced from recruitment websites online. The intention is to use these to provide an understanding of what business are looking for in the role and as a comparison against a job description for a similar role at RedWeb.
+
+Background
+Growth of the internet
+By the end of 2017 the internet is forecast to be worth $700 billion to a $2.15 trillion global media industry (PricewaterhouseCoopers 2013). Potentially more relevant to this report, in 2014 the UK itself accounted software, including web applications, for 41% of its own creative industry which had a revenue of £10 million every hour (UK Government’s Department for Culture 2016). Although these statistics are a suggestion of the importance of the internet and its content producers today, they don’t show the growth that has led to its success. The number of internet connected users is now fast approaching 50% of the global population, but in 2000 they equated for only 7% and in 1995 less than 1% of the population (InternetLiveStats.com 2017a). The rise of this new platform created a demand for people with the skill-set to create websites that outstripped demand (Dunn 2017; Gallagher 2015; Vyas 2015; Anderson 2015). The first website was published in 1991, from there it took a year to reach ten but by 2014 there was over a billion (InternetLiveStats.com 2017b).
+
+Potential of New Technologies
+Figure 1 reveals another disruptive development currently occurring on the internet, in 2016 mobile devices consumed the majority of online content compared to desktop, despite being less than 5% of online traffic in 2009 (StatCounter 2016). In their 2016 white paper, Ofcom noted “There is a preference among app users for accessing most types of content through apps rather than browsers…” (p.46). However, as figure 2 shows, websites are still the primary method for accessing online news, shopping and banking. With a forecast of 26 billion devices by 2020 (Gartner 2013), Internet of Things (IoT) devices are another new development only possible with the internet.
+
+
+Figure 1 — Distribution of internet traffic between desktop and mobile devices (StatCounter 2016).
+
+Figure 2 — Preference to use apps vs browsers to access content (Ofcom 2016 p.47)
+Redweb, A forward looking digital agency
+
+“There is an old Chinese proverb that states: ‘When winds of change blow, some people build walls, others build windmills’. Redweb labs is where we dig the foundations for our windmills.” (Redweb ca.2017)
+
+This excerpt from the Redweb Labs is evidence of their progressive mentality towards the work they do that has helped them prepare and overcome the challenges of new media. With twenty years of experience, 130 permanent staff, two branches and an average turnover of £10million (Cabinet Office ca.2017; Sitecore ca.2017); Redweb is a key case study in how agencies have overcome challenges to stay effective. Alongside their client work, Redweb also operate a department dedicated to investigating and experimenting with emerging technologies. Some examples of the work their labs have produced include cloud driven mobile apps such as Simpoll (Mullins 2013a; Mullins 2013b) and controlling music with movement (Redweb Labs ca.2017c). Redweb also run their own blog where employees can post regular updates and thoughts regarding trends and news in the industry as well as projects they are working on, the report will draw on some examples of these posts during the discussion.
+
+Theoretical Context
+The Internet as a Disruptive Technology
+
+There is generally a positive perception of new technologies, when asked about twelve specific categories audiences ranked the potential benefits at 5.6 out of 7 (figure 3; Collins 2017). In some cases however technology is responsible for causing disruptive innovation (Christensen and Bower 1995). Christensen pointed out that it has the ability to “disrupt an established industry with something simpler, more reliable, and more convenient” (1997, p115).
+
+
+Figure 3 — Perceived Benefits and Negatives of 12 Emerging Technologies (The Global Risks Report 2017 p.44)
+This theory is underpinned by the suggestion that successful businesses focus on sustaining innovation, evolving their existing product features to target high quality, more demanding and higher paying users (Harvard Business Review 2013). By neglecting and over serving low quality users, they create a new niche in the industry. New business can create simple products without extra features that consequently are cheaper and easier to use for these low quality users, this will give it momentum and ultimately allow them to target more advanced users anyway (figure 4). Although this theory has been used and recognised in the business industry, it hasn’t been used to the same extent by the media industry.
+
+
+Figure 4 — Graph showing the performance of disruptive technology as it gains higher quality users. (Megapixie 2005)
+Fostering a Convergence Culture
+
+The work of Henry Jenkins is well recognised and widely used by academics when exploring the effects and trends of new media. He recognised that in the contemporary industry there was increasingly a “…flow of content across multiple media platforms [and a] cooperation between multiple media industries…” (2006, p.2). It could be argued the internet laid the groundwork for the current industry state, one where an increasing range of technology is being simultaneously developed; one where apps, websites, television and social media are all used actively by audiences to understand content. It is this trend Jenkins attempted to explain, using the term ‘convergence’ as “a word that manages to describe technological, industrial, cultural, and social changes…” (2006 pp.2–3).
+
+Similarly, this report will portray audiences as having an active role of engagement with, and even production of, content. Some professionals may cower at the idea of this type of empowerment of what was traditionally described as a ‘consumer’. However, considering their role, it is far more appropriate to label them users or ‘prosumers’ (Toffler 1980), and as this report will suggest, it’s undermining this role that often limits the career of a professional. Jenkins very much wrote about his theory in the climax of the internet, where the trend of Web 2.0, a term popularised by Tim O’Reilly (2005), was full pace. As early as 1995 Negroponte recognised “In the information age, mass media got bigger and smaller at the same time.” (p.164), but with the rise of Facebook, Google and Youtube there was an increasing amount of investment towards websites and technology allowing platforms to become more interactive (Morrow 2014; Appendix F1) and therefore profitable (Chui 2013).
+
+Although these theories have been consistently cited in the study of audiences, they are yet to be used when exploring the role of a producer, they will however be key in supporting several findings later in the discussion of this report.
+
+Discussion
+What many perhaps consider the defining aspects of a website; interactivity, instant updates, flexibility and diversity, didn’t exist in the first websites (Cormode and Krishnamurthy 2008). The internet was a first, there had been nothing like it before so without hindsight, producers naturally tried to treat it like any other existing platform. The first website (Appendix G), created by Sir Tim Berners Lee in 1991, was essentially a hand-book for the internet; it was static, didn’t get regularly updated and consisted of just text and links. In these early days the skill-set of web developers consisted of having a technical understanding of computer science and being able code. The report previously mentioned the significance of web 2.0, this trend is what introduced the features many would consider essential for websites, but it also changed the skill-set required to create websites. Websites were originally coded using a language called hypertext markup language (HTML) and ultimately, in an attempt to more effectively replicate traditional media, Cascading Style Sheet (CSS); these are more logical languages and the first that many web developers start out learning (Appendix F2).
+
+In 2008 Rupert Murdoch spoke about the ways in which the internet and technology was disrupting old media, he called it creative destruction claiming “Everyday new technology is tearing down old ways of doing business.” (Georgetown University 2008). The catalyst to the rise of digital media has been the internet, the ability to conveniently network together media for a relatively low cost is what the industry is currently built upon (Chui 2013). In his speech Murdoch was speaking about this shift towards digital technology, but the process hasn’t stopped or slowed. It could be argued the most significant development that has occurred since the internet’s inception has been the uptake of mobile phones. As previously highlighted in the reports theoretical context, mobile devices now make up over 50% internet traffic, this has had a significant impact on the industry. The increasing use of mobile phones have led to the concept of responsive and mobile-first design, this has become a standard for professionals (Google ca.2017a). Interestingly the small-scale qualitative research conducted for this report suggested large screen devices were still the most popular; with 53% of respondents preferring Laptop and desktop devices over 47% preferring Mobiles and Tablets (Appendix C2). However, this holds less credit over the more extensive research methods Google have available and says more about the specific demographic surveyed, generally professionals and students who predominantly work on laptops.
+
+The consequences of these new technologies is the job specification of a web developer has grown to require an increased awareness of different languages in particular. Using a basic understanding of the way job profiles are created (Appendix F5), it is interesting to note both positions for web developers (Appendix D1, D2) list at least six different programming languages as being required, with one referencing over twenty different languages and API’s. This is a clear example of convergence, the need for professionals to have knowledge of so many languages, so that they can produce content simultaneously across a variety of platforms. It is this convergence and this diverse skill-set that makes it far more accurate to describe web developers as networked media developers.
+
+It is testament to the consistency and versatility of the internet that it can continually develop itself into new and exciting forms. When professionals with experience in the industry were asked if they thought mobile devices and apps would continue to grow, particularly concerning Google’s recently announced instant apps (Google 2017b) which itself is a response to mobile growth; the consensus was that apps are actually losing growth (Appendix C2). One wrote “…we are at the high-point of user enthusiasm in mobile apps…”, interestingly this is also what a small Twitter survey (Appendix A) suggested, with only 26% of users saying they predominantly use apps. In the same survey another professional wrote that the next big technology challenging developers is bots and artificial intelligence.
+
+It is this pace that makes it so hard to sustain a successful career as a web developer. But also exactly the reason renown digital agencies like Redweb don’t just ask for technical skills including the previously referenced job specifications, but also ask for “a Passion for the web and digital technologies” (Appendix E). By offering With the pressures of disruptive innovation, it is important for digital companies to not underestimate new technology that might enable new companies to take customers. Redweb haven’t underestimated this, with Redweb Labs they have set up a division of their company dedicated to discovering and experimenting with this technology. Redweb blogs are another example of how the passion of their developers is used, similarly to the responses in Appendix C2 they have already recognised the importance of Artificial Intelligence in the future (Redweb 2017b). By having an awareness of all future possible technologies they can prepare their web developers with the right skills to stay effective and survive the increasing pressures of convergence. Appendix F4 is a reflection from the author, as an aspiring and developing professional, in trying to understand the diversity of platforms available, the pressures of learning them and the exciting possible opportunities in the future.
+
+One example of how digital agencies failed to react to disruptive innovation in the past was ignoring the increasing movement towards participatory culture, a consequence of web 2.0. Digital agencies were focused on creating larger and more complex websites for higher paying businesses. However, as had already been seen with social networks and services like Youtube, there was a growing market of amateur and fan content creators, which were being increasingly ignored by these digital agencies because they don’t offer the same return. WordPress was a disruptive innovation, it recognised there wasn’t an affordable way for people to easily create their own blogs, but by using web 2.0 the service could offer everyone the opportunity to create their own blog for free. Digital agencies didn’t take this threat seriously because the resultant websites were low quality, therefore they focused on sustaining innovation and improving the products they already offered. Slowly however, WordPress itself improved the quality of its product, offering themes and plugins that customise the platform, now many companies who would previously have used digital agencies to create their websites use WordPress, including the New York Times and Walt Disney Company (WordPress, ca.2017). To respond to this there has been an increasing focus by professionals on learning how to make themes for these blog services, for example in Redweb’s job specification they require knowledge of Drupal, another blog platform.
+
+Conclusion
+This report has explored how a convergence culture has transformed web developers, who understood a limited number of web-based languages, into networked media developers with a much wider skill-set that spans many languages on many platforms. The report also looked at how web 2.0 and mobile technology has impacted the digital media industry, creating what Jankins called a convergence culture. It then briefly explored how some digital media agencies have shifted focus from proprietary websites to creating themes for blog systems like WordPress and Drupal after underestimating them as disruptive innovations. Finally, it looked at how Redweb try to ensure their developers are passionate and engaged about their work, requiring it on their job specification and supplying them with a blog to write about the industry. They also encourage their staff to experiment with new technologies, ensuring they don’t again underestimate what could potentially be a disruptive innovation such as was the case with WordPress and web 2.0.
+
+By exploring these aspects the report has tried to, for aspiring networked media producers, provide a more comprehensive understanding of the relationship between technology and the networked media industry. This relationship is one that continually evolves, it has provided new platforms for content to be more effectively distributed to but also created more platforms for content producers to understand and develop for. The findings of Appendix A and C2 suggest consumers still want to consume content across a range of platforms, at different times and in different places. By speaking to professionals in the industry (Appendix B) it is suggested this convergence culture isn’t going to stop, with artificial intelligence and bots potentially providing the next challenge for content providers, and this is supported by a variety of online secondary sources. However, both these pieces of primary research were limited by their small scale.
+
+Despite its limitations the report suggests it is as important as ever to be passionate and stay engaged with the industry. To work professionally in the industry, in particular the competitive digital media and convergence based one today, there is clearly a need to understand a range of different languages and platforms. The report also underlines why it’s important to be aware and not underestimate new technologies that might develop into disruptive innovations and change the way the industry works.
+
+Recommendations
+This report effectively manages to recognise some key developments and advice for aspiring networked media developers and supports the points made with instances in history and some limited primary research. However, it does in some aspects struggle to apprehend the real scale of the digital industry in such a short report. To more thoroughly underpin the key aspects of successful developers it would have been useful to have more extensive primary research, including a more critical analysis of results using graphs, and a transcript of a more in depth interview with Redweb. Appendix F (excluding F1) includes a series reflections in the form of blog posts by the author, prompted by the research and writing process of this report."
+50,Embodied conversational agents,conversational agents,https://books.google.com/books?hl=en&lr=&id=tHiKZGh9t7sC&oi=fnd&pg=PA1&dq=%22conversational+agent%22&ots=D--NoZfGBs&sig=wnROHZ3evb6aEz2wF73iMlqavr8,"Embodied conversational agents are computer-generated cartoonlike characters that demonstrate many of the same properties as humans in face-to-face conversation, including the ability to produce and respond to verbal and nonverbal communication. They constitute a type of (a) multimodal interface where the modalities are those natural to human conversation: speech, facial displays, hand gestures, and body stance; (b) software agent, insofar as they represent the computer in an interaction with a human or represent their human users in a computational environment (as avatars, for example); and (c) dialogue system where both verbal and nonverbal devices advance and regulate the dialogue between the user and the computer. With an embodied conversational agent, the visual dimension of interacting with an animated character on a screen plays an intrinsic role. Not just pretty pictures, the graphics display visual features of conversation in the same way that the face and hands do in face-to-face conversation among humans. This book describes research in all aspects of the design, implementation, and evaluation of embodied conversational agents as well as details of specific working systems. Many of the chapters are written by multidisciplinary teams of psychologists, linguists, computer scientists, artists, and researchers in interface design. "
+51,A conversational agent as museum guide–design and evaluation of a real-world application,conversational agents,https://link.springer.com/chapter/10.1007/11550617_28,"This paper describes an application of the conversational agent Max in a real-world setting. The agent is employed as guide in a public computer museum, where he engages with visitors in natural face-to-face communication, provides them with information about the museum or the exhibition, and conducts natural small talk conversations. The design of the system is described with a focus on how the conversational behavior is achieved. Logfiles from interactions between Max and museum visitors were analyzed for the kinds of dialogue people are willing to have with Max. Results indicate that Max engages people in interactions where they are likely to use human-like communication strategies, suggesting the attribution of sociality to the agent."
+52,Simulating the emotion dynamics of a multimodal conversational agent,conversational agents,https://link.springer.com/chapter/10.1007/978-3-540-24842-2_15,"We describe an implemented system for the simulation and visualisation of the emotional state of a multimodal conversational agent called Max. The focus of the presented work lies on modeling a coherent course of emotions over time. The basic idea of the underlying emotion system is the linkage of two interrelated psychological concepts: an emotion axis – representing short-time system states – and an orthogonal mood axis that stands for an undirected, longer lasting system state. A third axis was added to realize a dimension of boredom. To enhance the believability and lifelikeness of Max, the emotion system has been integrated in the agent’s architecture. In result, Max’s facial expression, gesture, speech, and secondary behaviors as well as his cognitive functions are modulated by the emotional system that, in turn, is affected by information arising at various levels within the agent’s architecture."
+53,Greta. a believable embodied conversational agent,conversational agents,https://link.springer.com/content/pdf/10.1007/1-4020-3051-7_1.pdf,"1. INTELLIGENT BELIEVABLE EMBODIED CONVERSATIONAL AGENTS
+A wide area of research on Autonomous Agents is presently devoted to the
+construction of ECAs, Embodied Conversational Agents (Cassell et al. 2000;
+Pelachaud & Poggi, 2001). An ECA is a virtual Agent that interacts with a User or
+another Agent through multimodal communicative behavior. It has a realistic or
+cartoon-like body and it can produce spoken discourse and dialogue, use voice with
+appropriate prosody and intonation, exhibit the visemes corresponding to the words
+uttered, make gestures, assume postures, produce facial expression and
+communicative gaze behavior.
+An ECA is generally a Believable Agent, that is, one able to express emotion
+(Bates, 1994) and to exhibit a given personality (Loyall & Bates, 1997). But,
+according to recent literature (Trappl & Payr, in press; de Rosis et al., in press a), an
+Agent is even more believable if it can behave in ways typical of given cultures,
+and if it has a personal communicative style (Canamero & Aylett, in press; Ruttkay
+et al., in press). This is, in fact, what makes a human a human. More, an ECA must
+be interactive, that is, take User and context into account, so as to tailor interaction
+onto the particular User and context at hand.
+In an ECA that fulfils these constraints the communicative output, that is, the
+particular combination of multimodal communicative signals displayed (words,
+prosody, gesture, face, gaze, body posture and movements) is determined by
+different aspects: a. contents to communicate, b. emotions, c. personality, d. culture,
+e. style, f. context and User sensitivity. At each moment of a communicative
+interaction, all of these aspects combine with each other to determine what the
+Agent will say, and how.
+In this paper we show how these aspects of an ECA can be modeled in terms of a
+belief and goal view of human communicative behavior. We then illustrate Greta, an
+ECA following these principles which is being implemented in the context of the
+EU project MagiCster1.
+2. WHAT AND HOW WE COMMUNICATE
+Before focusing on the Agent’s dialogue, let us see how a single move can be
+represented and simulated. An Agent S (Sender) generates a set of beliefs - about itself or about external objects and events - and has the goal to make Agent A (the
+Addressee) believe them. To achieve this, S produces a set of communicative signals
+(for example words, gestures, gaze, head, face and body behavior), taken from its
+communicative repertoire and temporally ordered in a particular way.
+Now, what are the beliefs an Agent may conceive to communicate? What is the
+structure of its communicative repertoire? What are the rules for the temporal
+ordering and synchronization of different signals? But also: how does the system go
+from the input – a set of beliefs – to the output – that particular arrangement of
+words, voice, hands, body, face signals? In fact, our communicative repertoire is
+very complex, in order for us to modulate our communication in a very sophisticated
+way. For example, words have formal and informal variants, connotations, positive
+or negative, tender or insulting nuances; and not only is the verbal lexicon so rich,
+but we can also communicate by subtly different intonations, gestures, facial
+expression, gaze, posture, spatial behavior.
+In each move of a dialog, how do we choose the best way to communicate, the
+combination of verbal and non verbal signals that are most fit to express our
+communicative goal? How do we activate the goal of using that given word,
+replacing it with a gesture or using both to communicate our meaning?
+According to a goal and belief model of social action (Conte & Castelfranchi,
+1995), choice, that is, the decision to pursue a goal instead of another is determined
+by the relative values attached to the alternative goals. But the value of a goal in its
+turn stems from the value of its superordinate goals, or from the algebraic sum of the
+values of two or more of them. So, whoever discovers his car was stolen might
+shout. But if this happens to someone who is just starting a work where he needs his
+car, his shout will be sharper or longer and his utterance more aggressive. In other
+words, resources we specifically use in a given communicative situation (a gesture
+in the place of a word, a very colloquial term instead of a more formal one) are
+determined by a number of permanent and contingent factors.
+3. PERMANENT AND CONTINGENT FACTORS
+As an Agent enters a communicative interaction, having the goal of
+communicating some meanings, two kinds of factors affect the final aspect of
+his/her communication: permanent and contingent ones (Table 1). The former are
+the goals and resources coming from the Senders’ biological and cultural
+endowment, that are always active in them; the latter are the goals activated and the
+resources provided by the contingent situation in which the Senders communicate.
+Long-lasting internal resources are (1) personality, (2) social identity (age,
+gender, cultural roots) and (3) cognitive traits. Among them, we may distinguish (4)
+innate and (5) culturally learned features: innate ones may be (6) a higher or lower
+capacity of making inferences, different reasoning styles (more abstract, intuitive, or
+imaginative); or (7) the different aptitudes, partly depending on neurological
+dispositions, towards musical, mathematical, visual or linguistic skills."
+54,Embodied conversational agent-based kiosk for automated interviewing,conversational agents,https://www.tandfonline.com/doi/abs/10.2753/MIS0742-1222280102,"We have created an automated kiosk that uses embodied intelligent agents to interview individuals and detect changes in arousal, behavior, and cognitive effort by using psychophysiological information systems. In this paper, we describe the system and propose a unique class of intelligent agents, which are described as Special Purpose Embodied Conversational Intelligence with Environmental Sensors (SPECIES). SPECIES agents use heterogeneous sensors to detect human physiology and behavior during interactions, and they affect their environment by influencing human behavior using various embodied states (i.e., gender and demeanor), messages, and recommendations. Based on the SPECIES paradigm, we present three studies that evaluate different portions of the model, and these studies are used as foundational research for the development of the automated kiosk. The first study evaluates human-computer interaction and how SPECIES agents can change perceptions of information systems by varying appearance and demeanor. Instantiations that had the agents embodied as males were perceived as more powerful, while female embodied agents were perceived as more likable. Similarly, smiling agents were perceived as more likable than neutral demeanor agents. The second study demonstrated that a single sensor measuring vocal pitch provides SPECIES with environmental awareness of human stress and deception. The final study ties the first two studies together and demonstrates an avatar-based kiosk that asks questions and measures the responses using vocalic measurements."
+55,CALMsystem: a conversational agent for learner modelling,conversational agents,https://link.springer.com/chapter/10.1007/978-1-84800-086-5_7,"This paper describes a system which incorporates natural language technologies, database manipulation and educational theories in order to offer learners a Negotiated Learner Model, for integration into an Intelligent Tutoring System. The system presents the learner with their learner model, offering them the opportunity to compare their own beliefs regarding their capabilities with those inferred by the system. A conversational agent, or “chatbot” has been developed to allow the learner to negotiate over the representations held about them using natural language. The system aims to support the metacognitive goals of self-assessment and reflection, which are increasingly seen as key to learning and are being incorporated into UK educational policy. The paper describes the design of the system, and reports a user trial, in which the chatbot was found to support users in increasing the accuracy of their self-assessments, and in reducing the number of discrepancies between system and user beliefs in the learner model. Some lessons learned in the development have been highlighted and future research and experimentation directions are outlined."
+56,Welbo: An embodied conversational agent living in mixed reality space,conversational agents,https://dl.acm.org/citation.cfm?id=633299,"This paper introduces a new type of anthropomorphic agent that lives in a 3D space where the real and virtual worlds are seamlessly merged. In this mixed reality (MR) space, people wearing a see-through head-mounted display can interact with both physical and virtual objects in real time. In this type of MR space, an embodied conversational agent, named ""Welbo,"" is implemented to study how agent technology contributes. This agent has several unique features, compared with the conventional desktop agent."
+57,Olga-A conversational agent with gestures,conversational agents,https://www.researchgate.net/profile/Jonas_Beskow/publication/2782400_Olga_-_a_Conversational_Agent_With_Gestures/links/546c9f330cf21e510f63ee16.pdf,"The Olga project has developed an animated agent interface for information services. The interface
+combines a graphical interface, spoken dialogue and an animated 3D ‘human-like’ character for
+multimodal input and output. The interaction is intelligently managed using techniques derived from
+spoken dialogue but extended for the graphical modality. The Olga agent is innovative in combining
+a spoken dialogue system with a 3-D animated character using lip-synthronized synthetic speech and
+gesturing. Particular attention has been paid to ensuring that the behaviour of the agent is
+immediately comprehensible for the user. Synchronizing speech with mouth movements increases
+intelligibility, while facial and gesturing realize the agent’s internal states and focus of the dialogue."
+58,Managing context in a conversational agent,conversational agents,https://www.researchgate.net/profile/Claude_Sammut/publication/220465339_Managing_Context_in_a_Conversational_Agent/links/0a85e537b13457fc41000000.pdf,"This paper describes a conversational agent, called “ProBot”,
+that uses a novel structure for handling context. The ProBot
+is implemented as a rule-based system embedded in a Prolog
+interpreter. The rules consist of patterns and responses, where
+each pattern matches a user’s input sentence and the response is
+an output sentence. Both patterns and responses may have attached Prolog expressions that act as constraints in the patterns
+and can invoke some action when used in the response. The main
+contributions of this work are in the use of hierarchies of contexts
+to handle unexpected inputs. The ProBot is also interesting in
+its link to an underlying engine capable of implementing deeper
+reasoning, which is usually not present in conversational agents
+based on shallow parsing."
+59,Delivering Cognitive Behavior Therapy to Young Adults With Symptoms of Depression and Anxiety Using a Fully Automated Conversational Agent (Woebot): A Randomized Controlled Trial,conversational agents,https://mental.jmir.org/2017/2/e19,"Web-based cognitive-behavioral therapeutic (CBT) apps have demonstrated efficacy but are characterized by poor adherence. Conversational agents may offer a convenient, engaging way of getting support at any time.
+
+Objective: The objective of the study was to determine the feasibility, acceptability, and preliminary efficacy of a fully automated conversational agent to deliver a self-help program for college students who self-identify as having symptoms of anxiety and depression.
+
+Methods: In an unblinded trial, 70 individuals age 18-28 years were recruited online from a university community social media site and were randomized to receive either 2 weeks (up to 20 sessions) of self-help content derived from CBT principles in a conversational format with a text-based conversational agent (Woebot) (n=34) or were directed to the National Institute of Mental Health ebook, “Depression in College Students,” as an information-only control group (n=36). All participants completed Web-based versions of the 9-item Patient Health Questionnaire (PHQ-9), the 7-item Generalized Anxiety Disorder scale (GAD-7), and the Positive and Negative Affect Scale at baseline and 2-3 weeks later (T2).
+
+Results: Participants were on average 22.2 years old (SD 2.33), 67% female (47/70), mostly non-Hispanic (93%, 54/58), and Caucasian (79%, 46/58). Participants in the Woebot group engaged with the conversational agent an average of 12.14 (SD 2.23) times over the study period. No significant differences existed between the groups at baseline, and 83% (58/70) of participants provided data at T2 (17% attrition). Intent-to-treat univariate analysis of covariance revealed a significant group difference on depression such that those in the Woebot group significantly reduced their symptoms of depression over the study period as measured by the PHQ-9 (F=6.47; P=.01) while those in the information control group did not. In an analysis of completers, participants in both groups significantly reduced anxiety as measured by the GAD-7 (F1,54= 9.24; P=.004). Participants’ comments suggest that process factors were more influential on their acceptability of the program than content factors mirroring traditional therapy.
+
+Conclusions: Conversational agents appear to be a feasible, engaging, and effective way to deliver CBT."
+60,The VoiceBot: a voice controlled robot arm,voicebot,https://dl.acm.org/citation.cfm?id=1518731,"We present a system whereby the human voice may specify continuous control signals to manipulate a simulated 2D robotic arm and a real 3D robotic arm. Our goal is to move towards making accessible the manipulation of everyday objects to individuals with motor impairments. Using our system, we performed several studies using control style variants for both the 2D and 3D arms. Results show that it is indeed possible for a user to learn to effectively manipulate real-world objects with a robotic arm using only non-verbal voice as a control mechanism. Our results provide strong evidence that the further development of non-verbal voice controlled robotics and prosthetic limbs will be successful."
+61,Demo of vj-voicebot: Control of robotic arm with the Vocal Joystick,voicebot,https://dl.acm.org/citation.cfm?id=1296895,We explore the use of the Vocal Joystick (VJ) for robotic limb control using a small-scale robotic arm. The purpose of this research is to allow individuals with mobile disabilities to obtain greater independence by continuously controlling a robotic arm with their voice. The VJ-Voicebot relies only on continuous and discrete non-verbal vocal sounds to interact with objects in its environment. The demonstration will allow users to experience real-time control of a 5 degrees-of-freedom (DOF) robotic arm using sounds produced from their own vocal system.
+62,College Voice Bot (Khabri),voicebot,https://pdfs.semanticscholar.org/900f/00864ad2b8bada90da0bfb61981a8b44f80e.pdf,"Artificial Intelligent Bots are software programs that include AI components to interact with people over text or voice messaging.
+Backed by AI, bots today are being used for ordering food, listening to music, finding information about your favorite author,
+checking the weather, etc. The AI component of bots helps in recommendations and making decisions for you. Built on NLP and
+ML, bots are based on the human ability to learn and absorb information. The college enquiry bot will be built using artificial
+algorithms that analyses user’s queries and understand user’s message. This System will be an android application which provides
+answer to the query of the user very effectively. User just have to ask their query to the bot which is used for two-way dynamic
+dialogues. The system will use the artificial intelligence algorithms to give appropriate answers to the user. User can ask for any
+information related to college/university like information about students, teachers, courses, admission process etc. The
+applications of this voice bot can be limitless. "
+63,A Photo-realistic Voice-bot,voicebot,https://upcommons.upc.edu/handle/2117/168405,"Technology is at the point where systems are capable of synthesizing video of human actors indistinguishably from ones in which the actor is present. This research investigates whether or not it is possible to use this technology in order to create a system which, allows video generation of a human actor, that is able to interact with a user through speech in real-time, whilst also remaining indistinguishable from a real human actor. In other words, a photo-realistic voicebot. The work discusses the motivations and ethics, but also presents and tests a prototype system. The prototype aims to take advantage of the latest in real-time video manipulation software to create a natural sounding conversation with an artificially synthesized video."
+64,Performance analysis of an integrated data/voice protocol on bus LANs,voicebot,https://ieeexplore.ieee.org/abstract/document/544963/,This paper presents a new hybrid protocol by combining the minislotted alternation priority (MSAP) protocol and the CSMA/CD protocol with priority scheme (HMCP) to handle the different demands of data and voice services on bus local area networks (LANs). The stations on the LANs can access the bus with either the MSAP or the CSMA/CD protocol. Analytical formulations are derived to evaluate the protocol performance. The throughput and the mean packet delay are also obtained. The results show that the throughout and the mean packet delay of this protocol are particularly better than that of the CSMA/CD at high loads. The delay of the voice station is lower than that of the data station.
+65,"Voicebot and Chatbot Design: Flexible Conversational Interfaces with Amazon Alexa, Google Home, and Facebook Messenger",voicebot,https://books.google.com/books?hl=en&lr=&id=XSxxDwAAQBAJ&oi=fnd&pg=PP1&dq=voicebot&ots=R9bprD5Vg5&sig=zdU09I94XsqFqOxeqFb9Q9X9yPI,"Create conversational UIs using cutting-edge frameworks
+
+Key Features
+Build AI chatbots and voicebots using practical and accessible toolkits
+Design and create voicebots that really shine in front of humans
+Work with familiar appliances like Alexa, Google Home, and FB Messenger
+Design for UI success across different industries and use cases
+Book Description
+We are entering the age of conversational interfaces, where we will interact with AI bots using chat and voice. But how do we create a good conversation? How do we design and build voicebots and chatbots that can carry successful conversations in in the real world?
+
+In this book, Rachel Batish introduces us to the world of conversational applications, bots and AI. You’ll discover how - with little technical knowledge - you can build successful and meaningful conversational UIs. You’ll find detailed guidance on how to build and deploy bots on the leading conversational platforms, including Amazon Alexa, Google Home, and Facebook Messenger.
+
+You’ll then learn key design aspects for building conversational UIs that will really succeed and shine in front of humans. You’ll discover how your AI bots can become part of a meaningful conversation with humans, using techniques such as persona shaping, and tone analysis.
+
+For successful bots in the real world, you’ll explore important use-cases and examples where humans interact with bots. With examples across finance, travel, and e-commerce, you’ll see how you can create successful conversational UIs in any sector.
+
+Expand your horizons further as Rachel shares with you her insights into cutting-edge voicebot and chatbot technologies, and how the future might unfold. Join in right now and start building successful, high impact bots!
+
+What you will learn
+Build your own AI voicebots and chatbots
+Use familiar appliances like Alexa, Google Home, and Facebook Messenger
+Master the elements of conversational user interfaces
+Key design techniques to make your bots successful
+Use tone analysis to deepen UI conversation for humans
+Create voicebots and UIs designed for real-world situations
+Insightful case studies in finance, travel, and e-commerce
+Cutting-edge technology and insight into the future of AI bots
+Who this book is for
+This book is for you, if you want to deepen your appreciation of UI and how conversational UIs - driven by artificial intelligence - are transforming the way humans interact with computers, appliances, and the everyday world around us. This book works with the major UI toolkits available today, so you do not need a deep programming knowledge to build the bots in this book: a basic familiarity with markup languages and JavaScript will give you everything you need to start building cutting-edge conversational UIs."
+66,"Aye, aye Captain: Voice active bots in a maritime MUVE",voicebot,https://www.citrenz.ac.nz/conferences/2015/pdf/2015CITRENZ_1_Cochrane_Voice_v4.pdf,"The paper presents an aspect of design based research into the design of 3D Multi User Virtual Environment (MUVE) to
+support authentic language learning on the bridge of a ship. Voice active Non-Player Characters (NPCs) “voice bots”
+were included in the design process to increase the authenticity of helm experiences, including helm commands. Using
+an Agile approach, development of a client based “voice bot” avatar was undertaken to complement human controlled
+avatar voice communication. While initial analysis indicated a relatively short development phase, the need to work
+around proprietary voice software led to a number of tasks that became distractingly large and exploratory on the
+programmer’s Agile backlog list. A decision to focus on the first principle in the Agile Manifesto constrained the
+solutions that were developed, which led to a working system for creating voice bots. "
+67,Practical bot development: designing and building bots with Node. js and Microsoft Bot Framework,voicebot,https://books.google.com/books?hl=en&lr=&id=JYxlDwAAQBAJ&oi=fnd&pg=PR3&dq=voicebot&ots=AZjrQfI9wl&sig=jC7ORC05awIhII5uyFaJa6GeYyE,"Explore the concept of bots and discover the motivation behind working with these new apps with messaging platforms. This book is an accessible resource teaching the basic concepts behind bot design and implementation. Each chapter builds on previous topics and, where appropriate, real working code is shown that implements the concepts. By just picking up a code editor, you can start creating smart, engaging, and useful bot experiences today.
+Practical Bot Development will teach you how to create your own bots on platforms like Facebook Messenger and Slack, incorporate extension APIs, and apply AI and ML algorithms in the cloud. By the end of this book, you'll be equipped with the information to reach thousands of new users with the bots you create!
+The book is a great resource for those looking to harness the benefits of building their own bots and leveraging the platform feasibility of them.
+What You’ll Learn
+Understand the general architecture of a bot
+Distinguish between a great bot experience versus a bad bot experience.
+Explore the ideas behind natural language processing and apply them to bot development
+Implement real Messenger, Slack, and custom channel bots using Node.js and the Microsoft Bot Builder framework
+Deploy bots to Facebook Messenger and Slack
+Who This Book Is For
+
+Engineers, hobbyists, and the design oriented community looking looking for an introduction to the technologies and concepts involved in building bots. The experience level could be from beginner to expert, although some familiarity with Node.js and APIs will be assumed."
+68,Virtual Assistants for End-User Development in the Internet of Things,voicebot,https://link.springer.com/chapter/10.1007/978-3-030-24781-2_17,"The spread of Virtual Assistants (software and hardware) on the consumer market deeply changed the way Internet of Things (IoT) is implemented and used today. Such devices, and related applications, are becoming more and more integrated within smart environments and this might pave the way to potential new approaches to End-User Development activities, which can be performed in IoT environments. This paper discusses the evolution of the IoT ecosystem definition that has been studied by the authors in the last years."
+69,Virtual Assistants for End-User Development in the Internet of Things,voicebot,https://books.google.com/books?hl=en&lr=&id=Vj2gDwAAQBAJ&oi=fnd&pg=PA209&dq=voicebot&ots=qM10xKZz2R&sig=_ZXlmmFEVAwZOEllHVWCVAlbBzY,"This book constitutes the refereed proceedings of the 7th International Symposium on End-User Development, IS-EUD 2017, held in Hatfield, UK, in July 2019. The 9 full papers and 8 short papers presented were carefully reviewed and selected from 35 submissions. The papers discuss progress in research around end-user development through, or towards, methods, socio-technical environments, intelligent agents, as well as the most effective end-user programming paradigms for smart environments. Papers and submissions in all categories addressed this specific theme together with topics that have been traditionally covered by the broader themes of end-user development, such as domain specific tools, spreadsheets, educational applications, and end user aspects. "
+70,TR10: Intelligent Software Assistant,virtual personal assistant,http://www.morgenthaler.com/press-releases/Siri%20Named%20Top%2010%20Emerging%20Tech%20of%202009.pdf,"Adam Cheyer is leading the design of powerful software that acts as a personal aide.
+ By Erica Naone
+Search is the gateway to the Internet for most people; for many of us, it has become second
+nature to distill a task into a set of keywords that will lead to the required tools and information.
+But Adam Cheyer, cofounder of Silicon Valley startup Siri, envisions a new way for people to
+interact with the services available on the Internet: a ""do engine"" rather than a search engine. Siri
+is working on virtual personal-assistant software, which would help users complete tasks rather
+than just collect information.
+Cheyer, Siri's vice president of engineering, says that the software takes the user's context into
+account, making it highly useful and flexible. ""In order to get a system that can act and reason,
+you need to get a system that can interact and understand,"" he says.
+Siri traces its origins to a military-funded artificial-intelligence project called CALO, for
+""cognitive assistant that learns and organizes,"" that is based at the research institute SRI
+International. The project's leaders--including Cheyer--combined traditionally isolated
+approaches to artificial intelligence to try to create a personal-assistant program that improves by
+interacting with its user. Cheyer, while still at SRI, took a team of engineers aside and built a
+sample consumer version; colleagues finally persuaded him to start a company based on the
+prototype. Siri licenses its core technology from SRI.
+Mindful of the sometimes spectacular failure of previous attempts to create a virtual personal
+assistant, Siri's founders have set their sights conservatively. The initial version, to be released
+this year, will be aimed at mobile users and will perform only specific types of functions, such as
+helping make reservations at restaurants, check flight status, or plan weekend activities. Users
+can type or speak commands in casual sentences, and the software deciphers their intent from the
+context. Siri is connected to multiple online services, so a quick interaction with it can
+accomplish several small tasks that would normally require visits to a number of websites. For
+example, a user can ask Siri to find a midpriced Chinese restaurant in a specific part of town and
+make a reservation there.
+Recent improvements in computer processor power have been essential in bringing this level of
+sophistication to a consumer product, Cheyer says. Many of CALO's abilities still can't be
+crammed into such products. But the growing power of mobile phones and the increasing speed 
+of networks make it possible to handle some of the processing at Siri's headquarters and pipe the
+results back to users, allowing the software to take on tasks that just couldn't be done before.
+""Search does what search does very well, and that's not going anywhere anytime soon,"" says Dag
+Kittlaus, Siri's cofounder and CEO. ""[But] we believe that in five years, everyone's going to have
+a virtual assistant to which they delegate a lot of the menial tasks.""
+While the software will be intelligent and useful, the company has no aspiration to make it seem
+human. ""We think that we can create an incredible experience that will help you be more
+efficient in your life, in solving problems and the tasks that you do,"" Cheyer says. But Siri is
+always going to be just a tool, not a rival to human intelligence: ""We're very practical minded.""
+See the 10 Emerging Technologies of 2009.
+Weekend Plans
+Siri cofounder Tom Gruber volunteered Adam Cheyer to participate in a conversation with the
+software (shown above). Gruber explains the artificial-intelligence tasks behind its responses.
+1. ""The user can ask a broad question like this because Siri has information that gives clues about
+what the user intends. For example, the software might store data about the user's location,
+schedule, and past activities. Siri can deal with open-ended questions within specific areas, such
+as entertainment or travel.""
+2. ""Siri pulls information relevant to the user's question from a variety of Web services and tools.
+In this case, it checks the weather, event listings, and directories of local attractions and uses
+machine learning to select certain options based on the user's past preferences. Siri can connect
+to various Web applications and then integrate the results into a single response.""
+3. ""Siri interprets this reply in the context of the existing conversation, using it to refine the user's
+request.""
+4. ""The software offers specific suggestions based on the user's personal preferences and its
+ability to categorize. Because Siri is task-oriented, rather than a search engine, it offers to buy
+tickets that the user selects.""
+5. ""By now, the conversation has narrowed enough that all the user has to do is click on his
+choice.""
+6. ""Siri compiles information about the event, such as band members, directions, and prices, and
+structures it in a logical way. It also handles the task of finding out what's available and getting
+the tickets.""
+Copyright Technology Review 2009. "
+71,Detecting out-of-domain utterances addressed to a virtual personal assistant,virtual personal assistant,https://www.isca-speech.org/archive/interspeech_2014/i14_0283.html,"Using different sources of information for grammar induction results in grammars that vary in coverage and precision. Fusing such grammars with a strategy that exploits their strengths while minimizing their weaknesses is expected to produce grammars with superior performance. We focus on the fusion of grammars produced using a knowledge-based approach using lexicalized ontologies and a data-driven approach using semantic similarity clustering. We propose various algorithms for finding the mapping between the (non-terminal) rules generated by each grammar induction algorithm, followed by rule fusion. Three fusion approaches are investigated: early, mid and late fusion. Results show that late fusion provides the best relative F-measure performance improvement by 20%."
+72,Virtual personal assistant,virtual personal assistant,https://researchportal.port.ac.uk/portal/en/publications/virtual-personal-assistant(99a40f22-17ab-4343-9610-b2fb0e8160a3).html,"This report discusses ways in which new technology could be harnessed to create an intelligent Virtual Personal Assistant (VPA) with a focus on user-based data. It will look at examples of intelligent programs with natural language processing that are currently available, with different categories of support, and examine the potential usefulness of one specific piece of software as a VPA. This engages the ability to communicate socially through natural language processing, holding and analysing data within the context of the user. It is suggested that new technologies may soon make the idea of virtual personal assistants a reality. Experiments conducted on this system, combined with user testing, have provided evidence that a basic program with natural language processing algorithms in the form of a VPA, with basic natural language processing and the ability to function without the need for other type of human input (or programming) may already be viable."
+73,A model to measure QoE for virtual personal assistant,virtual personal assistant,https://link.springer.com/article/10.1007/s11042-016-3650-5,"Until now the virtual assistants (like Siri, Google Now and Cortana) have primarily been confined to voice input and output only. Is there a justification for voice only confinement or can we enhance the user experience by adding a visual output? We hypothesized that providing a higher level of visual/auditory immersion would enhance the quality of user experience. In order to test this hypothesis, we first developed 4 variants of virtual assistant, each with a different audio/visual level of immersion. Developed virtual assistant systems were the following; audio only, audio and 2D visual display, audio and 3D visual display and audio and immersive 3D visual display. We developed a plan for usability testing of all 4 variants. The usability testing was conducted with 30 subjects against eight (8) dependent variables included presence, involvement, attention, reliability, dependency, easiness, satisfaction and expectations. Each subject rated these dependent variables based on a scale of 1–5, 5 being the highest value. The raw data collected from usability testing was then analyzed through several tools in order to determine the factors contributing towards the quality of experience for each of the 4 variants. The significant factors were then used develop a model that measures the quality of user experience. It was found that each variant had a different set of significant variables. Hence, in order to rate each system there is a need to develop a scale that is dependent upon the unique set of variables for the respective variant. Furthermore, it was found that variant 4 scored the highest rate for Quality of Experience (QoE). Lastly several other qualitative conclusions were also drawn from this research that will guide future work in the field of virtual assistants."
+74,Evaluation of a multimodal virtual personal assistant,virtual personal assistant,http://www.academia.edu/download/34253946/35_Branco.pdf,"Nowadays mobility is a reality. The small size and the rising computational power of personal
+mobiles devices enable the access and the exchange of an increasingly greater volume of data
+and information, anywhere and anytime. Multimodal interfaces, combining voice and visual
+modes can simplify the interaction but they raise news challenges concerning the usability and
+acceptability of such interfaces.
+In this paper, we present the results of the evaluation of a Virtual Personal Assistant
+application that provides e-mail management facilities through an intelligent and multimodal
+interaction with a fixed or a mobile device. The results show that the quality and speed of the
+system feedback as well as the recognition accuracy of the spoken components are key factors
+to a better user experience and for the acceptance of multimodal systems. "
+75,Interaction design concepts for a mobile personal assistant,virtual personal assistant,https://dl.acm.org/citation.cfm?id=1005232,"The Personal Assistant for onLine Services (PALS) project aims to develop an intelligent interface that facilitates efficient user interaction through personalization and context awareness with commerce web sites on a handheld device. The types of assistance services and interaction support represented by a mobile personal assistant have been investigated in the PALS project. Scenario Based Design was used to develop the PALS framework for the personal assistance services, generic scenarios and a usage model. The service concepts (e.g. direct, solicited, non-solicited, independent) characterize interaction between the user and virtual assistant during mobile web tasks. The generic scenarios and usage model aid to develop design and interaction of the PALS interface. A theme of ""personal customer support"" through an attentive interactive display can aid user acceptance of mobile web task assistance."
+76,Understanding user behavior of virtual personal assistant devices,virtual personal assistant,https://link.springer.com/article/10.1007/s10257-018-0375-1,"With the development of artificial intelligence technology, the market for virtual personal assistant (VPA) devices is emerging as a new battleground for global information technology companies. This study develops a comprehensive research model, based on perceived value theory, to explain potential customers’ intentions to adopt and use VPA devices. It investigates the relationship between perceived usefulness, perceived enjoyment, and product-related characteristics (i.e., portability, automation, and visual attractiveness). The research model and hypotheses are evaluated through Partial least squares analysis, using 313 survey samples. The results show that perceived usefulness and enjoyment have a significant impact on usage intention. Among the three constructs reflecting software- and hardware-based utilitarian value, content quality has the strongest impact on perceived usefulness. From the perspective of hedonic value, content quality, which is also a utilitarian attribute of VPA devices, and visual attractiveness positively affect perceived enjoyment. This study concludes by discussing implications and offering useful suggestions for academia and practice."
+77,Towards healthcare personal agents,virtual personal assistant,https://dl.acm.org/citation.cfm?id=2666266,"For a long time, the research on human-machine conversation and interaction has inspired futuristic visions created by film directors and science fiction writers. Nowadays, there has been great progress towards this end by the extended community of artificial intelligence scientists spanning from computer scientists to neuroscientists. In this paper we first review the tension between the latest advances in the technology of virtual agents and the limitations in the modality, complexity and sociability of conversational agent interaction. Then we identify a research challenge and target for the research and technology community. We need to create a vision and research path to create personal agents that are perceived as devoted assistants and counselors in helping end-users managing their own healthcare and well-being throughout their life. Such target is a high-payoff research agenda with high-impact on the society. In this position paper, following a review of the state-of-the-art in conversational agent technology, we discuss the challenges in spoken/multimodal/multi-sensorial interaction needed to support the development of Healthcare Personal Agents."
+78, Dangerous skills: Understanding and mitigating security risks of voice-controlled third-party functions on virtual personal assistant systems,virtual personal assistant,https://pdfs.semanticscholar.org/9785/5989936ed45485f15e470f8c70a8a3a1e93c.pdf,"Virtual personal assistants (VPA) (e.g., Amazon Alexa and Google Assistant) today mostly rely on the voice channel to communicate with their users, which however is known to be vulnerable, lacking proper authentication (from the user to the VPA). A new authentication challenge, from the VPA service to the user, has emerged with the rapid growth of the VPA ecosystem, which allows a third party to publish a function (called skill) for the service and therefore can be exploited to spread malicious skills to a large audience during their interactions with smart speakers like Amazon Echo and Google Home. In this paper, we report a study that concludes such remote, large-scale attacks are indeed realistic. We discovered two new attacks: voice squatting in which the adversary exploits the way a skill is invoked (e.g., ``open capital one''), using a malicious skill with a similarly pronounced name (e.g., ``capital won'') or a paraphrased name (e.g., ``capital one please'') to hijack the voice command meant for a legitimate skill (e.g., ``capital one''), and voice masquerading in which a malicious skill impersonates the VPA service or a legitimate skill during the user's conversation with the service to steal her personal information. These attacks aim at the way VPAs work or the user's misconceptions about their functionalities, and are found to pose a realistic threat by our experiments (including user studies and real-world deployments) on Amazon Echo and Google Home. The significance of our findings has already been acknowledged by Amazon and Google, and further evidenced by the risky skills found on Alexa and Google markets by the new squatting detector we built. We further developed a technique that automatically captures an ongoing masquerading attack and demonstrated its efficacy. "
+79,The impact of artificial intelligence and virtual personal assistants on marketing,virtual personal assistant,https://www.igi-global.com/chapter/the-impact-of-artificial-intelligence-and-virtual-personal-assistants-on-marketing/184275,"This entry will review the state of the art in AI, with a particular focus on applications in marketing. Based on the current capabilities of AI in marketing, the author's explore the new rules of engagement. Rather than simply targeting consumers, the marketing effort will also be directed at the algorithms controlling the consumers' virtual personal assistants (VPAs). Rather than exploiting human desires and weakness, marketing will need to focus on meeting the user's actual needs. The level of customer satisfaction will be even more critical as marketing will need to focus on establishing and maintaining a reputation in competition with those of similar offerings in the marketplace. This entry concludes with thoughts on the long-term implications, exploring the role of customer trust in the adoption of AI agents, the security requirements for agents and the ethical implications of access to such agents."
+80, Extracting Chatbot Knowledge from Online Discussion Forums.,chatbot ,https://www.aaai.org/Papers/IJCAI/2007/IJCAI07-066.pdf,"This paper presents a novel approach for extracting
+high-quality <thread-title, reply> pairs as chat
+knowledge from online discussion forums so as to
+efficiently support the construction of a chatbot for
+a certain domain. Given a forum, the high-quality
+<thread-title, reply> pairs are extracted using a
+cascaded framework. First, the replies logically
+relevant to the thread title of the root message are
+extracted with an SVM classifier from all the replies, based on correlations such as structure and
+content. Then, the extracted <thread-title, reply>
+pairs are ranked with a ranking SVM based on their
+content qualities. Finally, the Top-N <thread-title,
+reply> pairs are selected as chatbot knowledge. Results from experiments conducted within a movie
+forum show the proposed approach is effective."
+81,Survey on chatbot design techniques in speech conversation systems,chatbot ,http://repository.essex.ac.uk/21238/,"Human-Computer Speech is gaining momentum as a technique of computer interaction. There has been a recent upsurge in speech based search engines and assistants such as Siri, Google Chrome and Cortana. Natural Language Processing (NLP) techniques such as NLTK for Python can be applied to analyse speech, and intelligent responses can be found by designing an engine to provide appropriate human like responses. This type of programme is called a Chatbot, which is the focus of this study. This paper presents a survey on the techniques used to design Chatbots and a comparison is made between different design techniques from nine carefully selected papers according to the main methods adopted. These papers are representative of the significant improvements in Chatbots in the last decade. The paper discusses the similarities and differences in the techniques and examines in particular the Loebner prize-winning Chatbots."
+82,Different measurements metrics to evaluate a chatbot system,chatbot ,https://dl.acm.org/citation.cfm?id=1556341,"A chatbot is a software system, which can interact or ""chat"" with a human user in natural language such as English. For the annual Loebner Prize contest, rival chatbots have been assessed in terms of ability to fool a judge in a restricted chat session. We are investigating methods to train and adapt a chatbot to a specific user's language use or application, via a user-supplied training corpus. We advocate open-ended trials by real users, such as an example Afrikaans chatbot for Afrikaans-speaking researchers and students in South Africa. This is evaluated in terms of ""glass box"" dialogue efficiency metrics, and ""black box"" dialogue quality metrics and user satisfaction feedback. The other examples presented in this paper are the Qur'an and the FAQchat prototypes. Our general conclusion is that evaluation should be adapted to the application and to user needs."
+83,A deep reinforcement learning chatbot,chatbot ,https://arxiv.org/abs/1709.02349,"We present MILABOT: a deep reinforcement learning chatbot developed by the Montreal Institute for Learning Algorithms (MILA) for the Amazon Alexa Prize competition. MILABOT is capable of conversing with humans on popular small talk topics through both speech and text. The system consists of an ensemble of natural language generation and retrieval models, including template-based models, bag-of-words models, sequence-to-sequence neural network and latent variable neural network models. By applying reinforcement learning to crowdsourced data and real-world user interactions, the system has been trained to select an appropriate response from the models in its ensemble. The system has been evaluated through A/B testing with real-world users, where it performed significantly better than many competing systems. Due to its machine learning architecture, the system is likely to improve with additional data."
+84,A new chatbot for customer service on social media,chatbot ,https://dl.acm.org/citation.cfm?id=3025496,"Users are rapidly turning to social media to request and receive customer service; however, a majority of these requests were not addressed timely or even not addressed at all. To overcome the problem, we create a new conversational system to automatically generate responses for users requests on social media. Our system is integrated with state-of-the-art deep learning techniques and is trained by nearly 1M Twitter conversations between users and agents from over 60 brands. The evaluation reveals that over 40% of the requests are emotional, and the system is about as good as human agents in showing empathy to help users cope with emotional situations. Results also show our system outperforms information retrieval system based on both human judgments and an automatic evaluation metric."
+85,Building a chatbot with serverless computing,chatbot ,https://dl.acm.org/citation.cfm?id=3007217,"Chatbots are emerging as the newest platform used by millions of consumers worldwide due in part to the commoditization of natural language services, which provide provide developers with many building blocks to create chatbots inexpensively. However, it is still difficult to build and deploy chatbots. Developers need to handle the coordination of the cognitive services to build the chatbot interface, integrate the chatbot with external services, and worry about extensibility, scalability, and maintenance. In this work, we present the architecture and prototype of a chatbot using a serverless platform, where developers compose stateless functions together to perform useful actions. We describe our serverless architecture based on function sequences, and how we used these functions to coordinate the cognitive microservices in the Watson Developer Cloud to allow the chatbot to interact with external services. The serverless model improves the extensibility of our chatbot, which currently supports 6 abilities: location based weather reports, jokes, date, reminders, and a simple music tutor."
+86,Ontbot: Ontology based chatbot,chatbot ,https://ieeexplore.ieee.org/abstract/document/6149594/,"A new ontology based approach is proposed to model and operate chatbots (OntBot). OntBot uses appropriate mapping technique to transform ontologies and knowledge into relational database and then use that knowledge to drive its chats. The proposed approach overcomes a number of traditional chatbots drawbacks including: the need to learn and use chatbot specific language such as AIML, high botmaster interference, and the use of non-matured technology. OntBot has the additional power of easy users interactions using their natural language, and the seamless support of different application domains. This gives the proposed approach a number of unique scalability and interoperability properties that are going to be evaluated in future phases of this research project."
+87,Real conversations with artificial intelligence: A comparison between human–human online conversations and human–chatbot conversations,chatbot ,https://www.sciencedirect.com/science/article/pii/S0747563215001247,"This study analyzed how communication changes when people communicate with an intelligent agent as opposed to with another human. We compared 100 instant messaging conversations to 100 exchanges with the popular chatbot Cleverbot along seven dimensions: words per message, words per conversation, messages per conversation, word uniqueness, and use of profanity, shorthand, and emoticons. A MANOVA indicated that people communicated with the chatbot for longer durations (but with shorter messages) than they did with another human. Additionally, human–chatbot communication lacked much of the richness of vocabulary found in conversations among people, and exhibited greater profanity. These results suggest that while human language skills transfer easily to human–chatbot communication, there are notable differences in the content and quality of such conversations."
+88,Using corpora in machine-learning chatbot systems,chatbot ,https://www.jbe-platform.com/content/journals/10.1075/ijcl.10.4.06sha,"A chatbot is a machine conversation system which interacts with human users via natural conversational language. Software to machine-learn conversational patterns from a transcribed dialogue corpus has been used to generate a range of chatbots speaking various languages and sublanguages including varieties of English, as well as French, Arabic and Afrikaans. This paper presents a program to learn from spoken transcripts of the Dialogue Diversity Corpus of English, the Minnesota French Corpus, the Corpus of Spoken Afrikaans, the Qur'an Arabic-English parallel corpus, and the British National Corpus of English; we discuss the problems which arose during learning and testing. Two main goals were achieved from the automation process. One was the ability to generate different versions of the chatbot in different languages, bringing chatbot technology to languages with few if any NLP resources: the corpus-based learning techniques transferred straightforwardly to develop chatbots for Afrikaans and Qur'anic Arabic. The second achievement was the ability to learn a very large number of categories within a short time, saving effort and errors in doing such work manually: we generated more than one million AIML categories or conversation-rules from the BNC corpus, 20 times the size of existing AIML rule-sets, and probably the biggest AI Knowledge-Base ever."
+89,Freudbot: An investigation of chatbot technology in distance education,chatbot ,https://www.learntechlib.org/p/20691/,"A chatbot named Freudbot was constructed using the open source architecture of AIML to determine if a famous person application of chatbot technology could improve student-content interaction in distance education. Fifty-three students in psychology completed a study in which they chatted with Freudbot over the web for 10 minutes under one of two instructional sets. They then completed a questionnaire to provide information about their experience and demographic variables. The results from the questionnaire indicated a neutral evaluation of the chat experience although participants positively endorsed the expansion of chatbot technology and provided clear direction for future development and improvement. A basic analysis of the chatlogs indicated a high proportion of on-task behaviour. There was no effect of instructional set. Altogether, the findings indicate that famous person applications of chatbot technology may be promising as a teaching and learning tool in distance and online education.
+
+Citation"
+90,Understanding the long-term use of smart speaker assistants,smart speaker,https://dl.acm.org/citation.cfm?id=3264901,"Over the past two years the Ubicomp vision of ambient voice assistants, in the form of smart speakers such as the Amazon Echo and Google Home, has been integrated into tens of millions of homes. However, the use of these systems over time in the home has not been studied in depth. We set out to understand exactly what users are doing with these devices over time through analyzing voice history logs of 65,499 interactions with existing Google Home devices from 88 diverse homes over an average of 110 days. We found that specific types of commands were made more often at particular times of day and that commands in some domains increased in length over time as participants tried out new ways to interact with their devices, yet exploration of new topics was low. Four distinct user groups also emerged based on using the device more or less during the day vs. in the evening or using particular categories. We conclude by comparing smart speaker use to a similar study of smartphone use and offer implications for the design of new smart speaker assistants and skills, highlighting specific areas where both manufacturers and skill providers can focus in this domain."
+91,Google Home: smart speaker as environmental control unit,smart speaker,https://www.tandfonline.com/doi/abs/10.1080/17483107.2017.1369589,"Environmental Control Units (ECU) are devices or a system that allows a person to control appliances in their home or work environment. Such system can be utilized by clients with physical and/or functional disability to enhance their ability to control their environment, to promote independence and improve their quality of life. Over the last several years, there have been an emergence of several inexpensive, commercially-available, voice activated smart speakers into the market such as Google Home and Amazon Echo. These smart speakers are equipped with far field microphone that supports voice recognition, and allows for complete hand-free operation for various purposes, including for playing music, for information retrieval, and most importantly, for environmental control. Clients with disability could utilize these features to turn the unit into a simple ECU that is completely voice activated and wirelessly connected to appliances. Smart speakers, with their ease of setup, low cost and versatility, may be a more affordable and accessible alternative to the traditional ECU.
+
+Implications for Rehabilitation
+Environmental Control Units (ECU) enable independence for physically and functionally disabled clients, and reduce burden and frequency of demands on carers.
+
+Traditional ECU can be costly and may require clients to learn specialized skills to use.
+
+Smart speakers have the potential to be used as a new-age ECU by overcoming these barriers, and can be used by a wider range of clients."
+92,Investigating the usability and user experiences of voice user interface: a case of Google home smart speaker,smart speaker,https://dl.acm.org/citation.cfm?id=3236130,"Recently, commercial Voice User Interfaces (VUIs) have been introduced to the market (e.g. Amazon Echo and Google Home). Although they have drawn much attention from users, little is known about their usability, user experiences, and usefulness. In this study, we conducted a web-based survey to investigate usability, user experiences, and usefulness of the Google Home smart speaker. A total of 114 users, who are active in a social-media based interest group, participated in the study. The findings show that the Google Home is usable and user-friendly for users, and shows the potential for international users. Based on the users' feedback, we identified the challenges encountered by the participants. The findings from this study can be insightful for researchers and developers to take into account for future research in VUI."
+93,Home-based exercise system for patients using IoT enabled smart speaker,smart speaker,https://ieeexplore-ieee-org.ezproxy.pratt.edu/abstract/document/8210826/,"Physical therapy has a lot of importance for the well being and a better quality of living for an elderly patient. One integral constituent of any patient regime is the home-based exercise that a patient works on in a much comfortable environment. Although the benefits are well known, there is a big lag between the exercises prescribed by the therapists and the ones actually done by the patient. There is no cost effective and non-complex methods available to quantify the exercises performed by the patient. In this paper, a study was performed to check the validity and efficiency of a system consisting of a Smart IoT enabled speaker, which contains an orchestrator. Which is speech learning unit, an exercise database at the edge, and connected to the cloud, where the generated reports are stored and transferred for further analysis, if required. We report the efficiency of the system compared to the ratings of a physical therapist, a standard currently being used."
+94,A hardware framework for smart speaker control of home audio network,smart speaker,https://ieeexplore.ieee.org/abstract/document/5681134/,"Multi-channel speaker systems are typically driven by central power amplifiers. This approach has limitations when faced with the increasing number of channels in existing systems. In this paper, more distributed approach to multi-channel systems is proposed where a USB cable is used as an interface to a living room PC to connect to the proposed main controller. The main controller connects all speaker channels serially via a network cable through subcontrollers that are distributed across the rooms. The network cable interface between the sub-controllers and the main controller uses a custom-made transmission protocol. This protocol allows the main controller to provide multiple CD quality audio sources to different locations in a house. Furthermore we demonstrate a bidirectional communication capability to allow seamless personalized listening at all locations in the home with the proposed protocol between the main controller and the sub-controllers."
+95,Joint application of speech and speaker recognition for automation and security in smart home,smart speaker,https://www.isca-speech.org/archive/archive_papers/interspeech_2011/i11_3317.pdf,"This paper describes the deployment of speech technologies in
+STARHome, a fully functional smart home prototype. We
+make use of speech and speaker recognition technologies to
+provide three voice services, namely, voice command for
+controlling home appliances, voice biometric for entrancedoor access control, and service customization (speaker-loaded
+command control). Voice applications for STARHome have
+been designed to deal with short utterances and low SNR.
+Index Terms: home security and automation, command
+control, smart home, speaker recognition"
+96,"A 4Ω 2.65 W class-D audio amplifier with embedded DC-DC boost converter, current sensing ADC and DSP for adaptive speaker protection",smart speaker,https://ieeexplore.ieee.org/abstract/document/6644326/,In this paper a class-D smart speaker driver is presented that can deliver 2.65 W at 1% THD into a 4Ω load. Maximal output power is maintained at low battery voltage by supplying the class-D amplifier from a DC-DC boost converter. Speaker damage is avoided by a speaker protection algorithm that runs on an embedded DSP. The protection algorithm estimates the membrane excursion and voice coil temperature using a speaker model that tracks the speaker impedance which is determined by measuring the speaker current with less than 2% relative error. A sample & hold technique is presented that rejects the load current ripple by sampling at the moments where the instantaneous load current equals the average current. At full output power the combined efficiency of the class-D amplifier and DC-DC boost converter is higher than 80%. The complete system is implemented on a single chip that measures 6.6 mm 2 and is fabricated in a 0.14 μm CMOS technology with a 5 V gate-oxide option.
+97,Measuring user satisfaction on smart speaker intelligent assistants using intent sensitive query embeddings,smart speaker,https://dl.acm.org/citation.cfm?id=3271802,"Intelligent assistants are increasingly being used on smart speaker devices, such as Amazon Echo, Google Home, Apple Homepod, and Harmon Kardon Invoke with Cortana. Typically, user satisfaction measurement relies on user interaction signals, such as clicks and scroll movements, in order to determine if a user was satisfied. However, these signals do not exist for smart speakers, which creates a challenge for user satisfaction evaluation on these devices. In this paper, we propose a new signal, user intent, as a means to measure user satisfaction. We propose to use this signal to model user satisfaction in two ways: 1) by developing intent sensitive word embeddings and then using sequences of these intent sensitive query representations to measure user satisfaction; 2) by representing a user's interactions with a smart speaker as a sequence of user intents and thus using this sequence to identify user satisfaction. Our experimental results indicate that our proposed user satisfaction models based on the intent-sensitive query representations have statistically significant improvements over several baselines in terms of common classification evaluation metrics. In particular, our proposed task satisfaction prediction model based on intent-sensitive word embeddings has a 11.81% improvement over a generative model baseline and 6.63% improvement over a user satisfaction prediction model based on Skip-gram word embeddings in terms of the F1 metric. Our findings have implications for the evaluation of Intelligent Assistant systems."
+98,Smart room: Participant and speaker localization and identification,smart speaker,https://ieeexplore.ieee.org/abstract/document/1415605/,"Our long-term objective is to create smart room technologies that are aware of the users presence and their behavior and can become an active, but not an intrusive, part of the interaction. In this work, we present a multimodal approach for estimating and tracking the location and identity of the participants including the active speaker. Our smart room design contains three user-monitoring systems: four CCD cameras, an omnidirectional camera and a 16 channel microphone array. The various sensory modalities are processed both individually and jointly and it is shown that the multimodal approach results in significantly improved performance in spatial localization, identification and speech activity detection of the participants."
+99,Impact of domain and user's learning phase on task and session identification in smart speaker intelligent assistants,smart speaker,https://dl.acm.org/citation.cfm?id=3271803,"Task and session identification is a key element of system evaluation and user behavior modeling in Intelligent Assistant (IA) systems. However, identifying task and sessions for IAs is challenging due to the multi-task nature of IAs and the differences in the ways they are used on different platforms, such as smart-phones, cars, and smart speakers. Furthermore, usage behavior may differ among users depending on their expertise with the system and the tasks they are interested in performing. In this study, we investigate how to identify tasks and sessions in IAs given these differences. To do this, we analyze data based on the interaction logs of two IAs integrated with smart-speakers. We fit Gaussian Mixture Models to estimate task and session boundaries and show how a model with 3 components models user interactivity time better than a model with 2 components. We then show how session boundaries differ for users depending on whether they are in a learning-phase or not. Finally, we study how user inter-activity times differs depending on the task that the user is trying to perform. Our findings show that there is no single task or session boundary that can be used for IA evaluation. Instead, these boundaries are influenced by the experience of the user and the task they are trying to perform. Our findings have implications for the study and evaluation of Intelligent Agent Systems."
